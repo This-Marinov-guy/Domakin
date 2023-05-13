@@ -14,7 +14,7 @@ $(function() {
                             '</div>'
                         ].join(''),
                     icon: 'img/icons/map-marker-2.png',
-                    animation: google.maps.Animation.BOUNCE
+                    
                 },
                 {
                     lat: 40.733617,
@@ -29,7 +29,7 @@ $(function() {
                             '</div>'
                         ].join(''),
                     icon: 'img/icons/map-marker-2.png',
-                    animation: google.maps.Animation.BOUNCE
+                    
                 },
                 {
                     lat: 40.743011,
@@ -44,7 +44,7 @@ $(function() {
                             '</div>'
                         ].join(''),
                     icon: 'img/icons/map-marker-2.png',
-                    animation: google.maps.Animation.BOUNCE
+                    
                 },
                 {
                     lat: 40.711150,
@@ -59,7 +59,7 @@ $(function() {
                             '</div>'
                         ].join(''),
                     icon: 'img/icons/map-marker-2.png',
-                    animation: google.maps.Animation.BOUNCE
+                    
                 },
                 {
                     lat: 40.690010,
@@ -74,7 +74,7 @@ $(function() {
                             '</div>'
                         ].join(''),
                     icon: 'img/icons/map-marker-2.png',
-                    animation: google.maps.Animation.BOUNCE
+                    
                 },
                 {
                     lat: 40.697590,
@@ -89,7 +89,7 @@ $(function() {
                             '</div>'
                         ].join(''),
                     icon: 'img/icons/map-marker-2.png',
-                    animation: google.maps.Animation.BOUNCE
+                    
                 },
                 {
                     lat: 40.729979,
@@ -104,7 +104,7 @@ $(function() {
                             '</div>'
                         ].join(''),
                     icon: 'img/icons/map-marker-2.png',
-                    animation: google.maps.Animation.BOUNCE
+                    
                 },
                 {
                     lat: 40.749702,
@@ -119,7 +119,7 @@ $(function() {
                             '</div>'
                         ].join(''),
                     icon: 'img/icons/map-marker-2.png',
-                    animation: google.maps.Animation.BOUNCE
+                    
                 },
                 {
                     lat: 40.718971,
@@ -134,7 +134,7 @@ $(function() {
                             '</div>'
                         ].join(''),
                     icon: 'img/icons/map-marker-2.png',
-                    animation: google.maps.Animation.BOUNCE
+                    
                 },
                 {
                     lat: 40.748350,
@@ -149,7 +149,7 @@ $(function() {
                             '</div>'
                         ].join(''),
                     icon: 'img/icons/map-marker-2.png',
-                    animation: google.maps.Animation.BOUNCE
+                    
                 },
                 {
                     lat: 40.740178,
@@ -164,7 +164,7 @@ $(function() {
                             '</div>'
                         ].join(''),
                     icon: 'img/icons/map-marker-2.png',
-                    animation: google.maps.Animation.BOUNCE
+                    
                 }
 
             ];

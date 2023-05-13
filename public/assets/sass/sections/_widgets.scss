@@ -23,7 +23,7 @@
 -------------------------------------------------------------- */
 .widget {
     margin-bottom: 40px;
-    padding: 35px 35px 40px 30px;
+    padding: 35px 30px 40px 35px;
     border: 2px solid var(--border-color-11);
     &:last-child {
         margin-bottom: 0;
@@ -41,7 +41,7 @@
 }
 .ltn__widget-title-border {
     position: relative;
-    padding-right: 45px;
+    padding-left: 45px;
     &::after,
     &::before {
         position: absolute;
@@ -49,7 +49,7 @@
         background-color: var(--ltn__secondary-color);
         top: 50%;
         transform: translateY(-50%);
-        right: 0;
+        left: 0;
     }
     &::before {
         width: 18px;
@@ -59,19 +59,19 @@
     &::after {
         width: 4px;
         height: 4px;
-        right: 22px;
+        left: 22px;
         border-radius: 100%;
     }
 }
 .ltn__widget-title-border-2 {
-    border-right: 2px solid;
+    border-left: 2px solid;
     border-color: var(--ltn__secondary-color);
-    padding-right: 10px;
+    padding-left: 10px;
     position: relative;
     &::before {
         position: absolute;
         content: "";
-        right: 0;
+        left: 0;
         top: 50%;
         transform: translateY(-50%);
         width: 2px;
@@ -93,8 +93,8 @@
 }
 .ltn__search-widget input[type="text"] {
     margin-bottom: 0;
-    padding-left: 65px;
-    padding-right: 20px;
+    padding-right: 65px;
+    padding-left: 20px;
     height: 60px;
     background-color: var(--section-bg-1);
     font-weight: 600;
@@ -106,7 +106,7 @@
 }
 .ltn__search-widget button {
     position: absolute;
-    left: 0;
+    right: 0;
     height: 100%;
     padding: 0 20px;
     color: var(--white);
@@ -142,8 +142,8 @@
         color: var(--white);
         border-color: #133236;
         height: 70px;
-        padding-right: 25px;
-        padding-left: 70px;
+        padding-left: 25px;
+        padding-right: 70px;
     }
     input[type="text"]::placeholder {
             color: var(--white);
@@ -162,7 +162,7 @@
 }
 .ltn__newsletter-bg-icon {
     position: absolute;
-    left: 20px;
+    right: 20px;
     top: 15%;
     font-size: 120px;
     color: var(--ltn__color-1);
@@ -210,7 +210,7 @@
             list-style: none;
             display: inline-block;
             margin-top: 3px;
-            margin-left: 5px;
+            margin-right: 5px;
             background-color: var(--section-bg-1);
             border: 1px solid var(--border-color-1);
             a {
@@ -301,12 +301,12 @@
                 font-size: 14px;
                 font-weight: 700;
                 span {
-                    float: left;
+                    float: right;
                     color: var(--ltn__color-5);
                 }
             }
             span {
-                float: left;
+                float: right;
                 color: var(--ltn__color-5);
             }
         }
@@ -320,7 +320,7 @@
         li {
             a {
                 background-color: var(--section-bg-1);
-                padding: 20px 30px 20px 10px;
+                padding: 20px 10px 20px 30px;
                 span {
                     background-color: var(--white);
                     color: var(--ltn__primary-color);
@@ -411,8 +411,8 @@
     padding-bottom: 0px;
 }
 .popular-post-widget-img {
-    float: right;
-    margin-left: 20px;
+    float: left;
+    margin-right: 20px;
     img {
         max-width: 80px;
     }
@@ -434,8 +434,8 @@
 
 .ltn__twitter-post-widget {
     .popular-post-widget-img {
-        float: right;
-        margin-left: 20px;
+        float: left;
+        margin-right: 20px;
         img {
             max-width: 60px;
             border-radius: 100%;
@@ -487,8 +487,8 @@
 }
 .top-rated-product-img {
     max-width: 90px;
-    float: right;
-    margin-left: 20px;
+    float: left;
+    margin-right: 20px;
 }
 .top-rated-product-info {
     overflow: hidden;
@@ -548,13 +548,13 @@
 }
 .price_slider_amount > input[type="text"],
 .price_slider_amount > input[type="submit"] {
-  background: transparent none repeat scroll 100% 0;
+  background: transparent none repeat scroll 0 0;
   border: medium none;
   box-shadow: none;
-  float: right;
+  float: left;
   height: 25px;
   padding: 0;
-  text-align: right;
+  text-align: left;
   width: 140px;
   margin-bottom: 20px;
 }
@@ -580,7 +580,7 @@
   border: medium none;
   border-radius: 100%;
   height: 12px;
-  margin-right: 0;
+  margin-left: 0;
   margin-top: -6px;
   top: 50%;
   width: 12px;
@@ -641,22 +641,22 @@
 
 .insta-slide-gutter {
     .slick-list {
-        margin-left: -7.5px !important;
         margin-right: -7.5px !important;
+        margin-left: -7.5px !important;
         .slick-slide {
-            padding-left: 7.5px;
             padding-right: 7.5px;
+            padding-left: 7.5px;
         }
     }
 }
 .insta-grid-gutter {
     .instagram_gallery {
-        margin-left: -7.5px !important;
         margin-right: -7.5px !important;
+        margin-left: -7.5px !important;
         a,
         .instagram-image {
-            padding-left: 7.5px;
             padding-right: 7.5px;
+            padding-left: 7.5px;
             margin: 7px 0;
         }
     } 
@@ -726,7 +726,7 @@
     &::before {
         position: absolute;
         content: "";
-        right: 0;
+        left: 0;
         top: 0;
         width: 100%;
         height: 100%;
@@ -739,8 +739,8 @@
     .ltn__video-icon-1,
     .ltn__video-icon-2 {
         position: absolute;
-        right: 0;
         left: 0;
+        right: 0;
         margin: auto;
         top: 50%;
         transform: translateY(-50%);
@@ -803,13 +803,13 @@
     .ltn__video-bg-img {
         min-height: 320px;
         &.ml-30 {
-            margin-right: 0;
+            margin-left: 0;
         }
     }
     .ltn__video-img,
     .ltn__video-bg-img {
         &.ml-30 {
-            margin-right: 0;
+            margin-left: 0;
         }
     }
 }
@@ -845,7 +845,7 @@
 ---------------------------------------------------- */
 @media (min-width: 992px) {
     .footer-about-widget {
-        padding-left: 35px;
+        padding-right: 35px;
     }
 }
 /* ----------------------------------------------------
@@ -857,7 +857,7 @@
     }
     .top-rated-product-img {
         max-width: 70px;
-        margin-left: 15px;
+        margin-right: 15px;
     }
 }
 
