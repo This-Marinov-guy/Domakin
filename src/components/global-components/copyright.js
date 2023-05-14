@@ -20,7 +20,6 @@ class CopyRight extends Component {
 					<div className="ltn__copyright-menu text-end">
 					<ul className="go-top">
 						<li><Link to="/about">Terms &amp; Conditions</Link></li>
-						<li><Link to="/about">Claim</Link></li>
 						<li><Link to="/about">Privacy &amp; Policy</Link></li>
 					</ul>
 					</div>

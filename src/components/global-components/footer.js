@@ -54,7 +54,6 @@ class Footer_v1 extends Component {
 				                <img src={publicUrl+"assets/img/logo-2.png"} alt="Logo" />
 				              </div>
 				            </div>
-				            <p>Lorem Ipsum is simply dummy text of the and typesetting industry. Lorem Ipsum is dummy text of the printing.</p>
 				            <div className="footer-address">
 				              <ul>
 				                <li>
@@ -94,11 +93,8 @@ class Footer_v1 extends Component {
 				            <div className="footer-menu go-top">
 				              <ul>
 				                <li><Link to="/about">About</Link></li>
-				                <li><Link to="/blog-grid">Blog</Link></li>
-				                <li><Link to="/shop">All Products</Link></li>
+				               
 				                <li><Link to="/contact">Contact</Link></li>
-				                <li><Link to="/faq">FAQ</Link></li>
-				                <li><Link to="/contact">Contact us</Link></li>
 				              </ul>
 				            </div>
 				          </div>
@@ -110,10 +106,7 @@ class Footer_v1 extends Component {
 				              <ul>
 				                <li><Link to="/cart">Cart</Link></li>
 				                <li><Link to="/wishlist">Wish List</Link></li>
-				                <li><Link to="/login">Login</Link></li>
-				                <li><Link to="/checkout">Checkout</Link></li>
-				                <li><Link to="/about">Terms &amp; Conditions</Link></li>
-				                <li><Link to="/shop">Promotional Offers</Link></li>
+				                
 				              </ul>
 				            </div>
 				          </div>
@@ -125,30 +118,12 @@ class Footer_v1 extends Component {
 				              <ul>
 				                <li><Link to="/login">Login</Link></li>
 				                <li><Link to="/my-account">My account</Link></li>
-				                <li><Link to="/wishlist">Wish List</Link></li>
-				                <li><Link to="/add-listing">Add listing</Link></li>
-				                <li><Link to="/faq">FAQ</Link></li>
-				                <li><Link to="/contact">Contact us</Link></li>
+				          
 				              </ul>
 				            </div>
 				          </div>
 				        </div>
-				        <div className="col-xl-3 col-md-6 col-sm-12 col-12">
-				          <div className="footer-widget footer-newsletter-widget">
-				            <h4 className="footer-title">Newsletter</h4>
-				            <p>Subscribe to our weekly Newsletter and receive updates via email.</p>
-				            <div className="footer-newsletter">
-				              <form action="#">
-				                <input type="email" name="email" placeholder="Email*" />
-				                <div className="btn-wrapper">
-				                  <button className="theme-btn-1 btn" type="submit"><i className="fas fa-location-arrow" /></button>
-				                </div>
-				              </form>
-				            </div>
-				            <h5 className="mt-30">We Accept</h5>
-				            <img src={publicUrl+"assets/img/icons/payment-4.png"} alt="Payment Image" />
-				          </div>
-				        </div>
+				       
 				      </div>
 				    </div>
 				  </div>
