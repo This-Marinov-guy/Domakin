@@ -17,8 +17,6 @@ const About = () => {
         <Features  customClass="ltn__feature-area section-bg-1 pt-120 pb-90 mb-120---"/>
         <Team />
         <Testimonial />
-        <BlogSlider />
-        <CallToActionV1 />
         <Footer />
     </div>
 }

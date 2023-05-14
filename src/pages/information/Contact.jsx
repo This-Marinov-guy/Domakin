@@ -13,8 +13,6 @@ const Contact = () => {
         <PageHeader headertitle="Contact Us" subheader="Contact" />
         <ContactInfo />
         <ContactForm />
-        <Map />
-        <CallToActionV1 />
         <Footer />
     </div>
 }
