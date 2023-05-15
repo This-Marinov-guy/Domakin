@@ -12,11 +12,11 @@ import Footer from '../../components/global-components/footer';
 const About = () => {
     return <div>
         <Navbar />
-        <PageHeader headertitle="About Us" />
+        <PageHeader headertitle="Информация за нас" subheader="За нас" />
         <AboutV4 />
         <Features  customClass="ltn__feature-area section-bg-1 pt-120 pb-90 mb-120---"/>
         <Team />
-        <Testimonial />
+        {/* <Testimonial /> */}
         <Footer />
     </div>
 }

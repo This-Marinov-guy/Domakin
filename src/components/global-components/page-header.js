@@ -21,7 +21,7 @@ class Page_header extends Component {
 					<h1 className="page-title">{ HeaderTitle }</h1>
 					<div className="ltn__breadcrumb-list">
 						<ul>
-						<li><Link to="/"><span className="ltn__secondary-color"><i className="fas fa-home" /></span> Home</Link></li>
+						<li><Link to="/"><span className="ltn__secondary-color"><i className="fas fa-home" /></span> Начална страница</Link></li>
 						<li>{ Subheader }</li>
 						</ul>
 					</div>

@@ -26,7 +26,23 @@ class NavbarV3 extends Component {
 									<div className="top-bar-right text-end">
 										<div className="ltn__top-bar-menu">
 											<ul>
-
+												<li>
+													{/* ltn__language-menu */}
+													<div className="ltn__drop-menu ltn__currency-menu ltn__language-menu">
+														<ul>
+															<li><a href="#" className="dropdown-toggle"><span className="active-currency">English</span></a>
+																<ul>
+																	<li><Link to="#">Arabic</Link></li>
+																	<li><Link to="#">Bengali</Link></li>
+																	<li><Link to="#">Chinese</Link></li>
+																	<li><Link to="#">English</Link></li>
+																	<li><Link to="#">French</Link></li>
+																	<li><Link to="#">Hindi</Link></li>
+																</ul>
+															</li>
+														</ul>
+													</div>
+												</li>
 												<li>
 													<Social />
 												</li>
@@ -124,7 +140,7 @@ class NavbarV3 extends Component {
 										My Account
 									</Link>
 								</li>
-								
+
 							</ul>
 						</div>
 						<div className="ltn__social-media-2">
