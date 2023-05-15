@@ -10,11 +10,10 @@ export const languageSlice = createSlice({
     reducers: {
         setLanguage: (state, action) => {
             state.language = action.payload;
+            localStorage.removeItem("language");
             localStorage.setItem(
                 "language",
-                JSON.stringify({
-                    language: state.language,
-                })
+                action.payload 
             );
         },
         setScript: (state, action) => {

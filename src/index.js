@@ -17,29 +17,30 @@ const Root = () => {
     const language = useSelector(selectLanguage);
 
     useEffect(() => {
-        let storedData = JSON.parse(localStorage.getItem("language"));
-        console.log(storedData);
-        if (storedData && storedData.language) {
-            dispatch(setLanguage(storedData.language))
+        let storedLanguage = localStorage.getItem("language");
+        if (storedLanguage) {
+            dispatch(setLanguage(storedLanguage))
         }
         switch (language) {
             case 'bg':
                 dispatch(setScript(BG))
+                console.log('heello');
                 break;
             case 'en':
                 dispatch(setScript(EN))
+                console.log('bye');
                 break;
             default:
                 dispatch(setScript(BG))
                 break;
         }
-    }, [])
+    }, [dispatch])
 
     return (
         <BrowserRouter basename={"/"}>
-            <Suspense fallback={<div class="quarter-overlay">
-                <div class="cv-spinner">
-                    <span class="spinner"></span>
+            <Suspense fallback={<div className="quarter-overlay">
+                <div className="cv-spinner">
+                    <span className="spinner"></span>
                 </div>
             </div>}>
                 <Switch>

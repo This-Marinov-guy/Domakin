@@ -34,8 +34,8 @@ const Navbar = () => {
 													<ul>
 														<li><a href="#" className="dropdown-toggle"><span className="active-currency">Предпочитан език</span></a>
 															<ul>
-																<li><button onClick={() => {dispatch(setLanguage('bg'))}}>Български</button></li>
-																<li><button onClick={() => {dispatch(setLanguage('en'))}}>English</button></li>
+																<li><button onClick={() => { dispatch(setLanguage('bg')); window.location.reload() }}>Български</button></li>
+																<li><button onClick={() => { dispatch(setLanguage('en')); window.location.reload() }}>English</button></li>
 															</ul>
 														</li>
 													</ul>
