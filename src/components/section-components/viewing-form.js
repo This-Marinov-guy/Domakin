@@ -3,13 +3,15 @@ import { useSelector } from 'react-redux';
 import { selectScript } from '../../redux/language';
 import { Field, Form, Formik, ErrorMessage } from 'formik';
 import * as yup from "yup";
+import { useHttpClient } from '../../hooks/http-hook'
 
 
 const ViewingForm = () => {
-
     let publicUrl = process.env.PUBLIC_URL + '/'
 
     const script = useSelector(selectScript);
+
+    const { loading, sendRequest } = useHttpClient()
 
     const schema = yup.object().shape({
         name: yup.string().required(script.viewing[16].errors[0]),
@@ -25,7 +27,25 @@ const ViewingForm = () => {
         <div className="container">
             <div className="row">
                 <div className="col-lg-12">
-                    <Formik className="ltn__appointment-inner" validationSchema={schema} onSubmit={async () => { }} initialValues={{
+                    <Formik className="ltn__appointment-inner" validationSchema={schema} onSubmit={async (values) => {
+                        try {
+                            const responseData = await sendRequest(
+                                "viewing/create-viewing",
+                                "POST",
+                                JSON.stringify({
+                                    name: values.name,
+                                    surname: values.surname,
+                                    phone: values.phone,
+                                    email: values.email,
+                                    description: values.description
+                                }),
+                                {
+                                    "Content-Type": "application/json",
+                                }
+                            );
+
+                        } catch (err) { }
+                    }} initialValues={{
                         name: "",
                         surname: "",
                         phone: "",
@@ -33,7 +53,7 @@ const ViewingForm = () => {
                         dataTerms: false,
                         payTerms: false,
                     }} >
-                        {({ values, setFieldValue }) => (
+                        {() => (
                             <Form>
                                 <h6>{script.viewing[7]}</h6>
                                 <div className="row">

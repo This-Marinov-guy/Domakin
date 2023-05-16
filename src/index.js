@@ -5,7 +5,8 @@ import { store } from './redux/store'
 import { BrowserRouter, Switch, Route } from "react-router-dom";
 import { setLanguage, setScript } from "./redux/language";
 import { BG, EN } from "./util/PAGE_SCRIPT";
-
+import { selectError, selectErrorMsg } from "./redux/error";
+import Error from './components/ui/Error'
 
 //general pages
 const Home = lazy(() => import('./pages/Home'));
@@ -21,6 +22,9 @@ const Viewing = lazy(() => import('./pages/actions/Viewing'));
 
 const Root = () => {
     const dispatch = useDispatch()
+
+    const error = useSelector(selectError)
+    const errorMessage = useSelector(selectErrorMsg);
 
     useEffect(() => {
         let storedLanguage = localStorage.getItem("language");
@@ -43,6 +47,7 @@ const Root = () => {
     return (
         <BrowserRouter basename={"/"}>
             <Suspense fallback={<div className="quarter-overlay">
+                {error && <Error errorMessage={errorMessage} />}
                 <div className="cv-spinner">
                     <span className="spinner"></span>
                 </div>
