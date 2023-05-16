@@ -72,7 +72,7 @@ const Navbar = () => {
 								<div className="header-menu d-none d-xl-block">
 									<nav>
 										<div className="ltn__main-menu go-top">
-											<ul style={{ justifyContent: 'center' }}>
+											<ul style={{ justifyContent: 'flex-end' }}>
 
 												<li className="menu-icon"><Link to="/about">{script.header[2]}</Link>
 

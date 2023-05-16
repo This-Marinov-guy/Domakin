@@ -13,7 +13,7 @@ import { selectScript } from '../../redux/language';
 
 
 const About = () => {
-
+    
     const script = useSelector(selectScript)
     return <div>
         <Navbar />

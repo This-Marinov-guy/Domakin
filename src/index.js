@@ -6,6 +6,7 @@ import { BrowserRouter, Switch, Route } from "react-router-dom";
 import { setLanguage, setScript } from "./redux/language";
 import { BG, EN } from "./util/PAGE_SCRIPT";
 
+
 //general pages
 const Home = lazy(() => import('./pages/Home'));
 const ErrorPage = lazy(() => import('./pages/ErrorPage'));
@@ -15,7 +16,8 @@ const About = lazy(() => import('./pages/information/About'));
 const Contact = lazy(() => import('./pages/information/Contact'));
 
 //actions
-const AddDocument = lazy(() => import('./pages/actions/AddDocument'));
+const Lending = lazy(() => import('./pages/actions/Lending'));
+const Viewing = lazy(() => import('./pages/actions/Viewing'));
 
 const Root = () => {
     const dispatch = useDispatch()
@@ -50,7 +52,9 @@ const Root = () => {
 
                     <Route path="/about" component={About} />
                     <Route path="/contact" component={Contact} />
-                    <Route path="/lending" component={AddDocument}/>
+
+                    <Route path="/lending" component={Lending} />
+                    <Route path='/viewing' component={Viewing} />
 
                     <Route path="*" component={ErrorPage} />
 

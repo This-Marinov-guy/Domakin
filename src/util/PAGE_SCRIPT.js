@@ -40,6 +40,35 @@ const BG = {
         'Отдай апартамент/стая',
         'Добави описание и документи'
     ],
+    viewing: [
+        'Извършване на огледи',
+        'Огледи',
+        'Ние извършваме огледа вместо вас',
+        'Намерили сте квартира, но нямате възможност да присъствате на оглед или сте в процес на търсене и искате да си осигурите агент за огледи? Предлагаме услуга агент за огледи, където ние отиваме вместо вас. При ваше желание документираме целия оглед и задаваме вашите въпроси лично на наемодателят. Ако имате възможност, ще предаваме наживо за да имате моментална връзка! Нужно е само да изпълните инструкциите както следва:',
+        '1) Попълнете данните си в бланката отдолу',
+        '2) Изчакайте връзка с наш клиент',
+        '3) Оговорете оглед/и и оставете всичко останало на нас',
+        'Попълнете детайлите си',
+        'Име',
+        'Фамилия',
+        'Телефон за връзка (Моля изплозвайте + и държавния индекс',
+        'Ел. поща',
+        'Допълнителна информация, която искате да предате на агента ни',
+        'Давам разрешение да бъда контактуван от компанията по телефон или ел. поща, както и инфомацията ми да бъде запазена и изплозвана единствено във връзка с услугата',
+        'Разбирам, че ще бъда таксуван за услугата, когато и двете страни изпълнят задълженията си и услугата е извършена успешно',
+        'Изпращане',
+        {
+            errors: [
+                "Моля, въведете име",
+                "Моля, въведете фамилия",
+                'Номерът е непълен или не започва с държавен индекс (например +359)',
+                "Моля, въведете телефонен номер",
+                "Имейлът е навалиден",
+                "Моля, въведете имейл",
+                "Условията трябва да бъдат приети"
+            ]
+        }
+    ],
     home: [
         'Комапния за подпогане с квартири',
         'Намерете вашето място',
@@ -135,6 +164,34 @@ const EN = {
     addDocument: [
         'Lend your apartment/room',
         'Add description and documents'
+    ],
+    viewing: [
+        'Viewing service',
+        'Viewing',
+        'Let us make the walk for you',
+        'You have found a room or apartment but you do not have the availability to go on the viewing? Our agents do the viewing instead of you with the option to document everything or live broadcast it to you. This allows for your direct interaction with the landlord and significantly increases the chances of getting the place. To use this service, simply follow the steps in the order:',
+        '1) Fill your details in the form below',
+        '2) Wait for one of our agents to contact you',
+        '3) Arrange the viewing/s and leave the rest to us',
+        'Fill your details',
+        'Name',
+        'Surname',
+        'Phone to be contacted (Please add + and country code)',
+        'Email',
+        'Any comments you would like to add',
+        'I give me consent to be contacted by the company via phone or email and for them to store my information for service purposes only',
+        'I understand that the service they provide will include a payment at some point in the future given that both sides are satisfied',
+        'Submit Request',
+        {
+            errors: [
+                "Name is required",
+                "Surname is required",
+                'Phone number is not full or does not start with country code (example +359)',
+                "Phone is required",
+                "Please enter a valid email",
+                "Terms must be accepted"
+            ]
+        }
     ],
     home: [
         'Company for accommodation searching',

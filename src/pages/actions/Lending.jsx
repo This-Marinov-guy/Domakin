@@ -7,7 +7,7 @@ import Footer from '../../components/global-components/footer';
 import { useSelector } from 'react-redux';
 import { selectScript } from '../../redux/language';
 
-const AddDocument = () => {
+const Lending = () => {
     const script = useSelector(selectScript)
 
     return <div>
@@ -19,5 +19,5 @@ const AddDocument = () => {
     </div>
 }
 
-export default AddDocument
+export default Lending
 

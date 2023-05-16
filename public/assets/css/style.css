@@ -12756,6 +12756,24 @@ blockquote::before {
   }
 }
 
+.rotate-arrow {
+  text-align: center;
+  @media (max-width: 991px) {
+    transform: rotate(90deg);
+  }
+}
+
+.service-description {
+  @media (max-width: 991px) {
+    text-align: center;
+  }
+}
+
+.error {
+  color: red;
+  margin-bottom: 20px;
+}
+
 /* ----------------------------------------------------
     Pagination
 ---------------------------------------------------- */
@@ -18085,6 +18103,8 @@ input.cart-plus-minus-box {
 .is-hide {
   display: none;
 }
+
+
 
 /* ----------------------------------------------------
     END
