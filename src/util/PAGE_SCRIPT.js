@@ -7,7 +7,12 @@ const BG = {
         'Записване',
         'Гронинген, Нидерландия',
     ],
-    footer: [],
+    footer: [
+        'Всички права на платформата са собственост на компанията @ Domakin ',
+        'Условия & Регулации',
+        'Гронинген, Нидерландия',
+        ''
+    ],
     about: [
         "Информация за нас",
         "За нас",
@@ -31,6 +36,10 @@ const BG = {
         'Изпрати запитване'
 
     ],
+    addDocument: [
+        'Отдай апартамент/стая',
+        'Добави описание и документи'
+    ],
     home: [
         'Комапния за подпогане с квартири',
         'Намерете вашето място',
@@ -38,6 +47,52 @@ const BG = {
         'Ние ще ви помогнем с намиране и отдаване на квартири в Гронинген и околността',
         'Направете запитване',
     ],
+    features: [
+        'Предлагане',
+        'Нашите основни услуги',
+        'Оставете огледите на нас',
+        'Нашите агенти извършват огледите вместо вас, когато нямате възможността. Ние правим директна връзка между намеател и хазяйн чрез виртуална платформа или поемаме цялата отговорност да зададем всичките ви въпроси и да документираме огледа за вас.',
+        'Към услугата',
+        'Наеми апартамент',
+        'Очаквайте скоро',
+        'Отдайте апартамент/стая'
+    ],
+    team: [
+        'Екип',
+        'Нашите агенти',
+        {
+            name: 'Лазар Попов',
+            position: 'Агент за недвижими имоти',
+            about: '26, Студент по Изкуствен Интелект',
+            social: {
+                linkedIn: '#',
+            }
+        },
+        {
+            name: 'Сава Попов',
+            position: 'Агент за недвижими имоти',
+            about: '20, Студент по Дизайн на Игри',
+            social: {
+                linkedIn: '#',
+            }
+        },
+        {
+            name: 'Константин Сонев',
+            position: 'Агент за недвижими имоти',
+            about: '21, Студент по Менджмънт на Строителство',
+            social: {
+                linkedIn: '#',
+            }
+        },
+        {
+            name: 'Димитър Стаматов',
+            position: 'Агент за недвижими имоти',
+            about: '22, Студент по Международен Бизнес',
+            social: {
+                linkedIn: '#',
+            }
+        }
+    ]
 }
 
 const EN = {
@@ -49,7 +104,11 @@ const EN = {
         'Register',
         'Groningen, the Netherlands'
     ],
-    footer: [],
+    footer: [
+        'All Rights Reserved @ Domakin ',
+        'Terms & Policy',
+        'Groningen, the Netherlands',
+    ],
     about: [
         "About us",
         "About us",
@@ -73,6 +132,10 @@ const EN = {
         'Send'
 
     ],
+    addDocument: [
+        'Lend your apartment/room',
+        'Add description and documents'
+    ],
     home: [
         'Company for accommodation searching',
         'Find your place to live',
@@ -80,6 +143,52 @@ const EN = {
         'Our young team will help you with finding your place to live in Groningen and the area around it',
         'Contact us',
     ],
+    features: [
+        'Our Services',
+        'Our Main Focus',
+        'Let us do the walk',
+        'We go to apartment visits for you, ask the landlord any question you have, and make any arrangements for you or with your presence through a virtual connection. ',
+        'Check it out',
+        'Rent an apartment',
+        'Expect soon',
+        'Land your place'
+    ],
+    team: [
+        'Team',
+        'Property Agents',
+        {
+            name: 'Lazar Popov',
+            position: 'Real Estate Agent',
+            about: '26, Artificial Intelligence student',
+            social: {
+                linkedIn: '#',
+            }
+        },
+        {
+            name: 'Sava Popov',
+            position: 'Real Estate Agent',
+            about: '20, Game Design student',
+            social: {
+                linkedIn: '#',
+            }
+        },
+        {
+            name: 'Konstantin Sonev',
+            position: 'Real Estate Agent',
+            about: '21, Construction Management student',
+            social: {
+                linkedIn: '#',
+            }
+        },
+        {
+            name: 'Dimitar Stamatov',
+            position: 'Real Estate Agent',
+            about: '22, International Business student',
+            social: {
+                linkedIn: '#',
+            }
+        }
+    ]
 }
 
 export { BG, EN }

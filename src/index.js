@@ -3,13 +3,19 @@ import ReactDOM from "react-dom/client";
 import { Provider, useDispatch, useSelector } from "react-redux";
 import { store } from './redux/store'
 import { BrowserRouter, Switch, Route } from "react-router-dom";
-import { selectLanguage, setLanguage, setScript } from "./redux/language";
+import { setLanguage, setScript } from "./redux/language";
 import { BG, EN } from "./util/PAGE_SCRIPT";
 
+//general pages
 const Home = lazy(() => import('./pages/Home'));
 const ErrorPage = lazy(() => import('./pages/ErrorPage'));
+
+//information
 const About = lazy(() => import('./pages/information/About'));
 const Contact = lazy(() => import('./pages/information/Contact'));
+
+//actions
+const AddDocument = lazy(() => import('./pages/actions/AddDocument'));
 
 const Root = () => {
     const dispatch = useDispatch()
@@ -44,6 +50,7 @@ const Root = () => {
 
                     <Route path="/about" component={About} />
                     <Route path="/contact" component={Contact} />
+                    <Route path="/lending" component={AddDocument}/>
 
                     <Route path="*" component={ErrorPage} />
 
