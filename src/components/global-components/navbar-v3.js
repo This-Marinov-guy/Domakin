@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
 import Social from '../section-components/social';
-import { useDispatch } from 'react-redux';
-import { setLanguage } from '../../redux/language';
+import { useDispatch, useSelector } from 'react-redux';
+import { selectScript, setLanguage } from '../../redux/language';
 
 const NavbarV3 = () => {
 
@@ -11,6 +11,8 @@ const NavbarV3 = () => {
 	let anchor = '#'
 
 	const dispatch = useDispatch()
+
+	const script = useSelector(selectScript)
 	return (
 		<div>
 			<header className="ltn__header-area ltn__header-5 ltn__header-logo-and-mobile-menu-in-mobile ltn__header-logo-and-mobile-menu ltn__header-transparent gradient-color-4---">
@@ -20,8 +22,8 @@ const NavbarV3 = () => {
 							<div className="col-md-7">
 								<div className="ltn__top-bar-menu">
 									<ul>
-										<li><a href="mailto:info@webmail.com?Subject=Flower%20greetings%20to%20you"><i className="icon-mail" /> info@webmail.com</a></li>
-										<li><a href="locations.html"><i className="icon-placeholder" /> 15/A, Nest Tower, NYC</a></li>
+										<li><a href="mailto:info@webmail.com?Subject=Flower%20greetings%20to%20you"><i className="icon-mail" /> domakin.nl@gmail.com</a></li>
+										<li><a href="locations.html"><i className="icon-placeholder" /> {script.header[5]}</a></li>
 									</ul>
 								</div>
 							</div>
@@ -33,7 +35,7 @@ const NavbarV3 = () => {
 												{/* ltn__language-menu */}
 												<div className="ltn__drop-menu ltn__currency-menu ltn__language-menu">
 													<ul>
-														<li><a href="#" className="dropdown-toggle"><span className="active-currency">Предпочитан език</span></a>
+														<li><a href="#" className="dropdown-toggle"><span className="active-currency">{script.header[1]}</span></a>
 															<ul>
 																<li><button onClick={() => { dispatch(setLanguage('bg')); window.location.reload() }}>Български</button></li>
 																<li><button onClick={() => { dispatch(setLanguage('en')); window.location.reload() }}>English</button></li>
@@ -60,15 +62,7 @@ const NavbarV3 = () => {
 									<div className="site-logo go-top">
 										<Link to="/"><img src={publicUrl + "assets/img/logo-2.png"} alt="Logo" /></Link>
 									</div>
-									<div className="get-support clearfix d-none">
-										<div className="get-support-icon">
-											<i className="icon-call" />
-										</div>
-										<div className="get-support-info">
-											<h6>Get Support</h6>
-											<h4><a href="tel:+123456789">123-456-789-10</a></h4>
-										</div>
-									</div>
+									
 								</div>
 							</div>
 							<div className="col header-menu-column menu-color-white">
@@ -76,12 +70,12 @@ const NavbarV3 = () => {
 									<nav>
 										<div className="ltn__main-menu">
 											<ul style={{ justifyContent: 'flex-end' }} >
-												<li className="menu-icon"><Link to="/about">About</Link>
+												<li className="menu-icon"><Link to="/about">{script.header[2]}</Link>
 
 												</li>
-												<li><Link to="/contact">Contact</Link></li>
+												<li><Link to="/contact">{script.header[3]}</Link></li>
 												<li className="special-link">
-													<Link to="/add-listing">Register</Link>
+													<Link to="/add-listing">{script.header[4]}</Link>
 												</li>
 											</ul>
 										</div>
@@ -121,12 +115,12 @@ const NavbarV3 = () => {
 					<div className="ltn__utilize-menu">
 						<ul>
 
-							<li><Link to="/about">About</Link>
+							<li><Link to="/about">{script.header[2]}</Link>
 
 							</li>
 
 
-							<li><Link to="/contact">Contact</Link></li>
+							<li><Link to="/contact">{script.header[3]}</Link></li>
 						</ul>
 					</div>
 					<div className="ltn__utilize-buttons ltn__utilize-buttons-2">
@@ -136,7 +130,7 @@ const NavbarV3 = () => {
 									<span className="utilize-btn-icon">
 										<i className="far fa-user" />
 									</span>
-									My Account
+									{script.header[4]}
 								</Link>
 							</li>
 

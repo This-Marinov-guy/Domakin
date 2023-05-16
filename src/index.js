@@ -14,21 +14,17 @@ const Contact = lazy(() => import('./pages/information/Contact'));
 const Root = () => {
     const dispatch = useDispatch()
 
-    const language = useSelector(selectLanguage);
-
     useEffect(() => {
         let storedLanguage = localStorage.getItem("language");
         if (storedLanguage) {
             dispatch(setLanguage(storedLanguage))
         }
-        switch (language) {
+        switch (storedLanguage) {
             case 'bg':
                 dispatch(setScript(BG))
-                console.log('heello');
                 break;
             case 'en':
                 dispatch(setScript(EN))
-                console.log('bye');
                 break;
             default:
                 dispatch(setScript(BG))

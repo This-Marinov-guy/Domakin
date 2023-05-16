@@ -8,13 +8,18 @@ import Testimonial from '../../components/section-components/testimonial-v1';
 import BlogSlider from '../../components/blog-components/blog-slider-v1';
 import CallToActionV1 from '../../components/section-components/call-to-action-v1';
 import Footer from '../../components/global-components/footer';
+import { useSelector } from 'react-redux';
+import { selectScript } from '../../redux/language';
+
 
 const About = () => {
+
+    const script = useSelector(selectScript)
     return <div>
         <Navbar />
-        <PageHeader headertitle="Информация за нас" subheader="За нас" />
+        <PageHeader headertitle={script.about[0]} subheader={script.about[1]} />
         <AboutV4 />
-        <Features  customClass="ltn__feature-area section-bg-1 pt-120 pb-90 mb-120---"/>
+        <Features customClass="ltn__feature-area section-bg-1 pt-120 pb-90 mb-120---" />
         <Team />
         {/* <Testimonial /> */}
         <Footer />

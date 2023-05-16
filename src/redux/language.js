@@ -4,16 +4,14 @@ import { BG } from '../util/PAGE_SCRIPT'
 export const languageSlice = createSlice({
     name: "language",
     initialState: {
-        language: 'bg',
         script: BG,
     },
     reducers: {
         setLanguage: (state, action) => {
-            state.language = action.payload;
             localStorage.removeItem("language");
             localStorage.setItem(
                 "language",
-                action.payload 
+                action.payload
             );
         },
         setScript: (state, action) => {
@@ -22,7 +20,6 @@ export const languageSlice = createSlice({
     }
 });
 
-export const selectLanguage = (state) => state.language.language;
 export const selectScript = (state) => state.language.script;
 export const { setLanguage, setScript } = languageSlice.actions;
 export default languageSlice.reducer;

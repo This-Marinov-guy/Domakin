@@ -1,39 +1,41 @@
 import React, { Component } from 'react';
+import { useSelector } from 'react-redux';
 import { Link } from 'react-router-dom';
+import { selectScript } from '../../redux/language';
 
-class Page_header extends Component {
+const Page_header = (props) => {
 
-    render() {
+	let HeaderTitle = props.headertitle;
+	let publicUrl = process.env.PUBLIC_URL + '/'
+	let Subheader = props.subheader ? props.subheader : HeaderTitle
+	let CustomClass = props.customclass ? props.customclass : ''
+	let Img = props.Img ? props.Img : '14.jpg'
 
-        let HeaderTitle = this.props.headertitle;
-        let publicUrl = process.env.PUBLIC_URL+'/'
-        let Subheader = this.props.subheader ? this.props.subheader : HeaderTitle
-		let CustomClass = this.props.customclass ? this.props.customclass : ''
-        let Img = this.props.Img ? this.props.Img :'14.jpg'
+	const script = useSelector(selectScript)
 
-        return (
+	return (
 
-		<div className={"ltn__breadcrumb-area text-left bg-overlay-white-30 bg-image "+CustomClass} data-bs-bg={publicUrl+"assets/img/bg/14.jpg"}>
+		<div className={"ltn__breadcrumb-area text-left bg-overlay-white-30 bg-image " + CustomClass} data-bs-bg={publicUrl + "assets/img/bg/14.jpg"}>
 			<div className="container">
 				<div className="row">
-				<div className="col-lg-12">
-					<div className="ltn__breadcrumb-inner">
-					<h1 className="page-title">{ HeaderTitle }</h1>
-					<div className="ltn__breadcrumb-list">
-						<ul>
-						<li><Link to="/"><span className="ltn__secondary-color"><i className="fas fa-home" /></span> Начална страница</Link></li>
-						<li>{ Subheader }</li>
-						</ul>
+					<div className="col-lg-12">
+						<div className="ltn__breadcrumb-inner">
+							<h1 className="page-title">{HeaderTitle}</h1>
+							<div className="ltn__breadcrumb-list">
+								<ul>
+									<li><Link to="/"><span className="ltn__secondary-color"><i className="fas fa-home" /></span>{script.header[0]}</Link></li>
+									<li>{Subheader}</li>
+								</ul>
+							</div>
+						</div>
 					</div>
-					</div>
-				</div>
 				</div>
 			</div>
 		</div>
 
 
-        )
-    }
+	)
+
 }
 
 
