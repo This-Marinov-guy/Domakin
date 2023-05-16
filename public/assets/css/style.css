@@ -12757,9 +12757,12 @@ blockquote::before {
 }
 
 .rotate-arrow {
-  text-align: center;
+  justify-content: center;
+  font-size: 30px;
   @media (max-width: 991px) {
     transform: rotate(90deg);
+    font-size: 20px;
+    margin-bottom: 30px;
   }
 }
 
@@ -12767,6 +12770,17 @@ blockquote::before {
   @media (max-width: 991px) {
     text-align: center;
   }
+}
+
+.flex-center {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.icon {
+  font-size: 30px;
+  margin-bottom: 10px;
 }
 
 .error {
@@ -18103,8 +18117,6 @@ input.cart-plus-minus-box {
 .is-hide {
   display: none;
 }
-
-
 
 /* ----------------------------------------------------
     END

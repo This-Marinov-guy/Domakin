@@ -24,11 +24,20 @@ const ServiceDescription = () => {
                 <h5>{script.viewing[3]}</h5>
             </div>
             <div className='row justify-content-center'>
-                <h5 className="col-lg-2 col-sm-12 col-12 service-description">{script.viewing[4]}</h5>
-                <i className="rotate-arrow flaticon-right-arrow col-lg-2 col-sm-12 col-12" />
-                <h5 className="col-lg-2 col-sm-12 col-12 service-description">{script.viewing[5]}</h5>
-                <i className="rotate-arrow flaticon-right-arrow col-lg-2 col-sm-12 col-12" />
-                <h5 className="col-lg-2 col-sm-12 col-12 service-description">{script.viewing[6]} </h5>
+                <div className='col-lg-2 col-sm-12 col-12 flex-center'>
+                    <i class="fa-solid fa-user icon"></i>
+                    <h5 className="service-description">{script.viewing[4]}</h5>
+                </div>
+                <i className="rotate-arrow flaticon-right-arrow col-lg-2 col-sm-12 col-12 flex-center" />
+                <div className='col-lg-2 col-sm-12 col-12 flex-center'>
+                    <i class="fa-solid fa-clock icon"></i>
+                    <h5 className="service-description">{script.viewing[5]}</h5>
+                </div>
+                <i className="rotate-arrow flaticon-right-arrow col-lg-2 col-sm-12 col-12 flex-center" />
+                <div className='col-lg-2 col-sm-12 col-12 flex-center'>
+                    <i class="fa-solid fa-handshake icon"></i>
+                    <h5 className="service-description">{script.viewing[6]} </h5>
+                </div>
             </div>
 
         </div>
