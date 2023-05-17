@@ -74,9 +74,9 @@ const NavbarV3 = () => {
 
 												</li>
 												<li><Link to="/contact">{script.header[3]}</Link></li>
-												<li className="special-link">
+												{/* <li className="special-link">
 													<Link to="/add-listing">{script.header[4]}</Link>
-												</li>
+												</li> */}
 											</ul>
 										</div>
 									</nav>
