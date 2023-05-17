@@ -1,8 +1,8 @@
 import React from "react";
 import Alert from "react-bootstrap/Alert";
-import { FiX } from "react-icons/fi";
-import { useDispatch } from "react-redux";
+import { useDispatch, useSelector } from "react-redux";
 import { removeError } from "../../redux/error";
+import { selectScript } from "../../redux/language";
 
 const Error = (props) => {
   const dispatch = useDispatch();
@@ -11,18 +11,14 @@ const Error = (props) => {
     dispatch(removeError());
   };
 
+  const script = useSelector(selectScript)
+
   return (
-    <Alert
-      className="error_panel"
-      variant="danger"
-    >
-      <div className="action_btns">
-        <h3>Be careful - You just got an error!</h3>
-        <FiX className="x_icon" onClick={closeHandler}/>
-      </div>
-      <p>
-      {props.errorMessage}
-      </p>
+    <Alert className="notification_panel" variant="danger" onClose={closeHandler} dismissible>
+      <Alert.Heading>{script.error[0]}</Alert.Heading>
+      <h5>
+        {props.errorMessage}
+      </h5>
     </Alert>
   );
 };

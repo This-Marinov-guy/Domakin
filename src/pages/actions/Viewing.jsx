@@ -7,14 +7,14 @@ import ServiceDescription from '../../components/section-components/service-desc
 import { useSelector } from 'react-redux';
 import { selectScript } from '../../redux/language';
 
-const Viewing = () => {
+const Viewing = (props) => {
     const script = useSelector(selectScript);
 
     return <div>
         <Navbar />
         <PageHeader headertitle={script.viewing[0]} subtitle={script.viewing[1]} />
         <ServiceDescription />
-        <ViewingForm />
+        <ViewingForm setSuccess={props.setSuccess} />
         <Footer />
     </div>
 }

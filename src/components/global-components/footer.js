@@ -89,23 +89,23 @@ const Footer_v1 = () => {
 						</div>
 						<div className="col-xl-2 col-md-6 col-sm-6 col-12">
 							<div className="footer-widget footer-menu-widget clearfix">
-								<h4 className="footer-title">Company</h4>
+								<h4 className="footer-title">{script.footer[3]}</h4>
 								<div className="footer-menu go-top">
 									<ul>
-										<li><Link to="/about">About</Link></li>
+										<li><Link to="/about">{script.footer[4]}</Link></li>
 
-										<li><Link to="/contact">Contact</Link></li>
+										<li><Link to="/about">{script.footer[5]}</Link></li>
 									</ul>
 								</div>
 							</div>
 						</div>
 						<div className="col-xl-2 col-md-6 col-sm-6 col-12">
 							<div className="footer-widget footer-menu-widget clearfix">
-								<h4 className="footer-title">Services</h4>
+								<h4 className="footer-title">{script.footer[6]}</h4>
 								<div className="footer-menu go-top">
 									<ul>
-										<li><Link to="/cart">Cart</Link></li>
-										<li><Link to="/wishlist">Wish List</Link></li>
+										<li><Link to="/viewing">{script.footer[7]}</Link></li>
+										<li><p>{script.footer[8]}</p></li>
 
 									</ul>
 								</div>
@@ -113,12 +113,10 @@ const Footer_v1 = () => {
 						</div>
 						<div className="col-xl-2 col-md-6 col-sm-6 col-12">
 							<div className="footer-widget footer-menu-widget clearfix">
-								<h4 className="footer-title">Customer Care</h4>
+								<h4 className="footer-title">{script.footer[9]}</h4>
 								<div className="footer-menu go-top">
 									<ul>
-										<li><Link to="/login">Login</Link></li>
-										<li><Link to="/my-account">My account</Link></li>
-
+										<li><Link to="/contact">{script.footer[10]}</Link></li>
 									</ul>
 								</div>
 							</div>

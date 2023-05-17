@@ -4,12 +4,17 @@ import { selectScript } from '../../redux/language';
 import { Field, Form, Formik, ErrorMessage } from 'formik';
 import * as yup from "yup";
 import { useHttpClient } from '../../hooks/http-hook'
+import Success from '../ui/Success';
+import Spinner from 'react-bootstrap/Spinner';
+import { useHistory } from 'react-router-dom';
 
 
-const ViewingForm = () => {
+const ViewingForm = (props) => {
     let publicUrl = process.env.PUBLIC_URL + '/'
 
     const script = useSelector(selectScript);
+
+    const history = useHistory();
 
     const { loading, sendRequest } = useHttpClient()
 
@@ -43,7 +48,10 @@ const ViewingForm = () => {
                                     "Content-Type": "application/json",
                                 }
                             );
-
+                            props.setSuccess(
+                                <Success heading={script.viewing[17]} message={script.viewing[18]} onClose={() => { props.setSuccess(null) }} />
+                            );
+                            history.push("/");
                         } catch (err) { }
                     }} initialValues={{
                         name: "",
@@ -126,7 +134,8 @@ const ViewingForm = () => {
                                         />
                                     </div>
                                     <div className="btn-wrapper text-center mt-40">
-                                        <button className="btn theme-btn-1 btn-effect-1 text-uppercase" type="submit">{script.viewing[15]}</button>
+                                        <button disabled={loading} className="btn theme-btn-1 btn-effect-1 text-uppercase" type="submit">{loading ? <Spinner animation="border" />
+                                            : script.viewing[15]}</button>
                                     </div>
                                 </div>
                             </Form>

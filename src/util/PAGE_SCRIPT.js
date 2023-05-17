@@ -11,7 +11,14 @@ const BG = {
         'Всички права на платформата са собственост на компанията @ Domakin ',
         'Условия & Регулации',
         'Гронинген, Нидерландия',
-        ''
+        'За Компанията',
+        "Информация",
+        'Нашите агенти',
+        'Услуги',
+        'Наеми ни за оглед',
+        'Очаквайте още скоро...',
+        'Помощ',
+        'Контакти'
     ],
     about: [
         "Информация за нас",
@@ -67,7 +74,9 @@ const BG = {
                 "Моля, въведете имейл",
                 "Условията трябва да бъдат приети"
             ]
-        }
+        },
+        'Успешно свързване',
+        'Вашата информация вече е получена и очаква разглеждане от наш агент! Благодарим ви за доверието - очаквайте връзка!',
     ],
     home: [
         'Комапния за подпогане с квартири',
@@ -121,6 +130,9 @@ const BG = {
                 linkedIn: '#',
             }
         }
+    ],
+    error: [
+        'Внимание, попаднахте на грешка!'
     ]
 }
 
@@ -137,6 +149,14 @@ const EN = {
         'All Rights Reserved @ Domakin ',
         'Terms & Policy',
         'Groningen, the Netherlands',
+        'Company',
+        "About us",
+        'Team',
+        'Services',
+        'Viewings',
+        'Expect more soon...',
+        'Customer Care',
+        'Contact us'
     ],
     about: [
         "About us",
@@ -191,7 +211,9 @@ const EN = {
                 "Please enter a valid email",
                 "Terms must be accepted"
             ]
-        }
+        },
+        'Successful Request',
+        'Your information has been sent so expect soon to be contacted by one of our aggents! Thank you again for the trust and see you soon!',
     ],
     home: [
         'Company for accommodation searching',
@@ -245,6 +267,9 @@ const EN = {
                 linkedIn: '#',
             }
         }
+    ],
+    error: [
+        'Be careful - You just got an error!'
     ]
 }
 

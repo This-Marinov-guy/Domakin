@@ -7,6 +7,7 @@ import { setLanguage, setScript } from "./redux/language";
 import { BG, EN } from "./util/PAGE_SCRIPT";
 import { selectError, selectErrorMsg } from "./redux/error";
 import Error from './components/ui/Error'
+import Success from "./components/ui/Success";
 
 //general pages
 const Home = lazy(() => import('./pages/Home'));
@@ -21,6 +22,8 @@ const Lending = lazy(() => import('./pages/actions/Lending'));
 const Viewing = lazy(() => import('./pages/actions/Viewing'));
 
 const Root = () => {
+    const [success, setSuccess] = useState(null);
+
     const dispatch = useDispatch()
 
     const error = useSelector(selectError)
@@ -47,11 +50,12 @@ const Root = () => {
     return (
         <BrowserRouter basename={"/"}>
             <Suspense fallback={<div className="quarter-overlay">
-                {error && <Error errorMessage={errorMessage} />}
                 <div className="cv-spinner">
                     <span className="spinner"></span>
                 </div>
             </div>}>
+                {error && <Error errorMessage={errorMessage} />}
+                {success}
                 <Switch>
                     <Route exact path="/" component={Home} />
 
@@ -59,7 +63,9 @@ const Root = () => {
                     <Route path="/contact" component={Contact} />
 
                     <Route path="/lending" component={Lending} />
-                    <Route path='/viewing' component={Viewing} />
+                    <Route path='/viewing' >
+                        <Viewing setSuccess={setSuccess} />
+                    </Route>
 
                     <Route path="*" component={ErrorPage} />
 

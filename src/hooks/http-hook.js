@@ -3,10 +3,13 @@ import { useSelector } from "react-redux";
 import { useDispatch } from "react-redux";
 import { removeError, showError } from "../redux/error";
 import { selectLoading, startLoading, stopLoading } from "../redux/loading";
+import { selectScript } from "../redux/language";
+import { BG } from "../util/PAGE_SCRIPT";
 
 export const useHttpClient = () => {
   const dispatch = useDispatch();
   const loading = useSelector(selectLoading);
+  const script = useSelector(selectScript);
 
   const activeHttpRequests = useRef([]);
 
@@ -19,7 +22,7 @@ export const useHttpClient = () => {
       try {
         //for production --> process.env.REACT_APP_SERVER_URL
         //for testing -----> "http://localhost:80/api/"
-        const response = await fetch(process.env.REACT_APP_SERVER_URL + url, {
+        const response = await fetch("http://localhost:80/api/" + url, {
           method,
           body,
           headers,
@@ -39,7 +42,13 @@ export const useHttpClient = () => {
         dispatch(stopLoading());
         return responseData;
       } catch (err) {
-        dispatch(showError(err.message));
+        let errorMsg
+        if (script === BG && err.messages[1]) {
+          errorMsg = err.messages[1]
+        } else {
+          errorMsg = err.messages[0]
+        }
+        dispatch(showError(errorMsg))
         setTimeout(() => dispatch(removeError()), 6000);
         dispatch(stopLoading());
         throw err;
