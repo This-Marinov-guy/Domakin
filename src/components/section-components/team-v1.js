@@ -9,21 +9,18 @@ const TeamMember = (props) => {
 	let imagealt = 'image'
 
 	return <div className="col-lg-4 col-sm-6">
-		<div className="ltn__team-item ltn__team-item-3---">
-			<div className="team-img">
-				<img src={publicUrl + `assets/img/team/${props.image}.jpg`} alt="Image" />
-			</div>
-			<div className="team-info">
-				<h4>{props.name}</h4>
-				<h6 className="ltn__secondary-color">{props.position}</h6>
-				<p>{props.about}</p>
-				<div className="ltn__social-media">
-					<ul>
-						<li><a href={props.social}><i className="fab fa-linkedin" /></a></li>
-					</ul>
+		<Link to='/agents'>
+			<div className="ltn__team-item ltn__team-item-3---">
+				<div className="team-img">
+					<img src={publicUrl + `assets/img/team/${props.image}.jpg`} alt="Image" />
+				</div>
+				<div className="team-info">
+					<h4>{props.name}</h4>
+					<h6 className="ltn__secondary-color">{props.position}</h6>
+					<p>{props.about}</p>
 				</div>
 			</div>
-		</div>
+		</Link>
 	</div>
 }
 
@@ -41,12 +38,12 @@ const TeamV1 = () => {
 				</div>
 			</div>
 			<div className="row justify-content-center">
-				<TeamMember name={script.team[2].name} image='1' position={script.team[2].position} about={script.team[2].about} social={script.team[2].social.linkedIn} />
-				<TeamMember name={script.team[3].name} image='2' position={script.team[3].position} about={script.team[3].about} social={script.team[3].social.linkedIn} />
+				<TeamMember name={script.team[2].name} image='1' position={script.team[2].position} about={script.team[2].about} />
+				<TeamMember name={script.team[3].name} image='2' position={script.team[3].position} about={script.team[3].about} />
 			</div>
 			<div className="row justify-content-center">
-				<TeamMember name={script.team[4].name} image='3' position={script.team[4].position} about={script.team[4].about} social={script.team[4].social.linkedIn} />
-				<TeamMember name={script.team[5].name} image='4' position={script.team[5].position} about={script.team[5].about} social={script.team[5].social.linkedIn} />
+				<TeamMember name={script.team[4].name} image='3' position={script.team[4].position} about={script.team[4].about} />
+				<TeamMember name={script.team[5].name} image='4' position={script.team[5].position} about={script.team[5].about} />
 			</div>
 		</div>
 	</div>
