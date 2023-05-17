@@ -8,6 +8,7 @@ import { BG, EN } from "./util/PAGE_SCRIPT";
 import { selectError, selectErrorMsg } from "./redux/error";
 import Error from './components/ui/Error'
 import Success from "./components/ui/Success";
+import Agents from "./pages/information/Agents";
 
 //general pages
 const Home = lazy(() => import('./pages/Home'));
@@ -60,6 +61,7 @@ const Root = () => {
                     <Route exact path="/" component={Home} />
 
                     <Route path="/about" component={About} />
+                    <Route path='/agents' component={Agents} />
                     <Route path="/contact" component={Contact} />
 
                     <Route path="/lending" component={Lending} />
