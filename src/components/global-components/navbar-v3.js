@@ -23,7 +23,7 @@ const NavbarV3 = () => {
 								<div className="ltn__top-bar-menu">
 									<ul>
 										<li><a href="mailto:info@webmail.com?Subject=Flower%20greetings%20to%20you"><i className="icon-mail" /> domakin.nl@gmail.com</a></li>
-										<li><a href="locations.html"><i className="icon-placeholder" /> {script.header[5]}</a></li>
+										<li><i className="icon-placeholder" /> {script.header[5]}</li>
 									</ul>
 								</div>
 							</div>
@@ -44,9 +44,9 @@ const NavbarV3 = () => {
 													</ul>
 												</div>
 											</li>
-											<li>
+											{/* <li>
 												<Social />
-											</li>
+											</li> */}
 										</ul>
 									</div>
 								</div>
@@ -71,7 +71,17 @@ const NavbarV3 = () => {
 										<div className="ltn__main-menu go-top">
 											<ul style={{ justifyContent: 'flex-end' }} >
 												<li className="menu-icon"><Link to="/about">{script.header[2]}</Link>
+													<ul className="sub-menu menu-pages-img-show">
+														<li>
+															<Link to="/about">{script.header[7]}</Link>
+															{/* <img src={publicUrl + "assets/img/home-demos/home-1.jpg"} alt="#" /> */}
+														</li>
+														<li>
+															<Link to="/agents">{script.header[8]}</Link>
+															{/* <img src={publicUrl + "assets/img/home-demos/home-2.jpg"} alt="#" /> */}
+														</li>
 
+													</ul>
 												</li>
 												<li><Link to="/services">{script.header[6]}</Link></li>
 
@@ -108,17 +118,26 @@ const NavbarV3 = () => {
 						</div>
 						<button className="ltn__utilize-close">×</button>
 					</div>
-					<div className="ltn__utilize-menu-search-form">
+					{/* <div className="ltn__utilize-menu-search-form">
 						<form action={"#"}>
 							<input type="text" placeholder="Search..." />
 							<button><i className="fas fa-search" /></button>
 						</form>
-					</div>
+					</div> */}
 					<div className="ltn__utilize-menu">
 						<ul>
-
 							<li><Link to="/about">{script.header[2]}</Link>
+								<ul className="sub-menu menu-pages-img-show">
+									<li>
+										<Link to="/about">{script.header[7]}</Link>
+										{/* <img src={publicUrl + "assets/img/home-demos/home-1.jpg"} alt="#" /> */}
+									</li>
+									<li>
+										<Link to="/agents">{script.header[8]}</Link>
+										{/* <img src={publicUrl + "assets/img/home-demos/home-2.jpg"} alt="#" /> */}
+									</li>
 
+								</ul>
 							</li>
 							<li><Link to="/services">{script.header[6]}</Link></li>
 
@@ -126,7 +145,7 @@ const NavbarV3 = () => {
 							<li><Link to="/contact">{script.header[3]}</Link></li>
 						</ul>
 					</div>
-					<div className="ltn__utilize-buttons ltn__utilize-buttons-2">
+					{/* <div className="ltn__utilize-buttons ltn__utilize-buttons-2">
 						<ul>
 							<li>
 								<Link to="/my-account" title="My Account">
@@ -138,13 +157,10 @@ const NavbarV3 = () => {
 							</li>
 
 						</ul>
-					</div>
+					</div> */}
 					<div className="ltn__social-media-2">
 						<ul>
-							<li><a href="#" title="Facebook"><i className="fab fa-facebook-f" /></a></li>
-							<li><a href="#" title="Twitter"><i className="fab fa-twitter" /></a></li>
 							<li><a href="#" title="Linkedin"><i className="fab fa-linkedin" /></a></li>
-							<li><a href="#" title="Instagram"><i className="fab fa-instagram" /></a></li>
 						</ul>
 					</div>
 				</div>
