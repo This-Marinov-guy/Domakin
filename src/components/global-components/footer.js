@@ -104,7 +104,7 @@ const Footer_v1 = () => {
 								<h4 className="footer-title">{script.footer[6]}</h4>
 								<div className="footer-menu go-top">
 									<ul>
-										<li><Link to="/viewing">{script.footer[7]}</Link></li>
+										<li><Link to="services/viewing">{script.footer[7]}</Link></li>
 										<li><p>{script.footer[8]}</p></li>
 
 									</ul>

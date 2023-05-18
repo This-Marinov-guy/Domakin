@@ -62,17 +62,19 @@ const NavbarV3 = () => {
 									<div className="site-logo go-top">
 										<Link to="/"><img src={publicUrl + "assets/img/logo-2.png"} alt="Logo" /></Link>
 									</div>
-									
+
 								</div>
 							</div>
 							<div className="col header-menu-column menu-color-white">
 								<div className="header-menu d-none d-xl-block go-top">
 									<nav>
-										<div className="ltn__main-menu">
+										<div className="ltn__main-menu go-top">
 											<ul style={{ justifyContent: 'flex-end' }} >
 												<li className="menu-icon"><Link to="/about">{script.header[2]}</Link>
 
 												</li>
+												<li><Link to="/services">{script.header[6]}</Link></li>
+
 												<li><Link to="/contact">{script.header[3]}</Link></li>
 												{/* <li className="special-link">
 													<Link to="/add-listing">{script.header[4]}</Link>
@@ -118,6 +120,7 @@ const NavbarV3 = () => {
 							<li><Link to="/about">{script.header[2]}</Link>
 
 							</li>
+							<li><Link to="/services">{script.header[6]}</Link></li>
 
 
 							<li><Link to="/contact">{script.header[3]}</Link></li>

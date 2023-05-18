@@ -7,11 +7,11 @@ import { setLanguage, setScript } from "./redux/language";
 import { BG, EN } from "./util/PAGE_SCRIPT";
 import { selectError, selectErrorMsg } from "./redux/error";
 import Error from './components/ui/Error'
-import Success from "./components/ui/Success";
 import Agents from "./pages/information/Agents";
 
 //general pages
 const Home = lazy(() => import('./pages/Home'));
+const Services = lazy(() => import('./pages/Services'));
 const ErrorPage = lazy(() => import('./pages/ErrorPage'));
 
 //information
@@ -59,13 +59,14 @@ const Root = () => {
                 {success}
                 <Switch>
                     <Route exact path="/" component={Home} />
+                    <Route exact path="/services" component={Services} />
 
                     <Route path="/about" component={About} />
                     <Route path='/agents' component={Agents} />
                     <Route path="/contact" component={Contact} />
 
                     <Route path="/lending" component={Lending} />
-                    <Route path='/viewing' >
+                    <Route path='/services/viewing' >
                         <Viewing setSuccess={setSuccess} />
                     </Route>
 

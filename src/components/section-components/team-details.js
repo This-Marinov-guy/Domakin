@@ -45,10 +45,10 @@ const TeamDetails = () => {
                     <div className="ltn__our-history-inner">
                         <div className="ltn__tab-menu text-uppercase">
                             <div className="nav">
-                                <a className="active show" data-bs-toggle="tab" href="#liton_tab_2_1">Agents</a>
-                                <a data-bs-toggle="tab" href="#liton_tab_2_2">Marketing</a>
+                                <a className="active show" data-bs-toggle="tab" href="#liton_tab_2_1">{script.team[8]}</a>
+                                <a data-bs-toggle="tab" href="#liton_tab_2_2">{script.team[9]}</a>
                                 <a data-bs-toggle="tab" href="#liton_tab_2_3">IT</a>
-                                <a data-bs-toggle="tab" href="#liton_tab_2_4">Design</a>
+                                <a data-bs-toggle="tab" href="#liton_tab_2_4">{script.team[10]}</a>
                             </div>
                         </div>
                         <div className="tab-content mt-100">

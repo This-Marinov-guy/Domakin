@@ -73,13 +73,8 @@ const Navbar = () => {
 									<nav>
 										<div className="ltn__main-menu go-top">
 											<ul style={{ justifyContent: 'flex-end' }}>
-
-												<li className="menu-icon"><Link to="/about">{script.header[2]}</Link>
-
-												</li>
-
-
-
+												<li className="menu-icon"><Link to="/about">{script.header[2]}</Link></li>
+												<li><Link to="/services">{script.header[6]}</Link></li>
 												<li><Link to="/contact">{script.header[3]}</Link></li>
 											</ul>
 										</div>
@@ -152,6 +147,7 @@ const Navbar = () => {
 							<li><Link to="/about">{script.header[2]}</Link>
 
 							</li>
+							<li><Link to="/services">{script.header[6]}</Link></li>
 
 
 

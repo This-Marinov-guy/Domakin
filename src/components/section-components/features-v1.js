@@ -24,7 +24,7 @@ const FeaturesV1 = (props) => {
 			</div>
 			<div className="row ltn__custom-gutter--- justify-content-center go-top">
 				<div className="col-lg-4 col-sm-6 col-12">
-					<Link to="/viewing">
+					<Link to="services/viewing">
 						<div className="ltn__feature-item ltn__feature-item-6 text-center bg-white  box-shadow-1">
 							<div className="ltn__feature-icon">
 								<img src={publicUrl + "assets/img/icons/icon-img/23.png"} alt="#" />
