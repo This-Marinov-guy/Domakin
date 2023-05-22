@@ -1,7 +1,7 @@
 {
-  "name": "housing",
+  "name": "domakin",
   "version": "0.1.5",
-  "homepage": "https://housing-e830f.web.app",
+  "homepage": "https://domakin.nl/",
   "private": true,
   "basename": "/",
   "dependencies": {
