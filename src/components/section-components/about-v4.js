@@ -25,33 +25,28 @@ const AboutV4 = () => {
 						<div className="section-title-area ltn__section-title-2--- mb-20">
 							<h6 className="section-subtitle section-subtitle-2 ltn__secondary-color">За нас</h6>
 							<h1 className="section-title"><span>{script.about[2]}</span></h1>
-							<p>{script.about[3]}</p>
+							<p className='mt-40'>{script.about[4] + ' '}<a style={{color : "var(--ltn__secondary-color)"}} href='https://bulgarinasocietygro.nl'>Bulgarian Society Groningen</a>{' ' + script.about[5]}</p>
+							<p className='mt-40'>{script.about[6]}</p>
 						</div>
 						<ul className="ltn__list-item-half clearfix">
 							<li>
+								<i className="flaticon-deal" />
+								{script.about[7]}
+
+							</li>
+							<li>
 								<i className="flaticon-home-2" />
-								Smart Home Design
+								{script.about[8]}
 							</li>
 							<li>
-								<i className="flaticon-mountain" />
-								Beautiful Scene Around
+								<i className="flaticon-official-documents" />
+								{script.about[9]}
+
 							</li>
-							<li>
-								<i className="flaticon-heart" />
-								Exceptional Lifestyle
-							</li>
-							<li>
-								<i className="flaticon-secure" />
-								Complete 24/7 Security
-							</li>
+
 						</ul>
-						<div className="ltn__callout bg-overlay-theme-05  mt-30">
-							<p>"Enimad minim veniam quis nostrud exercitation <br />
-								llamco laboris. Lorem ipsum dolor sit amet" </p>
-						</div>
-						<div className="btn-wrapper animated">
-							<Link to="/service" className="theme-btn-1 btn btn-effect-1">OUR SERVICES</Link>
-						</div>
+
+
 					</div>
 				</div>
 			</div>
