@@ -238,6 +238,11 @@ font-family: 'Poppins', sans-serif;
   src: url(/assets/fonts/Archive-Regular.ttf) format("truetype");
 }
 
+@font-face {
+  font-family: OpenSans;
+  src: url(/assets/fonts/OpenSans.ttf) format("truetype");
+}
+
 :root {
   --ltn__primary-color: #000000;
   --ltn__primary-color-2: #041113;
@@ -253,7 +258,7 @@ font-family: 'Poppins', sans-serif;
   --ltn__paragraph-color: #5c727d;
   /* --ltn__heading-font: "Poppins", sans-serif; */
   --ltn__heading-font: "Archive";
-  --ltn__body-font: "Nunito Sans", sans-serif;
+  --ltn__body-font: "OpenSans", sans-serif;
   /* Footer ACD2D8 8CB2B2  */
   --ltn__color-1: #8cb2b2;
   --ltn__color-2: #acd2d8;
@@ -448,14 +453,10 @@ h1,
 h2,
 h3,
 h4,
-h5,
-h6,
 .h1,
 .h2,
 .h3,
-.h4,
-.h5,
-.h6 {
+.h4 {
   color: var(--ltn__heading-color);
   clear: both;
   font-family: var(--ltn__heading-font);
@@ -2746,6 +2747,14 @@ ul {
 /* ----------------------------------------------------
     Custom margin Padding
 ---------------------------------------------------- */
+.mr-5 {
+  margin-right: 5px;
+}
+
+.ml-5 {
+  margin-left: 5px;
+}
+
 .mr-30 {
   margin-right: 30px;
 }

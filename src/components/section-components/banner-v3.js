@@ -21,12 +21,7 @@ const BannerV3 = () => {
 							<div className="col-lg-12 align-self-center">
 								<div className="slide-item-info">
 									<div className="slide-item-info-inner ltn__slide-animation">
-										<div className="slide-video mb-50 d-none">
-											<a className="ltn__video-icon-2 ltn__video-icon-2-border" href="https://www.youtube.com/embed/tlThdr3O5Qo" data-rel="lightcase:myCollection">
-												<i className="fa fa-play" />
-											</a>
-										</div>
-										<h6 className="slide-sub-title white-color--- animated"><span><i className="fas fa-home" /></span>{script.home[0]}</h6>
+										<h6 className="slide-sub-title white-color--- animated"><span><i className="fas fa-home mr-5" /></span>{script.home[0]}</h6>
 										<h1 className="slide-title animated ">{script.home[1]}<br />{script.home[2]}</h1>
 										<div className="slide-brief animated">
 											<p>{script.home[3]}</p>
