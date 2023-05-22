@@ -31,9 +31,9 @@ const BannerV3 = () => {
 										<div className="slide-brief animated">
 											<p>{script.home[3]}</p>
 										</div>
-										<div className="btn-wrapper animated go-top">
+										{/* <div className="btn-wrapper animated go-top">
 											<Link to="/contact" className="theme-btn-1 btn btn-effect-1">{script.home[4]}</Link>
-										</div>
+										</div> */}
 									</div>
 								</div>
 							</div>
