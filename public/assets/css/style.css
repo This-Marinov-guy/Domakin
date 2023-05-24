@@ -62,7 +62,6 @@ font-family: 'Rajdhani', sans-serif;
 font-family: 'Nunito Sans', sans-serif;
 font-family: 'Titillium Web', sans-serif;
 */
-@import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300;400;600;700&family=Poppins:wght@400;500;600;700;800;900&display=swap");
 /*
 font-family: 'Nunito Sans', sans-serif;
 font-family: 'Poppins', sans-serif;
@@ -234,31 +233,34 @@ font-family: 'Poppins', sans-serif;
     Normalize    0B2C3D
 ---------------------------------------------------- */
 @font-face {
-  font-family: Archive;
-  src: url(/assets/fonts/Archive-Regular.ttf) format("truetype");
+  font-family: ArialNova;
+  src: url(/assets/fonts/ArialNova-Light.woff2) format("woff2"), url(/assets/fonts/ArialNova-Light.ttf) format("truetype");
 }
 
 @font-face {
-  font-family: OpenSans;
-  src: url(/assets/fonts/OpenSans.ttf) format("truetype");
+  font-family: ArialNovaBold;
+  src: url(/assets/fonts/ArialNovaCond-Bold.woff2) format("woff2"), url(/assets/fonts/ArialNovaCond-Bold.ttf) format("truetype");
 }
 
 :root {
-  --ltn__primary-color: #000000;
-  --ltn__primary-color-2: #041113;
+  --ltn__primary-color: #004AAD
+  ;
+  --ltn__primary-color-2: #004AAD
+  ;
   /* Darken */
-  --ltn__primary-color-3: #133236;
+  --ltn__primary-color-3: #004AAD
+;
   /* Lighten */
-  --ltn__secondary-color: #ff5a3c;
+  --ltn__secondary-color: #ff914d;
   --ltn__secondary-color-2: #cb3421;
   /* Darken */
-  --ltn__secondary-color-3: #fb412a;
+  --ltn__secondary-color-3: #ff914d;
   /* Lighten */
   --ltn__heading-color: #071c1f;
   --ltn__paragraph-color: #5c727d;
-  /* --ltn__heading-font: "Poppins", sans-serif; */
-  --ltn__heading-font: "Archive";
-  --ltn__body-font: "OpenSans", sans-serif;
+  /* Fonts */
+  --ltn__heading-font: "ArialNovaBold";
+  --ltn__body-font: "ArialNova";
   /* Footer ACD2D8 8CB2B2  */
   --ltn__color-1: #8cb2b2;
   --ltn__color-2: #acd2d8;
@@ -412,7 +414,7 @@ body {
   color: var(--ltn__paragraph-color);
   font-weight: 400;
   font-style: normal;
-  font-size: 16px;
+  font-size: 20px;
   font-family: var(--ltn__body-font);
   line-height: 1.8;
   margin: 0 auto;
@@ -875,7 +877,7 @@ ol li {
 }
 .ltn__custom-icon::before {
   content: "\f063";
-  font-family: "Font Awesome\ 5 Free";
+  font-family: "ArialNova";
   font-weight: 900;
 }
 
@@ -1286,6 +1288,7 @@ label.checkbox-inline {
 /* ----------------------------------------------------
     Posts and pages
 ---------------------------------------------------- */
+
 .sticky {
   display: block;
 }
@@ -4073,7 +4076,7 @@ ul.wp-block-latest-posts.is-grid.alignwide {
 .ltn__breadcrumb-list ul li:after {
   position: absolute;
   content: "\f054";
-  font-family: "Font Awesome\ 5 Free";
+  font-family: "ArialNova";
   font-weight: 900;
   font-size: 10px;
   right: -20px;
@@ -5192,6 +5195,16 @@ ul.wp-block-latest-posts.is-grid.alignwide {
 /* ----------------------------------------------
     Header Middle Area
 ---------------------------------------------- */
+.logo {
+  width: 160px;
+  height: 80px;
+}
+
+.logo_mobile {
+  width: 100px;
+  height: 50px;
+}
+
 .ltn__header-middle-area {
   z-index: 999;
 }
@@ -5737,7 +5750,7 @@ ul.wp-block-latest-posts.is-grid.alignwide {
   -webkit-transform: translateY(-50%);
   -ms-transform: translateY(-50%);
   transform: translateY(-50%);
-  font-family: "Font Awesome\ 5 Free";
+  font-family: "ArialNova";
   font-weight: 900;
 }
 
@@ -6340,7 +6353,7 @@ ul.wp-block-latest-posts.is-grid.alignwide {
   -webkit-transform: translateY(-50%);
   -ms-transform: translateY(-50%);
   transform: translateY(-50%);
-  font-family: "icomoon";
+  font-family: "ArialNova";
   color: var(--ltn__secondary-color);
 }
 
@@ -7296,7 +7309,7 @@ ul.wp-block-latest-posts.is-grid.alignwide {
 }
 .ltn__category-menu-title h2::before,
 .ltn__category-menu-title h2::after {
-  font-family: "Font Awesome\ 5 Free";
+  font-family: "ArialNova";
   font-weight: 900;
   display: block;
   font-size: 14px;
@@ -14962,7 +14975,7 @@ input.cart-plus-minus-box {
 .list-item-with-icon ul li::before {
   position: absolute;
   content: "\f00c";
-  font-family: "Font Awesome\ 5 Free";
+  font-family: "ArialNova";
   font-weight: 900;
   left: 0;
   top: -5px;
@@ -15891,7 +15904,7 @@ input.cart-plus-minus-box {
   -webkit-transform: translateY(-50%);
   -ms-transform: translateY(-50%);
   transform: translateY(-50%);
-  font-family: "Font Awesome\ 5 Free";
+  font-family: "ArialNova";
   font-weight: 900;
   color: var(--ltn__secondary-color);
 }
@@ -15963,7 +15976,7 @@ input.cart-plus-minus-box {
 
 .ltn__car-dealer-form-box .ltn__custom-icon .nice-select::before {
   content: "\f063";
-  font-family: "Font Awesome\ 5 Free";
+  font-family: "ArialNova";
   font-weight: 900;
   margin-right: 10px;
   color: var(--ltn__secondary-color);

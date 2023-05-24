@@ -51,7 +51,7 @@ const Footer_v1 = () => {
 							<div className="footer-widget footer-about-widget">
 								<div className="footer-logo">
 									<div className="site-logo">
-										<img src={publicUrl + "assets/img/logo-2.png"} alt="Logo" />
+										<img className='logo' src={publicUrl + "assets/img/logo.png"} alt="Logo" />
 									</div>
 								</div>
 								<div className="footer-address">
