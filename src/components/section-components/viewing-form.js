@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React from 'react';
 import { useSelector } from 'react-redux';
 import { selectScript } from '../../redux/language';
 import { Field, Form, Formik, ErrorMessage } from 'formik';
@@ -25,7 +25,6 @@ const ViewingForm = (props) => {
             .required(script.viewing[16].errors[3]),
         email: yup.string().email(script.viewing[16].errors[4]).required(script.viewing[16].errors[5]),
         dataTerms: yup.bool().required().oneOf([true], script.viewing[16].errors[6]),
-        // payTerms: yup.bool().required().oneOf([true], script.viewing[16].errors[6]),
     });
 
     return <div className="ltn__appointment-area pb-120">
@@ -59,7 +58,6 @@ const ViewingForm = (props) => {
                         phone: "",
                         email: "",
                         dataTerms: false,
-                        // payTerms: false,
                     }} >
                         {() => (
                             <Form>
@@ -121,18 +119,6 @@ const ViewingForm = (props) => {
                                             component="div"
                                         />
                                     </div>
-                                    {/* <div className="col-md-12">
-                                        <label className="checkbox-item">{script.viewing[14]}
-                                            <Field type="checkbox" name="payTerms"
-                                            />
-                                            <span className="checkmark" />
-                                        </label>
-                                        <ErrorMessage
-                                            className="error"
-                                            name="payTerms"
-                                            component="div"
-                                        />
-                                    </div> */}
                                     <div className="btn-wrapper text-center mt-40">
                                         <button disabled={loading} className="btn theme-btn-1 btn-effect-1 text-uppercase" type="submit">{loading ? <Spinner animation="border" />
                                             : script.viewing[15]}</button>
