@@ -251,10 +251,10 @@ font-family: 'Poppins', sans-serif;
   --ltn__primary-color-3: #004AAD
 ;
   /* Lighten */
-  --ltn__secondary-color: #ff914d;
-  --ltn__secondary-color-2: #cb3421;
+  --ltn__secondary-color: #ff5a3c;
+  --ltn__secondary-color-2: #ff914d;
   /* Darken */
-  --ltn__secondary-color-3: #ff914d;
+  --ltn__secondary-color-3: #cb3421;
   /* Lighten */
   --ltn__heading-color: #071c1f;
   --ltn__paragraph-color: #5c727d;
