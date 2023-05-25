@@ -65,11 +65,9 @@ const TeamDetails = () => {
                             </div>
                             <div className="tab-pane fade" id="liton_tab_2_3">
                                 <TeamMEmberDetails name={script.team[6].name} image='6' position={script.team[6].position} about={script.team[6].aboutExtra} social={[{ href: '', type: 'Facebook-f' }, { href: '', type: 'Linkedin' }]} />
-                                <TeamMEmberDetails name={script.team[4].name} image='3' position={script.team[4].position} about={script.team[4].aboutExtra} social={[{ href: '', type: 'Facebook-f' }, { href: '', type: 'Linkedin' }]} />
                             </div>
                             <div className="tab-pane fade" id="liton_tab_2_4">
                                 <TeamMEmberDetails name={script.team[7].name} image='5' position={script.team[7].position} about={script.team[7].aboutExtra} social={[{ href: '', type: 'Facebook-f' }, { href: '', type: 'Linkedin' }]} />
-                                <TeamMEmberDetails name={script.team[3].name} image='2' position={script.team[3].position} about={script.team[3].aboutExtra} social={[{ href: '', type: 'Facebook-f' }, { href: '', type: 'Linkedin' }]} />
                             </div>
 
                         </div>
