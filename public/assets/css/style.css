@@ -211,12 +211,12 @@
 ---------------------------------------------------- */
 @font-face {
   font-family: ArialNova;
-  src: url(/assets/fonts/ArialNova-Light.ttf) format("truetype");
+  src: url(/assets/fonts/ArialNova-Light.woff2) format("woff2"), url(/assets/fonts/ArialNova-Light.ttf) format("truetype");
 }
 
 @font-face {
   font-family: ArialNovaBold;
-  src: url(/assets/fonts/ArialNovaCond-Bold.ttf) format("truetype");
+  src: url(/assets/fonts/ArialNovaCond-Bold.woff2) format("woff2"), url(/assets/fonts/ArialNovaCond-Bold.ttf) format("truetype");
 }
 
 :root {
