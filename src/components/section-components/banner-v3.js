@@ -22,7 +22,7 @@ const BannerV3 = () => {
 								<div className="slide-item-info">
 									<div className="slide-item-info-inner ltn__slide-animation">
 										<h6 className="slide-sub-title white-color--- animated"><span><i className="fas fa-home mr-5" /></span>{script.home[0]}</h6>
-										<h1 className="slide-title animated ">{script.home[1]}<br />{script.home[2]}</h1>
+										<h1 style={{ marginBottom: "-20px" }} className="slide-title animated ">{script.home[1]}</h1><br /><h1 className="slide-title animated ">{script.home[2]}</h1>
 										<div className="slide-brief animated">
 											<p>{script.home[3]}</p>
 										</div>
