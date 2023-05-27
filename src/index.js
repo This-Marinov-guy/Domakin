@@ -19,8 +19,13 @@ const About = lazy(() => import('./pages/information/About'));
 const Contact = lazy(() => import('./pages/information/Contact'));
 
 //actions
-const Lending = lazy(() => import('./pages/actions/Lending'));
 const Viewing = lazy(() => import('./pages/actions/Viewing'));
+const Renting = lazy(() => import('./pages/actions/Renting'));
+const Lending = lazy(() => import('./pages/actions/Lending'));
+
+//details
+const PropertyDetails = lazy(() => import('./pages/details/PropertyDetails'));
+
 
 const Root = () => {
     const [success, setSuccess] = useState(null);
@@ -65,10 +70,17 @@ const Root = () => {
                     <Route path='/agents' component={Agents} />
                     <Route path="/contact" component={Contact} />
 
-                    <Route path="/lending" component={Lending} />
                     <Route path='/services/viewing' >
                         <Viewing setSuccess={setSuccess} />
                     </Route>
+                    <Route path='/services/renting' >
+                        <Renting setSuccess={setSuccess} />
+                    </Route>
+                    <Route path='/services/lending' >
+                        <Lending setSuccess={setSuccess} />
+                    </Route>
+
+                    <Route path="/properties/:propertyId" component={PropertyDetails} />
 
                     <Route path="*" component={ErrorPage} />
 
