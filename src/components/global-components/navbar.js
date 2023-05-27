@@ -20,7 +20,7 @@ const Navbar = () => {
 							<div className="col-md-7">
 								<div className="ltn__top-bar-menu">
 									<ul>
-										<li><a href="mailto:info@webmail.com?Subject=Flower%20greetings%20to%20you"><i className="icon-mail" /> domakin.nl@gmail.com</a></li>
+										<li><a href="mailto:domakin.nl@gmail.com"><i className="icon-mail" /> domakin.nl@gmail.com</a></li>
 										<li><i className="icon-placeholder" /> {script.header[5]}</li>
 									</ul>
 								</div>

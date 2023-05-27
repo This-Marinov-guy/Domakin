@@ -271,7 +271,7 @@
   /* Background Colors ( 1, 2, 3, 4, 5 )  */
   --section-bg-1: #f2f6f7;
   /* White */
-  --section-bg-2: #004aad;
+  --section-bg-2: #171b2a;
   /* Black */
   --section-bg-5: #fff2f0;
   /* White */
@@ -519,7 +519,7 @@ ol li {
 .section-bg-2,
 .section-bg-6,
 .section-bg-7 {
-  background-color: var(--section-bg-2);
+  background-color: var(--ltn__primary-color);
 }
 .section-bg-2 h1,
 .section-bg-2 h2,
@@ -2865,6 +2865,10 @@ ul {
   .mt--150 {
     margin-top: -100px;
   }
+}
+
+.m--a {
+  margin: auto !important;
 }
 
 @media (max-width: 767px) {
@@ -5357,7 +5361,7 @@ ul.wp-block-latest-posts.is-grid.alignwide {
   padding: 20px 10px;
   display: inline-block;
   white-space: nowrap;
-  color: var(--ltn__heading-color);
+  color: var(--white);
   font-weight: 600;
   font-family: var(--ltn__body-font);
 }
@@ -6551,7 +6555,7 @@ ul.wp-block-latest-posts.is-grid.alignwide {
 }
 
 /* Sticky Background Black */
-.sticky-active.ltn__sticky-bg-black {
+.ltn__sticky-bg-black {
   background-color: var(--ltn__primary-color-3);
 }
 .sticky-active.ltn__sticky-bg-black .ltn__main-menu > ul > li > a,

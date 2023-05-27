@@ -10,9 +10,7 @@ const PropertyDetails = () => {
     return <div>
         <Navbar />
         <PageHeader headertitle="Product Details" customclass="mb-0" />
-        <ProductSlider />
         <ProductDetails />
-        <CallToActionV1 />
         <Footer />
     </div>
 }

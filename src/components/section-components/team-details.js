@@ -43,32 +43,21 @@ const TeamDetails = () => {
             <div className="row">
                 <div className="col-lg-12">
                     <div className="ltn__our-history-inner">
-                        <div className="ltn__tab-menu text-uppercase">
+                        {/* <div className="ltn__tab-menu text-uppercase">
                             <div className="nav">
                                 <a className="active show" data-bs-toggle="tab" href="#liton_tab_2_1">{script.team[8]}</a>
                                 <a data-bs-toggle="tab" href="#liton_tab_2_2">{script.team[9]}</a>
                                 <a data-bs-toggle="tab" href="#liton_tab_2_3">IT</a>
                                 <a data-bs-toggle="tab" href="#liton_tab_2_4">{script.team[10]}</a>
                             </div>
-                        </div>
+                        </div> */}
                         <div className="tab-content mt-100">
-                            <div className="tab-pane fade active show" id="liton_tab_2_1">
-                                <TeamMEmberDetails name={script.team[2].name} image='1' position={script.team[2].position} about={script.team[2].aboutExtra} social={[{ href: '', type: 'Facebook-f' }, { href: '', type: 'Linkedin' }]} />
-                                <TeamMEmberDetails name={script.team[5].name} image='4' position={script.team[5].position} about={script.team[5].aboutExtra} social={[{ href: '', type: 'Facebook-f' }, { href: '', type: 'Linkedin' }]} />
-                                <TeamMEmberDetails name={script.team[3].name} image='2' position={script.team[3].position} about={script.team[3].aboutExtra} social={[{ href: '', type: 'Facebook-f' }, { href: '', type: 'Linkedin' }]} />
-                                <TeamMEmberDetails name={script.team[4].name} image='3' position={script.team[4].position} about={script.team[4].aboutExtra} social={[{ href: '', type: 'Facebook-f' }, { href: '', type: 'Linkedin' }]} />
-
-                            </div>
-                            <div className="tab-pane fade" id="liton_tab_2_2">
-                                <TeamMEmberDetails name={script.team[2].name} image='1' position={script.team[2].position} about={script.team[2].aboutExtra} social={[{ href: '', type: 'Facebook-f' }, { href: '', type: 'Linkedin' }]} />
-                                <TeamMEmberDetails name={script.team[5].name} image='4' position={script.team[5].position} about={script.team[5].aboutExtra} social={[{ href: '', type: 'Facebook-f' }, { href: '', type: 'Linkedin' }]} />
-                            </div>
-                            <div className="tab-pane fade" id="liton_tab_2_3">
-                                <TeamMEmberDetails name={script.team[6].name} image='6' position={script.team[6].position} about={script.team[6].aboutExtra} social={[{ href: '', type: 'Facebook-f' }, { href: '', type: 'Linkedin' }]} />
-                            </div>
-                            <div className="tab-pane fade" id="liton_tab_2_4">
-                                <TeamMEmberDetails name={script.team[7].name} image='5' position={script.team[7].position} about={script.team[7].aboutExtra} social={[{ href: '', type: 'Facebook-f' }, { href: '', type: 'Linkedin' }]} />
-                            </div>
+                            <TeamMEmberDetails name={script.team[2].name} image='1' position={script.team[2].position} about={script.team[2].aboutExtra} social={[{ href: '', type: 'Facebook-f' }, { href: '', type: 'Linkedin' }]} />
+                            <TeamMEmberDetails name={script.team[5].name} image='4' position={script.team[5].position} about={script.team[5].aboutExtra} social={[{ href: '', type: 'Facebook-f' }, { href: '', type: 'Linkedin' }]} />
+                            <TeamMEmberDetails name={script.team[3].name} image='2' position={script.team[3].position} about={script.team[3].aboutExtra} social={[{ href: '', type: 'Facebook-f' }, { href: '', type: 'Linkedin' }]} />
+                            <TeamMEmberDetails name={script.team[4].name} image='3' position={script.team[4].position} about={script.team[4].aboutExtra} social={[{ href: '', type: 'Facebook-f' }, { href: '', type: 'Linkedin' }]} />
+                            <TeamMEmberDetails name={script.team[6].name} image='6' position={script.team[6].position} about={script.team[6].aboutExtra} social={[{ href: '', type: 'Facebook-f' }, { href: '', type: 'Linkedin' }]} />
+                            <TeamMEmberDetails name={script.team[7].name} image='5' position={script.team[7].position} about={script.team[7].aboutExtra} social={[{ href: '', type: 'Facebook-f' }, { href: '', type: 'Linkedin' }]} />
 
                         </div>
                     </div>
