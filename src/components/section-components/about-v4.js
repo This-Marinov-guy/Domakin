@@ -10,7 +10,7 @@ const AboutV4 = () => {
 
 	const script = useSelector(selectScript)
 
-	return <div className="ltn__about-us-area pt-120--- pb-90 mt--30 go-top">
+	return <div className="ltn__about-us-area pt-120--- pb-90 mt-80 go-top">
 		<div className="container">
 			<div className="row">
 				<div className="col-lg-6 align-self-center">

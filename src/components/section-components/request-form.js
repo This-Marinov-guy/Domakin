@@ -4,19 +4,14 @@ import { selectScript } from '../../redux/language';
 import { Field, Form, Formik, ErrorMessage } from 'formik';
 import * as yup from "yup";
 import { useHttpClient } from '../../hooks/http-hook'
-import Success from '../ui/Success';
 import Spinner from 'react-bootstrap/Spinner';
-import { useHistory } from 'react-router-dom';
 
-
-const ViewingForm = (props) => {
+const RequestForm = (props) => {
     let publicUrl = process.env.PUBLIC_URL + '/'
 
     const script = useSelector(selectScript);
 
-    const history = useHistory();
-
-    const { loading, sendRequest } = useHttpClient()
+    const { loading } = useHttpClient()
 
     const schema = yup.object().shape({
         name: yup.string().required(script.viewing[16].errors[0]),
@@ -31,28 +26,7 @@ const ViewingForm = (props) => {
         <div className="container">
             <div className="row">
                 <div className="col-lg-12">
-                    <Formik className="ltn__appointment-inner" validationSchema={schema} onSubmit={async (values) => {
-                        try {
-                            const responseData = await sendRequest(
-                                "viewing/create-viewing",
-                                "POST",
-                                JSON.stringify({
-                                    name: values.name,
-                                    surname: values.surname,
-                                    phone: values.phone,
-                                    email: values.email,
-                                    description: values.description
-                                }),
-                                {
-                                    "Content-Type": "application/json",
-                                }
-                            );
-                            props.setSuccess(
-                                <Success heading={script.viewing[17]} message={script.viewing[18]} onClose={() => { props.setSuccess(null) }} />
-                            );
-                            history.push("/");
-                        } catch (err) { }
-                    }} initialValues={{
+                    <Formik className="ltn__appointment-inner" validationSchema={schema} onSubmit={(values) => props.onSubmit(values)} initialValues={{
                         name: "",
                         surname: "",
                         phone: "",
@@ -134,4 +108,4 @@ const ViewingForm = (props) => {
 
 }
 
-export default ViewingForm
+export default RequestForm

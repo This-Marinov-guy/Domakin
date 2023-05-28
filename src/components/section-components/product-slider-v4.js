@@ -1,8 +1,7 @@
 import React, { Fragment, useState } from 'react';
 import { useSelector } from 'react-redux';
-import { Link } from 'react-router-dom';
 import { selectScript } from '../../redux/language';
-import { current } from '@reduxjs/toolkit';
+import RequestForm from './request-form';
 
 const PropertyItem = (props) => {
 	let publicUrl = process.env.PUBLIC_URL + '/'
@@ -46,10 +45,9 @@ const PropertyItem = (props) => {
 					</div>
 					<div className="product-info-bottom">
 						<div className="product-hover-action m--a">
-							<button id={props.description[0] + ' ' + props.location} onClick={(event) => { props.setSelectedProperty(event.target.id); }} className="btn theme-btn-1 btn-effect-1 text-uppercase" title="Quick View" data-bs-toggle="modal" data-bs-target="#quick_view_modal">
+							<button id={props.description[0] + ' ' + props.location} onClick={(event) => { props.setSelectedProperty(event.target.id); }} className={(props.selectedProperty === props.description[0] + ' ' + props.location ? "theme-btn-1" : "theme-btn-2") + " btn btn-effect-1 text-uppercase button-renting"} title="Quick View" data-bs-toggle="modal" data-bs-target="#quick_view_modal">
 								Направи Запитване
 							</button>
-
 						</div>
 					</div>
 				</div>
@@ -58,9 +56,8 @@ const PropertyItem = (props) => {
 	)
 }
 
-const ProductSliderV4 = () => {
+const ProductSliderV4 = (props) => {
 	const [selectedProperty, setSelectedProperty] = useState(null);
-	console.log(selectedProperty);
 
 	const script = useSelector(selectScript);
 
@@ -75,10 +72,10 @@ const ProductSliderV4 = () => {
 				</div>
 			</div>
 			<div className="row ltn__product-slider-item-three-active slick-arrow-1">
-				{script.FOR_RENT.map((value, index) => { return <PropertyItem key={index} status={value.status} price={value.price} type={value.type} location={value.location} description={value.description} images={value.images} setSelectedProperty={setSelectedProperty} /> })}
+				{script.FOR_RENT.map((value, index) => { return <PropertyItem key={index} status={value.status} price={value.price} type={value.type} location={value.location} description={value.description} images={value.images} setSelectedProperty={setSelectedProperty} selectedProperty={selectedProperty} /> })}
 			</div>
-			{selectedProperty && <div className='row'>
-
+			{selectedProperty && <div id='form-renting' className='row'>
+				<RequestForm onSubmit={props.onSubmit} />
 			</div>}
 		</div>
 	</div>
