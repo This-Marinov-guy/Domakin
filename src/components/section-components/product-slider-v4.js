@@ -1,5 +1,6 @@
 import React, { Fragment, useState } from 'react';
 import { useSelector } from 'react-redux';
+import { Link } from 'react-router-dom';
 import { selectScript } from '../../redux/language';
 import RequestForm from './request-form';
 
@@ -11,7 +12,10 @@ const PropertyItem = (props) => {
 			<div className="col-xl-4 col-sm-6 col-12">
 				<div className="ltn__product-item ltn__product-item-4 text-center---">
 					<div className="product-img go-top">
-						<img src={publicUrl + props.images[0]} alt="#" />
+						<Link to={publicUrl + props.images[0]} data-rel="lightcase:myCollection">
+							<img src={publicUrl + props.images[0]} alt="#" />
+						</Link>
+
 						<div className="product-badge">
 							<ul>
 								<li className="sale-badge bg-green">{props.status}</li>
@@ -28,7 +32,7 @@ const PropertyItem = (props) => {
 							<div className="product-img-gallery go-top">
 								<ul>
 									<li>
-										<i className="fas fa-camera" /> {props.images.length}
+										<Link to={publicUrl + props.images[0]} data-rel="lightcase:myCollection"><i className="fas fa-camera" /> {props.images.length}</Link>
 									</li>
 								</ul>
 							</div>
