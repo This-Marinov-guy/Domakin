@@ -1,5 +1,5 @@
 import React from 'react';
-import Navbar from '../components/global-components/navbar-v3';
+import Navbar from '../components/global-components/navbar';
 import Banner from '../components/section-components/banner-v3';
 import Features from '../components/section-components/features-v1';
 import Footer from '../components/global-components/footer';

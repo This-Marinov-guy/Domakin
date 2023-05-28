@@ -58,7 +58,7 @@ const FeaturesV1 = (props) => {
 							</div>
 							<div className="ltn__feature-info">
 								<h3>{script.features[7]}</h3>
-								<p>{script.features[6]}</p>
+								<p>Очаквайте скоро</p>
 								{/* <Link className="ltn__service-btn" to="/service-details">Find A Home <i className="flaticon-right-arrow" /></Link> */}
 							</div>
 						</div>

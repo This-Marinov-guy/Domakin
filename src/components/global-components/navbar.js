@@ -92,37 +92,7 @@ const Navbar = () => {
 									</nav>
 								</div>
 							</div>
-							<div className="col ltn__header-options ltn__header-options-2 mb-sm-20">
-								{/* header-search-1
-									<div className="header-search-wrap">
-										<div className="header-search-1">
-											<div className="search-icon">
-												<i className="icon-search for-search-show" />
-												<i className="icon-cancel  for-search-close" />
-											</div>
-										</div>
-										<div className="header-search-1-form">
-											<form id="#" method="get" action="#">
-												<input type="text" name="search" defaultValue placeholder="Search here..." />
-												<button type="submit">
-													<span><i className="icon-search" /></span>
-												</button>
-											</form>
-										</div>
-									</div> */}
-								{/* user-menu
-									<div className="ltn__drop-menu user-menu">
-										<ul>
-											<li>
-												<Link to="#"><i className="icon-user" /></Link>
-												<ul className="go-top">
-													<li><Link to="/login">Sign in</Link></li>
-													<li><Link to="/register">Register</Link></li>
-													<li><Link to="/my-account">My Account</Link></li>
-												</ul>
-											</li>
-										</ul>
-									</div> */}
+							<div className="col--- ltn__header-options ltn__header-options-2 ">
 								{/* Mobile Menu Button */}
 								<div className="mobile-menu-toggle d-xl-none">
 									<a href="#ltn__utilize-mobile-menu" className="ltn__utilize-toggle">
