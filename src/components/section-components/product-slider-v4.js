@@ -1,7 +1,8 @@
-import React, { Fragment } from 'react';
+import React, { Fragment, useState } from 'react';
 import { useSelector } from 'react-redux';
 import { Link } from 'react-router-dom';
 import { selectScript } from '../../redux/language';
+import { current } from '@reduxjs/toolkit';
 
 const PropertyItem = (props) => {
 	let publicUrl = process.env.PUBLIC_URL + '/'
@@ -11,7 +12,7 @@ const PropertyItem = (props) => {
 			<div className="col-xl-4 col-sm-6 col-12">
 				<div className="ltn__product-item ltn__product-item-4 text-center---">
 					<div className="product-img go-top">
-						<Link to="/product-details"><img src={publicUrl + props.images[0]} alt="#" /></Link>
+						<img src={publicUrl + props.images[0]} alt="#" />
 						<div className="product-badge">
 							<ul>
 								<li className="sale-badge bg-green">{props.status}</li>
@@ -21,14 +22,14 @@ const PropertyItem = (props) => {
 							<div className="product-img-location">
 								<ul>
 									<li>
-										<Link to="/product-details"><i className="flaticon-pin" /></Link>
+										<i className="flaticon-pin" /> {props.location}
 									</li>
 								</ul>
 							</div>
 							<div className="product-img-gallery go-top">
 								<ul>
 									<li>
-										<Link to="/product-details"><i className="fas fa-camera" /> {props.images.length}</Link>
+										<i className="fas fa-camera" /> {props.images.length}
 									</li>
 								</ul>
 							</div>
@@ -38,16 +39,16 @@ const PropertyItem = (props) => {
 						<div className="product-price">
 							<span>&euro;{props.price}<label>/Month</label></span>
 						</div>
-						<h2 className="product-title go-top"><Link to="/product-details">{props.type}</Link></h2>
-						<div className="product-description">
-							{props.description.map((value, index) => { return <div key={index}><p >{value}</p><br /></div> })}
-						</div>
+						<h2 className="product-title go-top">{props.type}</h2>
+						<ul className="product-description">
+							{props.description.map((value, index) => { return <p key={index}>{value}</p> })}
+						</ul>
 					</div>
 					<div className="product-info-bottom">
 						<div className="product-hover-action m--a">
-							<a href="#" className="btn theme-btn-1 btn-effect-1 text-uppercase" title="Quick View" data-bs-toggle="modal" data-bs-target="#quick_view_modal">
+							<button id={props.description[0] + ' ' + props.location} onClick={(event) => { props.setSelectedProperty(event.target.id); }} className="btn theme-btn-1 btn-effect-1 text-uppercase" title="Quick View" data-bs-toggle="modal" data-bs-target="#quick_view_modal">
 								Направи Запитване
-							</a>
+							</button>
 
 						</div>
 					</div>
@@ -58,6 +59,8 @@ const PropertyItem = (props) => {
 }
 
 const ProductSliderV4 = () => {
+	const [selectedProperty, setSelectedProperty] = useState(null);
+	console.log(selectedProperty);
 
 	const script = useSelector(selectScript);
 
@@ -72,9 +75,11 @@ const ProductSliderV4 = () => {
 				</div>
 			</div>
 			<div className="row ltn__product-slider-item-three-active slick-arrow-1">
-				{script.FOR_RENT.map((value, index) => { return <PropertyItem key={index} status={value.status} price={value.price} type={value.type} location={value.location} description={value.description} images={value.images} /> })}
+				{script.FOR_RENT.map((value, index) => { return <PropertyItem key={index} status={value.status} price={value.price} type={value.type} location={value.location} description={value.description} images={value.images} setSelectedProperty={setSelectedProperty} /> })}
 			</div>
-			{/* <PropertyWindow /> */}
+			{selectedProperty && <div className='row'>
+
+			</div>}
 		</div>
 	</div>
 

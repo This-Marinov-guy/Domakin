@@ -94,20 +94,22 @@ const BG = {
     ],
     FOR_RENT: [
         {
+            id: '0',
             status: 'наемане',
             price: 600,
-            type: '',
-            location: '',
-            description: [],
-            images: ["assets/img/properties/1.jpg", "assets/img/properties/1.jpg", "assets/img/properties/1.jpg"],
+            type: 'Двойна стая',
+            location: 'Visvliet, Netherlands',
+            description: ['Двойна стая в споделена къща', 'Намира се в близост до Грьонинген и е собственост да португалство семейство, което търси наематели за свободните стаи', 'Договорът е за 12 месеца'],
+            images: ["assets/img/properties/1.jpg", '', '', '', '', ''],
         },
         {
-            status: '',
+            id: '1',
+            status: 'наемане',
             price: 400,
-            type: '',
-            location: '',
-            description: [],
-            images: ["assets/img/properties/7.jpg"],
+            type: 'Единична стая',
+            location: 'Visvliet, Netherlands',
+            description: ['Единична стая в споделена къща', 'Намира се в близост до Грьонинген и е собственост да португалство семейство, което търси наематели за свободните стаи', 'Договорът е за 12 месеца'],
+            images: ["assets/img/properties/7.jpg", '', '', '', '', ''],
         }
     ],
     home: [
