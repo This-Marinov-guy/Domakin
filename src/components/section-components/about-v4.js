@@ -6,19 +6,17 @@ import { selectScript } from '../../redux/language';
 
 const AboutV4 = () => {
 
-	let publicUrl = process.env.REACT_APP_PUBLIC_URL + '/'
+	let publicUrl = process.env.PUBLIC_URL + '/'
+	console.log(publicUrl);
 
 	const script = useSelector(selectScript)
 
 	return <div className="ltn__about-us-area pt-120--- pb-90 mt-80 go-top">
 		<div className="container">
-			<div className="row">
+			<div className="row about-img-section">
 				<div className="col-lg-6 align-self-center">
-					<div className="about-us-img-wrap about-img-left">
-						<img src={publicUrl + "assets/img/others/13.png"} alt="About Us Image" />
-						<div className="about-us-img-info about-us-img-info-2 about-us-img-info-3">
-						</div>
-					</div>
+						<img className='about-img' src={publicUrl + "assets/img/team/about.jpg"} alt="About Us" />
+						<img className='bgsg-img' src={publicUrl + "assets/img/team/bgsg.jpg"} alt="BGSG" />
 				</div>
 				<div className="col-lg-6 align-self-center">
 					<div className="about-us-info-wrap">

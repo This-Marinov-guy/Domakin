@@ -50,7 +50,7 @@ const PropertyItem = (props) => {
 					<div className="product-info-bottom">
 						<div className="product-hover-action m--a">
 							<button id={props.description[0] + ' ' + props.location} onClick={(event) => { props.setSelectedProperty(event.target.id); }} className={(props.selectedProperty === props.description[0] + ' ' + props.location ? "theme-btn-1" : "theme-btn-2") + " btn btn-effect-1 text-uppercase button-renting"} title="Quick View" data-bs-toggle="modal" data-bs-target="#quick_view_modal">
-								избери
+								{props.selectedProperty === props.description[0] + ' ' + props.location ? <span><i style={{fontSize:"15px"}} className="fa-solid fa-check icon"></i></span> : 'избери'}
 							</button>
 						</div>
 					</div>
@@ -61,8 +61,6 @@ const PropertyItem = (props) => {
 }
 
 const ProductSliderV4 = (props) => {
-	const [selectedProperty, setSelectedProperty] = useState(null);
-
 	const script = useSelector(selectScript);
 
 	return <div className="ltn__product-slider-area ltn__product-gutter pt-115 pb-70">
@@ -76,9 +74,9 @@ const ProductSliderV4 = (props) => {
 				</div>
 			</div>
 			<div className="row ltn__product-slider-item-three-active slick-arrow-1">
-				{script.FOR_RENT.map((value, index) => { return <PropertyItem key={index} status={value.status} price={value.price} type={value.type} location={value.location} description={value.description} images={value.images} setSelectedProperty={setSelectedProperty} selectedProperty={selectedProperty} /> })}
+				{script.FOR_RENT.map((value, index) => { return <PropertyItem key={index} status={value.status} price={value.price} type={value.type} location={value.location} description={value.description} images={value.images} setSelectedProperty={props.setSelectedProperty} selectedProperty={props.selectedProperty} /> })}
 			</div>
-			{selectedProperty && <div id='form-renting' className='row'>
+			{props.selectedProperty && <div id='form-renting' className='row'>
 				<RequestForm onSubmit={props.onSubmit} />
 			</div>}
 		</div>

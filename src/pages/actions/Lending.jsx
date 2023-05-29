@@ -55,17 +55,17 @@ const Lending = (props) => {
             </div>
             <div className='row justify-content-center'>
                 <div className='col-lg-3 col-md-2 col-sm-12 col-12 flex-center'>
-                    <i class="fa-solid fa-user icon"></i>
+                    <i className="fa-solid fa-user icon"></i>
                     <h5 className="service-description">{script.lending[4]}</h5>
                 </div>
                 <i className="rotate-arrow-2 flaticon-right-arrow col-lg-1 col-md-1 col-sm-12 col-12 flex-center" />
                 <div className='col-lg-3 col-md-2 col-sm-12 col-12 flex-center'>
-                    <i class="fa-solid fa-clock icon"></i>
+                    <i className="fa-solid fa-clock icon"></i>
                     <h5 className="service-description">{script.lending[5]}</h5>
                 </div>
                 <i className="rotate-arrow-2 flaticon-right-arrow col-lg-1 col-md-1 col-sm-12 col-12 flex-center" />
                 <div className='col-lg-3 col-md-2 col-sm-12 col-12 flex-center'>
-                    <i class="fa-solid fa-file-contract icon"></i>
+                    <i className="fa-solid fa-file-contract icon"></i>
                     <h5 className="service-description">{script.lending[6]} </h5>
                 </div>
             </div></Fragment>} />

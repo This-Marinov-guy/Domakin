@@ -1,4 +1,4 @@
-import React, { Fragment } from 'react';
+import React, { Fragment, useState } from 'react';
 import Navbar from '../../components/global-components/navbar';
 import PageHeader from '../../components/global-components/page-header';
 import ProSlider from '../../components/section-components/product-slider-v4';
@@ -10,7 +10,9 @@ import { selectScript } from '../../redux/language';
 import { useHttpClient } from '../../hooks/http-hook';
 import { useHistory } from 'react-router-dom';
 
-const Viewing = (props) => {
+const Renting = (props) => {
+    const [selectedProperty, setSelectedProperty] = useState(null);
+
     const script = useSelector(selectScript);
 
     const { sendRequest } = useHttpClient()
@@ -23,6 +25,7 @@ const Viewing = (props) => {
                 "renting/create-renting",
                 "POST",
                 JSON.stringify({
+                    property: selectedProperty,
                     name: values.name,
                     surname: values.surname,
                     phone: values.phone,
@@ -55,29 +58,29 @@ const Viewing = (props) => {
             </div>
             <div className='row justify-content-center'>
                 <div className='col-lg-2 col-sm-12 col-12 flex-center'>
-                    <i class="fa-solid fa-magnifying-glass-location icon"></i>
+                    <i className="fa-solid fa-magnifying-glass-location icon"></i>
                     <h5 className="service-description">{script.renting[4]}</h5>
                 </div>
                 <i className="rotate-arrow flaticon-right-arrow col-lg-1 col-sm-12 col-12 flex-center" />
                 <div className='col-lg-2 col-sm-12 col-12 flex-center'>
-                    <i class="fa-solid fa-user icon"></i>
+                    <i className="fa-solid fa-user icon"></i>
                     <h5 className="service-description">{script.renting[5]}</h5>
                 </div>
                 <i className="rotate-arrow flaticon-right-arrow col-lg-1 col-sm-12 col-12 flex-center" />
                 <div className='col-lg-2 col-sm-12 col-12 flex-center'>
-                    <i class="fa-solid fa-clock icon"></i>
+                    <i className="fa-solid fa-clock icon"></i>
                     <h5 className="service-description">{script.renting[6]} </h5>
                 </div>
                 <i className="rotate-arrow flaticon-right-arrow col-lg-1 col-sm-12 col-12 flex-center" />
                 <div className='col-lg-2 col-sm-12 col-12 flex-center'>
-                    <i class="fa-solid fa-handshake icon"></i>
+                    <i className="fa-solid fa-handshake icon"></i>
                     <h5 className="service-description">{script.renting[7]} </h5>
                 </div>
             </div>
         </Fragment>} />
-        <ProSlider onSubmit={submitRentingHandler} />
+        <ProSlider onSubmit={submitRentingHandler} selectedProperty={selectedProperty} setSelectedProperty={setSelectedProperty}/>
         <Footer />
     </div>
 }
 
-export default Viewing
+export default Renting

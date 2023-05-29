@@ -5034,6 +5034,24 @@ ul.wp-block-latest-posts.is-grid.alignwide {
 /* ----------------------------------------------------
     Footer About Widget
 ---------------------------------------------------- */
+.about-img-section {
+  @media (max-width: 992px) {
+    flex-direction: column-reverse !important;
+  }
+}
+
+.about-img {
+  border-radius: 7%;
+  @media (max-width: 992px) {
+    margin-top: 50px;
+  }
+}
+
+.bgsg-img {
+  margin-top: 50px;
+  border-radius: 50%;
+}
+
 @media (min-width: 992px) {
   .footer-about-widget {
     padding-right: 35px;

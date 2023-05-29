@@ -6,9 +6,9 @@ import { selectScript } from '../../redux/language';
 
 const FeaturesV1 = (props) => {
 
-	let publicUrl = process.env.PUBLIC_URL + '/'
+	const publicUrl = process.env.PUBLIC_URL + '/'
 
-	let customClass = props.customClass ? props.customClass : ''
+	const customClass = props.customClass ? props.customClass : ''
 
 	const script = useSelector(selectScript);
 
