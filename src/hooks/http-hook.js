@@ -42,17 +42,17 @@ export const useHttpClient = () => {
         dispatch(stopLoading());
         return responseData;
       } catch (err) {
-        let errorMsg
-        if (script === BG && err.messages[1]) {
-          errorMsg = err.messages[1]
-        } else {
-          errorMsg = err.messages[0]
-        }
-        dispatch(showError(errorMsg))
+        // let errorMsg
+        // if (script === BG && err.message2) {
+        //   errorMsg = err.message2
+        // } else {
+        //   errorMsg = err.message1
+        // }
+        dispatch(showError(err.message))
         setTimeout(() => dispatch(removeError()), 6000);
         dispatch(stopLoading());
         throw err;
-      }
+      } 
     },
     []
   );

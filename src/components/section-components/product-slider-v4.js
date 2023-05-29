@@ -50,7 +50,7 @@ const PropertyItem = (props) => {
 					<div className="product-info-bottom">
 						<div className="product-hover-action m--a">
 							<button id={props.description[0] + ' ' + props.location} onClick={(event) => { props.setSelectedProperty(event.target.id); }} className={(props.selectedProperty === props.description[0] + ' ' + props.location ? "theme-btn-1" : "theme-btn-2") + " btn btn-effect-1 text-uppercase button-renting"} title="Quick View" data-bs-toggle="modal" data-bs-target="#quick_view_modal">
-								Направи Запитване
+								избери
 							</button>
 						</div>
 					</div>

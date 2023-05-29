@@ -12780,6 +12780,16 @@ blockquote::before {
   }
 }
 
+.rotate-arrow-2 {
+  justify-content: center;
+  font-size: 30px;
+  @media (max-width: 767px) {
+    transform: rotate(90deg);
+    font-size: 20px;
+    margin-bottom: 30px;
+  }
+}
+
 .service-description {
   @media (max-width: 991px) {
     text-align: center;
