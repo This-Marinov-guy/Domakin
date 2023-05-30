@@ -34,7 +34,7 @@ const Viewing = (props) => {
                 }
             );
             props.setSuccess(
-                <Success heading={script.viewing[17]} message={script.viewing[18]} onClose={() => { props.setSuccess(null) }} />
+                <Success heading={script.viewing[18]} message={script.viewing[19]} onClose={() => { props.setSuccess(null) }} />
             );
             history.push("/");
         } catch (err) { }
@@ -52,21 +52,22 @@ const Viewing = (props) => {
         </div>
             <div className="row mb-40 plr--5">
                 <h5>{script.viewing[3]}</h5>
+                <h5 className='mt-10'>{script.viewing[4]}</h5>
             </div>
             <div className='row justify-content-center'>
-                <div className='col-lg-3 col-md-2 col-sm-12 col-12 flex-center'>
+                <div className='col-lg-3 col-md-3 col-sm-12 col-12 flex-center'>
                     <i className="fa-solid fa-user icon"></i>
-                    <h5 className="service-description">{script.viewing[4]}</h5>
-                </div>
-                <i className="rotate-arrow-2 flaticon-right-arrow col-lg-2 col-md-1 col-sm-12 col-12 flex-center" />
-                <div className='col-lg-3 col-md-2 col-sm-12 col-12 flex-center'>
-                    <i className="fa-solid fa-clock icon"></i>
                     <h5 className="service-description">{script.viewing[5]}</h5>
                 </div>
-                <i className="rotate-arrow-2 flaticon-right-arrow col-lg-2 col-md-1 col-sm-12 col-12 flex-center" />
-                <div className='col-lg-3 col-md-2 col-sm-12 col-12 flex-center'>
+                <i className="rotate-arrow-2 flaticon-right-arrow col-1 flex-center" />
+                <div className='col-lg-3 col-md-3 col-sm-12 col-12 flex-center'>
+                    <i className="fa-solid fa-clock icon"></i>
+                    <h5 className="service-description">{script.viewing[6]}</h5>
+                </div>
+                <i className="rotate-arrow-2 flaticon-right-arrow col-1 flex-center" />
+                <div className='col-lg-3 col-md-3 col-sm-12 col-12 flex-center'>
                     <i className="fa-solid fa-handshake icon"></i>
-                    <h5 className="service-description">{script.viewing[6]} </h5>
+                    <h5 className="service-description">{script.viewing[7]} </h5>
                 </div>
             </div></Fragment>} />
         <RequestForm onSubmit={submitViewingHandler} />

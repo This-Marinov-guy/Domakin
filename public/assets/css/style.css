@@ -4679,6 +4679,7 @@ ul.wp-block-latest-posts.is-grid.alignwide {
 /* ----------------------------------------------------
     Popular Product Widget
 ---------------------------------------------------- */
+
 .ltn__popular-product-widget .ltn__product-item {
   margin-bottom: 30px;
 }
@@ -8895,6 +8896,7 @@ ul.wp-block-latest-posts.is-grid.alignwide {
 }
 
 .product-info {
+  text-align: center;
   padding: 20px 0 0;
 }
 

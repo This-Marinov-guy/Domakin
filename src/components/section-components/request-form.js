@@ -14,12 +14,12 @@ const RequestForm = (props) => {
     const { loading } = useHttpClient()
 
     const schema = yup.object().shape({
-        name: yup.string().required(script.viewing[16].errors[0]),
-        surname: yup.string().required(script.viewing[16].errors[1]),
-        phone: yup.string().min(8, script.viewing[16].errors[2]).matches(/^\+/, script.viewing[16].errors[2])
-            .required(script.viewing[16].errors[3]),
-        email: yup.string().email(script.viewing[16].errors[4]).required(script.viewing[16].errors[5]),
-        dataTerms: yup.bool().required().oneOf([true], script.viewing[16].errors[6]),
+        name: yup.string().required(script.viewing[17].errors[0]),
+        surname: yup.string().required(script.viewing[17].errors[1]),
+        phone: yup.string().min(8, script.viewing[17].errors[2]).matches(/^\+/, script.viewing[17].errors[2])
+            .required(script.viewing[17].errors[3]),
+        email: yup.string().email(script.viewing[17].errors[4]).required(script.viewing[17].errors[5]),
+        dataTerms: yup.bool().required().oneOf([true], script.viewing[17].errors[6]),
     });
 
     return <div className="ltn__appointment-area pb-120">
@@ -35,11 +35,11 @@ const RequestForm = (props) => {
                     }} >
                         {() => (
                             <Form>
-                                <h6>{script.viewing[7]}</h6>
+                                <h4>{script.viewing[8]}</h4>
                                 <div className="row">
                                     <div className="col-md-6">
                                         <div className="input-item input-item-name ltn__custom-icon">
-                                            <Field type="text" name="name" placeholder={script.viewing[8]} />
+                                            <Field type="text" name="name" placeholder={script.viewing[9]} />
                                         </div>
                                         <ErrorMessage
                                             className="error"
@@ -49,7 +49,7 @@ const RequestForm = (props) => {
                                     </div>
                                     <div className="col-md-6">
                                         <div className="input-item input-item-name ltn__custom-icon">
-                                            <Field type="text" name="surname" placeholder={script.viewing[9]} />
+                                            <Field type="text" name="surname" placeholder={script.viewing[10]} />
                                         </div>
                                         <ErrorMessage
                                             className="error"
@@ -59,7 +59,7 @@ const RequestForm = (props) => {
                                     </div>
                                     <div className="col-md-6">
                                         <div className="input-item input-item-name ltn__custom-icon">
-                                            <Field type="text" name="phone" placeholder={script.viewing[10]} />
+                                            <Field type="text" name="phone" placeholder={script.viewing[11]} />
                                         </div>
                                         <ErrorMessage
                                             className="error"
@@ -69,7 +69,7 @@ const RequestForm = (props) => {
                                     </div>
                                     <div className="col-md-6">
                                         <div className="input-item input-item-name ltn__custom-icon">
-                                            <Field type="text" name="email" placeholder={script.viewing[11]} />
+                                            <Field type="text" name="email" placeholder={script.viewing[12]} />
                                         </div>
                                         <ErrorMessage
                                             className="error"
@@ -79,11 +79,11 @@ const RequestForm = (props) => {
                                     </div>
                                     <div className="col-md-12">
                                         <div className="input-item input-item-textarea ltn__custom-icon">
-                                            <Field as='textarea' name="description" placeholder={script.viewing[12]} defaultValue={""} />
+                                            <Field as='textarea' name="description" placeholder={script.viewing[13]} defaultValue={""} />
                                         </div>
                                     </div>
                                     <div className="col-md-12 mb-20">
-                                        <label className="checkbox-item">{script.viewing[13]}
+                                        <label className="checkbox-item">{script.viewing[14]}
                                             <Field type="checkbox" name="dataTerms" />
                                             <span className="checkmark" />
                                         </label>
@@ -95,7 +95,7 @@ const RequestForm = (props) => {
                                     </div>
                                     <div className="btn-wrapper text-center mt-40">
                                         <button disabled={loading} className="btn theme-btn-1 btn-effect-1 text-uppercase" type="submit">{loading ? <Spinner animation="border" />
-                                            : script.viewing[15]}</button>
+                                            : script.viewing[16]}</button>
                                     </div>
                                 </div>
                             </Form>

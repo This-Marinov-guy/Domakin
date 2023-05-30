@@ -53,25 +53,22 @@ const Renting = (props) => {
                 </div>
             </div>
         </div>
-            <div className="row mb-40 plr--5">
-                <h5>{script.renting[3]}</h5>
-            </div>
             <div className='row justify-content-center'>
                 <div className='col-lg-2 col-sm-12 col-12 flex-center'>
                     <i className="fa-solid fa-magnifying-glass-location icon"></i>
                     <h5 className="service-description">{script.renting[4]}</h5>
                 </div>
-                <i className="rotate-arrow flaticon-right-arrow col-lg-1 col-sm-12 col-12 flex-center" />
+                <i className="rotate-arrow flaticon-right-arrow col-1 flex-center" />
                 <div className='col-lg-2 col-sm-12 col-12 flex-center'>
                     <i className="fa-solid fa-user icon"></i>
                     <h5 className="service-description">{script.renting[5]}</h5>
                 </div>
-                <i className="rotate-arrow flaticon-right-arrow col-lg-1 col-sm-12 col-12 flex-center" />
+                <i className="rotate-arrow flaticon-right-arrow col-1 flex-center" />
                 <div className='col-lg-2 col-sm-12 col-12 flex-center'>
                     <i className="fa-solid fa-clock icon"></i>
                     <h5 className="service-description">{script.renting[6]} </h5>
                 </div>
-                <i className="rotate-arrow flaticon-right-arrow col-lg-1 col-sm-12 col-12 flex-center" />
+                <i className="rotate-arrow flaticon-right-arrow col-1 flex-center" />
                 <div className='col-lg-2 col-sm-12 col-12 flex-center'>
                     <i className="fa-solid fa-handshake icon"></i>
                     <h5 className="service-description">{script.renting[7]} </h5>

@@ -1,4 +1,4 @@
-import React, { Fragment, useState } from 'react';
+import React, { Fragment } from 'react';
 import { useSelector } from 'react-redux';
 import { Link } from 'react-router-dom';
 import { selectScript } from '../../redux/language';
@@ -12,8 +12,8 @@ const PropertyItem = (props) => {
 			<div className="col-xl-4 col-sm-6 col-12">
 				<div className="ltn__product-item ltn__product-item-4 text-center---">
 					<div className="product-img go-top">
-						<Link to={publicUrl + props.images[0]} data-rel="lightcase:myCollection">
-							<img src={publicUrl + props.images[0]} alt="#" />
+						<Link to={publicUrl + props.main_image} data-rel={`lightcase:${props.description[0]}`}>
+							<img src={publicUrl + props.main_image} alt="Галерия" />
 						</Link>
 
 						<div className="product-badge">
@@ -32,9 +32,8 @@ const PropertyItem = (props) => {
 							<div className="product-img-gallery go-top">
 								<ul>
 									<li>
-									<Link to={publicUrl + props.images} data-rel="lightcase:myCollection"><i className="fas fa-camera" /> {props.images.length}</Link>
 										{props.images.map((value, index) => {
-											return <Link key={index} to={publicUrl + value} data-rel="lightcase:myCollection"></Link>
+											return <Link key={index} to={publicUrl + value} data-rel={`lightcase:${props.description[0]}`}>{index === 0 && <Fragment><i className="fas fa-camera"/> {props.images.length + 1} </Fragment>}</Link>
 										})}
 									</li>
 								</ul>
@@ -43,7 +42,7 @@ const PropertyItem = (props) => {
 					</div>
 					<div className="product-info">
 						<div className="product-price">
-							<span>&euro;{props.price}<label>/Month</label></span>
+							<span>&euro;{props.price}<label>/ на месец</label></span>
 						</div>
 						<h2 className="product-title go-top">{props.type}</h2>
 						<ul className="product-description">
@@ -77,7 +76,7 @@ const ProductSliderV4 = (props) => {
 				</div>
 			</div>
 			<div className="row ltn__product-slider-item-three-active slick-arrow-1">
-				{script.FOR_RENT.map((value, index) => { return <PropertyItem key={index} status={value.status} price={value.price} type={value.type} location={value.location} description={value.description} images={value.images} setSelectedProperty={props.setSelectedProperty} selectedProperty={props.selectedProperty} /> })}
+				{script.FOR_RENT.map((value, index) => { return <PropertyItem key={index} status={value.status} price={value.price} type={value.type} location={value.location} description={value.description} main_image={value.main_image} images={value.images} setSelectedProperty={props.setSelectedProperty} selectedProperty={props.selectedProperty} /> })}
 			</div>
 			{props.selectedProperty && <div id='form-renting' className='row'>
 				<RequestForm onSubmit={props.onSubmit} />
