@@ -5191,7 +5191,10 @@ ul.wp-block-latest-posts.is-grid.alignwide {
   -ms-flex-align: center;
   align-items: center;
   position: relative;
-  padding-bottom: 20px;
+
+  @media (max-width: 767px) {
+    padding-bottom: 10px;
+  }
 }
 
 .ltn__header-middle-area > .container-fluid > .row > .col,

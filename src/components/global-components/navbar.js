@@ -76,15 +76,16 @@ const Navbar = () => {
 											<ul style={{ justifyContent: 'flex-end' }}>
 												<li className="menu-icon"><Link to="/about">{script.header[2]}</Link>
 													<ul className="sub-menu menu-pages-img-show">
-														<li>
-															<Link to="/about">{script.header[7]}</Link>
+														<Link to="/about"><li>
+															{script.header[7]}
 															{/* <img src={publicUrl + "assets/img/home-demos/home-1.jpg"} alt="#" /> */}
 														</li>
-														<li>
-															<Link to="/agents">{script.header[8]}</Link>
+														</Link>
+														<Link to="/agents"><li>
+															{script.header[8]}
 															{/* <img src={publicUrl + "assets/img/home-demos/home-2.jpg"} alt="#" /> */}
 														</li>
-
+														</Link>
 													</ul>
 												</li>												<li><Link to="/services">{script.header[6]}</Link></li>
 												<li><Link to="/contact">{script.header[3]}</Link></li>

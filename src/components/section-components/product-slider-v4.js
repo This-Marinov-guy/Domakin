@@ -32,7 +32,10 @@ const PropertyItem = (props) => {
 							<div className="product-img-gallery go-top">
 								<ul>
 									<li>
-										<Link to={publicUrl + props.images[0]} data-rel="lightcase:myCollection"><i className="fas fa-camera" /> {props.images.length}</Link>
+									<Link to={publicUrl + props.images} data-rel="lightcase:myCollection"><i className="fas fa-camera" /> {props.images.length}</Link>
+										{props.images.map((value, index) => {
+											return <Link key={index} to={publicUrl + value} data-rel="lightcase:myCollection"></Link>
+										})}
 									</li>
 								</ul>
 							</div>
@@ -50,7 +53,7 @@ const PropertyItem = (props) => {
 					<div className="product-info-bottom">
 						<div className="product-hover-action m--a">
 							<button id={props.description[0] + ' ' + props.location} onClick={(event) => { props.setSelectedProperty(event.target.id); }} className={(props.selectedProperty === props.description[0] + ' ' + props.location ? "theme-btn-1" : "theme-btn-2") + " btn btn-effect-1 text-uppercase button-renting"} title="Quick View" data-bs-toggle="modal" data-bs-target="#quick_view_modal">
-								{props.selectedProperty === props.description[0] + ' ' + props.location ? <span><i style={{fontSize:"15px"}} className="fa-solid fa-check icon"></i></span> : 'избери'}
+								{props.selectedProperty === props.description[0] + ' ' + props.location ? <span><i style={{ fontSize: "15px" }} className="fa-solid fa-check icon"></i></span> : 'избери'}
 							</button>
 						</div>
 					</div>
