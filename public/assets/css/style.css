@@ -5034,29 +5034,6 @@ ul.wp-block-latest-posts.is-grid.alignwide {
 /* ----------------------------------------------------
     Footer About Widget
 ---------------------------------------------------- */
-.about-img-section {
-  @media (max-width: 992px) {
-    flex-direction: column-reverse !important;
-  }
-}
-
-.about-img {
-  border-radius: 7%;
-  @media (max-width: 992px) {
-    margin-top: 50px;
-  }
-}
-
-.bgsg-img {
-  margin-top: 50px;
-  border-radius: 50%;
-}
-
-@media (min-width: 992px) {
-  .footer-about-widget {
-    padding-right: 35px;
-  }
-}
 
 /* ----------------------------------------------------
     Widget Responsive
@@ -5214,6 +5191,7 @@ ul.wp-block-latest-posts.is-grid.alignwide {
   -ms-flex-align: center;
   align-items: center;
   position: relative;
+  padding-bottom: 20px;
 }
 
 .ltn__header-middle-area > .container-fluid > .row > .col,
@@ -5845,6 +5823,10 @@ ul.wp-block-latest-posts.is-grid.alignwide {
   padding: 10px 0;
 }
 
+.ltn__header-options-2 {
+  width: 50px;
+}
+
 .ltn__header-options-2 > div {
   margin-right: 10px;
 }
@@ -6399,12 +6381,6 @@ ul.wp-block-latest-posts.is-grid.alignwide {
 /* ----------------------------------------
     Header 4
 ---------------------------------------- */
-.ltn__header-4 .ltn__header-middle-area,
-.ltn__header-5 .ltn__header-middle-area {
-  padding-top: 22px;
-  padding-bottom: 22px;
-}
-
 .ltn__header-4 .ltn__header-top-area {
   border-color: var(--border-color-3);
 }
@@ -6523,12 +6499,6 @@ ul.wp-block-latest-posts.is-grid.alignwide {
   z-index: 999;
   -webkit-box-shadow: 0 10px 50px 0 rgba(46, 56, 220, 0.2);
   box-shadow: 0 10px 50px 0 rgba(46, 56, 220, 0.2);
-}
-
-.ltn__header-4 .ltn__header-middle-area.sticky-active,
-.ltn__header-5 .ltn__header-middle-area.sticky-active {
-  padding-top: 10px;
-  padding-bottom: 10px;
 }
 
 /* Sticky Background Secondary */
@@ -12818,6 +12788,7 @@ blockquote::before {
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
 }
 
 .icon {
@@ -14797,13 +14768,31 @@ input.cart-plus-minus-box {
 /* ----------------------------------------------------
     About Us Area
 ---------------------------------------------------- */
-.about-us-img-wrap {
-  position: relative;
-}
-.about-us-img-wrap img {
-  margin: 0;
+.about-img-section {
+  @media (max-width: 992px) {
+    flex-direction: column-reverse !important;
+  }
 }
 
+.about-img {
+  border-radius: 7%;
+  @media (max-width: 992px) {
+    margin-top: 50px;
+    margin-bottom: -50px;
+    width: 200px;
+  }
+}
+
+.bgsg-img {
+  margin-top: 50px;
+  border-radius: 50%;
+}
+
+@media (min-width: 992px) {
+  .footer-about-widget {
+    padding-right: 35px;
+  }
+}
 .about-us-img-info {
   width: 310px;
   height: 310px;

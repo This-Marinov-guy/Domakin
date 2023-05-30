@@ -37,18 +37,16 @@ const FeaturesV1 = (props) => {
 					</Link>
 				</div>
 				<div className="col-lg-4 col-sm-6 col-12">
-					<Link to="services/renting">
-						<div className="ltn__feature-item ltn__feature-item-6 text-center bg-white  box-shadow-1 active">
-							<div className="ltn__feature-icon">
-								<img src={publicUrl + "assets/img/icons/icon-img/22.png"} alt="#" />
-							</div>
-							<div className="ltn__feature-info">
-								<h3>{script.features[5]}</h3>
-								<p>{script.features[6]}</p>
-								{/* <Link className="ltn__service-btn" to="/service-details">Find A Home <i className="flaticon-right-arrow" /></Link> */}
-							</div>
+					<div className="ltn__feature-item ltn__feature-item-6 text-center bg-white  box-shadow-1 active">
+						<div className="ltn__feature-icon">
+							<img src={publicUrl + "assets/img/icons/icon-img/22.png"} alt="#" />
 						</div>
-					</Link>
+						<div className="ltn__feature-info">
+							<h3>{script.features[5]}</h3>
+							<p>{script.features[6]}</p>
+							{/* <Link className="ltn__service-btn" to="/service-details">Find A Home <i className="flaticon-right-arrow" /></Link> */}
+						</div>
+					</div>
 
 				</div>
 				<div className="col-lg-4 col-sm-6 col-12">
@@ -60,7 +58,7 @@ const FeaturesV1 = (props) => {
 							</div>
 							<div className="ltn__feature-info">
 								<h3>{script.features[7]}</h3>
-								<p>{script.features[9]}</p>
+								<p>Очаквайте скоро</p>
 								{/* <Link className="ltn__service-btn" to="/service-details">Find A Home <i className="flaticon-right-arrow" /></Link> */}
 							</div>
 						</div>
