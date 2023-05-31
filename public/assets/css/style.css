@@ -12766,25 +12766,30 @@ blockquote::before {
 .rotate-arrow {
   justify-content: center;
   font-size: 30px;
-  @media (max-width: 991px) {
-    transform: rotate(90deg);
-    font-size: 20px;
-    margin-bottom: 30px;
+}
+@media (max-width: 991px) {
+  .rotate-arrow {
+  transform: rotate(90deg);
+  font-size: 20px;
+  margin-bottom: 30px;
   }
 }
 
 .rotate-arrow-2 {
   justify-content: center;
   font-size: 30px;
-  @media (max-width: 767px) {
-    transform: rotate(90deg);
-    font-size: 20px;
-    margin-bottom: 30px;
-  }
 }
 
-.service-description {
-  @media (max-width: 991px) {
+@media (max-width: 767px) {
+  .rotate-arrow-2 {
+  transform: rotate(90deg);
+  font-size: 20px;
+  margin-bottom: 30px;
+}
+}
+
+@media (max-width: 991px) {
+    .service-description {
     text-align: center;
   }
 }
@@ -14773,15 +14778,11 @@ input.cart-plus-minus-box {
 /* ----------------------------------------------------
     About Us Area
 ---------------------------------------------------- */
-.about-img-section {
-  @media (max-width: 992px) {
+@media (max-width: 992px) {
+    .about-img-section {
     flex-direction: column-reverse !important;
   }
-}
-
-.about-img {
-  border-radius: 7%;
-  @media (max-width: 992px) {
+  .about-img {
     margin-top: 50px;
     margin-bottom: -50px;
     width: 200px;
