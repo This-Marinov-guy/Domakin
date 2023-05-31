@@ -14786,9 +14786,9 @@ input.cart-plus-minus-box {
     flex-direction: column-reverse !important;
   }
   .about-img {
-    margin-top: 50px;
-    margin-bottom: -50px;
-    width: 200px;
+    margin-top: 30px;
+    margin-bottom: -100px;
+    width: 120px;
   }
 }
 
