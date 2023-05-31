@@ -10,8 +10,7 @@ class Social extends Component {
 
     return <div className="ltn__social-media">
 			<ul>
-				
-				<li><a href="https://www.linkedin.com/tuna-theme" title="LinkedIn"><i className="fab fa-linkedin" /></a></li>
+				<li><a href="https://www.linkedin.com/company/domakin/" target='_blank' title="LinkedIn"><i className="fab fa-linkedin" /></a></li>
 			</ul>
 		</div>
         }

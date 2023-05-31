@@ -160,7 +160,7 @@ const NavbarV3 = () => {
 					</div> */}
 					<div className="ltn__social-media-2">
 						<ul>
-							<li><a href="#" title="Linkedin"><i className="fab fa-linkedin" /></a></li>
+							<li><a href="https://www.linkedin.com/company/domakin/" target="_blank" title="Linkedin"><i className="fab fa-linkedin" /></a></li>
 						</ul>
 					</div>
 				</div>
