@@ -14908,6 +14908,9 @@ input.cart-plus-minus-box {
 .about-us-info-wrap {
   position: relative;
 }
+.about-us-info-wrap p, .ltn__list-item-half li {
+  font-size: 18px;
+}
 .about-us-info-wrap .btn-wrapper {
   margin-top: 40px;
 }
@@ -14919,7 +14922,7 @@ input.cart-plus-minus-box {
   width: 80px;
   height: 80px;
   line-height: 84px;
-  font-size: 20px;
+  font-size: 16px;
   position: absolute;
   top: 50%;
   -webkit-transform: translateY(-50%);

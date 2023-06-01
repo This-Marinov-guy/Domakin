@@ -18,7 +18,7 @@ const AboutV4 = () => {
 				</div>
 				<div className="col-lg-6 align-self-center">
 					<div className="about-us-info-wrap">
-						<div className="section-title-area ltn__section-title-2--- mb-20">
+						<div className="ltn__section-title-2--- mb-20">
 							<h6 className="section-subtitle section-subtitle-2 ltn__secondary-color">За нас</h6>
 							<h1 className="section-title"><span>{script.about[2]}</span></h1>
 							<p className='mt-40'>{script.about[4] + ' '}<a style={{color : "var(--ltn__secondary-color)"}} href='https://bulgariansocietygro.nl' target="_blank">Bulgarian Society Groningen (BGSG) </a>{' ' + script.about[5]}</p>
