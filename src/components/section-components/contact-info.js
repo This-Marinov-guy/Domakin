@@ -30,8 +30,8 @@ const ContactInfo = () => {
 						<h3>{script.contact[3]}</h3>
 						<p>{script.contact[4]}</p>
 					</div>
-				</div>
-				<div className="col-lg-4">
+				</div> */}
+				{/* <div className="col-lg-4">
 					<div className="ltn__contact-address-item ltn__contact-address-item-3 box-shadow">
 						<div className="ltn__contact-address-icon">
 							<img src={publicUrl + "assets/img/icons/12.png"} alt="Icon Image" />

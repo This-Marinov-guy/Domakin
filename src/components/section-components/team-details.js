@@ -19,14 +19,14 @@ const TeamMEmberDetails = (props) => {
         <div className="col-lg-8">
             <div className="ltn__team-details-member-info-details">
                 <p>{props.about}</p>
-                <div className="ltn__social-media-3">
+                {/* <div className="ltn__social-media-3">
                     <ul>
                         {props.social && props.social.map((value) => {
                             return (<li key={value.type}><a href={value.href} target='_blank'><i className={`fab fa-${value.type.toLowerCase()}`} /></a></li>
                             )
                         })}
                     </ul>
-                </div>
+                </div> */}
             </div>
         </div>
     </div>

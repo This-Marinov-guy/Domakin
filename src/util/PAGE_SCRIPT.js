@@ -92,13 +92,13 @@ const BG = {
         `1) Изберете имот от секцията по-долу и кликнете 'Избери'`,
         '2) Попълнете формата, която ще се появи при селектиран имот',
         '3) Изчакайте връзка с наш агент за допълнителна информация за имота',
-        '4) Завършете сделката с нашия клиент'
+        '4) Завършете сделката с нашия агент'
     ],
     lending: [
         'Прехвърли стар договор',
         'Прехвърляне',
         'Прехвърлете стария си договор чрез нас',
-        'ПРедлагаме опцията да си прехвълите оставащия договора на намерен от нас клиент. За тази цел, Вашият договор трябва да позволява прехвърляне и съгласие на наемодателя. За да стартирате процедурата, моля изпълнете следни стъпки: ',
+        'Предлагаме опцията да си прехвълите оставащия договора на намерен от нас клиент. За тази цел, Вашият договор трябва да позволява прехвърляне и съгласие на наемодателя. За да стартирате процедурата, моля изпълнете следни стъпки: ',
         '1) Попълнете бланката по-долу',
         '2) Изчакайте обратна връзка с наш агент',
         '3) Заедно разгледайте договора Ви и завършете сделката',
@@ -110,7 +110,7 @@ const BG = {
             price: 600,
             type: 'Стая за двама',
             location: 'Visvliet, Netherlands',
-            description: ['Стая за двама в споделена къща на 20 км от Гроьнинген. Къщата се държи от възрастна португалска двойка. В цената са включени всички консумативи', 'Споделя се хол, баня и тоалетна', 'Договорът е за 12 месеца'],
+            description: ['Стая за двама в споделена къща на 20 км от Гроьнинген. Къщата се държи от възрастна португалска двойка. В цената са включени всички консумативи', 'Споделя се хол, баня и тоалетна', 'Договорът е за 12 месеца', 'Налична от 1ви август'],
             main_image: "assets/img/properties/1.jpg",
             images: ['assets/img/properties/2.jpg', 'assets/img/properties/3.jpg', 'assets/img/properties/4.jpg', 'assets/img/properties/5.jpg', 'assets/img/properties/6.jpg', 'assets/img/properties/8.jpg', 'assets/img/properties/9.jpg', 'assets/img/properties/10.jpg'],
         },
@@ -120,7 +120,7 @@ const BG = {
             price: 400,
             type: 'Единична стая',
             location: 'Visvliet, Netherlands',
-            description: ['Единична стая в споделена къща на 20 км от Грьонинген. Къщата се държи от възрастна португалска двойка. В цената са включени всички консумативи.', 'Споделя се хол, баня и тоалетна', 'Договорът е за 12 месеца'],
+            description: ['Единична стая в споделена къща на 20 км от Грьонинген. Къщата се държи от възрастна португалска двойка. В цената са включени всички консумативи.', 'Споделя се хол, баня и тоалетна', 'Договорът е за 12 месеца', 'Налична от 1ви август'],
             main_image: "assets/img/properties/7.jpg",
             images: ['assets/img/properties/2.jpg', 'assets/img/properties/3.jpg', 'assets/img/properties/5.jpg'],
         },
@@ -204,7 +204,7 @@ const EN = {
         'Register',
         'Groningen, the Netherlands',
         'Services',
-        'Company',
+        'Information',
         'Agents'
     ],
     footer: [
@@ -217,14 +217,22 @@ const EN = {
         'Services',
         'Viewings',
         'Expect more soon...',
-        'Customer Care',
-        'Contact us'
+        'Support',
+        'Contact us',
+        'Renting',
+        'Lending'
     ],
     about: [
-        "About us",
+        "About the company",
         "About us",
         'Helping you find a place',
-        'The only organization to do this',
+        'When to reach us:',
+        'At the end of 2022 some of the founders of Domakin started the NPO',
+        'with the aim to help the Bulgarian students of Groningen. Part of our mission includes one of the biggest challenges of stundents in Groningen - finding an accommodation. That is why we created Domakin in order to make this process easier for many that find difficulties in finding a place to live.',
+        'It is hard for a student to find a place to live in their first year and even in the rest. The team of Domakin will help you with: ',
+        'If you are located in Bulgaria and want to find a place but you are unable to make the viewing, we are here for you!',
+        'If you want to find a place, we are here for you!',
+        'If you are searching for a new flatmate or want to transfer your contract to someone else, we are here for you!',
     ],
     contact: [
         'Contact us',
@@ -242,26 +250,22 @@ const EN = {
         'Enter you message',
         'Send'
     ],
-    addDocument: [
-        'Lend your apartment/room',
-        'Add description and documents'
-    ],
     viewing: [
         'Viewing service',
         'Viewing',
-        'Let us make the walk for you',
-        'You have found a room or apartment but you do not have the availability to go on the viewing? Our agents do the viewing instead of you with the option to document everything or live broadcast it to you. This allows for your direct interaction with the landlord and significantly increases the chances of getting the place. To use this service, simply follow the steps in the order:',
-        '1) Fill your details in the form below',
+        'Let us make the viewing for you',
+        'You have found a room/apartment but you are unable to attend the viewing or you are in the process of searching and want to ensure that someone can represent you for the viewing.',
+        'We offer agents for viewings where we go to the viewing instead of you. By your request we document the whole process and make any inqueries to the landlord. If there is a possibility, we can make a live connection with you so you can realisticaly experience the viewing. Contact us by following the steps below: ',
+        '1) Fill your details in the form',
         '2) Wait for one of our agents to contact you',
         '3) Arrange the viewing/s and leave the rest to us',
         'Fill your details',
         'Name',
         'Surname',
-        'Phone to be contacted (Please add + and country code)',
+        'Phone to be contacted (+ and country code)',
         'Email',
-        'Any comments you would like to add',
-        'I give me consent to be contacted by the company via phone or email and for them to store my information for service purposes only',
-        'I understand that the service they provide will include a payment at some point in the future given that both sides are satisfied',
+        'Any comments you would like to be sent to our agent',
+        'I give my consent to be contacted by the company via phone or email and for them to store my information for service purposes only',
         'Submit Request',
         {
             errors: [
@@ -270,17 +274,59 @@ const EN = {
                 'Phone number is not full or does not start with country code (example +359)',
                 "Phone is required",
                 "Please enter a valid email",
+                "Please enter an email",
                 "Terms must be accepted"
             ]
         },
         'Successful Request',
-        'Your information has been sent so expect soon to be contacted by one of our aggents! Thank you again for the trust and see you soon!',
+        'Your information has been sent so expect soon to be contacted by one of our agents! Thank you again for the trust and see you soon!',
+    ],
+    renting: [
+        'Renting accommodations',
+        'Renting',
+        'Find the perfect place for you',
+        'Our platform contains different properties.',
+        `1) Choose a property from the list below and click 'Select'`,
+        '2) Fill the form that will appear once a property has been selected',
+        '3) Wait to be contacted by our agent to finilize the deal',
+        '4) Finish the deal with our agent'
+    ],
+    lending: [
+        'Прехвърли стар договор',
+        'Прехвърляне',
+        'Прехвърлете стария си договор чрез нас',
+        'Предлагаме опцията да си прехвълите оставащия договора на намерен от нас клиент. За тази цел, Вашият договор трябва да позволява прехвърляне и съгласие на наемодателя. За да стартирате процедурата, моля изпълнете следни стъпки: ',
+        '1) Попълнете бланката по-долу',
+        '2) Изчакайте обратна връзка с наш агент',
+        '3) Заедно разгледайте договора Ви и завършете сделката',
+    ],
+    FOR_RENT: [
+        {
+            id: '0',
+            status: 'наемане',
+            price: 600,
+            type: 'Стая за двама',
+            location: 'Visvliet, Netherlands',
+            description: ['Стая за двама в споделена къща на 20 км от Гроьнинген. Къщата се държи от възрастна португалска двойка. В цената са включени всички консумативи', 'Споделя се хол, баня и тоалетна', 'Договорът е за 12 месеца', 'Налична от 1ви август'],
+            main_image: "assets/img/properties/1.jpg",
+            images: ['assets/img/properties/2.jpg', 'assets/img/properties/3.jpg', 'assets/img/properties/4.jpg', 'assets/img/properties/5.jpg', 'assets/img/properties/6.jpg', 'assets/img/properties/8.jpg', 'assets/img/properties/9.jpg', 'assets/img/properties/10.jpg'],
+        },
+        {
+            id: '1',
+            status: 'наемане',
+            price: 400,
+            type: 'Единична стая',
+            location: 'Visvliet, Netherlands',
+            description: ['Единична стая в споделена къща на 20 км от Грьонинген. Къщата се държи от възрастна португалска двойка. В цената са включени всички консумативи.', 'Споделя се хол, баня и тоалетна', 'Договорът е за 12 месеца', 'Налична от 1ви август'],
+            main_image: "assets/img/properties/7.jpg",
+            images: ['assets/img/properties/2.jpg', 'assets/img/properties/3.jpg', 'assets/img/properties/5.jpg'],
+        },
     ],
     home: [
         'Company for accommodation searching',
         'Find your place to live',
         'with our help',
-        'Our young team will help you with finding your place to live in Groningen and the area around it',
+        'Our young team will help you find a place to live in Groningen and the area around it',
         'Contact us',
     ],
     features: [
@@ -290,9 +336,10 @@ const EN = {
         `Our agents make the apartment visits for you by also following any client's requirements`,
         'Check it out',
         'Rent an apartment',
-        'Expect soon',
-        'Transfer ownership',
+        'Check the properties on our site and make an inquery for more information',
+        'Search for a flatmate',
         'Services',
+        'Search for a new flatmate / Transfer your contract'
     ],
     team: [
         'Team',
@@ -306,7 +353,7 @@ const EN = {
         {
             name: 'Sava Popov',
             position: 'Estate Viewing Agent',
-            about: '20, Game Design student',
+            about: '20, Creative Media & Game Technologies',
             aboutExtra: ''
         },
         {
@@ -338,7 +385,10 @@ const EN = {
         'Design',
     ],
     error: [
-        'Be careful - You just got an error!'
+        'Be careful - You just got an error!',
+        'Page not found',
+        'The page you are looking for does not exists',
+        ' Back to home',
     ]
 }
 
