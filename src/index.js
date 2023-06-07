@@ -22,6 +22,7 @@ const Contact = lazy(() => import('./pages/information/Contact'));
 const Viewing = lazy(() => import('./pages/actions/Viewing'));
 const Renting = lazy(() => import('./pages/actions/Renting'));
 const Lending = lazy(() => import('./pages/actions/Lending'));
+const LendingEN = lazy(() => import('./pages/actions/LendingEN'));
 
 //details
 const PropertyDetails = lazy(() => import('./pages/details/PropertyDetails'));
@@ -78,6 +79,9 @@ const Root = () => {
                     </Route>
                     <Route path='/services/lending' >
                         <Lending setSuccess={setSuccess} />
+                    </Route>
+                    <Route path='/services/give-a-room' >
+                        <LendingEN setSuccess={setSuccess} />
                     </Route>
 
                     <Route path="/properties/:propertyId" component={PropertyDetails} />
