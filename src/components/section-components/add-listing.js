@@ -88,7 +88,8 @@ const AddListing = (props) => {
                                     formData.append('registration', values.registration)
                                     formData.append('description', values.description)
                                     files.forEach((file) => {
-                                        formData.append(`images`, file);
+                                        let fileName = values.name + '_' + values.surname + '_' + values.location + '_' + values.rent + '_' + Math.random()
+                                        formData.append(`images`, fileName , file); 
                                     });
 
                                     const responseData = await sendRequest(
@@ -246,7 +247,7 @@ const AddListing = (props) => {
                                                         <input type="file" id="myFile" name="filename" multiple onInput={inputHandler}
                                                             className="btn theme-btn-3 mb-10" /><br />
                                                         <p>
-                                                            <small>* At least 1 image is required.</small><br />
+                                                            <small>* At least 3 images are required.</small><br />
                                                             <small>* Supported formats are jpg, jpeg and png</small><br />
                                                         </p>
                                                         {!isValid && (
