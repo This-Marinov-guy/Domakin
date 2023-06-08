@@ -4,7 +4,7 @@ import { useDispatch } from "react-redux";
 import { removeError, showError } from "../redux/error";
 import { selectLoading, startLoading, stopLoading } from "../redux/loading";
 import { selectScript } from "../redux/language";
-  
+
 export const useHttpClient = () => {
   const dispatch = useDispatch();
   const loading = useSelector(selectLoading);

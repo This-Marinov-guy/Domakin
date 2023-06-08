@@ -87,8 +87,8 @@ const AddListing = (props) => {
                                     formData.append('rent', values.rent)
                                     formData.append('registration', values.registration)
                                     formData.append('description', values.description)
-                                    files.forEach((file, index) => {
-                                        formData.append(`images${index}`, file);
+                                    files.forEach((file) => {
+                                        formData.append(`images`, file);
                                     });
 
                                     const responseData = await sendRequest(
@@ -96,10 +96,10 @@ const AddListing = (props) => {
                                         "POST",
                                         formData,
                                     );
-                                    // props.setSuccess(
-                                    //     <Success heading='Thank you for the property' message='We will soon check your room and contact you to advance with the deal!' onClose={() => { props.setSuccess(null) }} />
-                                    // );
-                                    // history.push("/");
+                                    props.setSuccess(
+                                        <Success heading='Thank you for the property' message='We will soon check your room and contact you to advance with the deal!' onClose={() => { props.setSuccess(null) }} />
+                                    );
+                                    history.push("/");
                                 } catch (err) { }
                             }
                         }

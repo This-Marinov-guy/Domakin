@@ -46,7 +46,7 @@ const LendingEN = (props) => {
                     </h5>
                 </div>
             </div></Fragment>} />
-        <AddListing />
+        <AddListing setSuccess={props.setSuccess}/>
         <Footer />
     </div>
 }
