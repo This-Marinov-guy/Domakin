@@ -4,8 +4,7 @@ import { useDispatch } from "react-redux";
 import { removeError, showError } from "../redux/error";
 import { selectLoading, startLoading, stopLoading } from "../redux/loading";
 import { selectScript } from "../redux/language";
-import { BG } from "../util/PAGE_SCRIPT";
-
+  
 export const useHttpClient = () => {
   const dispatch = useDispatch();
   const loading = useSelector(selectLoading);
@@ -22,7 +21,7 @@ export const useHttpClient = () => {
       try {
         //for production --> process.env.REACT_APP_SERVER_URL
         //for testing -----> process.env.REACT_APP_TEST_SERVER_URL
-        const response = await fetch(process.env.REACT_APP_TEST_SERVER_URL + url, {
+        const response = await fetch(process.env.REACT_APP_SERVER_URL + url, {
           method,
           body,
           headers,

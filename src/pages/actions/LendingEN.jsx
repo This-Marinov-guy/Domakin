@@ -12,35 +12,6 @@ import { useHistory } from 'react-router-dom';
 import AddListing from '../../components/section-components/add-listing';
 
 const LendingEN = (props) => {
-    const script = useSelector(selectScript)
-
-    const history = useHistory()
-
-    const { sendRequest } = useHttpClient()
-
-    const submitLendingHandler = async (values) => {
-        try {
-            const responseData = await sendRequest(
-                "lending/create-lending",
-                "POST",
-                JSON.stringify({
-                    name: values.name,
-                    surname: values.surname,
-                    phone: values.phone,
-                    email: values.email,
-                    description: values.description
-                }),
-                {
-                    "Content-Type": "application/json",
-                }
-            );
-            props.setSuccess(
-                <Success heading={script.viewing[17]} message={script.viewing[18]} onClose={() => { props.setSuccess(null) }} />
-            );
-            history.push("/");
-        } catch (err) { }
-    }
-
     return <div>
         <Navbar />
         <PageHeader headertitle='Give out your room' subheader='Lending' />

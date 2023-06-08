@@ -211,12 +211,14 @@
 ---------------------------------------------------- */
 @font-face {
   font-family: ArialNova;
-  src: url(/assets/fonts/ArialNova-Light.woff2) format("woff2"), url(/assets/fonts/ArialNova-Light.ttf) format("truetype");
+  src: url(/assets/fonts/ArialNova-Light.woff2) format("woff2"),
+    url(/assets/fonts/ArialNova-Light.ttf) format("truetype");
 }
 
 @font-face {
   font-family: ArialNovaBold;
-  src: url(/assets/fonts/ArialNovaCond-Bold.woff2) format("woff2"), url(/assets/fonts/ArialNovaCond-Bold.ttf) format("truetype");
+  src: url(/assets/fonts/ArialNovaCond-Bold.woff2) format("woff2"),
+    url(/assets/fonts/ArialNovaCond-Bold.ttf) format("truetype");
 }
 
 :root {
@@ -1481,6 +1483,16 @@ ul {
 .footer-widget .table td,
 .footer-widget .table th {
   padding: 0.5rem !important;
+}
+
+.preview-small {
+  height: 80px;
+  margin-bottom: 15px;
+}
+@media only screen and (max-width: 1000px) {
+  .preview-small {
+    height: 60px;
+  }
 }
 
 /* ----------------------------------------------------
@@ -5192,7 +5204,6 @@ ul.wp-block-latest-posts.is-grid.alignwide {
   -ms-flex-align: center;
   align-items: center;
   position: relative;
-
 }
 
 @media (max-width: 767px) {
@@ -12772,9 +12783,9 @@ blockquote::before {
 }
 @media (max-width: 991px) {
   .rotate-arrow {
-  transform: rotate(90deg);
-  font-size: 20px;
-  margin-bottom: 30px;
+    transform: rotate(90deg);
+    font-size: 20px;
+    margin-bottom: 30px;
   }
 }
 
@@ -12785,14 +12796,14 @@ blockquote::before {
 
 @media (max-width: 767px) {
   .rotate-arrow-2 {
-  transform: rotate(90deg);
-  font-size: 20px;
-  margin-bottom: 30px;
-}
+    transform: rotate(90deg);
+    font-size: 20px;
+    margin-bottom: 30px;
+  }
 }
 
 @media (max-width: 991px) {
-    .service-description {
+  .service-description {
     text-align: center;
   }
 }
@@ -14782,7 +14793,7 @@ input.cart-plus-minus-box {
     About Us Area
 ---------------------------------------------------- */
 @media (max-width: 992px) {
-    .about-img-section {
+  .about-img-section {
     flex-direction: column-reverse !important;
   }
   .about-img {
@@ -14908,7 +14919,8 @@ input.cart-plus-minus-box {
 .about-us-info-wrap {
   position: relative;
 }
-.about-us-info-wrap p, .ltn__list-item-half li {
+.about-us-info-wrap p,
+.ltn__list-item-half li {
   font-size: 18px;
 }
 .about-us-info-wrap .btn-wrapper {
