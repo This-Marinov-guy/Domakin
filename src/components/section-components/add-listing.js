@@ -247,7 +247,8 @@ const AddListing = (props) => {
                                                         <input type="file" id="myFile" name="filename" multiple onInput={inputHandler}
                                                             className="btn theme-btn-3 mb-10" /><br />
                                                         <p>
-                                                            <small>* At least 3 images are required.</small><br />
+                                                            <small>* Submit at least 3 images and no more than 10</small><br />
+                                                            <small>* Extra images will not be received</small><br />
                                                             <small>* Supported formats are jpg, jpeg and png</small><br />
                                                         </p>
                                                         {!isValid && (
