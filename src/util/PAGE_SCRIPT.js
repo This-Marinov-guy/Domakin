@@ -116,7 +116,7 @@ const BG = {
             location: 'Visvliet, Netherlands',
             description: ['Стая за двама в споделена къща на 20 км от Гроьнинген. Къщата се държи от възрастна португалска двойка. В цената са включени всички консумативи', 'Споделя се хол, баня и тоалетна', 'Договорът е за 12 месеца', 'Налична от 1ви август'],
             main_image: "assets/img/properties/1.jpg",
-            images: ['assets/img/properties/19.jpg', 'assets/img/properties/20.jpg', 'assets/img/properties/21.jpg','assets/img/properties/2.jpg', 'assets/img/properties/3.jpg', 'assets/img/properties/4.jpg', 'assets/img/properties/5.jpg', 'assets/img/properties/6.jpg', 'assets/img/properties/8.jpg', 'assets/img/properties/9.jpg', 'assets/img/properties/10.jpg', 'assets/img/properties/14.jpg', 'assets/img/properties/15.jpg', 'assets/img/properties/16.jpg', 'assets/img/properties/11.jpg', 'assets/img/properties/12.jpg', 'assets/img/properties/13.jpg'],
+            images: ['assets/img/properties/19.jpg', 'assets/img/properties/20.jpg', 'assets/img/properties/21.jpg', 'assets/img/properties/2.jpg', 'assets/img/properties/3.jpg', 'assets/img/properties/4.jpg', 'assets/img/properties/5.jpg', 'assets/img/properties/6.jpg', 'assets/img/properties/8.jpg', 'assets/img/properties/9.jpg', 'assets/img/properties/10.jpg', 'assets/img/properties/14.jpg', 'assets/img/properties/15.jpg', 'assets/img/properties/16.jpg', 'assets/img/properties/11.jpg', 'assets/img/properties/12.jpg', 'assets/img/properties/13.jpg'],
         },
         {
             id: '1',
@@ -317,7 +317,7 @@ const EN = {
             location: 'Visvliet, Netherlands',
             description: ['Room for two in a shared house just 20km from Groningen. The house is owned by a Portogues couple. Price includes all bills', 'Contract is for 12 months', 'Available from 1st of August'],
             main_image: "assets/img/properties/1.jpg",
-            images: ['assets/img/properties/19.jpg', 'assets/img/properties/20.jpg', 'assets/img/properties/21.jpg','assets/img/properties/2.jpg', 'assets/img/properties/3.jpg', 'assets/img/properties/4.jpg', 'assets/img/properties/5.jpg', 'assets/img/properties/6.jpg', 'assets/img/properties/8.jpg', 'assets/img/properties/9.jpg', 'assets/img/properties/10.jpg', 'assets/img/properties/14.jpg', 'assets/img/properties/15.jpg', 'assets/img/properties/16.jpg', 'assets/img/properties/11.jpg', 'assets/img/properties/12.jpg', 'assets/img/properties/13.jpg'],
+            images: ['assets/img/properties/19.jpg', 'assets/img/properties/20.jpg', 'assets/img/properties/21.jpg', 'assets/img/properties/2.jpg', 'assets/img/properties/3.jpg', 'assets/img/properties/4.jpg', 'assets/img/properties/5.jpg', 'assets/img/properties/6.jpg', 'assets/img/properties/8.jpg', 'assets/img/properties/9.jpg', 'assets/img/properties/10.jpg', 'assets/img/properties/14.jpg', 'assets/img/properties/15.jpg', 'assets/img/properties/16.jpg', 'assets/img/properties/11.jpg', 'assets/img/properties/12.jpg', 'assets/img/properties/13.jpg'],
         },
         {
             id: '1',
@@ -329,7 +329,7 @@ const EN = {
             main_image: "assets/img/properties/7.jpg",
             images: ['assets/img/properties/2.jpg', 'assets/img/properties/3.jpg', 'assets/img/properties/4.jpg', 'assets/img/properties/5.jpg', 'assets/img/properties/6.jpg', 'assets/img/properties/8.jpg', 'assets/img/properties/9.jpg', 'assets/img/properties/14.jpg', 'assets/img/properties/15.jpg', 'assets/img/properties/16.jpg', 'assets/img/properties/11.jpg', 'assets/img/properties/12.jpg', 'assets/img/properties/13.jpg'],
         },
-       
+
     ],
     home: [
         'Company for accommodation searching',
@@ -352,42 +352,42 @@ const EN = {
     ],
     team: [
         'Team',
-        'Property Agents',
+        'Propert Agents',
         {
             name: 'Lazar Popov',
-            position: 'Estate Viewing Agent',
-            about: '26, Artificial Intelligence student',
-            aboutExtra: ''
+            position: 'Viewing Agent',
+            about: '26, Bachelor in Artificial Intelligence',
+            aboutExtra: `Hello, my name is Lazar. I'm from Ruse, but I have been living in Groningen for five years now. I have a master's degree in "Artificial Intelligence". I am familiar with the city and have experience in searching for and finding rental properties. My interests include combat sports and artificial intelligence. Besides being an agent at Domakin.nl, I am also the president and co-founder of the non-profit student organization Bulgarian Society Groningen. I would be happy to assist you!`
         },
         {
             name: 'Sava Popov',
-            position: 'Estate Viewing Agent',
-            about: '20, Creative Media & Game Technologies',
-            aboutExtra: ''
+            position: 'Viewing Agent',
+            about: '20, Creative Media student',
+            aboutExtra: `Hello, I'm Sava and I'm a student in the "Creative Media and Technologies" program in Groningen. I have spent a lot of my summer time before coming to this town in searching for apartments, going on viewings, and asking acquaintances for advice. After numerous unsuccessful attempts, I finally managed to find a place, and I believe I now have a good understanding of the mistakes and successes in apartment hunting. I would be glad to help anyone who is in a similar situation!`
         },
         {
             name: 'Konstantin Sonev',
-            position: 'Estate Viewing Agent',
-            about: '21, Creative Media & Game Technologies',
-            aboutExtra: ''
+            position: 'Viewing Agent',
+            about: '21, Creative Media student',
+            aboutExtra: `Hello, my name is Konstantin, and I study "Creative Media and Technologies" in Groningen. At the end of the previous academic year, I had to search for a new apartment. It was extremely difficult to find a room in the city, and I was satisfied when I finally found a place after multiple unsuccessful attempts. There are many difficulties in finding apartments due to the high influx of students and high rents. We know that many of you have the desire to study in the city and face the same difficulties, especially when you are not in the city. That's why we at Domakin.nl want to help by providing our services. I look forward to working together!`
         },
         {
             name: 'Dimitar Stamatov',
-            position: 'Estate Viewing Agent',
+            position: 'Viewing Agent',
             about: '22, International Business student',
-            aboutExtra: ''
+            aboutExtra: `Hello, my name is Dimitar Stamatov, I'm 22 years old, and I'm a third-year student in the Netherlands. I study business and work as a bartender, and in my free time, I train in combat sports and engage in music. Like every student in the Netherlands, I know how difficult it is to find accommodation, especially in the first year. That's why I would be happy to assist any future student with my work as an agent at Domakin.nl.`
         },
         {
             name: 'Vladislav Marinov',
             position: 'IT Manager',
             about: '22, International Business student',
-            aboutExtra: ''
+            aboutExtra: ` Hello, my name is Vladislav, and I'm a business student in London, England. Although in a different country, I am also familiar with the problems a student can encounter when searching for accommodation. Stress, despair, and anger are just a few emotions I have experienced personally while looking for an apartment in London, and I know the difficulties one can face, especially when searching remotely. It is a pleasure for me to work on this platform, which I believe will help many people!`
         },
         {
             name: 'Radost Lozanova',
-            position: 'Creative Designer',
+            position: 'Design Manager',
             about: '22, International Business student',
-            aboutExtra: ''
+            aboutExtra: `Hello! I'm Radost, a creative director and co-founder of Bulgarian Society Groningen. As a student, I have lived in several countries, which involved frequent moving. As part of the Domakin.nl team, I would be happy to help more Bulgarians find their new home in the Netherlands.`
         },
         'Agents',
         'Marketing',
