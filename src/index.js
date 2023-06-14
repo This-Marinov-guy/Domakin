@@ -45,9 +45,9 @@ const Root = () => {
             case 'bg':
                 dispatch(setScript(BG))
                 break;
-            // case 'en':
-            //     dispatch(setScript(EN))
-            //     break;
+            case 'en':
+                dispatch(setScript(EN))
+                break;
             default:
                 dispatch(setScript(BG))
                 break;

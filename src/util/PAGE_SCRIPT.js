@@ -92,7 +92,11 @@ const BG = {
         `1) Изберете имот от секцията по-долу и кликнете 'Избери'`,
         '2) Попълнете формата, която ще се появи при селектиран имот',
         '3) Изчакайте връзка с наш агент за допълнителна информация за имота',
-        '4) Завършете сделката с нашия агент'
+        '4) Завършете сделката с нашия агент',
+        'Услуги',
+        'Предлагани имоти',
+        'на месец',
+        'избери'
     ],
     lending: [
         'Прехвърли стар договор',
@@ -112,7 +116,7 @@ const BG = {
             location: 'Visvliet, Netherlands',
             description: ['Стая за двама в споделена къща на 20 км от Гроьнинген. Къщата се държи от възрастна португалска двойка. В цената са включени всички консумативи', 'Споделя се хол, баня и тоалетна', 'Договорът е за 12 месеца', 'Налична от 1ви август'],
             main_image: "assets/img/properties/1.jpg",
-            images: ['assets/img/properties/2.jpg', 'assets/img/properties/3.jpg', 'assets/img/properties/4.jpg', 'assets/img/properties/5.jpg', 'assets/img/properties/6.jpg', 'assets/img/properties/8.jpg', 'assets/img/properties/9.jpg', 'assets/img/properties/10.jpg'],
+            images: ['assets/img/properties/19.jpg', 'assets/img/properties/20.jpg', 'assets/img/properties/21.jpg','assets/img/properties/2.jpg', 'assets/img/properties/3.jpg', 'assets/img/properties/4.jpg', 'assets/img/properties/5.jpg', 'assets/img/properties/6.jpg', 'assets/img/properties/8.jpg', 'assets/img/properties/9.jpg', 'assets/img/properties/10.jpg', 'assets/img/properties/14.jpg', 'assets/img/properties/15.jpg', 'assets/img/properties/16.jpg', 'assets/img/properties/11.jpg', 'assets/img/properties/12.jpg', 'assets/img/properties/13.jpg'],
         },
         {
             id: '1',
@@ -122,7 +126,7 @@ const BG = {
             location: 'Visvliet, Netherlands',
             description: ['Единична стая в споделена къща на 20 км от Грьонинген. Къщата се държи от възрастна португалска двойка. В цената са включени всички консумативи.', 'Споделя се хол, баня и тоалетна', 'Договорът е за 12 месеца', 'Налична от 1ви август'],
             main_image: "assets/img/properties/7.jpg",
-            images: ['assets/img/properties/2.jpg', 'assets/img/properties/3.jpg', 'assets/img/properties/5.jpg'],
+            images: ['assets/img/properties/2.jpg', 'assets/img/properties/3.jpg', 'assets/img/properties/4.jpg', 'assets/img/properties/5.jpg', 'assets/img/properties/6.jpg', 'assets/img/properties/8.jpg', 'assets/img/properties/9.jpg', 'assets/img/properties/14.jpg', 'assets/img/properties/15.jpg', 'assets/img/properties/16.jpg', 'assets/img/properties/11.jpg', 'assets/img/properties/12.jpg', 'assets/img/properties/13.jpg'],
         },
     ],
     home: [
@@ -289,38 +293,43 @@ const EN = {
         `1) Choose a property from the list below and click 'Select'`,
         '2) Fill the form that will appear once a property has been selected',
         '3) Wait to be contacted by our agent to finilize the deal',
-        '4) Finish the deal with our agent'
+        '4) Finish the deal with our agent',
+        'Services',
+        'Properties',
+        'per month',
+        'select'
     ],
     lending: [
-        'Прехвърли стар договор',
-        'Прехвърляне',
-        'Прехвърлете стария си договор чрез нас',
-        'Предлагаме опцията да си прехвълите оставащия договора на намерен от нас клиент. За тази цел, Вашият договор трябва да позволява прехвърляне и съгласие на наемодателя. За да стартирате процедурата, моля изпълнете следни стъпки: ',
-        '1) Попълнете бланката по-долу',
-        '2) Изчакайте обратна връзка с наш агент',
-        '3) Заедно разгледайте договора Ви и завършете сделката',
+        'Transfer and old contract',
+        'Transfering',
+        'Transfer your old contract through us',
+        'We offer you to transfer the remain of your contract to one of our clients. In order to achieve this, your contract should allow for such execution and your landlord should be informed. To start, simply follow the steps below: ',
+        '1) Fill the form',
+        '2) Wait for our agent to contact you',
+        '3) Together check the contract and finilize the service',
     ],
     FOR_RENT: [
         {
             id: '0',
-            status: 'наемане',
+            status: 'rent',
             price: 600,
-            type: 'Стая за двама',
+            type: 'Double Room',
             location: 'Visvliet, Netherlands',
-            description: ['Стая за двама в споделена къща на 20 км от Гроьнинген. Къщата се държи от възрастна португалска двойка. В цената са включени всички консумативи', 'Споделя се хол, баня и тоалетна', 'Договорът е за 12 месеца', 'Налична от 1ви август'],
+            description: ['Room for two in a shared house just 20km from Groningen. The house is owned by a Portogues couple. Price includes all bills', 'Contract is for 12 months', 'Available from 1st of August'],
             main_image: "assets/img/properties/1.jpg",
-            images: ['assets/img/properties/2.jpg', 'assets/img/properties/3.jpg', 'assets/img/properties/4.jpg', 'assets/img/properties/5.jpg', 'assets/img/properties/6.jpg', 'assets/img/properties/8.jpg', 'assets/img/properties/9.jpg', 'assets/img/properties/10.jpg'],
+            images: ['assets/img/properties/19.jpg', 'assets/img/properties/20.jpg', 'assets/img/properties/21.jpg','assets/img/properties/2.jpg', 'assets/img/properties/3.jpg', 'assets/img/properties/4.jpg', 'assets/img/properties/5.jpg', 'assets/img/properties/6.jpg', 'assets/img/properties/8.jpg', 'assets/img/properties/9.jpg', 'assets/img/properties/10.jpg', 'assets/img/properties/14.jpg', 'assets/img/properties/15.jpg', 'assets/img/properties/16.jpg', 'assets/img/properties/11.jpg', 'assets/img/properties/12.jpg', 'assets/img/properties/13.jpg'],
         },
         {
             id: '1',
-            status: 'наемане',
+            status: 'rent',
             price: 400,
-            type: 'Единична стая',
+            type: 'Single Room',
             location: 'Visvliet, Netherlands',
-            description: ['Единична стая в споделена къща на 20 км от Грьонинген. Къщата се държи от възрастна португалска двойка. В цената са включени всички консумативи.', 'Споделя се хол, баня и тоалетна', 'Договорът е за 12 месеца', 'Налична от 1ви август'],
+            description: ['Room for one in a shared house just 20km from Groningen. The house is owned by a Portogues couple. Price includes all bills', 'Contract is for 12 months', 'Available from 1st of August'],
             main_image: "assets/img/properties/7.jpg",
-            images: ['assets/img/properties/2.jpg', 'assets/img/properties/3.jpg', 'assets/img/properties/5.jpg'],
+            images: ['assets/img/properties/2.jpg', 'assets/img/properties/3.jpg', 'assets/img/properties/4.jpg', 'assets/img/properties/5.jpg', 'assets/img/properties/6.jpg', 'assets/img/properties/8.jpg', 'assets/img/properties/9.jpg', 'assets/img/properties/14.jpg', 'assets/img/properties/15.jpg', 'assets/img/properties/16.jpg', 'assets/img/properties/11.jpg', 'assets/img/properties/12.jpg', 'assets/img/properties/13.jpg'],
         },
+       
     ],
     home: [
         'Company for accommodation searching',
@@ -346,7 +355,7 @@ const EN = {
         'Property Agents',
         {
             name: 'Lazar Popov',
-            position: 'Estate Viewing Agent/ Marketing Agent',
+            position: 'Estate Viewing Agent',
             about: '26, Artificial Intelligence student',
             aboutExtra: ''
         },
@@ -364,13 +373,13 @@ const EN = {
         },
         {
             name: 'Dimitar Stamatov',
-            position: 'Estate Viewing Agent/Marketing Agent',
+            position: 'Estate Viewing Agent',
             about: '22, International Business student',
             aboutExtra: ''
         },
         {
             name: 'Vladislav Marinov',
-            position: 'IT Specialis',
+            position: 'IT Manager',
             about: '22, International Business student',
             aboutExtra: ''
         },

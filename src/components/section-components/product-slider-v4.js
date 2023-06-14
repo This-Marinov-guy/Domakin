@@ -7,6 +7,8 @@ import RequestForm from './request-form';
 const PropertyItem = (props) => {
 	let publicUrl = process.env.PUBLIC_URL + '/'
 
+	const script = useSelector(selectScript)
+
 	return (
 		<Fragment>
 			<div className="col-xl-4 col-sm-6 col-12">
@@ -33,7 +35,7 @@ const PropertyItem = (props) => {
 								<ul>
 									<li>
 										{props.images.map((value, index) => {
-											return <Link key={index} to={publicUrl + value} data-rel={`lightcase:${props.description[0]}`}>{index === 0 && <Fragment><i className="fas fa-camera"/> {props.images.length + 1} </Fragment>}</Link>
+											return <Link key={index} to={publicUrl + value} data-rel={`lightcase:${props.description[0]}`}>{index === 0 && <Fragment><i className="fas fa-camera" /> {props.images.length + 1} </Fragment>}</Link>
 										})}
 									</li>
 								</ul>
@@ -42,7 +44,7 @@ const PropertyItem = (props) => {
 					</div>
 					<div className="product-info">
 						<div className="product-price">
-							<span>&euro;{props.price}<label>/ на месец</label></span>
+							<span>&euro;{props.price}<label>/ {script.renting[10]}</label></span>
 						</div>
 						<h2 className="product-title go-top">{props.type}</h2>
 						<ul className="product-description">
@@ -52,7 +54,7 @@ const PropertyItem = (props) => {
 					<div className="product-info-bottom">
 						<div className="product-hover-action m--a">
 							<button id={props.description[0] + ' ' + props.location} onClick={(event) => { props.setSelectedProperty(event.target.id); }} className={(props.selectedProperty === props.description[0] + ' ' + props.location ? "theme-btn-1" : "theme-btn-2") + " btn btn-effect-1 text-uppercase button-renting"} title="Quick View" data-bs-toggle="modal" data-bs-target="#quick_view_modal">
-								{props.selectedProperty === props.description[0] + ' ' + props.location ? <span><i style={{ fontSize: "15px" }} className="fa-solid fa-check icon"></i></span> : 'избери'}
+								{props.selectedProperty === props.description[0] + ' ' + props.location ? <span><i style={{ fontSize: "15px" }} className="fa-solid fa-check icon"></i></span> : script.renting[11]}
 							</button>
 						</div>
 					</div>
@@ -70,8 +72,8 @@ const ProductSliderV4 = (props) => {
 			<div className="row">
 				<div className="col-lg-12">
 					<div className="section-title-area ltn__section-title-2--- text-center">
-						<h6 className="section-subtitle section-subtitle-2 ltn__secondary-color">Услуги</h6>
-						<h1 className="section-title">Предлагани имоти</h1>
+						<h6 className="section-subtitle section-subtitle-2 ltn__secondary-color">{script.renting[8]}</h6>
+						<h1 className="section-title">{script.renting[9]}</h1>
 					</div>
 				</div>
 			</div>
