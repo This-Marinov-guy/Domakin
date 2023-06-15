@@ -116,7 +116,7 @@ const BG = {
             location: 'Visvliet, Netherlands',
             description: ['Стая за двама в споделена къща на 20 км от Гроьнинген. Къщата се държи от възрастна португалска двойка. В цената са включени всички консумативи', 'Споделя се хол, баня и тоалетна', 'Договорът е за 12 месеца', 'Налична от 1ви август'],
             main_image: "assets/img/properties/1.jpg",
-            images: ['assets/img/properties/19.jpg', 'assets/img/properties/20.jpg', 'assets/img/properties/21.jpg', 'assets/img/properties/2.jpg', 'assets/img/properties/3.jpg', 'assets/img/properties/4.jpg', 'assets/img/properties/5.jpg', 'assets/img/properties/6.jpg', 'assets/img/properties/8.jpg', 'assets/img/properties/9.jpg', 'assets/img/properties/10.jpg', 'assets/img/properties/14.jpg', 'assets/img/properties/15.jpg', 'assets/img/properties/16.jpg', 'assets/img/properties/11.jpg', 'assets/img/properties/12.jpg', 'assets/img/properties/13.jpg'],
+            images: ['assets/img/properties/21.jpg', 'assets/img/properties/18.jpg', 'assets/img/properties/3.jpg', 'assets/img/properties/4.jpg', 'assets/img/properties/5.jpg', 'assets/img/properties/6.jpg', 'assets/img/properties/8.jpg', 'assets/img/properties/9.jpg', 'assets/img/properties/10.jpg', 'assets/img/properties/14.jpg', 'assets/img/properties/15.jpg', 'assets/img/properties/16.jpg', 'assets/img/properties/11.jpg', 'assets/img/properties/12.jpg', 'assets/img/properties/13.jpg'],
         },
         {
             id: '1',
@@ -126,7 +126,7 @@ const BG = {
             location: 'Visvliet, Netherlands',
             description: ['Единична стая в споделена къща на 20 км от Грьонинген. Къщата се държи от възрастна португалска двойка. В цената са включени всички консумативи.', 'Споделя се хол, баня и тоалетна', 'Договорът е за 12 месеца', 'Налична от 1ви август'],
             main_image: "assets/img/properties/7.jpg",
-            images: ['assets/img/properties/2.jpg', 'assets/img/properties/3.jpg', 'assets/img/properties/4.jpg', 'assets/img/properties/5.jpg', 'assets/img/properties/6.jpg', 'assets/img/properties/8.jpg', 'assets/img/properties/9.jpg', 'assets/img/properties/14.jpg', 'assets/img/properties/15.jpg', 'assets/img/properties/16.jpg', 'assets/img/properties/11.jpg', 'assets/img/properties/12.jpg', 'assets/img/properties/13.jpg'],
+            images: ['assets/img/properties/19.jpg', 'assets/img/properties/20.jpg','assets/img/properties/2.jpg', 'assets/img/properties/3.jpg', 'assets/img/properties/14.jpg', 'assets/img/properties/15.jpg', 'assets/img/properties/16.jpg', 'assets/img/properties/11.jpg', 'assets/img/properties/12.jpg', 'assets/img/properties/13.jpg'],
         },
     ],
     home: [
@@ -140,7 +140,7 @@ const BG = {
         'Услуги',
         'Нашите услуги',
         'Извършване на огледи',
-        'Нашите агенти извършват огледите вместо Вас, като спазват всички Ваши изисквания',
+        'Нашите агенти извършват огледите вместо Вас, като спазват в    сички Ваши изисквания',
         'Към услугата',
         'Наемане на квартира',
         'Разгледайте нашите предложения в околността и се свържете с нас, за да получите повече информация',
@@ -317,7 +317,7 @@ const EN = {
             location: 'Visvliet, Netherlands',
             description: ['Room for two in a shared house just 20km from Groningen. The house is owned by a Portogues couple. Price includes all bills', 'Contract is for 12 months', 'Available from 1st of August'],
             main_image: "assets/img/properties/1.jpg",
-            images: ['assets/img/properties/19.jpg', 'assets/img/properties/20.jpg', 'assets/img/properties/21.jpg', 'assets/img/properties/2.jpg', 'assets/img/properties/3.jpg', 'assets/img/properties/4.jpg', 'assets/img/properties/5.jpg', 'assets/img/properties/6.jpg', 'assets/img/properties/8.jpg', 'assets/img/properties/9.jpg', 'assets/img/properties/10.jpg', 'assets/img/properties/14.jpg', 'assets/img/properties/15.jpg', 'assets/img/properties/16.jpg', 'assets/img/properties/11.jpg', 'assets/img/properties/12.jpg', 'assets/img/properties/13.jpg'],
+            images: ['assets/img/properties/21.jpg', 'assets/img/properties/18.jpg', 'assets/img/properties/3.jpg', 'assets/img/properties/4.jpg', 'assets/img/properties/5.jpg', 'assets/img/properties/6.jpg', 'assets/img/properties/8.jpg', 'assets/img/properties/9.jpg', 'assets/img/properties/10.jpg', 'assets/img/properties/14.jpg', 'assets/img/properties/15.jpg', 'assets/img/properties/16.jpg', 'assets/img/properties/11.jpg', 'assets/img/properties/12.jpg', 'assets/img/properties/13.jpg'],
         },
         {
             id: '1',
@@ -327,7 +327,7 @@ const EN = {
             location: 'Visvliet, Netherlands',
             description: ['Room for one in a shared house just 20km from Groningen. The house is owned by a Portogues couple. Price includes all bills', 'Contract is for 12 months', 'Available from 1st of August'],
             main_image: "assets/img/properties/7.jpg",
-            images: ['assets/img/properties/2.jpg', 'assets/img/properties/3.jpg', 'assets/img/properties/4.jpg', 'assets/img/properties/5.jpg', 'assets/img/properties/6.jpg', 'assets/img/properties/8.jpg', 'assets/img/properties/9.jpg', 'assets/img/properties/14.jpg', 'assets/img/properties/15.jpg', 'assets/img/properties/16.jpg', 'assets/img/properties/11.jpg', 'assets/img/properties/12.jpg', 'assets/img/properties/13.jpg'],
+            images: ['assets/img/properties/19.jpg', 'assets/img/properties/20.jpg','assets/img/properties/2.jpg', 'assets/img/properties/3.jpg', 'assets/img/properties/14.jpg', 'assets/img/properties/15.jpg', 'assets/img/properties/16.jpg', 'assets/img/properties/11.jpg', 'assets/img/properties/12.jpg', 'assets/img/properties/13.jpg'],
         },
 
     ],
