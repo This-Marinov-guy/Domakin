@@ -24,7 +24,7 @@ const FeaturesV1 = (props) => {
 			</div>
 			<div className="row ltn__custom-gutter--- justify-content-center go-top">
 				<div className="col-lg-4 col-sm-6 col-12">
-					<Link to="services/viewing">
+					<Link to="/services/viewing">
 						<div className="ltn__feature-item ltn__feature-item-6 text-center bg-white  box-shadow-1">
 							<div className="ltn__feature-icon">
 								<img src={publicUrl + "assets/img/icons/icon-img/23.png"} alt="#" />
@@ -37,7 +37,7 @@ const FeaturesV1 = (props) => {
 					</Link>
 				</div>
 				<div className="col-lg-4 col-sm-6 col-12">
-					<Link to="services/renting">
+					<Link to="/services/renting">
 						<div className="ltn__feature-item ltn__feature-item-6 text-center bg-white  box-shadow-1 active">
 							<div className="ltn__feature-icon">
 								<img src={publicUrl + "assets/img/icons/icon-img/22.png"} alt="#" />
@@ -51,7 +51,7 @@ const FeaturesV1 = (props) => {
 					</Link>
 				</div>
 				<div className="col-lg-4 col-sm-6 col-12">
-					<Link to="/contact">
+					<Link to="/services/give-a-room">
 						<div className="ltn__feature-item ltn__feature-item-6 text-center bg-white  box-shadow-1">
 							<div className="ltn__feature-icon">
 								<img src={publicUrl + "assets/img/icons/icon-img/21.png"} alt="#" />

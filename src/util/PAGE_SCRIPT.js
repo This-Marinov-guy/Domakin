@@ -144,7 +144,7 @@ const BG = {
         'Към услугата',
         'Наемане на квартира',
         'Разгледайте нашите предложения в околността и се свържете с нас, за да получите повече информация',
-        'Търсене на нов съквартирант',
+        'Отдай стая',
         'Услуги',
         'Търсене на съквартирант / Прехвърляне на стар договор'
     ],
@@ -346,7 +346,7 @@ const EN = {
         'Check it out',
         'Rent an apartment',
         'Check the properties on our site and make an inquery for more information',
-        'Search for a flatmate',
+        'List a room',
         'Services',
         'Search for a new flatmate / Transfer your contract'
     ],
