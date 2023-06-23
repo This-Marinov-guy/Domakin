@@ -2,7 +2,7 @@ import React from "react";
 import Modal from "react-bootstrap/Modal";
 
 const ModalWindow = (props) => {
-  
+
   if (props.freeze) {
     window.onscroll = function () {
       window.scrollTo({ top: 0, left: 0, behavior: "smooth" });

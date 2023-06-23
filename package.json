@@ -65,7 +65,7 @@
     "react-accessible-accordion": "^3.3.5",
     "react-animate-on-scroll": "^2.1.5",
     "react-app-polyfill": "^1.0.6",
-    "react-bootstrap": "^2.7.2",
+    "react-bootstrap": "^2.8.0",
     "react-countup": "^4.4.0",
     "react-dev-utils": "^9.1.0",
     "react-dom": "^18.0.0",

@@ -47,6 +47,9 @@
     Gutter Code 
 ==================================================== */
 
+.ma {
+  margin: auto;
+}
 .notification_panel {
   position: fixed;
   top: 5%;
