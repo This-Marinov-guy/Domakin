@@ -15,8 +15,6 @@ const AddListing = (props) => {
     const [previewUrls, setPreviewUrls] = useState([]);
     const [isValid, setIsValid] = useState(true);
 
-    const script = useSelector(selectScript);
-
     const history = useHistory()
 
     const { loading, sendRequest } = useHttpClient()
@@ -269,7 +267,7 @@ const AddListing = (props) => {
                                         <div className="btn-wrapper text-center mt-40">
                                             <button disabled={loading || files.length === 0 || !isValid} className="btn theme-btn-1 btn-effect-1 text-uppercase" type="submit">{loading ? <Spinner animation="border" />
                                                 : 'send room'}</button>
-                                            {files.length === 0 && <p><small>* Waiting for images</small></p>}
+                                            {files.length === 0 && <p><small>* Don't forget images</small></p>}
                                         </div>
                                     </div>
                                 </div>
