@@ -8,15 +8,17 @@ import CallToActionV1 from '../../components/section-components/call-to-action-v
 import Footer from '../../components/global-components/footer';
 import { useSelector } from 'react-redux';
 import { selectScript } from '../../redux/language';
+import Feedbacks from '../../components/global-components/feedbacks';
 
 const Contact = () => {
     const script = useSelector(selectScript)
 
     return <div>
         <Navbar />
-        <PageHeader headertitle={script.contact[0]} subheader={script.contact[1]}  />
+        <PageHeader headertitle={script.contact[0]} subheader={script.contact[1]} />
         <ContactInfo />
         <ContactForm />
+        <Feedbacks />
         <Footer />
     </div>
 }

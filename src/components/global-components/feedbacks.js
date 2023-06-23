@@ -16,7 +16,7 @@ const Feedbacks = (props) => {
         const fetchFeedbacks = async () => {
             try {
                 const responseData = await sendRequest('feedback/get-feedbacks');
-                setFeedbacks(responseData.feedbacks)
+                setFeedbacks(responseData.feedbacks.filter(feedback => feedback.approved === true))
             } catch (err) {
 
             }
@@ -28,8 +28,8 @@ const Feedbacks = (props) => {
         <div className="row">
             <div className="col-lg-12">
                 <div className="section-title-area ltn__section-title-2--- text-center">
-                    <h6 className="section-subtitle section-subtitle-2 ltn__secondary-color">{script.features[0]}</h6>
-                    <h1 className="section-title">{script.features[1]}</h1>
+                    <h6 className="section-subtitle section-subtitle-2 ltn__secondary-color">{script.feedbacks[1]}</h6>
+                    <h1 className="section-title">{script.feedbacks[2]}</h1>
                 </div>
             </div>
         </div>
@@ -38,11 +38,11 @@ const Feedbacks = (props) => {
                 <div className='text-center'>
                     <p>No feedbacks yet - Be the first!</p>
                 </div> :
-                <div>
+                <div className='feedback_display'>
                     {feedbacks.map((feedback, index) => {
-                        return <div key={index}>
-                            <p>{feedback.feedback}</p>
-                            <p>-{feedback.name}</p>
+                        return <div key={index} className={index % 2 === 0 ? 'feedback_left' : 'feedback_right'}>
+                            <p>"{feedback.feedback}"</p>
+                            <p>- {feedback.name}</p>
                         </div>
                     })}
                 </div>}

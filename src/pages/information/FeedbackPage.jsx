@@ -1,24 +1,23 @@
 import React from 'react';
 import Navbar from '../../components/global-components/navbar';
 import PageHeader from '../../components/global-components/page-header';
-import TeamDetails from '../../components/section-components/team-details';
 import Footer from '../../components/global-components/footer';
 import { useSelector } from 'react-redux';
 import { selectScript } from '../../redux/language';
 import Feedbacks from '../../components/global-components/feedbacks';
 
-const Agents = () => {
 
-  const script = useSelector(selectScript);
+const FeedbackPage = () => {
+
+    const script = useSelector(selectScript)
 
     return <div>
         <Navbar />
-        <PageHeader headertitle={script.team[0]} subheader={script.team[1]} />
-        <Feedbacks/>
-        <TeamDetails />
+        <PageHeader headertitle={script.feedbacks[0]} subheader={script.feedbacks[2]} />
+        <Feedbacks />
         <Footer />
     </div>
 }
 
-export default Agents
+export default FeedbackPage
 

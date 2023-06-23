@@ -17,6 +17,8 @@ const ErrorPage = lazy(() => import('./pages/ErrorPage'));
 //information
 const About = lazy(() => import('./pages/information/About'));
 const Contact = lazy(() => import('./pages/information/Contact'));
+const FeedbackPage = lazy(() => import('./pages/information/FeedbackPage'));
+
 
 //actions
 const Viewing = lazy(() => import('./pages/actions/Viewing'));
@@ -68,6 +70,7 @@ const Root = () => {
                     <Route exact path="/services" component={Services} />
 
                     <Route path="/about" component={About} />
+                    <Route path="/feedbacks" component={FeedbackPage} />
                     <Route path='/agents' component={Agents} />
                     <Route path="/contact" component={Contact} />
 

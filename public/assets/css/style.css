@@ -18177,6 +18177,42 @@ input.cart-plus-minus-box {
   display: none;
 }
 
+/* custom feedback form */
+.feedback_display{
+  display: flex;
+  flex-direction: column;
+  padding: 0 10px;
+}
+
+@media only screen and (min-width: 1000px) {
+  .feedback_display{
+    padding: 0 100px;
+  }
+}
+
+.feedback_left {
+  margin-top: 10px;
+  max-width: 50%;
+  word-break: break-word;
+  font-style: italic;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  align-self: flex-start;
+}
+
+.feedback_right{
+  margin-top: 10px;
+  max-width: 50%;
+  word-break: break-word;
+  font-style: italic;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  align-self: flex-end;
+
+}
+
 /* ----------------------------------------------------
     END
 ---------------------------------------------------- */

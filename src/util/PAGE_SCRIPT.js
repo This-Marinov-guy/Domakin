@@ -23,7 +23,8 @@ const BG = {
         'Помощ',
         'Контакти',
         'Наемане',
-        'Прехвърляне'
+        'Прехвърляне',
+        'Отзиви',
     ],
     about: [
         "Информация за нас",
@@ -196,6 +197,21 @@ const BG = {
         'Страницата не е намерена',
         'Страницата, която търсехте, не съществува! Възможно е да е преместена или изтрита.',
         ' Обратно към начало',
+    ],
+    feedbacks : [
+        'Остави отзив',
+        'За нас',
+        'Отзиви',
+        'Сподели Вашето впечатление от услугите ни',
+        'Име',
+        'Вашият отзив',
+        'Минимум 20 символа',
+        'Изпрати',
+        'Името е задължително',
+        'Не оставяйте отзива празен',
+        'Минимум 20 символа са нужни',
+        'Надвишихте лимита от 300 думи',
+        'Благодарим, очаквайте отзива ви да бъде одобрен съвсем скоро!'
     ]
 }
 
@@ -224,7 +240,8 @@ const EN = {
         'Support',
         'Contact us',
         'Renting',
-        'Lending'
+        'Lending',
+        'Feedbacks'
     ],
     about: [
         "About the company",
@@ -398,6 +415,21 @@ const EN = {
         'Page not found',
         'The page you are looking for does not exists',
         ' Back to home',
+    ],
+    feedbacks : [
+        'Leave feedback',
+        'About',
+        'Feedbacks',
+        'Share your experience for others to see',
+        'Name',
+        'Your Feedback',
+        'Minimum 20 characters',
+        'Send',
+        'Name is required',
+        'Do not leave empty',
+        'Please type at least 20 characters',
+        'You passed the 300 characters limit',
+        'Thank you, your feedback was sent to us for approval!'
     ]
 }
 
