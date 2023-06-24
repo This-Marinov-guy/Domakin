@@ -136,6 +136,10 @@ const Navbar = () => {
 										<Link to="/agents">{script.header[8]}</Link>
 										{/* <img src={publicUrl + "assets/img/home-demos/home-2.jpg"} alt="#" /> */}
 									</li>
+									<li>
+										<Link to="/feedbacks">{script.footer[13]}</Link>
+										{/* <img src={publicUrl + "assets/img/home-demos/home-2.jpg"} alt="#" /> */}
+									</li>
 
 								</ul>
 							</li>

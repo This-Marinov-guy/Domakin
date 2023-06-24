@@ -5,7 +5,7 @@ import Spinner from 'react-bootstrap/Spinner';
 import { useSelector } from 'react-redux'
 import { selectScript } from '../../redux/language'
 
-const Feedbacks = (props) => {
+const Feedbacks = () => {
     const [feedbacks, setFeedbacks] = useState([])
 
     const { loading, sendRequest } = useHttpClient()
@@ -36,13 +36,23 @@ const Feedbacks = (props) => {
         {loading ? <div className='text-center'><Spinner variant='primary' animation="border" /></div> :
             <div>{feedbacks.length === 0 ?
                 <div className='text-center'>
-                    <p>No feedbacks yet - Be the first!</p>
+                    <p>No feedbacks yet - A chance to be the first!</p>
                 </div> :
-                <div className='feedback_display'>
+                <div className="row ltn__testimonial-slider-5-active slick-arrow-1">
                     {feedbacks.map((feedback, index) => {
-                        return <div key={index} className={index % 2 === 0 ? 'feedback_left' : 'feedback_right'}>
-                            <p>"{feedback.feedback}"</p>
-                            <p>- {feedback.name}</p>
+                        return <div key={index} className="col-lg-4">
+                            <div className="ltn__testimonial-item ltn__testimonial-item-7">
+                                <div className="ltn__testimoni-info">
+                                    <p><i className="flaticon-left-quote-1" />
+                                        {feedback.feedback}</p>
+                                    <div className="ltn__testimoni-info-inner">
+
+                                        <div className="ltn__testimoni-name-designation">
+                                            <h5>{feedback.name}</h5>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     })}
                 </div>}
