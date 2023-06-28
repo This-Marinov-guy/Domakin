@@ -58,11 +58,9 @@ const AddEmergencyListing = (props) => {
             .required(),
         ownerDescription: yup.string().required(),
         location: yup.string().required(),
-        size: yup.string().required(),
-        period: yup.string().required(),
-        rent: yup.string().required(),
-        registration: yup.string().required(),
-        description: yup.string().required(),
+        maxPeriod: yup.string().required(),
+        price: yup.string().required(),
+        propertyDescription: yup.string().required(),
         dataTerms: yup.bool().required().oneOf([true], 'Terms must be accepted'),
     });
 
@@ -80,24 +78,23 @@ const AddEmergencyListing = (props) => {
                                     formData.append('surname', values.surname)
                                     formData.append('email', values.email)
                                     formData.append('phone', values.phone)
+                                    formData.append('ownerDescription', values.ownerDescription)
                                     formData.append('location', values.location)
-                                    formData.append('size', values.size)
-                                    formData.append('period', values.period)
-                                    formData.append('rent', values.rent)
-                                    formData.append('registration', values.registration)
-                                    formData.append('description', values.description)
+                                    formData.append('maxPeriod', values.maxPeriod)
+                                    formData.append('price', values.price)
+                                    formData.append('propertyDescription', values.propertyDescription)
                                     files.forEach((file) => {
-                                        let fileName = values.name + '_' + values.surname + '_' + values.location + '_' + values.rent + '_' + Math.random()
-                                        formData.append(`images`, fileName , file); 
+                                        let fileName = values.name + '_' + values.surname + '_' + values.location + '_' + values.price + '_' + Math.random()
+                                        formData.append(`images`, file, fileName);
                                     });
 
                                     const responseData = await sendRequest(
-                                        "lending/create-lending-international",
+                                        "emergency-renting/create-lending",
                                         "POST",
                                         formData,
                                     );
                                     props.setSuccess(
-                                        <Success heading='Thank you for the property' message='We will soon check your room and contact you to advance with the deal!' onClose={() => { props.setSuccess(null) }} />
+                                        <Success heading='Thank you for the property' message='We will soon check your room and post it on the page!' onClose={() => { props.setSuccess(null) }} />
                                     );
                                     history.push("/");
                                 } catch (err) { }
@@ -108,12 +105,11 @@ const AddEmergencyListing = (props) => {
                             surname: '',
                             email: '',
                             phone: '',
+                            ownerDescription: '',
                             location: '',
-                            size: '',
-                            period: '',
-                            rent: '',
-                            registration: '',
-                            description: '',
+                            maxPeriod: '',
+                            price: '',
+                            propertyDescription: '',
                             dataTerms: false,
                         }} >
                         {() => (
@@ -164,10 +160,10 @@ const AddEmergencyListing = (props) => {
                                         </div>
                                         <div className="col-md-12">
                                             <div className="input-item input-item-textarea">
-                                                <Field as='textarea' name="description" placeholder='Description of the room and the apartment (incl. shared facilities and number of tenants)' defaultValue={""} />
+                                                <Field as='textarea' name="ownerDescription" placeholder='Description of the room and the apartment (incl. shared facilities and number of tenants)' />
                                                 <ErrorMessage
                                                     className="error"
-                                                    name="description"
+                                                    name="ownerDescription"
                                                     component="div"
                                                 />
                                             </div>
@@ -189,31 +185,31 @@ const AddEmergencyListing = (props) => {
                                         </div>
                                         <div className="col-md-6">
                                             <div className="input-item input-item-name">
-                                                <Field type="text" name="period" placeholder='Period of availability' />
+                                                <Field type="text" name="maxPeriod" placeholder='Maximum Period of stay' />
                                             </div>
                                             <ErrorMessage
                                                 className="error"
-                                                name="period"
+                                                name="maxPeriod"
                                                 component="div"
                                             />
                                         </div>
                                         <div className="col-md-6">
                                             <div className="input-item input-item-name">
-                                                <Field type="text" name="rent" placeholder='Price per night' />
+                                                <Field type="text" name="price" placeholder='Price per night' />
                                             </div>
                                             <p className='correct'>*You can also lend it out of charge</p>
                                             <ErrorMessage
                                                 className="error"
-                                                name="rent"
+                                                name="price"
                                                 component="div"
                                             />
                                         </div>
                                         <div className="col-md-12">
                                             <div className="input-item input-item-textarea">
-                                                <Field as='textarea' name="description" placeholder='Description of the room and the apartment (incl. shared facilities and number of tenants)' defaultValue={""} />
+                                                <Field as='textarea' name="propertyDescription" placeholder='Description of the room and the apartment (incl. shared facilities and number of tenants)' />
                                                 <ErrorMessage
                                                     className="error"
-                                                    name="description"
+                                                    name="propertyDescription"
                                                     component="div"
                                                 />
                                             </div>
@@ -237,7 +233,7 @@ const AddEmergencyListing = (props) => {
                                                         <input type="file" id="myFile" name="filename" multiple onInput={inputHandler}
                                                             className="btn theme-btn-3 mb-10" /><br />
                                                         <p>
-                                                            <small>* Submit at least 3 images and no more than 10</small><br />
+                                                            <small>* Submit at least 3 images and no more than 6</small><br />
                                                             <small>* Extra images will not be received</small><br />
                                                             <small>* Supported formats are jpg, jpeg and png</small><br />
                                                         </p>

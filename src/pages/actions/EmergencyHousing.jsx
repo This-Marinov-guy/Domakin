@@ -22,27 +22,27 @@ const EmergencyHousing = (props) => {
     const history = useHistory()
 
     const submitRentingHandler = async (values) => {
-        // try {
-        //     const responseData = await sendRequest(
-        //         "renting/create-renting",
-        //         "POST",
-        //         JSON.stringify({
-        //             property: selectedProperty,
-        //             name: values.name,
-        //             surname: values.surname,
-        //             phone: values.phone,
-        //             email: values.email,
-        //             description: values.description
-        //         }),
-        //         {
-        //             "Content-Type": "application/json",
-        //         }
-        //     );
-        //     props.setSuccess(
-        //         <Success heading={script.viewing[17]} message={script.viewing[18]} onClose={() => { props.setSuccess(null) }} />
-        //     );
-        //     history.push("/");
-        // } catch (err) { }
+        try {
+            const responseData = await sendRequest(
+                "emergency-renting/create-renting",
+                "POST",
+                JSON.stringify({
+                    property: selectedProperty,
+                    name: values.name,
+                    surname: values.surname,
+                    phone: values.phone,
+                    email: values.email,
+                    description: values.description
+                }),
+                {
+                    "Content-Type": "application/json",
+                }
+            );
+            props.setSuccess(
+                <Success heading={script.viewing[17]} message={script.viewing[18]} onClose={() => { props.setSuccess(null) }} />
+            );
+            history.push("/");
+        } catch (err) { }
     }
     return <div>
         <Navbar />
@@ -122,7 +122,16 @@ const EmergencyHousing = (props) => {
         </div>
 
         {selectedWindow === 'Searching' &&
-            <ProSlider propertyList={[]} onSubmit={submitRentingHandler} selectedProperty={selectedProperty} setSelectedProperty={setSelectedProperty} />
+            <ProSlider propertyList={[{
+            id: '0',
+            status: 'rent',
+            price: 600,
+            type: 'Double Room',
+            location: 'Visvliet, Netherlands',
+            description: ['Room for two in a shared house just 20km from Groningen. The house is owned by a Portogues couple. Price includes all bills', 'Contract is for 12 months', 'Available from 1st of August'],
+            main_image: "assets/img/properties/1.jpg",
+            images: ['assets/img/properties/21.jpg', 'assets/img/properties/18.jpg', 'assets/img/properties/3.jpg', 'assets/img/properties/4.jpg', 'assets/img/properties/5.jpg', 'assets/img/properties/6.jpg', 'assets/img/properties/8.jpg', 'assets/img/properties/9.jpg', 'assets/img/properties/10.jpg', 'assets/img/properties/14.jpg', 'assets/img/properties/15.jpg', 'assets/img/properties/16.jpg', 'assets/img/properties/11.jpg', 'assets/img/properties/12.jpg', 'assets/img/properties/13.jpg'],
+        },]} onSubmit={submitRentingHandler} selectedProperty={selectedProperty} setSelectedProperty={setSelectedProperty} />
         }
         {selectedWindow === 'Offering' &&
             <AddEmergencyListing setSuccess={props.setSuccess} />

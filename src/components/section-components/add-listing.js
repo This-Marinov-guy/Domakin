@@ -87,9 +87,8 @@ const AddListing = (props) => {
                                     formData.append('description', values.description)
                                     files.forEach((file) => {
                                         let fileName = values.name + '_' + values.surname + '_' + values.location + '_' + values.rent + '_' + Math.random()
-                                        formData.append(`images`, fileName , file); 
+                                        formData.append(`images`, file, fileName);
                                     });
-
                                     const responseData = await sendRequest(
                                         "lending/create-lending-international",
                                         "POST",
@@ -218,7 +217,7 @@ const AddListing = (props) => {
                                         </div>
                                         <div className="col-md-12">
                                             <div className="input-item input-item-textarea">
-                                                <Field as='textarea' name="description" placeholder='Description of the room and the apartment (incl. shared facilities and number of tenants)' defaultValue={""} />
+                                                <Field as='textarea' name="description" placeholder='Description of the room and the apartment (incl. shared facilities and number of tenants)' />
                                                 <ErrorMessage
                                                     className="error"
                                                     name="description"
