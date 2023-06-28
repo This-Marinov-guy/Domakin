@@ -1,28 +1,18 @@
-import React, { useEffect, useState } from 'react'
+import React from 'react'
 import { useHttpClient } from '../../hooks/http-hook'
 import CreateFeedback from './createFeedback';
 import Spinner from 'react-bootstrap/Spinner';
 import { useSelector } from 'react-redux'
 import { selectScript } from '../../redux/language'
+import { selectFeedbacks } from '../../redux/feedbacks';
 
 const Feedbacks = () => {
-    const [feedbacks, setFeedbacks] = useState([])
-
-    const { loading, sendRequest } = useHttpClient()
+    const { loading } = useHttpClient()
 
     const script = useSelector(selectScript)
 
-    useEffect(() => {
-        const fetchFeedbacks = async () => {
-            try {
-                const responseData = await sendRequest('feedback/get-feedbacks');
-                setFeedbacks(responseData.feedbacks.filter(feedback => feedback.approved === true))
-            } catch (err) {
+    const feedbacks = useSelector(selectFeedbacks)
 
-            }
-        }
-        fetchFeedbacks()
-    }, [sendRequest])
 
     return <div className='container mt-40 mb-120'>
         <div className="row">

@@ -2,12 +2,14 @@ import React, { useEffect, useState, lazy, Suspense } from "react";
 import ReactDOM from "react-dom/client";
 import { Provider, useDispatch, useSelector } from "react-redux";
 import { store } from './redux/store'
+import { useHttpClient } from './hooks/http-hook'
 import { BrowserRouter, Switch, Route } from "react-router-dom";
 import { setLanguage, setScript } from "./redux/language";
 import { BG, EN } from "./util/PAGE_SCRIPT";
 import { selectError, selectErrorMsg } from "./redux/error";
 import Error from './components/ui/Error'
 import Agents from "./pages/information/Agents";
+import { setFeedbacks } from "./redux/feedbacks";
 
 //general pages
 const Home = lazy(() => import('./pages/Home'));
@@ -25,6 +27,7 @@ const Viewing = lazy(() => import('./pages/actions/Viewing'));
 const Renting = lazy(() => import('./pages/actions/Renting'));
 const Lending = lazy(() => import('./pages/actions/Lending'));
 const LendingEN = lazy(() => import('./pages/actions/LendingEN'));
+const EmergencyHousing = lazy(() => import('./pages/actions/EmergencyHousing'));
 
 //details
 const PropertyDetails = lazy(() => import('./pages/details/PropertyDetails'));
@@ -34,6 +37,9 @@ const Root = () => {
     const [success, setSuccess] = useState(null);
 
     const dispatch = useDispatch()
+
+    const { sendRequest } = useHttpClient()
+
 
     const error = useSelector(selectError)
     const errorMessage = useSelector(selectErrorMsg);
@@ -55,6 +61,17 @@ const Root = () => {
                 break;
         }
     }, [dispatch])
+
+    useEffect(() => {
+        const fetchFeedbacks = async () => {
+            try {
+                const responseData = await sendRequest('feedback/get-feedbacks');
+                dispatch(setFeedbacks(responseData.feedbacks.filter(feedback => feedback.approved === true)))
+            } catch (err) {
+            }
+        }
+        fetchFeedbacks()
+    }, [sendRequest])
 
     return (
         <BrowserRouter basename={"/"}>
@@ -85,6 +102,9 @@ const Root = () => {
                     </Route>
                     <Route path='/services/give-a-room' >
                         <LendingEN setSuccess={setSuccess} />
+                    </Route>
+                    <Route path='/services/emergency-housing' >
+                        <EmergencyHousing setSuccess={setSuccess} />
                     </Route>
 
                     <Route path="/properties/:propertyId" component={PropertyDetails} />

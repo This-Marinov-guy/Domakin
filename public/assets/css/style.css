@@ -47,9 +47,16 @@
     Gutter Code 
 ==================================================== */
 
+.center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 .ma {
   margin: auto;
 }
+
 .notification_panel {
   position: fixed;
   top: 5%;
@@ -6951,6 +6958,12 @@ ul.wp-block-latest-posts.is-grid.alignwide {
   display: block;
 }
 
+.option-btns {
+  width: 50%;
+  height: 120px;
+  margin: 50px auto;
+}
+
 .menu-btn-white.mobile-menu-toggle > a {
   color: #fff;
 }
@@ -6963,6 +6976,12 @@ ul.wp-block-latest-posts.is-grid.alignwide {
   width: 40px;
   height: 38px;
   border: 1px solid;
+}
+
+p.correct {
+  font-size: 17px;
+  margin-top: -15px;
+  color: #00cc00;
 }
 
 /* ----------------------------------------
@@ -18178,14 +18197,14 @@ input.cart-plus-minus-box {
 }
 
 /* custom feedback form */
-.feedback_display{
+.feedback_display {
   display: flex;
   flex-direction: column;
   padding: 0 10px;
 }
 
 @media only screen and (min-width: 1000px) {
-  .feedback_display{
+  .feedback_display {
     padding: 0 100px;
   }
 }
@@ -18201,7 +18220,7 @@ input.cart-plus-minus-box {
   align-self: flex-start;
 }
 
-.feedback_right{
+.feedback_right {
   margin-top: 10px;
   max-width: 50%;
   word-break: break-word;
@@ -18210,7 +18229,6 @@ input.cart-plus-minus-box {
   flex-direction: column;
   align-items: flex-end;
   align-self: flex-end;
-
 }
 
 /* ----------------------------------------------------

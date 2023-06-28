@@ -86,6 +86,10 @@ const Navbar = () => {
 															{/* <img src={publicUrl + "assets/img/home-demos/home-2.jpg"} alt="#" /> */}
 														</li>
 														</Link>
+														<Link to="/feedbacks"><li>{script.footer[13]}
+
+															{/* <img src={publicUrl + "assets/img/home-demos/home-2.jpg"} alt="#" /> */}
+														</li></Link>
 													</ul>
 												</li>												<li><Link to="/services">{script.header[6]}</Link></li>
 												<li><Link to="/contact">{script.header[3]}</Link></li>

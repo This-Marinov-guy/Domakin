@@ -108,6 +108,9 @@ const BG = {
         '2) Изчакайте обратна връзка с наш агент',
         '3) Заедно разгледайте договора Ви и завършете сделката',
     ],
+    emegency_housing: [
+        'Emergency Housing'
+    ],
     FOR_RENT: [
         {
             id: '0',
@@ -127,7 +130,7 @@ const BG = {
             location: 'Visvliet, Netherlands',
             description: ['Единична стая в споделена къща на 20 км от Грьонинген. Къщата се държи от възрастна португалска двойка. В цената са включени всички консумативи.', 'Споделя се хол, баня и тоалетна', 'Договорът е за 12 месеца', 'Налична от 1ви август'],
             main_image: "assets/img/properties/7.jpg",
-            images: ['assets/img/properties/19.jpg', 'assets/img/properties/20.jpg','assets/img/properties/2.jpg', 'assets/img/properties/3.jpg', 'assets/img/properties/14.jpg', 'assets/img/properties/15.jpg', 'assets/img/properties/16.jpg', 'assets/img/properties/11.jpg', 'assets/img/properties/12.jpg', 'assets/img/properties/13.jpg'],
+            images: ['assets/img/properties/19.jpg', 'assets/img/properties/20.jpg', 'assets/img/properties/2.jpg', 'assets/img/properties/3.jpg', 'assets/img/properties/14.jpg', 'assets/img/properties/15.jpg', 'assets/img/properties/16.jpg', 'assets/img/properties/11.jpg', 'assets/img/properties/12.jpg', 'assets/img/properties/13.jpg'],
         },
     ],
     home: [
@@ -198,7 +201,7 @@ const BG = {
         'Страницата, която търсехте, не съществува! Възможно е да е преместена или изтрита.',
         ' Обратно към начало',
     ],
-    feedbacks : [
+    feedbacks: [
         'Остави отзив',
         'За нас',
         'Отзиви',
@@ -211,7 +214,7 @@ const BG = {
         'Не оставяйте отзива празен',
         'Минимум 20 символа са нужни',
         'Надвишихте лимита от 300 думи',
-        'Благодарим, очаквайте отзива ви да бъде одобрен съвсем скоро!'
+        'Благодарим, очаквайте отзивът ви да бъде одобрен съвсем скоро!'
     ]
 }
 
@@ -325,6 +328,22 @@ const EN = {
         '2) Wait for our agent to contact you',
         '3) Together check the contract and finilize the service',
     ],
+    emergency_housing: [
+        'Emergency Housing',
+        'If you are looking for a place to stay until finding your own',
+        'Find a place for a short stay in one of our trusted properties lent by trusted people. The cost is low (if any) and the stay is limited but can help someone in need. If you need emergency housing in the Netherlands, simply follow the steps:',
+        `1) Select the 'Searching' option below`,
+        '2) Choose a room by clicking select',
+        '3) Fill your details in the form that will appear',
+        '4) Wait for a response from our side to receive the information about the owner of the property',
+        'If you are giving a place for a short time',
+        'Lend an extra bed/coach to someone in need for a short stay. Many people, and more specifically students, come to the Netherlands without a place to live in order not to miss out on their studies. You can significantly help by offering to urgently house a student until they find their accommodation with our help. To list your property, simply follow these steps:',
+        `1) Select the 'Offering' option below`,
+        `3) Fill your details and the property's in the form that will appear`,
+        '4) Wait for a response from our side to approve you',
+        `"The team of Domakin is genuinely thankful to all who are willing to help"`,
+        '...'
+      ],
     FOR_RENT: [
         {
             id: '0',
@@ -344,7 +363,7 @@ const EN = {
             location: 'Visvliet, Netherlands',
             description: ['Room for one in a shared house just 20km from Groningen. The house is owned by a Portogues couple. Price includes all bills', 'Contract is for 12 months', 'Available from 1st of August'],
             main_image: "assets/img/properties/7.jpg",
-            images: ['assets/img/properties/19.jpg', 'assets/img/properties/20.jpg','assets/img/properties/2.jpg', 'assets/img/properties/3.jpg', 'assets/img/properties/14.jpg', 'assets/img/properties/15.jpg', 'assets/img/properties/16.jpg', 'assets/img/properties/11.jpg', 'assets/img/properties/12.jpg', 'assets/img/properties/13.jpg'],
+            images: ['assets/img/properties/19.jpg', 'assets/img/properties/20.jpg', 'assets/img/properties/2.jpg', 'assets/img/properties/3.jpg', 'assets/img/properties/14.jpg', 'assets/img/properties/15.jpg', 'assets/img/properties/16.jpg', 'assets/img/properties/11.jpg', 'assets/img/properties/12.jpg', 'assets/img/properties/13.jpg'],
         },
 
     ],
@@ -416,7 +435,7 @@ const EN = {
         'The page you are looking for does not exists',
         ' Back to home',
     ],
-    feedbacks : [
+    feedbacks: [
         'Leave feedback',
         'About',
         'Feedbacks',

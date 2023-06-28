@@ -14,12 +14,12 @@ const RequestForm = (props) => {
     const { loading } = useHttpClient()
 
     const schema = yup.object().shape({
-        name: yup.string().required(script.viewing[17].errors[0]),
-        surname: yup.string().required(script.viewing[17].errors[1]),
-        phone: yup.string().min(8, script.viewing[17].errors[2]).matches(/^\+/, script.viewing[17].errors[2])
-            .required(script.viewing[17].errors[3]),
-        email: yup.string().email(script.viewing[17].errors[4]).required(script.viewing[17].errors[5]),
-        dataTerms: yup.bool().required().oneOf([true], script.viewing[17].errors[6]),
+        name: yup.string().required(script.viewing[16].errors[0]),
+        surname: yup.string().required(script.viewing[16].errors[1]),
+        phone: yup.string().min(8, script.viewing[16].errors[2]).matches(/^\+/, script.viewing[16].errors[2])
+            .required(script.viewing[16].errors[3]),
+        email: yup.string().email(script.viewing[16].errors[4]).required(script.viewing[16].errors[5]),
+        dataTerms: yup.bool().required().oneOf([true], script.viewing[16].errors[6]),
     });
 
     return <div className="ltn__appointment-area pb-120">
@@ -95,7 +95,7 @@ const RequestForm = (props) => {
                                     </div>
                                     <div className="btn-wrapper text-center mt-40">
                                         <button disabled={loading} className="btn theme-btn-1 btn-effect-1 text-uppercase" type="submit">{loading ? <Spinner animation="border" />
-                                            : script.viewing[16]}</button>
+                                            : script.viewing[15]}</button>
                                     </div>
                                 </div>
                             </Form>

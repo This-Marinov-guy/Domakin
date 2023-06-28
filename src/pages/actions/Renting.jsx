@@ -75,7 +75,7 @@ const Renting = (props) => {
                 </div>
             </div>
         </Fragment>} />
-        <ProSlider onSubmit={submitRentingHandler} selectedProperty={selectedProperty} setSelectedProperty={setSelectedProperty}/>
+        <ProSlider propertyList={script.FOR_RENT} onSubmit={submitRentingHandler} selectedProperty={selectedProperty} setSelectedProperty={setSelectedProperty}/>
         <Footer />
     </div>
 }

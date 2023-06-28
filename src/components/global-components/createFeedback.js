@@ -18,7 +18,7 @@ const CreateFeedback = () => {
 
     const schema = yup.object().shape({
         name: yup.string().required(script.feedbacks[8]),
-        feedback: yup.string().required().min(20, script.feedbacks[10]).max(300, script.feedbacks[11]),
+        feedback: yup.string().required(script.feedbacks[9]).min(20, script.feedbacks[10]).max(300, script.feedbacks[11]),
     });
 
 

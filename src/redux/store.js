@@ -4,6 +4,7 @@ import languageReducer from './language'
 import loadingReducer from './loading'
 import modalReducer from "./modal";
 import userReducer from "./user";
+import feedbacksReducer from './feedbacks'
 
 
 export const store = configureStore({
@@ -13,5 +14,6 @@ export const store = configureStore({
     loading: loadingReducer,
     modal: modalReducer,
     user: userReducer,
+    feedbacks: feedbacksReducer,
   },
 });
