@@ -17,6 +17,8 @@ const AddEmergencyListing = (props) => {
 
     const history = useHistory()
 
+    const script = useSelector(selectScript)
+
     const { loading, sendRequest } = useHttpClient()
 
     useEffect(() => {
@@ -51,17 +53,17 @@ const AddEmergencyListing = (props) => {
     };
 
     const schema = yup.object().shape({
-        name: yup.string().required(),
-        surname: yup.string().required(),
-        email: yup.string().email().required(),
-        phone: yup.string().min(8, 'Invalid phone').matches(/^\+/, 'invalid phone (please check there is + and the country code)')
-            .required(),
-        ownerDescription: yup.string().required(),
-        location: yup.string().required(),
-        maxPeriod: yup.string().required(),
-        price: yup.string().required(),
-        propertyDescription: yup.string().required(),
-        dataTerms: yup.bool().required().oneOf([true], 'Terms must be accepted'),
+        name: yup.string().required(script.emergency_housing[35].errors[0]),
+        surname: yup.string().required(script.emergency_housing[35].errors[1]),
+        email: yup.string().email().required(script.emergency_housing[35].errors[2]),
+        phone: yup.string().min(8, script.emergency_housing[35].errors[3]).matches(/^\+/, script.emergency_housing[35].errors[4])
+            .required(script.emergency_housing[35].errors[5]),
+        ownerDescription: yup.string().required(script.emergency_housing[35].errors[6]),
+        location: yup.string().required(script.emergency_housing[35].errors[7]),
+        maxPeriod: yup.string().required(script.emergency_housing[35].errors[8]),
+        price: yup.string().required(script.emergency_housing[35].errors[9]),
+        propertyDescription: yup.string().required(script.emergency_housing[35].errors[10]),
+        dataTerms: yup.bool().required(script.emergency_housing[35].errors[11]).oneOf([true], 'Terms must be accepted'),
     });
 
     return <div className="ltn__appointment-area pb-120">
@@ -116,11 +118,11 @@ const AddEmergencyListing = (props) => {
                             <Form encType="multipart/form-data"
                             >
                                 <div className='personal-details'>
-                                    <h4>Personal Information</h4>
+                                    <h4>{script.emergency_housing[16]}</h4>
                                     <div className="row">
                                         <div className="col-md-6">
                                             <div className="input-item input-item-name">
-                                                <Field type="text" name="name" placeholder='Name' />
+                                                <Field type="text" name="name" placeholder={script.emergency_housing[17]} />
                                             </div>
                                             <ErrorMessage
                                                 className="error"
@@ -130,7 +132,7 @@ const AddEmergencyListing = (props) => {
                                         </div>
                                         <div className="col-md-6">
                                             <div className="input-item input-item-name">
-                                                <Field type="text" name="surname" placeholder='Surname' />
+                                                <Field type="text" name="surname" placeholder={script.emergency_housing[18]} />
                                             </div>
                                             <ErrorMessage
                                                 className="error"
@@ -140,7 +142,7 @@ const AddEmergencyListing = (props) => {
                                         </div>
                                         <div className="col-md-6">
                                             <div className="input-item input-item-name">
-                                                <Field type="text" name="phone" placeholder='Phone (+ and country code)' />
+                                                <Field type="text" name="phone" placeholder={script.emergency_housing[19]} />
                                             </div>
                                             <ErrorMessage
                                                 className="error"
@@ -150,7 +152,7 @@ const AddEmergencyListing = (props) => {
                                         </div>
                                         <div className="col-md-6">
                                             <div className="input-item input-item-name">
-                                                <Field type="email" name="email" placeholder='Email' />
+                                                <Field type="email" name="email" placeholder={script.emergency_housing[20]} />
                                             </div>
                                             <ErrorMessage
                                                 className="error"
@@ -160,7 +162,7 @@ const AddEmergencyListing = (props) => {
                                         </div>
                                         <div className="col-md-12">
                                             <div className="input-item input-item-textarea">
-                                                <Field as='textarea' name="ownerDescription" placeholder='Description of the room and the apartment (incl. shared facilities and number of tenants)' />
+                                                <Field as='textarea' name="ownerDescription" placeholder={script.emergency_housing[21]} />
                                                 <ErrorMessage
                                                     className="error"
                                                     name="ownerDescription"
@@ -171,11 +173,11 @@ const AddEmergencyListing = (props) => {
                                     </div>
                                 </div>
                                 <div className='mt-80 room-details'>
-                                    <h4>Room Details</h4>
+                                    <h4>{script.emergency_housing[22]}</h4>
                                     <div className="row">
                                         <div className="col-md-6">
                                             <div className="input-item input-item-name">
-                                                <Field type="text" name="location" placeholder='Location' />
+                                                <Field type="text" name="location" placeholder={script.emergency_housing[23]} />
                                             </div>
                                             <ErrorMessage
                                                 className="error"
@@ -185,7 +187,7 @@ const AddEmergencyListing = (props) => {
                                         </div>
                                         <div className="col-md-6">
                                             <div className="input-item input-item-name">
-                                                <Field type="text" name="maxPeriod" placeholder='Maximum Period of stay' />
+                                                <Field type="text" name="maxPeriod" placeholder={script.emergency_housing[24]} />
                                             </div>
                                             <ErrorMessage
                                                 className="error"
@@ -195,9 +197,9 @@ const AddEmergencyListing = (props) => {
                                         </div>
                                         <div className="col-md-6">
                                             <div className="input-item input-item-name">
-                                                <Field type="text" name="price" placeholder='Price per night' />
+                                                <Field type="text" name="price" placeholder={script.emergency_housing[25]} />
                                             </div>
-                                            <p className='correct'>*You can also lend it out of charge</p>
+                                            <p className='correct'>{script.emergency_housing[26]}</p>
                                             <ErrorMessage
                                                 className="error"
                                                 name="price"
@@ -206,7 +208,7 @@ const AddEmergencyListing = (props) => {
                                         </div>
                                         <div className="col-md-12">
                                             <div className="input-item input-item-textarea">
-                                                <Field as='textarea' name="propertyDescription" placeholder='Description of the room and the apartment (incl. shared facilities and number of tenants)' />
+                                                <Field as='textarea' name="propertyDescription" placeholder={script.emergency_housing[27]} />
                                                 <ErrorMessage
                                                     className="error"
                                                     name="propertyDescription"
@@ -215,7 +217,7 @@ const AddEmergencyListing = (props) => {
                                             </div>
                                         </div>
                                         <div className="col-md-12 mb-20">
-                                            <label className="checkbox-item">I give my permission to be contacted by the organization for the purposes of the service
+                                            <label className="checkbox-item">{script.emergency_housing[28]}
                                                 <Field type="checkbox" name="dataTerms" />
                                                 <span className="checkmark" />
                                             </label>
@@ -227,18 +229,18 @@ const AddEmergencyListing = (props) => {
                                         </div>
                                         <div className="col-md-12 mt-40 mb-20">
                                             <div className="input-item input-item-textarea">
-                                                <h4>Room Pictures</h4>
+                                            <h4>{script.emergency_housing[29]}</h4>
                                                 <div className='row'>
                                                     <div className='col-lg-6 col-sm-12 col-sm-12'>
                                                         <input type="file" id="myFile" name="filename" multiple onInput={inputHandler}
                                                             className="btn theme-btn-3 mb-10" /><br />
                                                         <p>
-                                                            <small>* Submit at least 3 images and no more than 6</small><br />
-                                                            <small>* Extra images will not be received</small><br />
-                                                            <small>* Supported formats are jpg, jpeg and png</small><br />
+                                                            <small>{script.emergency_housing[30]}</small><br />
+                                                            <small>{script.emergency_housing[31]}</small><br />
+                                                            <small>{script.emergency_housing[32]}</small><br />
                                                         </p>
                                                         {!isValid && (
-                                                            <p style={{ color: "red" }}>The file is not supported, please try again</p>
+                                                            <p style={{ color: "red" }}>{script.emergency_housing[35].errors[12]}</p>
                                                         )}
                                                     </div>
                                                     <div className='input-pictures col-lg-6 col-sm-12 col-sm-12'>
@@ -254,8 +256,8 @@ const AddEmergencyListing = (props) => {
                                         </div>
                                         <div className="btn-wrapper text-center mt-40">
                                             <button disabled={loading || files.length === 0 || !isValid} className="btn theme-btn-1 btn-effect-1 text-uppercase" type="submit">{loading ? <Spinner animation="border" />
-                                                : 'send room'}</button>
-                                            {files.length === 0 && <p><small>* Don't forget images</small></p>}
+                                                : script.emergency_housing[33]}</button>
+                                            {files.length === 0 && <p><small>{script.emergency_housing[33]}</small></p>}
                                         </div>
                                     </div>
                                 </div>
