@@ -5,6 +5,7 @@ import ProSlider from '../../components/section-components/product-slider-v4';
 import Footer from '../../components/global-components/footer';
 import ServiceDescription from '../../components/section-components/service-description';
 import Success from '../../components/ui/Success';
+import CallToActionV1 from '../../components/section-components/call-to-action-v1';
 import { useSelector } from 'react-redux';
 import { selectScript } from '../../redux/language';
 import { useHttpClient } from '../../hooks/http-hook';
@@ -76,6 +77,7 @@ const Renting = (props) => {
             </div>
         </Fragment>} />
         <ProSlider propertyList={script.FOR_RENT} onSubmit={submitRentingHandler} selectedProperty={selectedProperty} setSelectedProperty={setSelectedProperty}/>
+        <CallToActionV1 />
         <Footer />
     </div>
 }

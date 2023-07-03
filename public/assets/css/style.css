@@ -15613,6 +15613,7 @@ input.cart-plus-minus-box {
   -ms-flex-align: center;
   align-items: center;
   padding: 50px 60px;
+    margin-bottom: -65px;
 }
 .call-to-action-inner-6 .coll-to-info p {
   margin-bottom: 0;

@@ -3,6 +3,7 @@ import Navbar from '../../components/global-components/navbar';
 import PageHeader from '../../components/global-components/page-header';
 import ServiceDescription from '../../components/section-components/service-description';
 import Footer from '../../components/global-components/footer';
+import CallToActionV1 from '../../components/section-components/call-to-action-v1';
 import AddListing from '../../components/section-components/add-listing';
 
 const LendingEN = (props) => {
@@ -41,6 +42,7 @@ const LendingEN = (props) => {
                 </div>
             </div></Fragment>} />
         <AddListing setSuccess={props.setSuccess}/>
+        <CallToActionV1 />
         <Footer />
     </div>
 }

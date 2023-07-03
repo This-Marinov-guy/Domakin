@@ -5,7 +5,7 @@ import TeamDetails from '../../components/section-components/team-details';
 import Footer from '../../components/global-components/footer';
 import { useSelector } from 'react-redux';
 import { selectScript } from '../../redux/language';
-import Feedbacks from '../../components/global-components/feedbacks';
+import CallToActionV1 from '../../components/section-components/call-to-action-v1';
 
 const Agents = () => {
 
@@ -14,8 +14,8 @@ const Agents = () => {
     return <div>
         <Navbar />
         <PageHeader headertitle={script.team[0]} subheader={script.team[1]} />
-        <Feedbacks/>
         <TeamDetails />
+        <CallToActionV1 />
         <Footer />
     </div>
 }

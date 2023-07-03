@@ -257,7 +257,7 @@ const AddEmergencyListing = (props) => {
                                         <div className="btn-wrapper text-center mt-40">
                                             <button disabled={loading || files.length === 0 || !isValid} className="btn theme-btn-1 btn-effect-1 text-uppercase" type="submit">{loading ? <Spinner animation="border" />
                                                 : script.emergency_housing[33]}</button>
-                                            {files.length === 0 && <p><small>{script.emergency_housing[33]}</small></p>}
+                                            {files.length === 0 && <p><small>{script.emergency_housing[34]}</small></p>}
                                         </div>
                                     </div>
                                 </div>

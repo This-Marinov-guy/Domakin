@@ -20,7 +20,7 @@ const PropertyItem = (props) => {
 
 						<div className="product-badge">
 							<ul>
-								<li className="sale-badge bg-green">{props.status}</li>
+								<li className={`sale-badge ${props.free === true ? 'bg-orange' : 'bg-green'}`}>{props.status}</li>
 							</ul>
 						</div>
 						<div className="product-img-location-gallery">
@@ -78,7 +78,7 @@ const ProductSliderV4 = (props) => {
 				</div>
 			</div>
 			<div className="row ltn__product-slider-item-three-active slick-arrow-1">
-				{props.propertyList.length === 0 ? <h3 className='col-12 text-center'>{script.renting[12]}</h3> : props.propertyList.map((value, index) => { return <PropertyItem key={index} status={value.status} price={value.price} type={value.type} location={value.location} description={value.description} main_image={value.main_image} images={value.images} setSelectedProperty={props.setSelectedProperty} selectedProperty={props.selectedProperty} /> })}
+				{props.propertyList.length === 0 ? <h3 className='col-12 text-center'>{script.renting[12]}</h3> : props.propertyList.map((value, index) => { return <PropertyItem key={index} status={value.status} free={value.free} price={value.price} type={value.type} location={value.location} description={value.description} main_image={value.main_image} images={value.images} setSelectedProperty={props.setSelectedProperty} selectedProperty={props.selectedProperty} /> })}
 			</div>
 			{props.selectedProperty && <div id='form-renting' className='row'>
 				<RequestForm onSubmit={props.onSubmit} />

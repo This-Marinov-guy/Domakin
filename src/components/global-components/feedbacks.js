@@ -19,7 +19,7 @@ const Feedbacks = () => {
             <div className="col-lg-12">
                 <div className="section-title-area ltn__section-title-2--- text-center">
                     <h6 className="section-subtitle section-subtitle-2 ltn__secondary-color">{script.feedbacks[1]}</h6>
-                    <h1 className="section-title">{script.feedbacks[2]}</h1>
+                    <h1 className="section-title">{script.feedbacks[13]}</h1>
                 </div>
             </div>
         </div>

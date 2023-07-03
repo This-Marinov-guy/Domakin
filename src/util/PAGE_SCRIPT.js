@@ -24,7 +24,7 @@ const BG = {
         'Контакти',
         'Наемане',
         'Прехвърляне',
-        'Отзиви',
+        'Отзиви и Дарения',
     ],
     about: [
         "Информация за нас",
@@ -169,8 +169,9 @@ const BG = {
     FOR_RENT: [
         {
             id: '0',
-            status: 'наемане',
+            status: 'Свободна',
             price: 600,
+            free: false,
             type: 'Стая за двама',
             location: 'Visvliet, Netherlands',
             description: ['Стая за двама в споделена къща на 20 км от Гроьнинген. Къщата се държи от възрастна португалска двойка. В цената са включени всички консумативи', 'Споделя се хол, баня и тоалетна', 'Договорът е за 12 месеца', 'Налична от 1ви август'],
@@ -179,8 +180,9 @@ const BG = {
         },
         {
             id: '1',
-            status: 'наемане',
+            status: 'Свободна',
             price: 400,
+            free: false,
             type: 'Единична стая',
             location: 'Visvliet, Netherlands',
             description: ['Единична стая в споделена къща на 20 км от Грьонинген. Къщата се държи от възрастна португалска двойка. В цената са включени всички консумативи.', 'Споделя се хол, баня и тоалетна', 'Договорът е за 12 месеца', 'Налична от 1ви август'],
@@ -205,7 +207,9 @@ const BG = {
         'Разгледайте нашите предложения в околността и се свържете с нас, за да получите повече информация',
         'Отдай стая',
         'Услуги',
-        'В случай, че търсите съквартирант или искате да прехвърлите на стар договор'
+        'Ако искаш да намериш съквартирант или да предадеш стаята си на нов наемател, който да заеме стаята ти',
+        'Извънредно настаняване',
+        'Ако търсиш или предлагаш кратък престой за студент в нужда'
     ],
     team: [
         'Екип',
@@ -259,7 +263,7 @@ const BG = {
     feedbacks: [
         'Остави отзив',
         'За нас',
-        'Отзиви',
+        'Отзиви и дарения',
         'Сподели Вашето впечатление от услугите ни',
         'Име',
         'Вашият отзив',
@@ -269,7 +273,12 @@ const BG = {
         'Не оставяйте отзива празен',
         'Минимум 20 символа са нужни',
         'Надвишихте лимита от 300 думи',
-        'Благодарим, очаквайте отзивът ви да бъде одобрен съвсем скоро!'
+        'Благодарим, очаквайте отзивът ви да бъде одобрен съвсем скоро!',
+        'Отзиви',
+        'Дарения',
+        'Искате да помогнете на организацията?',
+        'Вече приемаме и дарения - чрез тях и чрез вашите отзиви, ние от Домакин успяваме да подпогаме повече и повече студенти!',
+        'Помогни'
     ]
 }
 
@@ -299,7 +308,7 @@ const EN = {
         'Contact us',
         'Renting',
         'Lending',
-        'Feedbacks'
+        'Feedbacks & Donations'
     ],
     about: [
         "About the company",
@@ -443,7 +452,8 @@ const EN = {
     FOR_RENT: [
         {
             id: '0',
-            status: 'rent',
+            status: 'Free',
+            free: true,
             price: 600,
             type: 'Double Room',
             location: 'Visvliet, Netherlands',
@@ -453,7 +463,8 @@ const EN = {
         },
         {
             id: '1',
-            status: 'rent',
+            status: 'Free',
+            free: true,
             price: 400,
             type: 'Single Room',
             location: 'Visvliet, Netherlands',
@@ -532,9 +543,9 @@ const EN = {
         ' Back to home',
     ],
     feedbacks: [
-        'Leave feedback',
+        'Leave a feedback',
         'About',
-        'Feedbacks',
+        'Feedbacks & Donations',
         'Share your experience for others to see',
         'Name',
         'Your Feedback',
@@ -544,7 +555,12 @@ const EN = {
         'Do not leave empty',
         'Please type at least 20 characters',
         'You passed the 300 characters limit',
-        'Thank you, your feedback was sent to us for approval!'
+        'Thank you, your feedback was sent to us for approval!',
+        'Feedbacks',
+        'Donations',
+        'Want to support the organisation?',
+        'You can now donate or leave a positive feedback so we can continue helping other students',
+        'Contribute'
     ]
 }
 

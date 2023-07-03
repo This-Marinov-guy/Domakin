@@ -4,6 +4,7 @@ import PageHeader from '../../components/global-components/page-header';
 import ServiceDescription from '../../components/section-components/service-description';
 import Footer from '../../components/global-components/footer';
 import Success from '../../components/ui/Success';
+import CallToActionV1 from '../../components/section-components/call-to-action-v1';
 import { useSelector } from 'react-redux';
 import { selectScript } from '../../redux/language';
 import RequestForm from '../../components/section-components/request-form';
@@ -70,6 +71,7 @@ const Lending = (props) => {
                 </div>
             </div></Fragment>} />
         <RequestForm onSubmit={submitLendingHandler} setSuccess={props.setSuccess} />
+        <CallToActionV1 />
         <Footer />
     </div>
 }
