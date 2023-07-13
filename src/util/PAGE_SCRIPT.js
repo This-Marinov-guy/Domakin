@@ -69,7 +69,7 @@ const BG = {
         'Телефон за връзка (+ кода на държавата)',
         'Ел. поща',
         'Допълнителна информация, която искате да предадете на агента ни',
-        'Давам разрешение компанията да се свърже с мен по телефон или по ел. поща, като разрешавам подадената лична информация да бъде запазена и използване единствено във връзка с предлаганата услуга', 
+        'Давам разрешение компанията да се свърже с мен по телефон или по ел. поща, като разрешавам подадената лична информация да бъде запазена и използване единствено във връзка с предлаганата услуга',
         'Изпращане',
         {
             errors: [
@@ -167,6 +167,17 @@ const BG = {
         'Предлагане'
     ],
     FOR_RENT: [
+        {
+            id: '2',
+            status: 'Свободна',
+            price: 784,
+            free: false,
+            type: 'Студио',
+            location: 'Xior,  Hoogeweg 1, Groningen',
+            description: ['Студио от Септември до Февруари, , 784 евро на месец, всичко включено', 'Алина отива на ексчендж до Февруари и си търси някой да й вземе студиото', 'На този адрес регистрация не е възможна, така че това студио не е подходящо за студенти първа година, които не са регистрирани в Холандия.'],
+            main_image: "assets/img/properties/studio/1.jpg",
+            images: ['assets/img/properties/studio/2.jpg', 'assets/img/properties/studio/3.jpg', 'assets/img/properties/studio/4.jpg', 'assets/img/properties/studio/5.jpg', 'assets/img/properties/studio/6.jpg', 'assets/img/properties/studio/7.jpg'],
+        },
         {
             id: '0',
             status: 'Свободна',
@@ -450,6 +461,17 @@ const EN = {
         'Offering'
     ],
     FOR_RENT: [
+        {
+            id: '2',
+            status: 'Rent',
+            price: 784,
+            free: false,
+            type: 'Studio',
+            location: 'Xior,  Hoogeweg 1, Groningen',
+            description: ['Studio from September to February, , 784 euro per month, all bills included', 'Alina is going on an exchange program and would like somebody to take her studio', 'As registration of living is not possible at the place, it is NOT suitable for first year students who have not yet been registered'],
+            main_image: "assets/img/properties/studio/1.jpg",
+            images: ['assets/img/properties/studio/2.jpg', 'assets/img/properties/studio/3.jpg', 'assets/img/properties/studio/4.jpg', 'assets/img/properties/studio/5.jpg', 'assets/img/properties/studio/6.jpg', 'assets/img/properties/studio/7.jpg'],
+        },
         {
             id: '0',
             status: 'Free',
