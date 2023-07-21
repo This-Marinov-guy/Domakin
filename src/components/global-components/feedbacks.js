@@ -14,7 +14,7 @@ const Feedbacks = () => {
     const feedbacks = useSelector(selectFeedbacks)
 
 
-    return <div className='container mt-40 mb-120'>
+    return <div className='container mt-40'>
         <div className="row">
             <div className="col-lg-12">
                 <div className="section-title-area ltn__section-title-2--- text-center">
