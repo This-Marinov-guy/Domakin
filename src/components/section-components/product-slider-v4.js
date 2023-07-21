@@ -20,7 +20,7 @@ const PropertyItem = (props) => {
 
 						<div className="product-badge">
 							<ul>
-								<li className={`sale-badge ${!props.free ? 'bg-orange' : 'bg-green'}`}>{props.status}</li>
+								<li className={`sale-badge ${!props.free ? 'bg-orange' : 'bg-red'}`}>{props.status}</li>
 							</ul>
 						</div>
 						<div className="product-img-location-gallery">
