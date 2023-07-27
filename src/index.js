@@ -20,6 +20,7 @@ const ErrorPage = lazy(() => import('./pages/ErrorPage'));
 const About = lazy(() => import('./pages/information/About'));
 const Contact = lazy(() => import('./pages/information/Contact'));
 const FeedbackPage = lazy(() => import('./pages/information/FeedbackPage'));
+const Recommendations = lazy(() => import('./pages/information/Recommendations'));
 
 
 //actions
@@ -39,7 +40,6 @@ const Root = () => {
     const dispatch = useDispatch()
 
     const { sendRequest } = useHttpClient()
-
 
     const error = useSelector(selectError)
     const errorMessage = useSelector(selectErrorMsg);
@@ -88,6 +88,7 @@ const Root = () => {
 
                     <Route path="/about" component={About} />
                     <Route path="/feedbacks" component={FeedbackPage} />
+                    <Route path="/recommendations" component={Recommendations} />
                     <Route path='/agents' component={Agents} />
                     <Route path="/contact" component={Contact} />
 

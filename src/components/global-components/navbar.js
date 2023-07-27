@@ -91,7 +91,22 @@ const Navbar = () => {
 															{/* <img src={publicUrl + "assets/img/home-demos/home-2.jpg"} alt="#" /> */}
 														</li></Link>
 													</ul>
-												</li>												<li><Link to="/services">{script.header[6]}</Link></li>
+												</li>
+												<li className="menu-icon"><Link to="/services">{script.header[6]}</Link>
+													<ul className="sub-menu menu-pages-img-show">
+														<Link to="/services">
+															<li>
+																{script.header[6]}
+																{/* <img src={publicUrl + "assets/img/home-demos/home-1.jpg"} alt="#" /> */}
+															</li>
+														</Link>
+														<Link to="/recommendations"><li>
+															{script.header[10]}
+															{/* <img src={publicUrl + "assets/img/home-demos/home-2.jpg"} alt="#" /> */}
+														</li>
+														</Link>
+													</ul>
+												</li>
 												<li><Link to="/contact">{script.header[3]}</Link></li>
 											</ul>
 										</div>
@@ -147,8 +162,21 @@ const Navbar = () => {
 
 								</ul>
 							</li>
-							<li><Link to="/services">{script.header[6]}</Link></li>
-
+							<li><Link to="/services">{script.header[6]}</Link>
+								<ul className="sub-menu menu-pages-img-show">
+									<Link to="/services">
+										<li>
+											{script.header[6]}
+											{/* <img src={publicUrl + "assets/img/home-demos/home-1.jpg"} alt="#" /> */}
+										</li>
+									</Link>
+									<Link to="/recommendations"><li>
+										{script.header[10]}
+										{/* <img src={publicUrl + "assets/img/home-demos/home-2.jpg"} alt="#" /> */}
+									</li>
+									</Link>
+								</ul>
+							</li>
 
 
 							<li><Link to="/contact">{script.header[3]}</Link></li>

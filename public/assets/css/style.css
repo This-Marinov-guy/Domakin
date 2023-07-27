@@ -6777,7 +6777,7 @@ ul.wp-block-latest-posts.is-grid.alignwide {
   -webkit-transform: scale(0.75);
   -ms-transform: scale(0.75);
   transform: scale(0.75);
-  background-color: #7e7e7e;
+  background-color: white;
 }
 
 .ltn__utilize-menu > ul > li .menu-expand::after {
@@ -6927,6 +6927,7 @@ ul.wp-block-latest-posts.is-grid.alignwide {
 }
 .ltn__utilize-menu-head .ltn__utilize-close {
   background-color: transparent;
+  font-weight: 1000;
   font-size: 30px;
   padding: 0 15px;
 }

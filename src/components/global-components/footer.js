@@ -108,7 +108,7 @@ const Footer_v1 = () => {
 									<ul>
 										<li><Link to="services/viewing">{script.footer[7]}</Link></li>
 										<li><Link to="services/renting">{script.footer[11]}</Link></li>
-										{/* <li><Link to="services/lending">{script.footer[12]}</Link></li> */}
+										<li><Link to="services/lending">{script.footer[12]}</Link></li>
 									</ul>
 								</div>
 							</div>
@@ -119,6 +119,7 @@ const Footer_v1 = () => {
 								<div className="footer-menu go-top">
 									<ul>
 										<li><Link to="/contact">{script.footer[10]}</Link></li>
+										<li><Link to="recommendations">{script.footer[14]}</Link></li>
 									</ul>
 								</div>
 							</div>

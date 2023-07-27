@@ -8,7 +8,9 @@ const BG = {
         'Нидерландия',
         'Услуги',
         'Информация',
-        'Екип'
+        'Екип',
+        'Нашите Услуги',
+        'Препоръки',
     ],
     footer: [
         'Всички права са собственост на компанията @ Domakin ',
@@ -23,8 +25,9 @@ const BG = {
         'Помощ',
         'Контакти',
         'Наемане',
-        'Прехвърляне',
+        'Отдаване',
         'Отзиви и Дарения',
+        'Препоръки'
     ],
     about: [
         "Информация за нас",
@@ -303,7 +306,9 @@ const EN = {
         'the Netherlands',
         'Services',
         'Information',
-        'Agents'
+        'Agents',
+        'Our Services',
+        'Recommendations'
     ],
     footer: [
         'All Rights Reserved @ Domakin ',
@@ -319,7 +324,8 @@ const EN = {
         'Contact us',
         'Renting',
         'Lending',
-        'Feedbacks & Donations'
+        'Feedbacks & Donations',
+        'Recommendations'
     ],
     about: [
         "About the company",
