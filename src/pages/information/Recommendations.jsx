@@ -13,7 +13,7 @@ const Recommendations = () => {
     const script = useSelector(selectScript)
     return <div>
         <Navbar />
-        <PageHeader headertitle={script.about[0]} subheader={script.about[1]} />
+        <PageHeader headertitle={script.recommendations[0]} subheader={script.recommendations[1]} />
         <RecommendedSources />
         <CallToActionV1 />
         <Footer />

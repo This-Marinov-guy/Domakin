@@ -293,6 +293,16 @@ const BG = {
         'Искате да помогнете на организацията?',
         'Вече приемаме и дарения - чрез тях и чрез вашите отзиви, ние от Домакин успяваме да подпогаме повече и повече студенти!',
         'Помогни'
+    ],
+    recommendations: [
+        'Нашите препоръки',
+        'Помощи',
+        'Към нашите услуги',
+        'Препоръчно от Domakin.nl',
+        'Екипът на Domakin поддържа списък с сайтове и групи за търсене и отдаване на квартири из цяля Холандия. Тук, Вие може да намерите най-използваните и най-надеждни платформи, като ние допълнително можем да Ви помогнем с търсенето или предлагането! Просто кликнете заглавието, за да видите платформата.',
+        'Уебстраници',
+        'от Domakin.nl',
+        'При нужда от информация или допълнителна помощ, моля свържете се с нас чрез страницата за контакти или страницата с услуги!'
     ]
 }
 
@@ -589,6 +599,16 @@ const EN = {
         'Want to support the organisation?',
         'You can now donate or leave a positive feedback so we can continue helping other students',
         'Contribute'
+    ],
+    recommendations: [
+        'Our recommendations',
+        'Support',
+        'Our services',
+        'Recommended from Domakin.nl',
+        'The team of Domakin.nl has made this list in order to help anyone with finding or lending properties in all of the Netherlands. Here you can find platforms to help with your searching and you can always count on us for support or extra services! Simply click the name to view the platform.',
+        'Websites',
+        'by Domakin.nl',
+        'In case you need more information or any help, please contact us through the contact page or our service page!'
     ]
 }
 
