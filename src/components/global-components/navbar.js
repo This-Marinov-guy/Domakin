@@ -44,9 +44,9 @@ const Navbar = () => {
 													</ul>
 												</div>
 											</li>
-											{/* <li>
+											<li>
 												<Social />
-											</li> */}
+											</li>
 											<li>
 												{/* header-top-btn */}
 
@@ -171,6 +171,8 @@ const Navbar = () => {
 					<div className="ltn__social-media-2">
 						<ul>
 							<li><a href="https://www.linkedin.com/company/domakin/" target='_blank' title="Linkedin"><i className="fab fa-linkedin" /></a></li>
+							<li><a href="https://www.instagram.com/domakin.nl/" target='_blank' title="Instagram"><i className="fab fa-instagram" /></a></li>
+							<li><a href="https://www.facebook.com/profile.php?id=100093230497851" target='_blank' title="Facebook"><i className="fab fa-facebook" /></a></li>
 						</ul>
 					</div>
 				</div>

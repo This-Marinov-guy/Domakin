@@ -5,7 +5,7 @@ const BG = {
         'За компанията',
         'Контакти',
         'Записване',
-        'Грьонинген, Нидерландия',
+        'Нидерландия',
         'Услуги',
         'Информация',
         'Екип'
@@ -13,7 +13,7 @@ const BG = {
     footer: [
         'Всички права са собственост на компанията @ Domakin ',
         'Условия & Регулации',
-        'Грьонинген, Нидерландия',
+        'Нидерландия',
         'За компанията',
         "Информация",
         'Екип',
@@ -300,7 +300,7 @@ const EN = {
         'About',
         'Contact',
         'Register',
-        'Groningen, the Netherlands',
+        'the Netherlands',
         'Services',
         'Information',
         'Agents'
@@ -308,7 +308,7 @@ const EN = {
     footer: [
         'All Rights Reserved @ Domakin ',
         'Terms & Policy',
-        'Groningen, the Netherlands',
+        'the Netherlands',
         'Company',
         "About us",
         'Team',
