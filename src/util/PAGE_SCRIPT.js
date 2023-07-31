@@ -299,10 +299,11 @@ const BG = {
         'Помощи',
         'Към нашите услуги',
         'Препоръчно от Domakin.nl',
-        'Екипът на Domakin поддържа списък с сайтове и групи за търсене и отдаване на квартири из цяля Холандия. Тук, Вие може да намерите най-използваните и най-надеждни платформи, като ние допълнително можем да Ви помогнем с търсенето или предлагането! Просто кликнете заглавието, за да видите платформата.',
+        'Екипът на Domakin поддържа списък със сайтове и групи за търсене и отдаване на квартири в Грьонинген. Тук може да намерите най-използваните платформи, като ние допълнително можем да Ви помогнем с търсенето или предлагането на квартира! Просто кликнете заглавието, за да видите платформата.',
         'Уебстраници',
         'от Domakin.nl',
-        'При нужда от информация или допълнителна помощ, моля свържете се с нас чрез страницата за контакти или страницата с услуги!'
+        'При нужда от информация или допълнителна помощ, моля свържете се с нас чрез страницата за контакти или страницата с услуги!',
+        'Бъдете нащрек за фалшиви оферти! Проверявайте фейсбук профила на предлагащия, изисквайте оглед и се уверете, че офертата е легитимна, преди да изпратите документи и да правите плащания! Свържете се с нас при нужда от асистенция!'
     ]
 }
 
@@ -608,7 +609,8 @@ const EN = {
         'The team of Domakin.nl has made this list in order to help anyone with finding or lending properties in all of the Netherlands. Here you can find platforms to help with your searching and you can always count on us for support or extra services! Simply click the name to view the platform.',
         'Websites',
         'by Domakin.nl',
-        'In case you need more information or any help, please contact us through the contact page or our service page!'
+        'In case you need more information or any help, please contact us through the contact page or our service page!',
+        'Be aware of scammers on Facebook. Share documents only with trusted profiles and always require an in-person meeting or video call. If you are in doubt, better call us for help.'
     ]
 }
 

@@ -53,6 +53,7 @@ const RecommendedSources = () => {
                             </div>
                             <h2 className='mt-40'>Facebook</h2>
                             <div className="list-item-with-icon-4">
+                            <p> {script.recommendations[8]}</p>
                                 <ul>
                                     <li><a href='https://www.facebook.com/groups/1403096933323844/' target='_blank'>Groningen Housing</a></li>
                                     <li><a href='https://www.facebook.com/groups/400200805138484/' target='_blank'>Groningen rooms, studios, and apartments</a></li>
