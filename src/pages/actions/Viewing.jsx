@@ -1,7 +1,7 @@
 import React, { Fragment } from 'react';
 import Navbar from '../../components/global-components/navbar';
 import PageHeader from '../../components/global-components/page-header';
-import RequestForm from '../../components/section-components/request-form';
+import RequestFormV2 from '../../components/section-components/request-form-v2';
 import Footer from '../../components/global-components/footer';
 import ServiceDescription from '../../components/section-components/service-description';
 import Success from '../../components/ui/Success';
@@ -28,6 +28,9 @@ const Viewing = (props) => {
                     surname: values.surname,
                     phone: values.phone,
                     email: values.email,
+                    town: values.town,
+                    date: values.date,
+                    time: values.time,
                     description: values.description
                 }),
                 {
@@ -71,7 +74,7 @@ const Viewing = (props) => {
                     <h5 className="service-description">{script.viewing[7]} </h5>
                 </div>
             </div></Fragment>} />
-        <RequestForm onSubmit={submitViewingHandler} />
+        <RequestFormV2 onSubmit={submitViewingHandler} />
         <CallToActionV1 />
         <Footer />
     </div>

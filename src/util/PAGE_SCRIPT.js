@@ -82,11 +82,17 @@ const BG = {
                 "Моля, въведете телефонен номер",
                 "Имейлът е навалиден",
                 "Моля, въведете имейл",
-                "Условията трябва да бъдат приети"
+                "Условията трябва да бъдат приети",
+                'Моля посочете град на огледа',
+                'Моля посочете дата на огледа',
+                'Моля посочете време на огледа'
             ]
         },
         'Успешно свързване',
         'Вашата информация вече е получена и очаква разглеждане от наш агент! Благодарим Ви за доверието - очаквайте връзка!',
+        'Град на огледа',
+        'Дата на огледа',
+        'Час на огледа'
     ],
     renting: [
         'Наемане на квартира',
@@ -391,11 +397,17 @@ const EN = {
                 "Phone is required",
                 "Please enter a valid email",
                 "Please enter an email",
-                "Terms must be accepted"
+                "Terms must be accepted",
+                'Please give the town of the viewing',
+                'Please give the date of the viewing',
+                'Please give the time of the viewing'
             ]
         },
         'Successful Request',
         'Your information has been sent so expect soon to be contacted by one of our agents! Thank you again for the trust and see you soon!',
+        'Town of viewing',
+        'Date of viewing',
+        'Time of viewing'
     ],
     renting: [
         'Renting accommodations',
