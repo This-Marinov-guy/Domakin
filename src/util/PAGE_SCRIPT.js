@@ -191,7 +191,7 @@ const BG = {
             id: '0',
             status: 'В процес на заемане',
             price: 600,
-            free: false,
+            free: true,
             type: 'Стая за двама',
             location: 'Visvliet, Netherlands',
             description: ['Стая за двама в споделена къща на 20 км от Гроьнинген. Къщата се държи от възрастна португалска двойка. В цената са включени всички консумативи', 'Споделя се хол, баня и тоалетна', 'Договорът е за 12 месеца', 'Налична от 1ви август'],
@@ -504,7 +504,7 @@ const EN = {
         {
             id: '0',
             status: 'Almost taken',
-            free: false,
+            free: true,
             price: 600,
             type: 'Double Room',
             location: 'Visvliet, Netherlands',
