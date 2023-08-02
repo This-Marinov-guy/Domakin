@@ -18,7 +18,8 @@ const RequestFormV2 = (props) => {
         phone: yup.string().min(8, script.viewing[16].errors[2]).matches(/^\+/, script.viewing[16].errors[2])
             .required(script.viewing[16].errors[3]),
         email: yup.string().email(script.viewing[16].errors[4]).required(script.viewing[16].errors[5]),
-        town: yup.string().required(script.viewing[16].errors[7]),
+        city: yup.string().required(script.viewing[16].errors[7]),
+        address: yup.string(),
         date: yup.string().required(script.viewing[16].errors[8]),
         time: yup.string().required(script.viewing[16].errors[9]),
         dataTerms: yup.bool().required().oneOf([true], script.viewing[16].errors[6]),
@@ -33,7 +34,8 @@ const RequestFormV2 = (props) => {
                         surname: "",
                         phone: "",
                         email: "",
-                        town: '',
+                        city: '',
+                        address: '',
                         date: '',
                         time: '',
                         dataTerms: false,
@@ -84,16 +86,26 @@ const RequestFormV2 = (props) => {
                                     </div>
                                     <div className="col-md-6">
                                         <div className="input-item input-item-city ltn__custom-icon">
-                                            <Field type="text" name="town" placeholder={script.viewing[19]} />
+                                            <Field type="text" name="city" placeholder={script.viewing[19]} />
                                         </div>
                                         <ErrorMessage
                                             className="error"
-                                            name="town"
+                                            name="city"
+                                            component="div"
+                                        />
+                                    </div>
+                                    <div className="col-md-6">
+                                        <div className="input-item input-item-city ltn__custom-icon">
+                                            <Field type="text" name="address" placeholder={script.viewing[22]} />
+                                        </div>
+                                        <ErrorMessage
+                                            className="error"
+                                            name="address"
                                             component="div"
                                         />
                                     </div>
 
-                                    <div className="col-md-6 mb-20">
+                                    <div className="col-md-8 mb-20">
                                         <div className='row'>
 
                                             <div className="col-md-6 ltn__page-details-inner mb-20">

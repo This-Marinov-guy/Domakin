@@ -14,7 +14,7 @@ import { useHistory } from 'react-router-dom';
 const Viewing = (props) => {
     const script = useSelector(selectScript);
 
-    const {sendRequest} = useHttpClient();
+    const { sendRequest } = useHttpClient();
 
     const history = useHistory()
 
@@ -28,7 +28,8 @@ const Viewing = (props) => {
                     surname: values.surname,
                     phone: values.phone,
                     email: values.email,
-                    town: values.town,
+                    city: values.city,
+                    address: values.address,
                     date: values.date,
                     time: values.time,
                     description: values.description
