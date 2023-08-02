@@ -95,9 +95,13 @@ const RequestFormV2 = (props) => {
 
                                     <div className="col-md-6 mb-20">
                                         <div className='row'>
-                                            <div className="col-6">
-                                                <div className="input-item input-item-name product-meta-date">
-                                                    <Field type="date" name="date" placeholder={script.viewing[20]} />
+
+                                            <div className="col-md-6 ltn__page-details-inner mb-20">
+                                                <div className='input-with-label'>
+                                                    <label>{script.viewing[20]}</label>
+                                                    <div className="input-item input-item-name product-meta-date">
+                                                        <Field type="date" name="date" />
+                                                    </div>
                                                 </div>
                                                 <ErrorMessage
                                                     className="error"
@@ -105,9 +109,13 @@ const RequestFormV2 = (props) => {
                                                     component="div"
                                                 />
                                             </div>
-                                            <div className="col-6">
-                                                <div className="input-item input-item-name product-meta-date">
-                                                    <Field type="time" name="time" placeholder={script.viewing[21]} />
+
+                                            <div className="col-md-6 ltn__page-details-inner">
+                                                <div className='input-with-label'>
+                                                    <label>{script.viewing[21]}</label>
+                                                    <div className="input-item input-item-name product-meta-date">
+                                                        <Field type="time" name="time" />
+                                                    </div>
                                                 </div>
                                                 <ErrorMessage
                                                     className="error"

@@ -91,8 +91,8 @@ const BG = {
         'Успешно свързване',
         'Вашата информация вече е получена и очаква разглеждане от наш агент! Благодарим Ви за доверието - очаквайте връзка!',
         'Град на огледа',
-        'Дата на огледа',
-        'Час на огледа'
+        'Дата:',
+        'Час:'
     ],
     renting: [
         'Наемане на квартира',
@@ -398,16 +398,16 @@ const EN = {
                 "Please enter a valid email",
                 "Please enter an email",
                 "Terms must be accepted",
-                'Please give the town of the viewing',
-                'Please give the date of the viewing',
-                'Please give the time of the viewing'
+                'Please provide the town of the viewing',
+                'Please provide the date of the viewing',
+                'Please provide the time of the viewing'
             ]
         },
         'Successful Request',
         'Your information has been sent so expect soon to be contacted by one of our agents! Thank you again for the trust and see you soon!',
         'Town of viewing',
-        'Date of viewing',
-        'Time of viewing'
+        'Date:',
+        'Time:'
     ],
     renting: [
         'Renting accommodations',

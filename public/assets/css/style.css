@@ -12469,6 +12469,12 @@ p.correct {
   font-size: 16px;
 }
 
+.input-with-label {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
 /* blog-details-wrap */
 .ltn__blog-details-wrap {
   border: 2px solid var(--border-color-11);
@@ -15621,7 +15627,7 @@ input.cart-plus-minus-box {
   -ms-flex-align: center;
   align-items: center;
   padding: 50px 60px;
-    margin-bottom: -65px;
+  margin-bottom: -65px;
 }
 .call-to-action-inner-6 .coll-to-info p {
   margin-bottom: 0;
