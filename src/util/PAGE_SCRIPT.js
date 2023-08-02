@@ -189,7 +189,7 @@ const BG = {
         },
         {
             id: '0',
-            status: 'В процес на заемане',
+            status: 'Заета',
             price: 600,
             free: true,
             type: 'Стая за двама',
@@ -503,7 +503,7 @@ const EN = {
         },
         {
             id: '0',
-            status: 'Almost taken',
+            status: 'Taken',
             free: true,
             price: 600,
             type: 'Double Room',
