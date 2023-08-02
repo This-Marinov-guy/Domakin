@@ -1,7 +1,7 @@
 {
   "name": "domakin",
   "version": "0.1.5",
-  "homepage": "https://domakin.nl/services",
+  "homepage": "https://domakin.nl",
   "private": true,
   "basename": "/",
   "dependencies": {

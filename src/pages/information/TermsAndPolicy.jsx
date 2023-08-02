@@ -8,7 +8,7 @@ import CallToActionV1 from '../../components/section-components/call-to-action-v
 import Terms from '../../components/section-components/terms';
 
 
-const About = () => {
+const TermsAndPolicy = () => {
 
     const script = useSelector(selectScript)
     return <div>
@@ -20,5 +20,5 @@ const About = () => {
     </div>
 }
 
-export default About
+export default TermsAndPolicy
 
