@@ -119,7 +119,7 @@ const Footer_v1 = () => {
 								<div className="footer-menu go-top">
 									<ul>
 										<li><Link to="/contact">{script.footer[10]}</Link></li>
-										<li><Link to="recommendations">{script.footer[14]}</Link></li>
+										<li><Link to="/recommendations">{script.footer[14]}</Link></li>
 									</ul>
 								</div>
 							</div>

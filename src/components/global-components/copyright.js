@@ -21,7 +21,7 @@ const CopyRight = () => {
 					<div className="col-md-6 col-12 align-self-center">
 						<div className="ltn__copyright-menu text-end">
 							<ul className="go-top">
-								<li><Link to="#">{script.footer[1]}</Link></li>
+								<li><Link to="/terms&policy">{script.footer[1]}</Link></li>
 							</ul>
 						</div>
 					</div>
