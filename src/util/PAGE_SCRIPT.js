@@ -320,7 +320,7 @@ const EN = {
         'About',
         'Contact',
         'Register',
-        'the Netherlands',
+        'The Netherlands',
         'Services',
         'Information',
         'Agents',
@@ -330,7 +330,7 @@ const EN = {
     footer: [
         'All Rights Reserved @ Domakin ',
         'Terms & Policy',
-        'the Netherlands',
+        'The Netherlands',
         'Company',
         "About us",
         'Team',
