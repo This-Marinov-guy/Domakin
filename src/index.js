@@ -84,7 +84,9 @@ const Root = () => {
                 {error && <Error errorMessage={errorMessage} />}
                 {success}
                 <Switch>
-                    <Route exact path="/" component={Home} />
+                    <Route exact path="/" >
+                        <Home />
+                    </Route>
                     <Route exact path="/services" component={Services} />
 
                     <Route path="/about" component={About} />
