@@ -32,8 +32,8 @@ const PropertyItem = (props) => {
 								</ul>
 							</div>
 							<div className="product-img-gallery go-top">
-								<ul>
-									<li>
+								<ul >
+									<li >
 										{props.images.map((value, index) => {
 											return <Link key={index} to={publicUrl + value} data-rel={`lightcase:${props.description[0]}`}>{index === 0 && <Fragment><i className="fas fa-camera" /> {props.images.length + 1} </Fragment>}</Link>
 										})}
