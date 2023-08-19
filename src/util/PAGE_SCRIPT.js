@@ -500,8 +500,8 @@ const EN = {
             type: 'Single Room',
             location: 'Tweede Oosterparkstraat 3, Amsterdam',
             description: ['A small but nice room in a two bedroom apartment. Living room, kitchen, bathroom have everything included. The room comes semi-furnished, the bed and the clothing rack can be bought from the previous tenant or removed. The shelf stays. There is one more working male tenant - 26 years old.', 'Rent 1050 all included', '8th of September 2023 - June 2024 with a possibility of extension'],
-            main_image: "assets/img/properties/property_3/(1).webp",
-            images: ['assets/img/properties/property_3/(2).webp', 'assets/img/properties/property_3/(3).webp', 'assets/img/properties/property_3/(4).webp', 'assets/img/properties/property_3/(5).webp', 'assets/img/properties/property_3/(6).webp', 'assets/img/properties/property_3/(7).webp', 'assets/img/properties/property_3/(8).webp', 'assets/img/properties/property_3/(9).webp', 'assets/img/properties/property_3/(10).webp'],
+            main_image: "assets/img/properties/property_3/(1).jpg",
+            images: ['assets/img/properties/property_3/(2).jpg', 'assets/img/properties/property_3/(3).jpg', 'assets/img/properties/property_3/(4).jpg', 'assets/img/properties/property_3/(5).jpg', 'assets/img/properties/property_3/(6).jpg', 'assets/img/properties/property_3/(7).jpg', 'assets/img/properties/property_3/(8).jpg', 'assets/img/properties/property_3/(9).jpg', 'assets/img/properties/property_3/(10).jpg'],
         },
         {
             id: '2',
