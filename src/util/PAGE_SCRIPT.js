@@ -178,6 +178,17 @@ const BG = {
     ],
     FOR_RENT: [
         {
+            id: '3',
+            status: 'Наемане',
+            price: '~' + 1050,
+            free: true,
+            type: 'Единична Стая',
+            location: 'Tweede Oosterparkstraat 3, Amsterdam',
+            description: ['Реновирана стая в двуспален апартамент. Кухнята и хола са напълно обурдвани. Стаята идва наполовина обзаведена, като леглото и гардероба могат да бъдат или закупени от предния наемодател или махнати - секцията остава в стаята. Другият съквартирант е мъж на 26 години и работи.', 'Наемат включва всички сметки (вода, ток, интърнет и тн.) и задължителната цена при прехвърляне', 'Свободна от 8ми Септември 2023 до Юни 2024 с опция за удължаване'],
+            main_image: "assets/img/properties/property_3/(1).jpg",
+            images: ['assets/img/properties/property_3/(2).jpg', 'assets/img/properties/property_3/(3).jpg', 'assets/img/properties/property_3/(4).jpg', 'assets/img/properties/property_3/(5).jpg', 'assets/img/properties/property_3/(6).jpg', 'assets/img/properties/property_3/(7).jpg', 'assets/img/properties/property_3/(8).jpg', 'assets/img/properties/property_3/(9).jpg', 'assets/img/properties/property_3/(10).jpg'],
+        },
+        {
             id: '2',
             status: 'Заета',
             price: 784,
@@ -493,7 +504,7 @@ const EN = {
     ],
     FOR_RENT: [
         {
-            id: '2',
+            id: '3',
             status: 'Rent',
             price: '~' + 1050,
             free: true,
