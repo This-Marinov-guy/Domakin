@@ -179,7 +179,7 @@ const BG = {
     FOR_RENT: [
         {
             id: '3',
-            status: 'Наемане',
+            status: 'Свободна',
             price: '~' + 1050,
             free: true,
             type: 'Единична Стая',
@@ -505,7 +505,7 @@ const EN = {
     FOR_RENT: [
         {
             id: '3',
-            status: 'Rent',
+            status: 'Available',
             price: '~' + 1050,
             free: true,
             type: 'Single Room',
@@ -648,6 +648,35 @@ const EN = {
         'In case you need more information or any help, please contact us through the contact page or our service page!',
         'Be aware of scammers on Facebook. Share documents only with trusted profiles and always require an in-person meeting or video call. If you are in doubt, better call us for help.'
     ]
+    ,
+    privacyPolicyContent: [
+        "Effective Date: 1st of August 2023",
+        "At Domakin, we are committed to protecting your privacy and ensuring the security of your personal information. This Privacy Policy outlines how we collect, use, and safeguard your data while you use our platform to find accommodations in the Netherlands. By accessing and using the Domakin website or mobile application (referred to as the \"Platform\"), you consent to the practices described in this Privacy Policy.",
+        "1. Information We Collect",
+        "We may collect various types of information from you, including but not limited to:",
+        "Personal information: Your name, email address, phone number, and other contact details.\nProfile information: Details about your preferences, interests, and accommodation requirements.\nCommunication information: Records of correspondence between you and Domakin.\nUsage information: Data about your interactions with the Platform, such as search queries, viewed listings, and user interactions.",
+        "2. How We Use Your Information",
+        "We use the collected information for the following purposes:",
+        "To facilitate your use of the Platform and provide personalized services.\nTo match you with suitable accommodation listings based on your preferences.\nTo improve our services, user experience, and customer support.\nTo communicate with you about your account, listings, and related updates.\nTo analyze usage patterns and conduct research to enhance our offerings.",
+        "3. Sharing of Information",
+        "We may share your information in the following circumstances:",
+        "With accommodation providers: Your profile information may be shared with accommodation owners to facilitate booking and communication.\nWith third-party service providers: We may engage trusted third parties to assist us in providing services, such as payment processing or data analytics.\nLegal compliance: We may disclose information if required by law or to protect our rights, privacy, safety, or property, or that of others.",
+        "4. Your Choices",
+        "We employ industry-standard security measures to safeguard your data from unauthorized access, disclosure, alteration, or destruction.",
+        "5. Data Security",
+        "The Platform is not intended for individuals under the age of 16. We do not knowingly collect personal information from minors without parental consent.",
+        "6. Children's Privacy",
+        "We may update this Privacy Policy as our practices evolve or legal requirements change. Any changes will be posted on the Platform, and your continued use of the Platform after such changes signifies your acceptance of the updated policy.",
+        "7. Changes to Privacy Policy",
+        "If you have questions, concerns, or requests related to your privacy, please contact us at [contact email/phone].",
+        "Thank you for trusting Domakin with your accommodations search. We are dedicated to ensuring your privacy and providing a secure and user-friendly experience on our platform."
+    ]
+
+
+
+
+
+
 }
 
 export { BG, EN }

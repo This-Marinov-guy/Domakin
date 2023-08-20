@@ -88,7 +88,7 @@ const Root = () => {
                     <Route exact path="/services" component={Services} />
 
                     <Route path="/about" component={About} />
-                    {/* <Route path="/terms&policy" component={TermsAndPolicy} /> */}
+                    <Route path="/terms&policy" component={TermsAndPolicy} />
                     <Route path="/feedbacks" component={FeedbackPage} />
                     <Route path="/recommendations" component={Recommendations} />
                     <Route path='/agents' component={Agents} />
