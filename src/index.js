@@ -18,7 +18,7 @@ const ErrorPage = lazy(() => import('./pages/ErrorPage'));
 
 //information
 const About = lazy(() => import('./pages/information/About'));
-// const TermsAndPolicy = lazy(() => import('./pages/information/TermsAndPolicy'));
+const TermsAndPolicy = lazy(() => import('./pages/information/TermsAndPolicy'));
 const Contact = lazy(() => import('./pages/information/Contact'));
 const FeedbackPage = lazy(() => import('./pages/information/FeedbackPage'));
 const Recommendations = lazy(() => import('./pages/information/Recommendations'));

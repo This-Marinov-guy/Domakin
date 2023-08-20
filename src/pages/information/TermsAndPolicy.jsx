@@ -13,7 +13,7 @@ const TermsAndPolicy = () => {
     const script = useSelector(selectScript)
     return <div>
         <Navbar />
-        <PageHeader headertitle={script.about[0]} subheader={script.about[1]} />
+        <PageHeader headertitle={script.privacyPolicyContent[0]} subheader={script.privacyPolicyContent[1]} />
         <Terms />
         <CallToActionV1 />
         <Footer />
