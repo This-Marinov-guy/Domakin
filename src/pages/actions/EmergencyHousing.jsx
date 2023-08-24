@@ -40,7 +40,10 @@ const EmergencyHousing = (props) => {
                 }
             );
             props.setSuccess(
-                <Success heading={script.viewing[17]} message={script.viewing[18]} onClose={() => { props.setSuccess(null) }} />
+                {
+                    heading: script.viewing[17],
+                    message: script.viewing[18]
+                }
             );
             history.push("/");
         } catch (err) { }

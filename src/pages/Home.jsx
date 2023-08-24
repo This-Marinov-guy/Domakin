@@ -7,6 +7,7 @@ import CallToActionV1 from '../components/section-components/call-to-action-v1';
 import Footer from '../components/global-components/footer';
 import Feedbacks from '../components/global-components/feedbacks';
 
+
 const Home = () => {
     return <div>
         <Navbar />

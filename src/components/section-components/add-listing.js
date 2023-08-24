@@ -94,8 +94,10 @@ const AddListing = (props) => {
                                         "POST",
                                         formData,
                                     );
-                                    props.setSuccess(
-                                        <Success heading='Thank you for the property' message='We will soon check your room and contact you to advance with the deal!' onClose={() => { props.setSuccess(null) }} />
+                                    props.setSuccess({
+                                        heading: 'Thank you for the property',
+                                        message: 'We will soon check your room and contact you to advance with the deal!'
+                                    }
                                     );
                                     history.push("/");
                                 } catch (err) { }

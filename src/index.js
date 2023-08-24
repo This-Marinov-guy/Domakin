@@ -1,15 +1,20 @@
-import React, { useEffect, useState, lazy, Suspense } from "react";
+import React, { useEffect, useState, useRef, lazy, Suspense } from "react";
 import ReactDOM from "react-dom/client";
 import { Provider, useDispatch, useSelector } from "react-redux";
 import { store } from './redux/store'
 import { useHttpClient } from './hooks/http-hook'
 import { BrowserRouter, Switch, Route } from "react-router-dom";
-import { setLanguage, setScript } from "./redux/language";
+import { selectScript, setLanguage, setScript } from "./redux/language";
 import { BG, EN } from "./util/PAGE_SCRIPT";
 import { selectError, selectErrorMsg } from "./redux/error";
-import Error from './components/ui/Error'
+import { Toast } from 'primereact/toast';
 import Agents from "./pages/information/Agents";
 import { setFeedbacks } from "./redux/feedbacks";
+import { PrimeReactProvider } from 'primereact/api';
+
+// styles
+import "primereact/resources/primereact.min.css";
+import "primereact/resources/themes/lara-light-indigo/theme.css";
 
 //general pages
 const Home = lazy(() => import('./pages/Home'));
@@ -36,11 +41,18 @@ const PropertyDetails = lazy(() => import('./pages/details/PropertyDetails'));
 
 
 const Root = () => {
-    const [success, setSuccess] = useState(null);
+    const [success, setSuccess] = useState({
+        heading: null,
+        message: null
+    });
+
+    const toast = useRef(null);
 
     const dispatch = useDispatch()
 
     const { sendRequest } = useHttpClient()
+
+    const script = useSelector(selectScript)
 
     const error = useSelector(selectError)
     const errorMessage = useSelector(selectErrorMsg);
@@ -74,48 +86,71 @@ const Root = () => {
         fetchFeedbacks()
     }, [sendRequest])
 
+    useEffect(() => {
+        if (toast.current) {
+            toast.current.show({
+                severity: 'error',
+                summary: script.error[0],
+                detail: errorMessage,
+                sticky: true
+            });
+        }
+    }, [error]);
+
+    useEffect(() => {
+        if (toast.current && success.heading && success.message) {
+            toast.current.show({
+                severity: 'success',
+                summary: success.heading,
+                detail: success.message,
+                sticky: true
+            });
+        }
+    }, [success])
+
     return (
         <BrowserRouter basename={"/"}>
-            <Suspense fallback={<div className="quarter-overlay">
-                <div className="cv-spinner">
-                    <span className="spinner"></span>
-                </div>
-            </div>}>
-                {error && <Error errorMessage={errorMessage} />}
-                {success}
-                <Switch>
-                    <Route exact path="/" component={Home} />
-                    <Route exact path="/services" component={Services} />
+            <PrimeReactProvider>
+                <Suspense fallback={<div className="quarter-overlay">
+                    <div className="cv-spinner">
+                        <span className="spinner"></span>
+                    </div>
+                </div>}>
+                    <Toast ref={toast} />
+                    <Switch>
+                        <Route exact path="/" component={Home} />
+                        <Route exact path="/services" component={Services} />
 
-                    <Route path="/about" component={About} />
-                    <Route path="/terms&policy" component={TermsAndPolicy} />
-                    <Route path="/feedbacks" component={FeedbackPage} />
-                    <Route path="/recommendations" component={Recommendations} />
-                    <Route path='/agents' component={Agents} />
-                    <Route path="/contact" component={Contact} />
+                        <Route path="/about" component={About} />
+                        <Route path="/terms&policy" component={TermsAndPolicy} />
+                        <Route path="/feedbacks" component={FeedbackPage} />
+                        <Route path="/recommendations" component={Recommendations} />
+                        <Route path='/agents' component={Agents} />
+                        <Route path="/contact" component={Contact} />
 
-                    <Route path='/services/viewing' >
-                        <Viewing setSuccess={setSuccess} />
-                    </Route>
-                    <Route path='/services/renting' >
-                        <Renting setSuccess={setSuccess} />
-                    </Route>
-                    <Route path='/services/lending' >
-                        <Lending setSuccess={setSuccess} />
-                    </Route>
-                    <Route path='/services/give-a-room' >
-                        <LendingEN setSuccess={setSuccess} />
-                    </Route>
-                    <Route path='/services/emergency-housing' >
-                        <EmergencyHousing setSuccess={setSuccess} />
-                    </Route>
+                        <Route path='/services/viewing' >
+                            <Viewing setSuccess={setSuccess} />
+                        </Route>
+                        <Route path='/services/renting' >
+                            <Renting setSuccess={setSuccess} />
+                        </Route>
+                        <Route path='/services/lending' >
+                            <Lending setSuccess={setSuccess} />
+                        </Route>
+                        <Route path='/services/give-a-room' >
+                            <LendingEN setSuccess={setSuccess} />
+                        </Route>
+                        <Route path='/services/emergency-housing' >
+                            <EmergencyHousing setSuccess={setSuccess} />
+                        </Route>
 
-                    <Route path="/properties/:propertyId" component={PropertyDetails} />
+                        <Route path="/properties/:propertyId" component={PropertyDetails} />
 
-                    <Route path="*" component={ErrorPage} />
+                        <Route path="*" component={ErrorPage} />
 
-                </Switch>
-            </Suspense>
+                    </Switch>
+                </Suspense>
+            </PrimeReactProvider>
         </BrowserRouter>
     )
 }

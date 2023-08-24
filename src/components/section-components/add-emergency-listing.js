@@ -95,8 +95,10 @@ const AddEmergencyListing = (props) => {
                                         "POST",
                                         formData,
                                     );
-                                    props.setSuccess(
-                                        <Success heading='Thank you for the property' message='We will soon check your room and post it on the page!' onClose={() => { props.setSuccess(null) }} />
+                                    props.setSuccess({
+                                        heading: 'Thank you for the property',
+                                        message: 'We will soon check your room and post it on the page!',
+                                    }
                                     );
                                     history.push("/");
                                 } catch (err) { }
@@ -229,7 +231,7 @@ const AddEmergencyListing = (props) => {
                                         </div>
                                         <div className="col-md-12 mt-40 mb-20">
                                             <div className="input-item input-item-textarea">
-                                            <h4>{script.emergency_housing[29]}</h4>
+                                                <h4>{script.emergency_housing[29]}</h4>
                                                 <div className='row'>
                                                     <div className='col-lg-6 col-sm-12 col-sm-12'>
                                                         <input type="file" id="myFile" name="filename" multiple onInput={inputHandler}

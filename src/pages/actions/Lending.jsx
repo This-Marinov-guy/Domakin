@@ -34,8 +34,10 @@ const Lending = (props) => {
                     "Content-Type": "application/json",
                 }
             );
-            props.setSuccess(
-                <Success heading={script.viewing[17]} message={script.viewing[18]} onClose={() => { props.setSuccess(null) }} />
+            props.setSuccess({
+                heading: script.viewing[17],
+                message: script.viewing[18]
+            }
             );
             history.push("/");
         } catch (err) { }

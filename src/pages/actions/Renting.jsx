@@ -37,8 +37,10 @@ const Renting = (props) => {
                     "Content-Type": "application/json",
                 }
             );
-            props.setSuccess(
-                <Success heading={script.viewing[17]} message={script.viewing[18]} onClose={() => { props.setSuccess(null) }} />
+            props.setSuccess({
+                heading: script.viewing[17],
+                message: script.viewing[18],
+            }
             );
             history.push("/");
         } catch (err) { }
@@ -76,7 +78,7 @@ const Renting = (props) => {
                 </div>
             </div>
         </Fragment>} />
-        <ProSlider propertyList={script.FOR_RENT} onSubmit={submitRentingHandler} selectedProperty={selectedProperty} setSelectedProperty={setSelectedProperty}/>
+        <ProSlider propertyList={script.FOR_RENT} onSubmit={submitRentingHandler} selectedProperty={selectedProperty} setSelectedProperty={setSelectedProperty} />
         <CallToActionV1 />
         <Footer />
     </div>

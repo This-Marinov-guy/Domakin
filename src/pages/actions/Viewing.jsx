@@ -38,8 +38,10 @@ const Viewing = (props) => {
                     "Content-Type": "application/json",
                 }
             );
-            props.setSuccess(
-                <Success heading={script.viewing[18]} message={script.viewing[19]} onClose={() => { props.setSuccess(null) }} />
+            props.setSuccess({
+                heading: script.viewing[18],
+                message: script.viewing[19],
+            }
             );
             history.push("/");
         } catch (err) { }

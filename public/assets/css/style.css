@@ -47,6 +47,15 @@
     Gutter Code 
 ==================================================== */
 
+a::slotted(*) {
+  all: inherit;
+}
+
+.p-component {
+  font-family: inherit !important;
+}
+
+
 .center {
   display: flex;
   align-items: center;
@@ -60,9 +69,8 @@
 .notification_panel {
   position: fixed;
   top: 5%;
-  left: 50%;
   transform: translateX(-50%);
-  z-index: 99999999;
+  z-index: 9999999;
   max-width: 90%;
 }
 
@@ -1196,7 +1204,7 @@ label.checkbox-inline {
   text-decoration: none;
   top: 5px;
   width: auto;
-  z-index: 100000;
+  z-index: 999;
   /* Above WP toolbar. */
 }
 
@@ -5107,7 +5115,7 @@ ul.wp-block-latest-posts.is-grid.alignwide {
     Header
 -------------------------------------------------------------- */
 .ltn__header-area {
-  z-index: 9999;
+  z-index: 999;
   position: relative;
 }
 
@@ -6217,7 +6225,7 @@ ul.wp-block-latest-posts.is-grid.alignwide {
   -o-transition-property: height;
   transition-property: height;
   width: 320px;
-  z-index: 9999;
+  z-index: 999;
 }
 .header-search-1-form form {
   position: relative;
@@ -6681,7 +6689,7 @@ ul.wp-block-latest-posts.is-grid.alignwide {
   background-color: var(--white);
   -webkit-box-shadow: none;
   box-shadow: none;
-  z-index: 99999;
+  z-index: 999;
 }
 
 .ltn__utilize.ltn__utilize-mobile-menu {
@@ -6823,7 +6831,7 @@ ul.wp-block-latest-posts.is-grid.alignwide {
 
 .ltn__utilize-overlay {
   position: fixed;
-  z-index: 9999;
+  z-index: 999;
   top: 0;
   right: 0;
   bottom: 0;
@@ -9231,8 +9239,8 @@ p.correct {
 }
 
 .product-badge .agent-img {
-  width: 60px;
-  height: 60px;
+  width:80px;
+  height:80px;
   margin-right: 12px;
 }
 
@@ -17352,12 +17360,12 @@ input.cart-plus-minus-box {
     LightCase
 ---------------------------------------------------- */
 #lightcase-overlay {
-  z-index: 9999;
+  z-index: 999;
   background: var(--section-bg-2);
 }
 
 #lightcase-case {
-  z-index: 99999;
+  z-index: 999;
 }
 
 /* ----------------------------------------------------

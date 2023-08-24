@@ -234,7 +234,7 @@ const BG = {
             main_image: "assets/img/emergency-housing/1.jpg",
             images: [],
             owner: {
-                image: 'assets/img/emergency-housing/owner1'
+                image: 'assets/img/emergency-housing/owner1.jpg'
             }
         },
         {
@@ -247,7 +247,7 @@ const BG = {
             main_image: "assets/img/emergency-housing/2.jpg",
             images: [],
             owner: {
-                image: 'assets/img/emergency-housing/owner1'
+                image: 'assets/img/emergency-housing/owner1.jpg'
             }
         },
 
@@ -613,7 +613,7 @@ const EN = {
             main_image: "assets/img/emergency-housing/1.jpg",
             images: [],
             owner: {
-                image: 'assets/img/emergency-housing/owner1'
+                image: 'assets/img/emergency-housing/owner1.jpg'
             }
         },
         {
@@ -626,7 +626,7 @@ const EN = {
             main_image: "assets/img/emergency-housing/2.jpg",
             images: [],
             owner: {
-                image: 'assets/img/emergency-housing/owner1'
+                image: 'assets/img/emergency-housing/owner1.jpg'
             }
         },
 
