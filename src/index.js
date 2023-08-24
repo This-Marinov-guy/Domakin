@@ -106,9 +106,9 @@ const Root = () => {
                     <Route path='/services/give-a-room' >
                         <LendingEN setSuccess={setSuccess} />
                     </Route>
-                    {/* <Route path='/services/emergency-housing' >
+                    <Route path='/services/emergency-housing' >
                         <EmergencyHousing setSuccess={setSuccess} />
-                    </Route> */}
+                    </Route>
 
                     <Route path="/properties/:propertyId" component={PropertyDetails} />
 

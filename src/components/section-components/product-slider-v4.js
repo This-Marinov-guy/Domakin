@@ -17,11 +17,12 @@ const PropertyItem = (props) => {
 						<Link to={publicUrl + props.main_image} data-rel={`lightcase:${props.description[0]}`}>
 							<img src={publicUrl + props.main_image} alt="Галерия" />
 						</Link>
-
 						<div className="product-badge">
-							<ul>
+							{props.owner ? <div className="agent-img">
+								<img src={props.owner.image} alt="#" />
+							</div> : <ul>
 								<li className={`sale-badge ${props.free ? 'bg-green' : 'bg-red'}`}>{props.status}</li>
-							</ul>
+							</ul>}
 						</div>
 						<div className="product-img-location-gallery">
 							<div className="product-img-location">
@@ -31,7 +32,7 @@ const PropertyItem = (props) => {
 									</li>
 								</ul>
 							</div>
-							<div className="product-img-gallery go-top">
+							{props.images.length && <div className="product-img-gallery go-top">
 								<ul >
 									<li >
 										{props.images.map((value, index) => {
@@ -39,12 +40,12 @@ const PropertyItem = (props) => {
 										})}
 									</li>
 								</ul>
-							</div>
+							</div>}
 						</div>
 					</div>
 					<div className="product-info">
 						<div className="product-price">
-							<span>&euro;{props.price}<label>/ {script.renting[10]}</label></span>
+							{props.price ? <span>&euro;{props.price}<label>/ {script.renting[10]}</label></span> : <span>{script.renting[13]}</span>}
 						</div>
 						<h2 className="product-title go-top">{props.type}</h2>
 						<ul className="product-description">
@@ -78,7 +79,7 @@ const ProductSliderV4 = (props) => {
 				</div>
 			</div>
 			<div className="row ltn__product-slider-item-three-active slick-arrow-1">
-				{props.propertyList.length === 0 ? <h3 className='col-12 text-center'>{script.renting[12]}</h3> : props.propertyList.map((value, index) => { return <PropertyItem key={index} status={value.status} free={value.free} price={value.price} type={value.type} location={value.location} description={value.description} main_image={value.main_image} images={value.images} setSelectedProperty={props.setSelectedProperty} selectedProperty={props.selectedProperty} /> })}
+				{props.propertyList.length === 0 ? <h3 className='col-12 text-center'>{script.renting[12]}</h3> : props.propertyList.map((value, index) => { return <PropertyItem key={index} status={value.status} free={value.free} price={value.price} type={value.type} location={value.location} description={value.description} main_image={value.main_image} images={value.images} owner={value.owner} setSelectedProperty={props.setSelectedProperty} selectedProperty={props.selectedProperty} /> })}
 			</div>
 			{props.selectedProperty && <div id='form-renting' className='row'>
 				<RequestForm onSubmit={props.onSubmit} />

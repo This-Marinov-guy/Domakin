@@ -123,7 +123,7 @@ const EmergencyHousing = (props) => {
         </div>
 
         {selectedWindow === 'Searching' &&
-            <ProSlider propertyList={[]} onSubmit={submitRentingHandler} selectedProperty={selectedProperty} setSelectedProperty={setSelectedProperty} />
+            <ProSlider propertyList={script.EMERGENCY_HOUSING} onSubmit={submitRentingHandler} selectedProperty={selectedProperty} setSelectedProperty={setSelectedProperty} />
         }
         {selectedWindow === 'Offering' &&
             <AddEmergencyListing setSuccess={props.setSuccess} />

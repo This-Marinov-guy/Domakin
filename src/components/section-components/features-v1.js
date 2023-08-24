@@ -64,7 +64,7 @@ const FeaturesV1 = (props) => {
 						</div>
 					</Link>
 				</div>
-				{/* <div className="col-lg-4 col-sm-6 col-12">
+				<div className="col-lg-4 col-sm-6 col-12">
 					<Link to="/services/emergency-housing">
 						<div className="ltn__feature-item ltn__feature-item-6 text-center bg-white  box-shadow-1">
 							<div style={{ height: '140px' }} className="ltn__feature-icon">
@@ -76,7 +76,7 @@ const FeaturesV1 = (props) => {
 							</div>
 						</div>
 					</Link>
-				</div> */}
+				</div>
 			</div>
 		</div>
 	</div>

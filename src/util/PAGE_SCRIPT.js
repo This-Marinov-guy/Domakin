@@ -108,7 +108,8 @@ const BG = {
         'Предлагани имоти',
         'на месец',
         'избери',
-        "В момента нямаме налични имоти - моля проверявайте сайта редовно или се свържете с нас!"
+        "В момента нямаме налични имоти - моля проверявайте сайта редовно или се свържете с нас!",
+        'НЕ СЕ ЗАПЛАЩА'
     ],
     lending: [
         'Прехвърли стар договор',
@@ -147,11 +148,11 @@ const BG = {
         'Местоположение',
         'Максимален период на престоя',
         'Цена за нощувка',
-        'Можете го предоставите безплатно',
+        'Можете да предоставите мястото безплатно',
         'Описание на имота (например дали е легло/диван и какво друго може да използва наемателят)',
         'Давам съгласието си да бъда свързван от организацията за целите на услугата',
         'Снимки на стаята',
-        ' Предайте поне 3 снимки и не повече от 6',
+        ' Предайте поне 1 снимка и не повече от 6',
         '* Допълнителни снимки няма да бъдат приети',
         '* Поддържани формати са jpg, jpeg и png',
         'изпрати стая',
@@ -221,6 +222,35 @@ const BG = {
             main_image: "assets/img/properties/7.jpg",
             images: ['assets/img/properties/19.jpg', 'assets/img/properties/20.jpg', 'assets/img/properties/2.jpg', 'assets/img/properties/3.jpg', 'assets/img/properties/14.jpg', 'assets/img/properties/15.jpg', 'assets/img/properties/16.jpg', 'assets/img/properties/11.jpg', 'assets/img/properties/12.jpg', 'assets/img/properties/13.jpg'],
         },
+    ],
+    EMERGENCY_HOUSING: [
+        {
+            id: '1',
+            status: 'Available',
+            free: true,
+            type: 'Single Room',
+            location: 'Tweede Oosterparkstraat 3, Amsterdam',
+            description: ['A small but nice room in a two bedroom apartment. Living room, kitchen, bathroom have everything included. The room comes semi-furnished, the bed and the clothing rack can be bought from the previous tenant or removed. The shelf stays. There is one more working male tenant - 26 years old.', 'Rent includes service cost, bills, wifi, el, gas, water', '8th of September 2023 - June 2024 with a possibility of extension'],
+            main_image: "assets/img/emergency-housing/1.jpg",
+            images: [],
+            owner: {
+                image: 'assets/img/emergency-housing/owner1'
+            }
+        },
+        {
+            id: '2',
+            status: 'Taken',
+            free: false,
+            type: 'Studio',
+            location: 'Hoogeweg 1, Groningen',
+            description: ['Studio from September to February, , 784 euro per month, all bills included', 'Alina is going on an exchange program and would like somebody to take her studio', 'As registration of living is not possible at the place, it is NOT suitable for first year students who have not yet been registered'],
+            main_image: "assets/img/emergency-housing/2.jpg",
+            images: [],
+            owner: {
+                image: 'assets/img/emergency-housing/owner1'
+            }
+        },
+
     ],
     home: [
         'Компания за подпомагане на намиране на квартири',
@@ -457,7 +487,8 @@ const EN = {
         'Properties',
         'per month',
         'select',
-        "No properties at the moment - please check again later!"
+        "No properties at the moment - please check again later!",
+        'FREE OF CHARGE',
     ],
     lending: [
         'Transfer and old contract',
@@ -499,7 +530,7 @@ const EN = {
         'Description of property (such as is it a bed/coach/etc., what else can the tenent use)',
         'I give my permission to be contacted by the organization for the purposes of the service',
         'Room pictures',
-        '* Submit at least 3 images and no more than 6',
+        '* Submit at least 1 image and no more than 6',
         '* Extra images will not be received',
         '* Supported formats are jpg, jpeg and png',
         'send room',
@@ -522,7 +553,7 @@ const EN = {
             ]
         },
         'Searching',
-        'Offering'
+        'Offering',
     ],
     FOR_RENT: [
         {
@@ -568,6 +599,35 @@ const EN = {
             description: ['Room for one in a shared house just 20km from Groningen. The house is owned by a Portuguese couple. Price includes all bills', 'Contract is for 12 months', 'Available from 1st of August'],
             main_image: "assets/img/properties/7.jpg",
             images: ['assets/img/properties/19.jpg', 'assets/img/properties/20.jpg', 'assets/img/properties/2.jpg', 'assets/img/properties/3.jpg', 'assets/img/properties/14.jpg', 'assets/img/properties/15.jpg', 'assets/img/properties/16.jpg', 'assets/img/properties/11.jpg', 'assets/img/properties/12.jpg', 'assets/img/properties/13.jpg'],
+        },
+
+    ],
+    EMERGENCY_HOUSING: [
+        {
+            id: '1',
+            status: 'Available',
+            free: true,
+            type: 'Single Room',
+            location: 'Tweede Oosterparkstraat 3, Amsterdam',
+            description: ['A small but nice room in a two bedroom apartment. Living room, kitchen, bathroom have everything included. The room comes semi-furnished, the bed and the clothing rack can be bought from the previous tenant or removed. The shelf stays. There is one more working male tenant - 26 years old.', 'Rent includes service cost, bills, wifi, el, gas, water', '8th of September 2023 - June 2024 with a possibility of extension'],
+            main_image: "assets/img/emergency-housing/1.jpg",
+            images: [],
+            owner: {
+                image: 'assets/img/emergency-housing/owner1'
+            }
+        },
+        {
+            id: '2',
+            status: 'Taken',
+            free: false,
+            type: 'Studio',
+            location: 'Hoogeweg 1, Groningen',
+            description: ['Studio from September to February, , 784 euro per month, all bills included', 'Alina is going on an exchange program and would like somebody to take her studio', 'As registration of living is not possible at the place, it is NOT suitable for first year students who have not yet been registered'],
+            main_image: "assets/img/emergency-housing/2.jpg",
+            images: [],
+            owner: {
+                image: 'assets/img/emergency-housing/owner1'
+            }
         },
 
     ],
