@@ -109,7 +109,8 @@ const BG = {
         'на месец',
         'избери',
         "В момента нямаме налични имоти - моля проверявайте сайта редовно или се свържете с нас!",
-        'НЕ СЕ ЗАПЛАЩА'
+        'НЕ СЕ ЗАПЛАЩА',
+        'на вечер',
     ],
     lending: [
         'Прехвърли стар договор',
@@ -231,15 +232,20 @@ const BG = {
     EMERGENCY_HOUSING: [
         {
             id: '1',
-            status: 'Available',
+            status: 'Свободна',
             free: true,
             type: 'Single Room',
             location: 'Tweede Oosterparkstraat 3, Amsterdam',
-            description: ['A small but nice room in a two bedroom apartment. Living room, kitchen, bathroom have everything included. The room comes semi-furnished, the bed and the clothing rack can be bought from the previous tenant or removed. The shelf stays. There is one more working male tenant - 26 years old.', 'Rent includes service cost, bills, wifi, el, gas, water', '8th of September 2023 - June 2024 with a possibility of extension'],
-            main_image: "assets/img/emergency-housing/1.jpg",
+            description: {
+                property: 'A small but nice room in a two bedroom apartment. Living room, kitchen, bathroom have everything included. The room comes semi-furnished, the bed and the clothing rack can be bought from the previous tenant or removed. The shelf stays.',
+                period: '8th of September 2023 - June 2024 with a possibility of extension',
+                bills: 'Rent includes service cost, bills, wifi, el, gas, water',
+                flatmates: 'There is one more working male tenant - 26 years old.',
+            }, main_image: "assets/img/emergency-housing/1.jpg",
             images: [],
             owner: {
-                image: 'assets/img/emergency-housing/owner1.jpg'
+                image: 'assets/img/emergency-housing/owner1.jpg',
+                description: ''
             }
         },
         {
@@ -248,11 +254,16 @@ const BG = {
             free: false,
             type: 'Studio',
             location: 'Hoogeweg 1, Groningen',
-            description: ['Studio from September to February, , 784 euro per month, all bills included', 'Alina is going on an exchange program and would like somebody to take her studio', 'As registration of living is not possible at the place, it is NOT suitable for first year students who have not yet been registered'],
-            main_image: "assets/img/emergency-housing/2.jpg",
+            description: {
+                property: 'A small but nice room in a two bedroom apartment. Living room, kitchen, bathroom have everything included. The room comes semi-furnished, the bed and the clothing rack can be bought from the previous tenant or removed. The shelf stays.',
+                period: '8th of September 2023 - June 2024 with a possibility of extension',
+                bills: 'Rent includes service cost, bills, wifi, el, gas, water',
+                flatmates: 'There is one more working male tenant - 26 years old.',
+            }, main_image: "assets/img/emergency-housing/2.jpg",
             images: [],
             owner: {
-                image: 'assets/img/emergency-housing/owner1.jpg'
+                image: 'assets/img/emergency-housing/owner1.jpg',
+                description: ''
             }
         },
 
@@ -494,6 +505,7 @@ const EN = {
         'select',
         "No properties at the moment - please check again later!",
         'FREE OF CHARGE',
+        'per night'
     ],
     lending: [
         'Transfer and old contract',
@@ -619,8 +631,12 @@ const EN = {
             free: true,
             type: 'Single Room',
             location: 'Tweede Oosterparkstraat 3, Amsterdam',
-            description: ['A small but nice room in a two bedroom apartment. Living room, kitchen, bathroom have everything included. The room comes semi-furnished, the bed and the clothing rack can be bought from the previous tenant or removed. The shelf stays. There is one more working male tenant - 26 years old.', 'Rent includes service cost, bills, wifi, el, gas, water', '8th of September 2023 - June 2024 with a possibility of extension'],
-            main_image: "assets/img/emergency-housing/1.jpg",
+            description: {
+                property: 'A small but nice room in a two bedroom apartment. Living room, kitchen, bathroom have everything included. The room comes semi-furnished, the bed and the clothing rack can be bought from the previous tenant or removed. The shelf stays.',
+                period: '8th of September 2023 - June 2024 with a possibility of extension',
+                bills: 'Rent includes service cost, bills, wifi, el, gas, water',
+                flatmates: 'There is one more working male tenant - 26 years old.',
+            }, main_image: "assets/img/emergency-housing/1.jpg",
             images: [],
             owner: {
                 image: 'assets/img/emergency-housing/owner1.jpg'
@@ -632,8 +648,12 @@ const EN = {
             free: false,
             type: 'Studio',
             location: 'Hoogeweg 1, Groningen',
-            description: ['Studio from September to February, , 784 euro per month, all bills included', 'Alina is going on an exchange program and would like somebody to take her studio', 'As registration of living is not possible at the place, it is NOT suitable for first year students who have not yet been registered'],
-            main_image: "assets/img/emergency-housing/2.jpg",
+            description: {
+                property: 'A small but nice room in a two bedroom apartment. Living room, kitchen, bathroom have everything included. The room comes semi-furnished, the bed and the clothing rack can be bought from the previous tenant or removed. The shelf stays.',
+                period: '8th of September 2023 - June 2024 with a possibility of extension',
+                bills: 'Rent includes service cost, bills, wifi, el, gas, water',
+                flatmates: 'There is one more working male tenant - 26 years old.',
+            }, main_image: "assets/img/emergency-housing/2.jpg",
             images: [],
             owner: {
                 image: 'assets/img/emergency-housing/owner1.jpg'

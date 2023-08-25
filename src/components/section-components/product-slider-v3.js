@@ -51,7 +51,19 @@ const EmergencyPropertyItem = (props) => {
 						</div>
 						<h2 className="product-title go-top">{props.type}</h2>
 						<ul className="product-description">
-							{props.description.map((value, index) => { return <p key={index}>{value}</p> })}
+							<li className='row justify-content-around'>
+								<i className="col-lg-2 col-md-2 col-sm-12 col-12 fa-solid fa-house icon_sm"></i>
+								<p className='col-lg-10 col-md-10 col-sm-12 col-12'>{props.description.property}</p>
+							</li>
+							<li className='row justify-content-around'>
+								<i className="col-lg-2 col-md-2 col-sm-12 col-12 fa-solid fa-calendar-days icon_sm"></i>
+								<p className='col-lg-10 col-md-10 col-sm-12 col-12'>{props.description.period}</p>
+							</li>
+	
+							<li className='row justify-content-around'>
+								<i className="col-lg-2 col-md-2 col-sm-12 col-12 fa-solid fa-users icon_sm"></i>
+								<p className='col-lg-10 col-md-10 col-sm-12 col-12'>{props.description.flatmates}</p>
+							</li>
 						</ul>
 					</div>
 					<div className="product-info-bottom">

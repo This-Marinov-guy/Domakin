@@ -37,7 +37,7 @@ const LendingEN = (props) => {
                 <i className="rotate-arrow-2 flaticon-right-arrow col-1 flex-center" />
                 <div className='col-lg-3 col-md-3 col-sm-12 col-12 flex-center'>
                     <i className="fa-regular fa-credit-card icon"></i>
-                    <h5 className="service-description">3. Once the tenant settles a contract you will receive a one time commission of 10% of the monthly rent
+                    <h5 className="service-description">3. Once the tenant settles a contract you will receive a one time commission of 100 euro
                     </h5>
                 </div>
             </div></Fragment>} />

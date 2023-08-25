@@ -43,7 +43,7 @@ const PropertyItem = (props) => {
 					</div>
 					<div className="product-info">
 						<div className="product-price">
-							{props.price ? <span>&euro;{props.price}<label>/ {script.renting[10]}</label></span> : <span>{script.renting[13]}</span>}
+							{props.price ? <span>&euro;{props.price}<label>/ {script.renting[14]}</label></span> : <span>{script.renting[13]}</span>}
 						</div>
 						<h2 className="product-title go-top">{props.type}</h2>
 						<ul className="product-description">
