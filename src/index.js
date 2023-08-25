@@ -87,7 +87,7 @@ const Root = () => {
     }, [sendRequest])
 
     useEffect(() => {
-        if (toast.current) {
+        if (toast.current && errorMessage) {
             toast.current.show({
                 severity: 'error',
                 summary: script.error[0],

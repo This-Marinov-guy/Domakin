@@ -22,13 +22,13 @@ const ContactForm = () => {
 			)
 			.then(
 				() => {
-					toast.current.show({ severity: 'success', summary: script.viewing[17], detail: script.contact[7], sticky: true });
+					toast.current.show({ severity: 'success', summary: script.viewing[17], detail: script.contact[7], life: 10000 });
 				},
 				() => {
-					toast.current.show({ severity: 'error', summary: script.error[0], detail: script.contact[8], sticky: true });
+					toast.current.show({ severity: 'error', summary: script.error[0], detail: script.contact[8], life: 10000 });
 				}
 			).catch((error) => {
-				toast.current.show({ severity: 'error', summary: script.error[0], detail: error, sticky: true });
+				toast.current.show({ severity: 'error', summary: script.error[0], detail: error, life: 10000 });
 
 			});
 	}
