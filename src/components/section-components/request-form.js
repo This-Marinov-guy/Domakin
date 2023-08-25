@@ -4,7 +4,7 @@ import { selectScript } from '../../redux/language';
 import { Field, Form, Formik, ErrorMessage } from 'formik';
 import * as yup from "yup";
 import { useHttpClient } from '../../hooks/http-hook'
-import Spinner from 'react-bootstrap/Spinner';
+import { ProgressSpinner } from 'primereact/progressspinner';
 
 const RequestForm = (props) => {
     let publicUrl = process.env.PUBLIC_URL + '/'
@@ -94,7 +94,8 @@ const RequestForm = (props) => {
                                         />
                                     </div>
                                     <div className="btn-wrapper text-center mt-40">
-                                        <button disabled={loading} className="btn theme-btn-1 btn-effect-1 text-uppercase" type="submit">{loading ? <Spinner animation="border" />
+                                        <button disabled={loading} className="btn theme-btn-1 btn-effect-1 text-uppercase" type="submit">{loading ?            <ProgressSpinner style={{ width: '30px', height: '30px' }} />
+
                                             : script.viewing[15]}</button>
                                     </div>
                                 </div>

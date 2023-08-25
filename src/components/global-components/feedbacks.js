@@ -1,7 +1,7 @@
 import React from 'react'
 import { useHttpClient } from '../../hooks/http-hook'
 import CreateFeedback from './createFeedback';
-import Spinner from 'react-bootstrap/Spinner';
+import { ProgressSpinner } from 'primereact/progressspinner';
 import { useSelector } from 'react-redux'
 import { selectScript } from '../../redux/language'
 import { selectFeedbacks } from '../../redux/feedbacks';
@@ -23,7 +23,8 @@ const Feedbacks = () => {
                 </div>
             </div>
         </div>
-        {loading ? <div className='text-center'><Spinner variant='primary' animation="border" /></div> :
+        {loading ? <div className='text-center'>            <ProgressSpinner style={{ width: '30px', height: '30px' }} />
+</div> :
             <div>{feedbacks.length === 0 ?
                 <div className='text-center'>
                     <p>No feedbacks yet - A chance to be the first!</p>

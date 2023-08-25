@@ -4,7 +4,7 @@ import { selectScript } from '../../redux/language';
 import { Field, Form, Formik, ErrorMessage } from 'formik';
 import * as yup from "yup";
 import { useHttpClient } from '../../hooks/http-hook'
-import Spinner from 'react-bootstrap/Spinner';
+import { ProgressSpinner } from 'primereact/progressspinner';
 
 const CreateFeedback = () => {
     let publicUrl = process.env.PUBLIC_URL + '/'
@@ -26,7 +26,7 @@ const CreateFeedback = () => {
         <div style={{ padding: '0 15%' }} className="container">
             <div className="row">
                 <div className="col-lg-12">
-                    <Formik className="ltn__appointment-inner" validationSchema={schema} onSubmit={async (values , {resetForm}) => {
+                    <Formik className="ltn__appointment-inner" validationSchema={schema} onSubmit={async (values, { resetForm }) => {
                         try {
                             setLoading(true)
                             const responseData = await sendRequest(
@@ -85,7 +85,8 @@ const CreateFeedback = () => {
                                     </div>
 
                                     <div className="btn-wrapper text-center">
-                                        <button disabled={loading} className="btn theme-btn-1 btn-effect-1 text-uppercase" type="submit">{loading ? <Spinner animation="border" />
+                                        <button disabled={loading} className="btn theme-btn-1 btn-effect-1 text-uppercase" type="submit">{loading ? <ProgressSpinner style={{ width: '30px', height: '30px' }} />
+
                                             : script.feedbacks[7]}</button>
                                         {success && <p style={{ color: '#10a551', marginTop: '5px' }}>{script.feedbacks[12]}</p>}
                                     </div>

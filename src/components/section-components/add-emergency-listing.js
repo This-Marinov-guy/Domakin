@@ -4,8 +4,7 @@ import { selectScript } from '../../redux/language';
 import { Field, Form, Formik, ErrorMessage } from 'formik';
 import * as yup from "yup";
 import { useHttpClient } from '../../hooks/http-hook'
-import Spinner from 'react-bootstrap/Spinner';
-import Success from '../ui/Success';
+import { ProgressSpinner } from 'primereact/progressspinner';
 import { useHistory } from 'react-router-dom';
 
 const AddEmergencyListing = (props) => {
@@ -257,7 +256,8 @@ const AddEmergencyListing = (props) => {
                                             </div>
                                         </div>
                                         <div className="btn-wrapper text-center mt-40">
-                                            <button disabled={loading || files.length === 0 || !isValid} className="btn theme-btn-1 btn-effect-1 text-uppercase" type="submit">{loading ? <Spinner animation="border" />
+                                            <button disabled={loading || files.length === 0 || !isValid} className="btn theme-btn-1 btn-effect-1 text-uppercase" type="submit">{loading ? <ProgressSpinner style={{ width: '30px', height: '30px' }} />
+
                                                 : script.emergency_housing[33]}</button>
                                             {files.length === 0 && <p><small>{script.emergency_housing[34]}</small></p>}
                                         </div>
