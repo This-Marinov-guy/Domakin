@@ -1,16 +1,19 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState, useRef } from 'react';
 import { useSelector } from 'react-redux';
 import { selectScript } from '../../redux/language';
 import { Field, Form, Formik, ErrorMessage } from 'formik';
 import * as yup from "yup";
 import { useHttpClient } from '../../hooks/http-hook'
 import { ProgressSpinner } from 'primereact/progressspinner';
+import { Toast } from 'primereact/toast';
 
 const CreateFeedback = () => {
     let publicUrl = process.env.PUBLIC_URL + '/'
 
     const [success, setSuccess] = useState(false)
     const [loading, setLoading] = useState(false)
+
+    const toast = useRef(null);
 
     const script = useSelector(selectScript);
 
@@ -21,8 +24,21 @@ const CreateFeedback = () => {
         feedback: yup.string().required(script.feedbacks[9]).min(20, script.feedbacks[10]).max(300, script.feedbacks[11]),
     });
 
+    useEffect(() => {
+        if (toast.current && success) {
+            toast.current.show({
+                severity: 'success',
+                summary: script.viewing[17],
+                detail: script.feedbacks[12],
+                sticky: true
+            });
+        }
+    }, [success])
+
 
     return (<div className="ltn__appointment-area pb-120">
+        <Toast ref={toast} />
+
         <div style={{ padding: '0 15%' }} className="container">
             <div className="row">
                 <div className="col-lg-12">
@@ -88,7 +104,6 @@ const CreateFeedback = () => {
                                         <button disabled={loading} className="btn theme-btn-1 btn-effect-1 text-uppercase" type="submit">{loading ? <ProgressSpinner style={{ width: '30px', height: '30px' }} />
 
                                             : script.feedbacks[7]}</button>
-                                        {success && <p style={{ color: '#10a551', marginTop: '5px' }}>{script.feedbacks[12]}</p>}
                                     </div>
                                 </div>
                             </Form>
