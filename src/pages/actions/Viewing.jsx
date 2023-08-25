@@ -4,7 +4,6 @@ import PageHeader from '../../components/global-components/page-header';
 import RequestFormV2 from '../../components/section-components/request-form-v2';
 import Footer from '../../components/global-components/footer';
 import ServiceDescription from '../../components/section-components/service-description';
-import Success from '../../components/ui/Success';
 import CallToActionV1 from '../../components/section-components/call-to-action-v1';
 import { useSelector } from 'react-redux';
 import { selectScript } from '../../redux/language';
