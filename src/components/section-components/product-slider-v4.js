@@ -2,7 +2,6 @@ import React, { Fragment } from 'react';
 import { useSelector } from 'react-redux';
 import { Link } from 'react-router-dom';
 import { selectScript } from '../../redux/language';
-import { Tooltip } from 'primereact/tooltip';
 import RequestForm from './request-form';
 
 const PropertyItem = (props) => {
@@ -12,7 +11,6 @@ const PropertyItem = (props) => {
 
 	return (
 		<Fragment>
-			<Tooltip target=".agent-img" />
 			<div className="col-xl-4 col-sm-6 col-12">
 				<div className="ltn__product-item ltn__product-item-4 text-center---">
 					<div className="product-img go-top">
@@ -20,13 +18,9 @@ const PropertyItem = (props) => {
 							<img src={publicUrl + props.main_image} alt="Галерия" />
 						</Link>
 						<div className="product-badge">
-							{props.owner ? <div className="agent-img" data-pr-tooltip="No notifications"
-								data-pr-position="top"
-								style={{ fontSize: '2rem', cursor: 'pointer' }}>
-								<img src={publicUrl + props.owner.image} alt="#" />
-							</div> : <ul>
+							 <ul>
 								<li className={`sale-badge ${props.free ? 'bg-green' : 'bg-red'}`}>{props.status}</li>
-							</ul>}
+							</ul>
 						</div>
 						<div className="product-img-location-gallery">
 							<div className="product-img-location">

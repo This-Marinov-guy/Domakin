@@ -1,7 +1,7 @@
 import React, { Fragment, useState } from 'react';
 import Navbar from '../../components/global-components/navbar';
 import PageHeader from '../../components/global-components/page-header';
-import ProSlider from '../../components/section-components/product-slider-v4';
+import ProSlider from '../../components/section-components/product-slider-v3';
 import Footer from '../../components/global-components/footer';
 import ServiceDescription from '../../components/section-components/service-description';
 import CallToActionV1 from '../../components/section-components/call-to-action-v1';
