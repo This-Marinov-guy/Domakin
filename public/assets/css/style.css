@@ -55,7 +55,6 @@ a::slotted(*) {
   font-family: inherit !important;
 }
 
-
 .center {
   display: flex;
   align-items: center;
@@ -4856,6 +4855,15 @@ ul.wp-block-latest-posts.is-grid.alignwide {
 /* ----------------------------------------------------
     Video Widget
 ---------------------------------------------------- */
+.icon_sm {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 25px;
+  width: 40px;
+  height: 40px;
+}
+
 .ltn__video-icon-1 {
   background-color: transparent;
   color: var(--white);
@@ -9239,8 +9247,8 @@ p.correct {
 }
 
 .product-badge .agent-img {
-  width:80px;
-  height:80px;
+  width: 80px;
+  height: 80px;
   margin-right: 12px;
 }
 
