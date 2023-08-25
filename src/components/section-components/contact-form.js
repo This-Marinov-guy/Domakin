@@ -1,13 +1,14 @@
-import React, { useState } from 'react';
+import React, { useRef } from 'react';
 import emailjs from "emailjs-com";
 import { useSelector } from 'react-redux';
 import { selectScript } from '../../redux/language';
+import { Toast } from 'primereact/toast';
 
 const ContactForm = () => {
 
 	let publicUrl = process.env.REACT_APP_PUBLIC_URL + '/'
 
-	const [result, showresult] = useState(null);
+	const toast = useRef(null)
 
 	const script = useSelector(selectScript)
 	const sendEmail = (e) => {
@@ -20,21 +21,20 @@ const ContactForm = () => {
 				process.env.REACT_APP_PUBLIC_KEY
 			)
 			.then(
-				(result) => {
-					showresult(<p style={{ color: 'green' }} className='mt-20'>{script.contact[7]}</p>);
+				() => {
+					toast.current.show({ severity: 'success', summary: script.viewing[17], detail: script.contact[7], sticky: true });
 				},
-				(error) => {
-					console.log(error.text);
-					showresult(<p style={{ color: 'red' }} className='mt-20'>{script.contact[8]}</p>);
+				() => {
+					toast.current.show({ severity: 'error', summary: script.error[0], detail: script.contact[8], sticky: true });
 				}
-			);
+			).catch((error) => {
+				toast.current.show({ severity: 'error', summary: script.error[0], detail: error, sticky: true });
+
+			});
 	}
 
-	setTimeout(() => {
-		showresult(null);
-	}, 5000);
-
 	return <div className="ltn__contact-message-area mb-120">
+		<Toast ref={toast} />
 		<div className="container">
 			<div className="row">
 				<div className="col-lg-12">
@@ -59,7 +59,6 @@ const ContactForm = () => {
 							<div className="btn-wrapper mt-0">
 								<button className="btn theme-btn-1 btn-effect-1 text-uppercase" type="submit">{script.contact[13]}</button>
 							</div>
-							{result}
 						</form>
 					</div>
 				</div>
