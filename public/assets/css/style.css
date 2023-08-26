@@ -55,6 +55,11 @@ a::slotted(*) {
   font-family: inherit !important;
 }
 
+.p-tooltip {
+  max-width: 300px;
+}
+
+
 .center {
   display: flex;
   align-items: center;

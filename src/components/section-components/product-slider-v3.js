@@ -22,7 +22,7 @@ const EmergencyPropertyItem = (props) => {
 						<div className="product-badge">
 							<div className="agent-img" data-pr-tooltip={props.owner.description}
 								data-pr-position="top"
-								style={{ fontSize: '2rem', cursor: 'pointer' }}>
+								style={{ fontSize: '2rem', cursor: 'pointer', maxWidth: '100px' }}>
 								<img src={publicUrl + props.owner.image} alt="#" />
 							</div>
 						</div>
