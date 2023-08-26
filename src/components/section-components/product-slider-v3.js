@@ -45,11 +45,13 @@ const EmergencyPropertyItem = (props) => {
 							</div>}
 						</div>
 					</div>
-					<div className="product-info">
+					<div className="text-center mt-10">
 						<div className="product-price">
 							{props.price ? <span>&euro;{props.price}<label>/ {script.renting[10]}</label></span> : <span>{script.renting[13]}</span>}
 						</div>
 						<h2 className="product-title go-top">{props.type}</h2>
+					</div>
+					<div className='product-info'>
 						<ul className="product-description">
 							<li className='row justify-content-around'>
 								<i className="col-lg-2 col-md-2 col-sm-12 col-12 fa-solid fa-house icon_sm"></i>
@@ -59,7 +61,7 @@ const EmergencyPropertyItem = (props) => {
 								<i className="col-lg-2 col-md-2 col-sm-12 col-12 fa-solid fa-calendar-days icon_sm"></i>
 								<p className='col-lg-10 col-md-10 col-sm-12 col-12'>{props.description.period}</p>
 							</li>
-	
+
 							<li className='row justify-content-around'>
 								<i className="col-lg-2 col-md-2 col-sm-12 col-12 fa-solid fa-users icon_sm"></i>
 								<p className='col-lg-10 col-md-10 col-sm-12 col-12'>{props.description.flatmates}</p>

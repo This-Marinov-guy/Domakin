@@ -10,7 +10,6 @@ const RequestForm = (props) => {
     let publicUrl = process.env.PUBLIC_URL + '/'
 
     const script = useSelector(selectScript);
-    console.log(script.viewing[15]);
     const { loading } = useHttpClient()
 
     const schema = yup.object().shape({

@@ -41,11 +41,13 @@ const PropertyItem = (props) => {
 							</div>}
 						</div>
 					</div>
-					<div className="product-info">
+					<div className="text-center mt-10">
 						<div className="product-price">
 							{props.price ? <span>&euro;{props.price}<label>/ {script.renting[14]}</label></span> : <span>{script.renting[13]}</span>}
 						</div>
 						<h2 className="product-title go-top">{props.type}</h2>
+					</div>
+					<div className='product-info'>
 						<ul className="product-description">
 							<li className='row justify-content-around'>
 								<i className="col-lg-2 col-md-2 col-sm-12 col-12 fa-solid fa-bed icon_sm"></i>
