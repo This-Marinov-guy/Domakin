@@ -234,36 +234,34 @@ const BG = {
             id: '1',
             status: 'Свободна',
             free: true,
-            type: 'Single Room',
-            location: 'Tweede Oosterparkstraat 3, Amsterdam',
+            type: 'Разтегаем диван',
+            location: 'Petrus Driessenstraat 42A, Groningen',
             description: {
-                property: 'A small but nice room in a two bedroom apartment. Living room, kitchen, bathroom have everything included. The room comes semi-furnished, the bed and the clothing rack can be bought from the previous tenant or removed. The shelf stays.',
-                period: '8th of September 2023 - June 2024 with a possibility of extension',
-                bills: 'Rent includes service cost, bills, wifi, el, gas, water',
-                flatmates: 'There is one more working male tenant - 26 years old.',
+                property: 'Разполага с баня, пералня, интърнет, и всички необходимости',
+                period: 'Максимална отседналост до 20 дена',
+                flatmates: '3ма младежи на 22, 22 и 23 години',
             }, main_image: "assets/img/emergency-housing/1.jpg",
             images: [],
             owner: {
                 image: 'assets/img/emergency-housing/owner1.jpg',
-                description: 'dasdsadd'
+                description: 'Здравейте, ние сме Сава, Коко и Дими и сме част от борда на BGSG. Ще се радваме да помогнем на всеки, който се нуждае от извънредно настаняване!'
             }
         },
         {
             id: '2',
-            status: 'Taken',
-            free: false,
-            type: 'Studio',
-            location: 'Hoogeweg 1, Groningen',
+            status: 'Свободна',
+            free: true,
+            type: 'Разтегаем диван',
+            location: 'Petrus Driessenstraat 42A, Groningen',
             description: {
-                property: 'A small but nice room in a two bedroom apartment. Living room, kitchen, bathroom have everything included. The room comes semi-furnished, the bed and the clothing rack can be bought from the previous tenant or removed. The shelf stays.',
-                period: '8th of September 2023 - June 2024 with a possibility of extension',
-                bills: 'Rent includes service cost, bills, wifi, el, gas, water',
-                flatmates: 'There is one more working male tenant - 26 years old.',
+                property: 'Разполага с баня, пералня, интърнет, и всички необходимости',
+                period: 'Максимална отседналост до 20 дена',
+                flatmates: '3ма младежи на 22 и 23 години',
             }, main_image: "assets/img/emergency-housing/2.jpg",
             images: [],
             owner: {
                 image: 'assets/img/emergency-housing/owner1.jpg',
-                description: 'dasdsad'
+                description: 'Здравейте, ние сме Сава, Коко и Дими и сме част от борда на BGSG. Ще се радваме да помогнем на всеки, който се нуждае от извънредно настаняване!'
             }
         },
 
@@ -629,36 +627,34 @@ const EN = {
             id: '1',
             status: 'Available',
             free: true,
-            type: 'Single Room',
-            location: 'Tweede Oosterparkstraat 3, Amsterdam',
+            type: 'Coach',
+            location: 'Petrus Driessenstraat 42A, Groningen',
             description: {
-                property: 'A small but nice room in a two bedroom apartment. Living room, kitchen, bathroom have everything included. The room comes semi-furnished, the bed and the clothing rack can be bought from the previous tenant or removed. The shelf stays.',
-                period: '8th of September 2023 - June 2024 with a possibility of extension',
-                bills: 'Rent includes service cost, bills, wifi, el, gas, water',
-                flatmates: 'There is one more working male tenant - 26 years old.',
+                property: 'Includes bathroom, washing machine, WI-FI and other essential utility',
+                period: 'Maximum period of stay of 20 days',
+                flatmates: '3 university students around the age of 22',
             }, main_image: "assets/img/emergency-housing/1.jpg",
             images: [],
             owner: {
                 image: 'assets/img/emergency-housing/owner1.jpg',
-                description: 'dasdasdas',
+                description: 'Hello, we are Sava, Koko and Dimi and we are part of the BGSG board. We would be happy to help anyone by emergently taking them in our current home!',
             }
         },
         {
             id: '2',
-            status: 'Taken',
-            free: false,
-            type: 'Studio',
-            location: 'Hoogeweg 1, Groningen',
+            status: 'Available',
+            free: true,
+            type: 'Coach',
+            location: 'Petrus Driessenstraat 42A, Groningen',
             description: {
-                property: 'A small but nice room in a two bedroom apartment. Living room, kitchen, bathroom have everything included. The room comes semi-furnished, the bed and the clothing rack can be bought from the previous tenant or removed. The shelf stays.',
-                period: '8th of September 2023 - June 2024 with a possibility of extension',
-                bills: 'Rent includes service cost, bills, wifi, el, gas, water',
-                flatmates: 'There is one more working male tenant - 26 years old.',
+                property: 'Includes bathroom, washing machine, WI-FI and other essential utility',
+                period: 'Maximum period of stay of 20 days',
+                flatmates: '3 university students around the age of 22',
             }, main_image: "assets/img/emergency-housing/2.jpg",
             images: [],
             owner: {
                 image: 'assets/img/emergency-housing/owner1.jpg',
-                description: 'dasdasdadads',
+                description: 'Hello, we are Sava, Koko and Dimi and we are part of the BGSG board. We would be happy to help anyone by emergently taking them in our current home!',
             }
         },
 
