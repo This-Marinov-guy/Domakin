@@ -676,7 +676,9 @@ const EN = {
         'Check the properties on our site and make an inquery for more information',
         'List a room',
         'Services',
-        'Search for a new flatmate / Transfer your contract'
+        'Search for a new flatmate / Transfer your contract',
+        'Emergency Housing',
+        'Search or provide hosuing for short period in emergency situations'
     ],
     team: [
         'Team',

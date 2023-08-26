@@ -71,8 +71,8 @@ const FeaturesV1 = (props) => {
 								<img style={{ margin: '20px 0 0 20px' }} src={publicUrl + "assets/img/icons/icon-img/8.png"} alt="#" />
 							</div>
 							<div className="ltn__feature-info">
-								<h3>{script.features[7]}</h3>
-								<p>{script.features[9]}</p>
+								<h3>{script.features[10]}</h3>
+								<p>{script.features[11]}</p>
 							</div>
 						</div>
 					</Link>
