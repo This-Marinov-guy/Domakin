@@ -36,6 +36,11 @@ const Lending = lazy(() => import('./pages/actions/Lending'));
 const LendingEN = lazy(() => import('./pages/actions/LendingEN'));
 const EmergencyHousing = lazy(() => import('./pages/actions/EmergencyHousing'));
 
+//emergency-housing
+const EmergencyHousingProperties = lazy(() => import('./pages/emergency-housing/EmergencyHousingProperties'));
+const EmergencyHousingAddListing = lazy(() => import('./pages/emergency-housing/EmergencyHousingAddListing'));
+
+
 //details
 const PropertyDetails = lazy(() => import('./pages/details/PropertyDetails'));
 
@@ -140,12 +145,17 @@ const Root = () => {
                         <Route path='/services/give-a-room' >
                             <LendingEN setSuccess={setSuccess} />
                         </Route>
-                        <Route path='/services/emergency-housing' >
-                            <EmergencyHousing setSuccess={setSuccess} />
+                        <Route path='/services/emergency-housing' exact>
+                            <EmergencyHousing />
+                        </Route>
+                        <Route path='/services/emergency-housing/properties' exact>
+                            <EmergencyHousingProperties setSuccess={setSuccess} />
+                        </Route>
+                        <Route path='/services/emergency-housing/add-listing' exact>
+                            <EmergencyHousingAddListing setSuccess={setSuccess} />
                         </Route>
 
                         <Route path="/properties/:propertyId" component={PropertyDetails} />
-
                         <Route path="*" component={ErrorPage} />
 
                     </Switch>
