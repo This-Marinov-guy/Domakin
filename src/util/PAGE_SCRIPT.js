@@ -242,7 +242,7 @@ const BG = {
                 period: 'Максимална отседналост до 20 дена',
                 flatmates: '3ма младежи на 22, 22 и 23 години',
             }, main_image: "assets/img/emergency-housing/1.jpg",
-            images: [],
+            images: ['assets/img/emergency-housing/3.jpg', 'assets/img/emergency-housing/4.jpg', 'assets/img/emergency-housing/5.jpg', 'assets/img/emergency-housing/6.jpg', 'assets/img/emergency-housing/7.jpg'],
             owner: {
                 image: 'assets/img/emergency-housing/owner1.jpg',
                 description: 'Здравейте, ние сме Сава, Коко и Дими и сме част от борда на BGSG. Ще се радваме да помогнем на всеки, който се нуждае от извънредно настаняване!'
@@ -259,7 +259,7 @@ const BG = {
                 period: 'Максимална отседналост до 20 дена',
                 flatmates: '3ма младежи на 22 и 23 години',
             }, main_image: "assets/img/emergency-housing/2.jpg",
-            images: [],
+            images: ['assets/img/emergency-housing/3.jpg', 'assets/img/emergency-housing/4.jpg', 'assets/img/emergency-housing/5.jpg', 'assets/img/emergency-housing/6.jpg', 'assets/img/emergency-housing/7.jpg'],
             owner: {
                 image: 'assets/img/emergency-housing/owner1.jpg',
                 description: 'Здравейте, ние сме Сава, Коко и Дими и сме част от борда на BGSG. Ще се радваме да помогнем на всеки, който се нуждае от извънредно настаняване!'
@@ -635,7 +635,7 @@ const EN = {
                 period: 'Maximum period of stay of 20 days',
                 flatmates: '3 university students around the age of 22',
             }, main_image: "assets/img/emergency-housing/1.jpg",
-            images: [],
+            images: ['assets/img/emergency-housing/3.jpg', 'assets/img/emergency-housing/4.jpg', 'assets/img/emergency-housing/5.jpg', 'assets/img/emergency-housing/6.jpg', 'assets/img/emergency-housing/7.jpg'],
             owner: {
                 image: 'assets/img/emergency-housing/owner1.jpg',
                 description: 'Hello, we are Sava, Koko and Dimi and we are part of the BGSG board. We would be happy to help anyone by emergently taking them in our current home!',
@@ -652,7 +652,7 @@ const EN = {
                 period: 'Maximum period of stay of 20 days',
                 flatmates: '3 university students around the age of 22',
             }, main_image: "assets/img/emergency-housing/2.jpg",
-            images: [],
+            images: ['assets/img/emergency-housing/3.jpg', 'assets/img/emergency-housing/4.jpg', 'assets/img/emergency-housing/5.jpg', 'assets/img/emergency-housing/6.jpg', 'assets/img/emergency-housing/7.jpg'],
             owner: {
                 image: 'assets/img/emergency-housing/owner1.jpg',
                 description: 'Hello, we are Sava, Koko and Dimi and we are part of the BGSG board. We would be happy to help anyone by emergently taking them in our current home!',

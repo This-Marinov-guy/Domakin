@@ -16,9 +16,9 @@ const EmergencyPropertyItem = (props) => {
 			<div className="col-xl-4 col-sm-6 col-12">
 				<div className="ltn__product-item ltn__product-item-4 text-center---">
 					<div className="product-img go-top">
-						<Link to={publicUrl + props.main_image} data-rel={`lightcase:${props.description[0]}`}>
+						{props.images ? <Link to={publicUrl + props.main_image} data-rel={`lightcase:${props.description[0]}`}>
 							<img src={publicUrl + props.main_image} alt="Галерия" />
-						</Link>
+						</Link> : <img src={publicUrl + props.main_image} alt="Галерия" />}
 						<div className="product-badge">
 							<div className="agent-img" data-pr-tooltip={props.owner.description}
 								data-pr-position="top"
@@ -34,7 +34,7 @@ const EmergencyPropertyItem = (props) => {
 									</li>
 								</ul>
 							</div>
-							{props.images.length && <div className="product-img-gallery go-top">
+							{props.images && <div className="product-img-gallery go-top">
 								<ul >
 									<li >
 										{props.images.map((value, index) => {
