@@ -238,7 +238,7 @@ const BG = {
             type: 'Разтегаем диван във всекидневната',
             location: 'Petrus Driessenstraat 42A, Groningen',
             description: {
-                property: 'Разполага с баня, пералня, интърнет, и всички необходимости',
+                property: 'Разполага с баня, пералня, интернет, и всички необходимости',
                 period: 'Максимална отседналост до 14 дена',
                 flatmates: '3ма младежи на 20, 22 и 23 години',
             }, main_image: "assets/img/emergency-housing/1.jpg",
@@ -255,7 +255,7 @@ const BG = {
             type: 'Разтегаем диван във всекидневната',
             location: 'Petrus Driessenstraat 42A, Groningen',
             description: {
-                property: 'Разполага с баня, пералня, интърнет, и всички необходимости',
+                property: 'Разполага с баня, пералня, интернет, и всички необходимости',
                 period: 'Максимална отседналост до 14 дена',
                 flatmates: '3ма младежи на 20, 22 и 23 години',
             }, main_image: "assets/img/emergency-housing/2.jpg",

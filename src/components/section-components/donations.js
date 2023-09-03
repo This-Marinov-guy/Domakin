@@ -8,12 +8,6 @@ import { ProgressSpinner } from 'primereact/progressspinner';
 import { useSelector } from "react-redux";
 import { selectScript } from "../../redux/language.js";
 
-const schema = yup.object().shape({
-    name: yup.string(),
-    amount: yup.number().positive(script.donations[9]).min(2, script.donations[10])
-        .required(script.donations[11]),
-    comments: yup.string()
-});
 
 const Donations = () => {
     const script = useSelector(selectScript);
@@ -22,8 +16,14 @@ const Donations = () => {
     const [stripePromise, setStripePromise] = useState(null);
     const [clientSecret, setClientSecret] = useState("");
 
-    return (
+    const schema = yup.object().shape({
+        name: yup.string(),
+        amount: yup.number().positive(script.donations[9]).min(2, script.donations[10])
+            .required(script.donations[11]),
+        comments: yup.string()
+    });
 
+    return (
         <div className="container mt-40">
             <div className="text-center mb-40">
                 <h2>{script.donations[0]}</h2>
