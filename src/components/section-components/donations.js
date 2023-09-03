@@ -37,11 +37,11 @@ const Donations = () => {
                 validationSchema={schema}
                 onSubmit={async (values) => {
                     try {
-                        fetch(process.env.REACT_APP_TEST_SERVER_URL + "payments/donation/config").then(async (r) => {
+                        fetch(process.env.REACT_APP_SERVER_URL + "payments/donation/config").then(async (r) => {
                             const { publishableKey } = await r.json();
                             setStripePromise(loadStripe(publishableKey));
                         });
-                        fetch(process.env.REACT_APP_TEST_SERVER_URL + "payments/donation/create-payment-intent", {
+                        fetch(process.env.REACT_APP_SERVER_URL + "payments/donation/create-payment-intent", {
                             method: "POST",
                             headers: {
                                 'Content-Type': 'application/json',
