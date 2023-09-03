@@ -10,8 +10,8 @@ import { selectScript } from "../../redux/language.js";
 
 const schema = yup.object().shape({
     name: yup.string(),
-    amount: yup.number().positive("Please insert a positive amount").min(2, 'Minimum Amount is 2 euro')
-        .required("Please insert an amount"),
+    amount: yup.number().positive(script.donations[9]).min(2, script.donations[10])
+        .required(script.donations[11]),
     comments: yup.string()
 });
 
@@ -26,8 +26,8 @@ const Donations = () => {
 
         <div className="container mt-40">
             <div className="text-center mb-40">
-                <h2>Your contribution means a lot!</h2>
-                <h3 style={{ marginTop: "-15px" }}>Thank you</h3>
+                <h2>{script.donations[0]}</h2>
+                <h3 style={{ marginTop: "-15px" }}>{script.donations[1]}</h3>
             </div>
             {(clientSecret && stripePromise ? <Elements stripe={stripePromise} options={{ clientSecret }} >
                 <CheckoutForm />
@@ -75,7 +75,7 @@ const Donations = () => {
                                 <div className="rnform-group">
                                     <Field
                                         type="text"
-                                        placeholder="Name (optional)"
+                                        placeholder={script.donations[2]}
                                         name="name"
                                     ></Field>
                                     <ErrorMessage
@@ -90,7 +90,7 @@ const Donations = () => {
                                     <Field
                                         type="number"
                                         step="0.5"
-                                        placeholder="Amount in EUR"
+                                        placeholder={script.donations[3]}
                                         name="amount"
                                         inputMode="numeric"
                                         min="2"
@@ -107,7 +107,7 @@ const Donations = () => {
                                     <Field
                                         style={{ padding: '1% 0 0 3%' }}
                                         as='textarea'
-                                        placeholder="Message to be sent to us (optional)"
+                                        placeholder={script.donations[4]}
                                         name="comments"
                                     ></Field>
                                     <ErrorMessage
@@ -122,7 +122,7 @@ const Donations = () => {
                         <div className="btn-wrapper text-center">
                             <button disabled={loading} className="btn theme-btn-1 btn-effect-1 text-uppercase" type="submit">{loading ? <ProgressSpinner style={{ width: '30px', height: '30px' }} />
 
-                                : script.feedbacks[7]}</button>
+                                : script.donations[5]}</button>
                         </div>
                     </Form>
                 )}

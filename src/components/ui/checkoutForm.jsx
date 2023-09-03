@@ -3,8 +3,12 @@ import { useState } from "react";
 import { PaymentElement } from "@stripe/react-stripe-js";
 import { useStripe, useElements } from "@stripe/react-stripe-js";
 import { ProgressSpinner } from 'primereact/progressspinner';
+import { useSelector } from "react-redux";
+import { selectScript } from "../../redux/language";
 
 const CheckoutForm = () => {
+    const script = useSelector(selectScript)
+
     const stripe = useStripe();
     const elements = useElements();
 
@@ -33,7 +37,7 @@ const CheckoutForm = () => {
         if (error.type === "card_error" || error.type === "validation_error") {
             setMessage(error.message);
         } else {
-            setMessage("An unexpected error occured.");
+            setMessage(script.donations[8]);
         }
 
         setIsProcessing(false);
@@ -47,12 +51,12 @@ const CheckoutForm = () => {
                 <button disabled={isProcessing || !stripe || !elements} id="submit" className="btn theme-btn-1 btn-effect-1 text-uppercase"
                 >
                     <span id="button-text">
-                        {isProcessing ? "Processing ... " : "Pay now"}
+                        {isProcessing ? script.donations[7] : script.donations[6]}
                     </span>
                 </button>
             </div>
             {/* Show any error or success messages */}
-            {message && <div id="payment-message">{message}</div>}
+            {message && <div style={{ color: 'red' }} id="payment-message">{message}</div>}
         </form>
     );
 }
