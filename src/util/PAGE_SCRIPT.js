@@ -42,7 +42,7 @@ const BG = {
         'Ако искате да намерите жилище, нашият сайт ще Ви помогне!',
         'Ако си търсите съквартирант или искате да си прехвърлите стария договор на някого, нашият сайт е тук за Вас!',
     ],
-    partners : [
+    partners: [
         'Официални Партньори'
     ],
     contact: [
@@ -206,7 +206,12 @@ const BG = {
             free: false,
             type: 'Студио',
             location: 'Hoogeweg 1, Groningen',
-            description: ['Студио от септември до февруари, 784 евро на месец, всичко включено.', 'Алина отива на обмен до февруари и си търси някой да й вземе студиото.', 'На този адрес регистрация не е възможна, така че това студио не е подходящо за студенти първа година, които не са регистрирани в Холандия.'],
+            description: {
+                property: 'Студио от септември до февруари, 784 евро на месец, всичко включено. На този адрес регистрация не е възможна, така че това студио не е подходящо за студенти първа година, които не са регистрирани в Холандия.',
+                period: 'Свободна до февруари 2024',
+                bills: 'Наемът включва сметки (вода, ток, интернет и т.н.).',
+                flatmates: 'Без съквартиранти',
+            },
             main_image: "assets/img/properties/studio/1.jpg",
             images: ['assets/img/properties/studio/2.jpg', 'assets/img/properties/studio/3.jpg', 'assets/img/properties/studio/4.jpg', 'assets/img/properties/studio/5.jpg', 'assets/img/properties/studio/6.jpg', 'assets/img/properties/studio/7.jpg'],
         },
@@ -217,7 +222,12 @@ const BG = {
             free: false,
             type: 'Стая за двама',
             location: 'Visvliet, Netherlands',
-            description: ['Стая за двама в споделена къща на 20 км от Гроьнинген. Къщата се държи от възрастна португалска двойка. В цената са включени всички консумативи', 'Споделя се хол, баня и тоалетна', 'Договорът е за 12 месеца', 'Налична от 1ви август'],
+            description: {
+                property: 'Стая за двама в споделена къща на 20 км от Гроьнинген. Къщата се държи от възрастна португалска двойка. В цената са включени всички консумативи',
+                period: 'Налична от 1ви август. Договорът е за 12 месеца. ',
+                bills: 'Наемът включва сметки (вода, ток, интернет и т.н.).',
+                flatmates: 'Възрастна двойка',
+            },
             main_image: "assets/img/properties/1.jpg",
             images: ['assets/img/properties/21.jpg', 'assets/img/properties/18.jpg', 'assets/img/properties/3.jpg', 'assets/img/properties/4.jpg', 'assets/img/properties/5.jpg', 'assets/img/properties/6.jpg', 'assets/img/properties/8.jpg', 'assets/img/properties/9.jpg', 'assets/img/properties/10.jpg', 'assets/img/properties/14.jpg', 'assets/img/properties/15.jpg', 'assets/img/properties/16.jpg', 'assets/img/properties/11.jpg', 'assets/img/properties/12.jpg', 'assets/img/properties/13.jpg'],
         },
@@ -228,7 +238,12 @@ const BG = {
             free: false,
             type: 'Единична стая',
             location: 'Visvliet, Netherlands',
-            description: ['Единична стая в споделена къща на 20 км от Грьонинген. Къщата се държи от възрастна португалска двойка. В цената са включени всички консумативи.', 'Споделя се хол, баня и тоалетна', 'Договорът е за 12 месеца', 'Налична от 1ви август'],
+            description: {
+                property: 'Единична стая в споделена къща на 20 км от Гроьнинген. Къщата се държи от възрастна португалска двойка. В цената са включени всички консумативи',
+                period: 'Налична от 1ви август. Договорът е за 12 месеца. ',
+                bills: 'Наемът включва сметки (вода, ток, интернет и т.н.).',
+                flatmates: 'Възрастна двойка',
+            },
             main_image: "assets/img/properties/7.jpg",
             images: ['assets/img/properties/19.jpg', 'assets/img/properties/20.jpg', 'assets/img/properties/2.jpg', 'assets/img/properties/3.jpg', 'assets/img/properties/14.jpg', 'assets/img/properties/15.jpg', 'assets/img/properties/16.jpg', 'assets/img/properties/11.jpg', 'assets/img/properties/12.jpg', 'assets/img/properties/13.jpg'],
         },
@@ -452,7 +467,7 @@ const EN = {
         'If you want to find a place, we are here for you!',
         'If you are searching for a new flatmate or want to transfer your contract to someone else, we are here for you!',
     ],
-    partners : [
+    partners: [
         'Official Partners'
     ],
     contact: [
@@ -615,7 +630,12 @@ const EN = {
             free: false,
             type: 'Studio',
             location: 'Hoogeweg 1, Groningen',
-            description: ['Studio from September to February, , 784 euro per month, all bills included', 'Alina is going on an exchange program and would like somebody to take her studio', 'As registration of living is not possible at the place, it is NOT suitable for first year students who have not yet been registered'],
+            description: {
+                property: 'Small studio for a short period.As registration of living is not possible at the place, it is NOT suitable for first year students who have not yet been registered. ',
+                period: 'Available until February 2024',
+                bills: 'Rent includes service cost, bills, wifi, el, gas, water',
+                flatmates: 'No flatmates',
+            },
             main_image: "assets/img/properties/studio/1.jpg",
             images: ['assets/img/properties/studio/2.jpg', 'assets/img/properties/studio/3.jpg', 'assets/img/properties/studio/4.jpg', 'assets/img/properties/studio/5.jpg', 'assets/img/properties/studio/6.jpg', 'assets/img/properties/studio/7.jpg'],
         },
@@ -626,7 +646,12 @@ const EN = {
             price: 600,
             type: 'Double Room',
             location: 'Visvliet, Netherlands',
-            description: ['Room for two in a shared house just 20km from Groningen. The house is owned by a Portuguese couple. Price includes all bills', 'Contract is for 12 months', 'Available from 1st of August'],
+            description: {
+                property: 'Room for two in a shared house just 20km from Groningen. The house is owned by a Portuguese couple.',
+                period: 'Contract is for 12 months. Available from 1st of August',
+                bills: 'Price includes all bills',
+                flatmates: 'Elder Couple',
+            },
             main_image: "assets/img/properties/1.jpg",
             images: ['assets/img/properties/21.jpg', 'assets/img/properties/18.jpg', 'assets/img/properties/3.jpg', 'assets/img/properties/4.jpg', 'assets/img/properties/5.jpg', 'assets/img/properties/6.jpg', 'assets/img/properties/8.jpg', 'assets/img/properties/9.jpg', 'assets/img/properties/10.jpg', 'assets/img/properties/14.jpg', 'assets/img/properties/15.jpg', 'assets/img/properties/16.jpg', 'assets/img/properties/11.jpg', 'assets/img/properties/12.jpg', 'assets/img/properties/13.jpg'],
         },
@@ -637,8 +662,12 @@ const EN = {
             price: 400,
             type: 'Single Room',
             location: 'Visvliet, Netherlands',
-            description: ['Room for one in a shared house just 20km from Groningen. The house is owned by a Portuguese couple. Price includes all bills', 'Contract is for 12 months', 'Available from 1st of August'],
-            main_image: "assets/img/properties/7.jpg",
+            description: {
+                property: 'Room for one in a shared house just 20km from Groningen. The house is owned by a Portuguese couple.',
+                period: 'Contract is for 12 months. Available from 1st of August',
+                bills: 'Price includes all bills',
+                flatmates: 'Elder Couple',
+            },            main_image: "assets/img/properties/7.jpg",
             images: ['assets/img/properties/19.jpg', 'assets/img/properties/20.jpg', 'assets/img/properties/2.jpg', 'assets/img/properties/3.jpg', 'assets/img/properties/14.jpg', 'assets/img/properties/15.jpg', 'assets/img/properties/16.jpg', 'assets/img/properties/11.jpg', 'assets/img/properties/12.jpg', 'assets/img/properties/13.jpg'],
         },
 
