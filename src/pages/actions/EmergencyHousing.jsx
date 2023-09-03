@@ -7,6 +7,7 @@ import { useSelector } from 'react-redux';
 import { selectScript } from '../../redux/language';
 
 import AddEmergencyListing from '../../components/section-components/add-emergency-listing';
+import Partners from '../../components/global-components/partners';
 
 const EmergencyHousing = () => {
     const script = useSelector(selectScript);
@@ -25,7 +26,6 @@ const EmergencyHousing = () => {
                     {script.emergency_housing[37]}                </a>
             </div>
         </div>
-
         <CallToActionV1 />
         <Footer />
     </div>

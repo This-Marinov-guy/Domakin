@@ -8,6 +8,7 @@ import Footer from '../../components/global-components/footer';
 import { useSelector } from 'react-redux';
 import { selectScript } from '../../redux/language';
 import CallToActionV1 from '../../components/section-components/call-to-action-v1';
+import Partners from '../../components/global-components/partners';
 
 
 const About = () => {
@@ -19,6 +20,7 @@ const About = () => {
         <AboutV4 />
         <Features customClass="ltn__feature-area section-bg-1 pt-120 pb-90 mb-120---" />
         <Team />
+        <Partners/>
         <CallToActionV1 />
         <Footer />
     </div>
