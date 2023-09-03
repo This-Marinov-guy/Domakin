@@ -96,7 +96,7 @@ const Footer_v1 = () => {
 
 										<li><Link to="/agents">{script.footer[5]}</Link></li>
 
-										<li><Link to="/feedbacks">{script.footer[13]}</Link></li>
+										<li><Link to="/feedbacks&donations">{script.footer[13]}</Link></li>
 									</ul>
 								</div>
 							</div>

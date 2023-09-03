@@ -128,7 +128,7 @@ const Root = () => {
 
                         <Route path="/about" component={About} />
                         <Route path="/terms&policy" component={TermsAndPolicy} />
-                        <Route path="/feedbacks" component={FeedbackPage} />
+                        <Route path="/feedbacks&donations" component={FeedbackPage} />
                         <Route path="/recommendations" component={Recommendations} />
                         <Route path='/agents' component={Agents} />
                         <Route path="/contact" component={Contact} />

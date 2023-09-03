@@ -86,7 +86,7 @@ const Navbar = () => {
 															{/* <img src={publicUrl + "assets/img/home-demos/home-2.jpg"} alt="#" /> */}
 														</li>
 														</Link>
-														<Link to="/feedbacks"><li>{script.footer[13]}
+														<Link to="/feedbacks&donations"><li>{script.footer[13]}
 
 															{/* <img src={publicUrl + "assets/img/home-demos/home-2.jpg"} alt="#" /> */}
 														</li></Link>
@@ -156,7 +156,7 @@ const Navbar = () => {
 										{/* <img src={publicUrl + "assets/img/home-demos/home-2.jpg"} alt="#" /> */}
 									</li>
 									<li>
-										<Link to="/feedbacks">{script.footer[13]}</Link>
+										<Link to="/feedbacks&donations">{script.footer[13]}</Link>
 										{/* <img src={publicUrl + "assets/img/home-demos/home-2.jpg"} alt="#" /> */}
 									</li>
 
