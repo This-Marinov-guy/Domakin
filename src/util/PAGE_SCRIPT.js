@@ -240,7 +240,7 @@ const BG = {
             description: {
                 property: 'Разполага с баня, пералня, интернет, и всички необходимости',
                 period: 'Максимална отседналост до 14 дена',
-                flatmates: '3ма младежи на 20, 22 и 23 години',
+                flatmates: '4ма студенти',
             }, main_image: "assets/img/emergency-housing/1.jpg",
             images: ['assets/img/emergency-housing/3.jpg', 'assets/img/emergency-housing/4.jpg', 'assets/img/emergency-housing/5.jpg', 'assets/img/emergency-housing/6.jpg', 'assets/img/emergency-housing/7.jpg'],
             owner: {
@@ -257,7 +257,7 @@ const BG = {
             description: {
                 property: 'Разполага с баня, пералня, интернет, и всички необходимости',
                 period: 'Максимална отседналост до 14 дена',
-                flatmates: '3ма младежи на 20, 22 и 23 години',
+                flatmates: '4ма студенти',
             }, main_image: "assets/img/emergency-housing/2.jpg",
             images: ['assets/img/emergency-housing/3.jpg', 'assets/img/emergency-housing/4.jpg', 'assets/img/emergency-housing/5.jpg', 'assets/img/emergency-housing/6.jpg', 'assets/img/emergency-housing/7.jpg'],
             owner: {
@@ -647,7 +647,7 @@ const EN = {
             description: {
                 property: 'Includes bathroom, washing machine, WI-FI and other essential utility',
                 period: 'Maximum period of stay of 14 days',
-                flatmates: '3 university students around the age of 22',
+                flatmates: '4 university students around the age of 22',
             }, main_image: "assets/img/emergency-housing/1.jpg",
             images: ['assets/img/emergency-housing/3.jpg', 'assets/img/emergency-housing/4.jpg', 'assets/img/emergency-housing/5.jpg', 'assets/img/emergency-housing/6.jpg', 'assets/img/emergency-housing/7.jpg'],
             owner: {
@@ -664,7 +664,7 @@ const EN = {
             description: {
                 property: 'Includes bathroom, washing machine, WI-FI and other essential utility',
                 period: 'Maximum period of stay of 14 days',
-                flatmates: '3 university students around the age of 22',
+                flatmates: '4 university students around the age of 22',
             }, main_image: "assets/img/emergency-housing/2.jpg",
             images: ['assets/img/emergency-housing/3.jpg', 'assets/img/emergency-housing/4.jpg', 'assets/img/emergency-housing/5.jpg', 'assets/img/emergency-housing/6.jpg', 'assets/img/emergency-housing/7.jpg'],
             owner: {
