@@ -9743,14 +9743,38 @@ p.correct {
 }
 
 /* ----------------------------------------------------
-    Product Details
+    Partners & Product Details 
 ---------------------------------------------------- */
-.product-meta-date input[type="date"] {
-  border: 1px solid #ddd;
-  height: 63px;
-  padding: 0 15px;
-  line-height: 50px;
+.cool-travel {
+  background-color: #77a02e;
+  border-radius: 44%;
+  padding: 20px;
 }
+
+.partners {
+  justify-content: space-around !important;
+  align-items: center;
+}
+
+.partner-img {
+  transition: 0.3s;
+  max-height: 180px;
+  max-width: 180px;
+  cursor: pointer;
+}
+
+.partner-img:hover {
+  transform: scale(1.1);
+}
+
+@media (max-width: 767px) {
+  .partner-img {
+    margin-bottom: 20px;
+    max-height: 150px;
+    max-width: 150px;
+  }
+}
+
 
 .product-meta-date input[type="time"] {
   border: 1px solid #ddd;

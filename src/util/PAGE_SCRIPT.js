@@ -42,6 +42,9 @@ const BG = {
         'Ако искате да намерите жилище, нашият сайт ще Ви помогне!',
         'Ако си търсите съквартирант или искате да си прехвърлите стария договор на някого, нашият сайт е тук за Вас!',
     ],
+    partners : [
+        'Официални Партньори'
+    ],
     contact: [
         'Свържете се с нас',
         'Контакти',
@@ -448,6 +451,9 @@ const EN = {
         'If you are located in Bulgaria and want to find a place but you are unable to make the viewing, we are here for you!',
         'If you want to find a place, we are here for you!',
         'If you are searching for a new flatmate or want to transfer your contract to someone else, we are here for you!',
+    ],
+    partners : [
+        'Official Partners'
     ],
     contact: [
         'Contact us',

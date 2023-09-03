@@ -6,12 +6,14 @@ import Features from '../components/section-components/features-v1';
 import CallToActionV1 from '../components/section-components/call-to-action-v1';
 import Footer from '../components/global-components/footer';
 import Feedbacks from '../components/global-components/feedbacks';
+import Partners from '../components/global-components/partners';
 
 
 const Home = () => {
     return <div>
         <Navbar />
         <Banner />
+        <Partners/>
         <AboutV4 />
         <Features customClass="ltn__feature-area section-bg-1--- pt-115 pb-90 mb-120---" />
         <Feedbacks/>
