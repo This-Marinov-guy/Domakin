@@ -185,9 +185,9 @@ const BG = {
     FOR_RENT: [
         {
             id: '3',
-            status: 'Свободна',
+            status: 'Заета',
             price: '~' + 1050,
-            free: true,
+            free: false,
             type: 'Единична Стая',
             location: 'Tweede Oosterparkstraat 3, Amsterdam',
             description: {
@@ -594,9 +594,9 @@ const EN = {
     FOR_RENT: [
         {
             id: '3',
-            status: 'Available',
+            status: 'Taken',
             price: '~' + 1050,
-            free: true,
+            free: false,
             type: 'Single Room',
             location: 'Tweede Oosterparkstraat 3, Amsterdam',
             description: {
