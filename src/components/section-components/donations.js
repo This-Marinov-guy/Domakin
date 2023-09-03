@@ -1,125 +1,140 @@
-import React, { useState } from 'react';
-import { ProgressSpinner } from 'primereact/progressspinner';
-import { useSelector } from 'react-redux'
-import { selectScript } from '../../redux/language'
-import { Field, Form, Formik, ErrorMessage } from 'formik';
+import React, { useEffect, useState } from "react";
+import { Elements } from "@stripe/react-stripe-js";
 import * as yup from "yup";
-import { useHttpClient } from '../../hooks/http-hook'
+import { Formik, Form, Field, ErrorMessage } from "formik";
+import CheckoutForm from "../ui/checkoutForm.jsx";
+import { loadStripe } from "@stripe/stripe-js";
+import { ProgressSpinner } from 'primereact/progressspinner';
 
+const schema = yup.object().shape({
+    name: yup.string(),
+    amount: yup.number().positive("Please insert a positive amount").min(2, 'Minimum Amount is 2 euro')
+        .required("Please insert an amount"),
+    comments: yup.string()
+});
 
 const Donations = () => {
-    const [success, setSuccess] = useState(false)
+
     const [loading, setLoading] = useState(false)
+    const [stripePromise, setStripePromise] = useState(null);
+    const [clientSecret, setClientSecret] = useState("");
 
-    const script = useSelector(selectScript)
+    return (
 
-    const { sendRequest } = useHttpClient()
+        <div className="payment bg_color--1">
+            <h2>Your contribution means a lot!</h2>
+            <h3 style={{ marginTop: "-15px" }}>Thank you</h3>
+            {(clientSecret && stripePromise ? <Elements stripe={stripePromise} options={{ clientSecret }} >
+                <CheckoutForm />
+            </Elements> : <Formik
+                className="inner"
+                style={{ display: 'flex' }}
+                validationSchema={schema}
+                onSubmit={async (values) => {
+                    try {
+                        fetch(process.env.REACT_APP_SERVER_URL + "payment/donation/config").then(async (r) => {
+                            const { publishableKey } = await r.json();
+                            setStripePromise(loadStripe(publishableKey));
+                        });
+                        fetch(process.env.REACT_APP_SERVER_URL + "payment/donation/create-payment-intent", {
+                            method: "POST",
+                            headers: {
+                                'Content-Type': 'application/json',
+                            },
+                            body: JSON.stringify({
+                                name: values.name,
+                                amount: values.amount,
+                                comments: values.comments
+                            }),
 
-    const schema = yup.object().shape({
-        name: yup.string().required(script.feedbacks[8]),
-        amount: yup.string().required(script.feedbacks[9]).min(20, script.feedbacks[10]).max(300, script.feedbacks[11]),
-        message: yup.string().max(300, script.feedbacks[11]),
-        terms: yup.bool().required().oneOf([true], 'Terms must be accepted'),
-    });
-
-    return <div className='container mt-40 mb-120'>
-        <div className="row">
-            <div className="col-lg-12">
-                <div className="section-title-area ltn__section-title-2--- text-center">
-                    <h6 className="section-subtitle section-subtitle-2 ltn__secondary-color">{script.feedbacks[1]}</h6>
-                    <h1 className="section-title">{script.feedbacks[13]}</h1>
-                </div>
-            </div>
-        </div>
-        <Formik className="ltn__appointment-inner" validationSchema={schema} onSubmit={async (values, { resetForm }) => {
-            try {
-                setLoading(true)
-                const responseData = await sendRequest(
-                    "feedback/create-feedback",
-                    "POST",
-                    JSON.stringify({
-                        name: values.name,
-                        feedback: values.feedback
-                    }),
-                    {
-                        "Content-Type": "application/json",
+                        }).then(async (result) => {
+                            var { clientSecret } = await result.json();
+                            setClientSecret(clientSecret);
+                        });
+                        setLoading(true)
+                    } catch (err) {
                     }
-                );
-                setLoading(false)
-                setSuccess(true)
-                resetForm();
-            } catch (err) { }
-        }} initialValues={{
-            name: "",
-        }} >
-            {(formikProps) => (
-                <Form>
-                    <h4>{script.feedbacks[3]}</h4>
-                    <div className="row">
-                        <div className="col-6">
-                            <div className="input-item input-item-name ltn__custom-icon">
-                                <Field type="text" name="name" placeholder={script.feedbacks[4]} />
+                }}
+                initialValues={{
+                    name: '',
+                    amount: '',
+                    comments: '',
+                }}
+            >
+                {() => (
+                    <Form
+                        id="form"
+                        className="payment"
+                        style={{ padding: "2%" }}
+                    >
+                        <div className="row">
+                            <div className="col-lg-6 col-md-12 col-12">
+                                <div className="rnform-group">
+                                    <Field
+                                        type="text"
+                                        placeholder="Name (optional)"
+                                        name="name"
+                                    ></Field>
+                                    <ErrorMessage
+                                        className="error"
+                                        name="name"
+                                        component="div"
+                                    />
+                                </div>
                             </div>
-                            <ErrorMessage
-                                className="error"
-                                name="name"
-                                component="div"
-                            />
-                        </div>
-                        <div className="col-6">
-                        <div className="input-item input-item-name ltn__custom-icon">
-                                <Field type="text" name="Amount" placeholder={script.feedbacks[4]} />
+                            <div className="col-lg-6 col-md-12 col-12">
+                                <div className="rnform-group">
+                                    <div className="input-container">
+                                        <Field
+                                            type="number"
+                                            step="0.5"
+                                            placeholder="Amount in EUR"
+                                            name="amount"
+                                            inputMode="numeric"
+                                            min="2"
+                                        ></Field>
+                                    </div>
+                                    <ErrorMessage
+                                        className="error"
+                                        name="amount"
+                                        component="div"
+                                    />
+                                </div>
                             </div>
-                            <ErrorMessage
-                                className="error"
-                                name="name"
-                                component="div"
-                            />
-                        </div>
-                        <div className="col-md-12">
-                            <div className="input-item input-item-textarea ltn__custom-icon">
-                                <Field
-                                    as="textarea"
-                                    name="feedback"
-                                    placeholder={script.feedbacks[5]}
-                                    defaultValue={""}
-                                    onKeyUp={(event) =>
-                                        formikProps.setFieldValue("feedback", event.target.value)
-                                    }
-                                />
-                                <p style={{ position: 'absolute', bottom: '20px', right: '10px', fontSize: '15px' }}>
-                                    {formikProps.values.feedback ? `${formikProps.values.feedback.length}/300` : script.feedbacks[6]}
-                                </p>
-                                <ErrorMessage
-                                    className="error"
-                                    name="feedback"
-                                    component="div"
-                                />
+                            <div className="col-lg-12 col-md-12 col-12 mt--40">
+                                <div className="rnform-group">
+                                    <Field
+                                        style={{ padding: '1% 0 0 3%' }}
+                                        as='textarea'
+                                        placeholder="Message to be sent to us (optional)"
+                                        name="comments"
+                                    ></Field>
+                                    <ErrorMessage
+                                        className="error"
+                                        name="comments"
+                                        component="div"
+                                    />
+                                </div>
                             </div>
-                        </div>
-                        <div className="col-md-12 mb-20">
-                            <label className="checkbox-item">{script.viewing[14]}
-                                <Field type="checkbox" name="dataTerms" />
-                                <span className="checkmark" />
-                            </label>
-                            <ErrorMessage
-                                className="error"
-                                name="dataTerms"
-                                component="div"
-                            />
-                        </div>
 
-                        <div className="btn-wrapper text-center">
-                            <button disabled={loading} className="btn theme-btn-1 btn-effect-1 text-uppercase" type="submit">{loading ?            <ProgressSpinner style={{ width: '30px', height: '30px' }} />
-
-                                : script.feedbacks[7]}</button>
-                            {success && <p style={{ color: '#10a551', marginTop: '5px' }}>{script.feedbacks[12]}</p>}
                         </div>
-                    </div>
-                </Form>
+                        <button
+                            disabled={loading}
+                            type="submit"
+                            className="rn-button-style--2 btn-solid mt--40"
+                        >
+                            {loading ? <ProgressSpinner style={{ width: '30px', height: '30px' }} /> : <span>Continue the payment</span>}
+                        </button>
+
+                    </Form>
+                )}
+            </Formik>
             )}
-        </Formik>    </div>
+        </div>
+    )
 }
 
+export default Donations;
 
-export default Donations 
+
+
