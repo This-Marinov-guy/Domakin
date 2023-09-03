@@ -5,6 +5,8 @@ import { Formik, Form, Field, ErrorMessage } from "formik";
 import CheckoutForm from "../ui/checkoutForm.jsx";
 import { loadStripe } from "@stripe/stripe-js";
 import { ProgressSpinner } from 'primereact/progressspinner';
+import { useSelector } from "react-redux";
+import { selectScript } from "../../redux/language.js";
 
 const schema = yup.object().shape({
     name: yup.string(),
@@ -14,6 +16,7 @@ const schema = yup.object().shape({
 });
 
 const Donations = () => {
+    const script = useSelector(selectScript);
 
     const [loading, setLoading] = useState(false)
     const [stripePromise, setStripePromise] = useState(null);
@@ -21,9 +24,11 @@ const Donations = () => {
 
     return (
 
-        <div className="payment bg_color--1">
-            <h2>Your contribution means a lot!</h2>
-            <h3 style={{ marginTop: "-15px" }}>Thank you</h3>
+        <div className="container mt-40">
+            <div className="text-center mb-40">
+                <h2>Your contribution means a lot!</h2>
+                <h3 style={{ marginTop: "-15px" }}>Thank you</h3>
+            </div>
             {(clientSecret && stripePromise ? <Elements stripe={stripePromise} options={{ clientSecret }} >
                 <CheckoutForm />
             </Elements> : <Formik
@@ -32,11 +37,11 @@ const Donations = () => {
                 validationSchema={schema}
                 onSubmit={async (values) => {
                     try {
-                        fetch(process.env.REACT_APP_SERVER_URL + "payment/donation/config").then(async (r) => {
+                        fetch(process.env.REACT_APP_TEST_SERVER_URL + "payments/donation/config").then(async (r) => {
                             const { publishableKey } = await r.json();
                             setStripePromise(loadStripe(publishableKey));
                         });
-                        fetch(process.env.REACT_APP_SERVER_URL + "payment/donation/create-payment-intent", {
+                        fetch(process.env.REACT_APP_TEST_SERVER_URL + "payments/donation/create-payment-intent", {
                             method: "POST",
                             headers: {
                                 'Content-Type': 'application/json',
@@ -64,11 +69,9 @@ const Donations = () => {
                 {() => (
                     <Form
                         id="form"
-                        className="payment"
-                        style={{ padding: "2%" }}
                     >
                         <div className="row">
-                            <div className="col-lg-6 col-md-12 col-12">
+                            <div className="col-lg-6 col-md-6 col-6">
                                 <div className="rnform-group">
                                     <Field
                                         type="text"
@@ -82,18 +85,16 @@ const Donations = () => {
                                     />
                                 </div>
                             </div>
-                            <div className="col-lg-6 col-md-12 col-12">
-                                <div className="rnform-group">
-                                    <div className="input-container">
-                                        <Field
-                                            type="number"
-                                            step="0.5"
-                                            placeholder="Amount in EUR"
-                                            name="amount"
-                                            inputMode="numeric"
-                                            min="2"
-                                        ></Field>
-                                    </div>
+                            <div className="col-lg-6 col-md-6 col-6     ">
+                                <div className="rnform-group product-meta-date">
+                                    <Field
+                                        type="number"
+                                        step="0.5"
+                                        placeholder="Amount in EUR"
+                                        name="amount"
+                                        inputMode="numeric"
+                                        min="2"
+                                    ></Field>
                                     <ErrorMessage
                                         className="error"
                                         name="amount"
@@ -118,14 +119,11 @@ const Donations = () => {
                             </div>
 
                         </div>
-                        <button
-                            disabled={loading}
-                            type="submit"
-                            className="rn-button-style--2 btn-solid mt--40"
-                        >
-                            {loading ? <ProgressSpinner style={{ width: '30px', height: '30px' }} /> : <span>Continue the payment</span>}
-                        </button>
+                        <div className="btn-wrapper text-center">
+                            <button disabled={loading} className="btn theme-btn-1 btn-effect-1 text-uppercase" type="submit">{loading ? <ProgressSpinner style={{ width: '30px', height: '30px' }} />
 
+                                : script.feedbacks[7]}</button>
+                        </div>
                     </Form>
                 )}
             </Formik>

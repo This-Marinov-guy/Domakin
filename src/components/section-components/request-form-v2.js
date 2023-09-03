@@ -155,7 +155,7 @@ const RequestFormV2 = (props) => {
                                         />
                                     </div>
                                     <div className="btn-wrapper text-center mt-40">
-                                        <button disabled={loading} className="btn theme-btn-1 btn-effect-1 text-uppercase" type="submit">{!loading ? <ProgressSpinner style={{ width: '30px', height: '30px' }} />
+                                        <button disabled={loading} className="btn theme-btn-1 btn-effect-1 text-uppercase" type="submit">{loading ? <ProgressSpinner style={{ width: '30px', height: '30px' }} />
 
 
                                             : script.viewing[15]}</button>

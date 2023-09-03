@@ -9759,6 +9759,13 @@ p.correct {
   line-height: 50px;
 }
 
+.product-meta-date input[type="number"] {
+  border: 1px solid #ddd;
+  height: 63px;
+  padding: 0 15px;
+  line-height: 50px;
+}
+
 .product-meta-date input[type="date"]::-webkit-input-placeholder {
   /* Chrome/Opera/Safari */
   color: pink;

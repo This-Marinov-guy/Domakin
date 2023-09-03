@@ -40,14 +40,17 @@ const CheckoutForm = () => {
     };
 
     return (
-        <form className="payment_form" id="payment-form" onSubmit={handleSubmit}>
-            <PaymentElement id="payment-element" />
-            <button disabled={isProcessing || !stripe || !elements} id="submit" className="rn-button-style--2 btn-solid mt--40"
-            >
-                <span id="button-text">
-                    {isProcessing ? "Processing ... " : "Pay now"}
-                </span>
-            </button>
+        <form className="container text-center" id="payment-form" onSubmit={handleSubmit}>
+            <PaymentElement style={{ margin: '40px auto 20px' }} id="payment-element" />
+            <div className="btn-wrapper text-center">
+
+                <button disabled={isProcessing || !stripe || !elements} id="submit" className="btn theme-btn-1 btn-effect-1 text-uppercase"
+                >
+                    <span id="button-text">
+                        {isProcessing ? "Processing ... " : "Pay now"}
+                    </span>
+                </button>
+            </div>
             {/* Show any error or success messages */}
             {message && <div id="payment-message">{message}</div>}
         </form>
