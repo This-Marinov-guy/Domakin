@@ -184,9 +184,9 @@ const BG = {
     ],
     FOR_RENT: [{
         id: '4',
-        status: 'Свободна',
+        status: 'Заета',
         price: 627,
-        free: true,
+        free: false,
         type: 'Студио za subrent в центъра',
         location: 'Gelkingestraat, Groningen',
         description: {
@@ -624,9 +624,9 @@ const EN = {
     FOR_RENT: [
         {
             id: '4',
-            status: 'RENT',
+            status: 'Taken',
             price: 627,
-            free: true,
+            free: false,
             type: 'Studio for subrent',
             location: 'Gelkingestraat, Groningen',
             description: {
