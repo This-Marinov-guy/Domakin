@@ -188,11 +188,11 @@ const BG = {
         price: 395,
         free: true,
         type: 'Стая 19 кв. м',
-        location: 'Saffierstraat 15, Groningen',
+        location: 'Saffierstraat, Groningen',
         description: {
             property: '19 кв. м стая, 395 евро наем, 1 евро за пералня, 1 евро за сушилня, 8 евро за интернет. Мебелите се закупуват отделно от сегашния наемател.',
             period: 'Свободна от декември',
-            bills: 'Всички сметки са включени (пералня, сушилня и интърнет се доплащат)',
+            bills: 'Всички сметки са включени (пералня, сушилня и интернет се доплащат)',
             flatmates: '3 съквартиранти - 1 x българин, 1 х българка и 1 х аржентинка',
         },
         main_image: "assets/img/properties/property_5/1.jpg",
@@ -643,7 +643,7 @@ const EN = {
         price: 395,
         free: true,
         type: 'Room 19 sq meters',
-        location: 'Saffierstraat 15, Groningen',
+        location: 'Saffierstraat, Groningen',
         description: {
             property: '19 sq meters room, 395 euro rent, 1 euro for washing machine, 1 euro for dryer, 8 euro for Wi-Fi. Furniture can be bought from the current tenant.',
             period: 'Free from December',
