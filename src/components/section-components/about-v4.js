@@ -14,7 +14,7 @@ const AboutV4 = () => {
 		<div className="container">
 			<div className="row about-img-section">
 				<div className="col-lg-6 col-sm-12 flex-center">
-						<img className='about-img' src={publicUrl + "assets/img/team/about.jpg"} alt="About Us" />
+						<img src={publicUrl + "assets/img/gallery/map.png"} alt="About Us" />
 				</div>
 				<div className="col-lg-6 align-self-center">
 					<div className="about-us-info-wrap">
