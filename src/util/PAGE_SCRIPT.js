@@ -184,9 +184,9 @@ const BG = {
     ],
     FOR_RENT: [{
         id: '5',
-        status: 'Свободна',
+        status: 'Заета',
         price: 395,
-        free: true,
+        free: false,
         type: 'Стая 19 кв. м',
         location: 'Saffierstraat, Groningen',
         description: {
@@ -639,9 +639,9 @@ const EN = {
     ],
     FOR_RENT: [{
         id: '5',
-        status: 'Rent',
+        status: 'Taken',
         price: 395,
-        free: true,
+        free: false,
         type: 'Room 19 sq meters',
         location: 'Saffierstraat, Groningen',
         description: {
