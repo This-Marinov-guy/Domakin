@@ -21,7 +21,7 @@ const CallToActonV1 = () => {
 			            <p style={{width:'90%'}}>{script.feedbacks[16]}</p>
 			          </div>
 			          <div className="btn-wrapper go-top">
-			            <Link className="btn btn-effect-3 btn-white" to="/feedbacks">{script.feedbacks[17]}<i className="icon-next" /></Link>
+			            <Link className="btn btn-effect-3 btn-white" to="/feedbacks&donations">{script.feedbacks[17]}<i className="icon-next" /></Link>
 			          </div>
 			        </div>
 			      </div>
