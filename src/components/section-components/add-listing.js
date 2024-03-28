@@ -18,21 +18,6 @@ const AddListing = (props) => {
 
     const { loading, sendRequest } = useHttpClient()
 
-    useEffect(() => {
-        const fileReaders = [];
-        files.forEach((file) => {
-            const fileReader = new FileReader();
-            fileReader.onload = () => {
-                setPreviewUrls((prevUrls) => [...prevUrls, fileReader.result]);
-            };
-            fileReaders.push(fileReader);
-        });
-
-        files.forEach((file, index) => {
-            fileReaders[index].readAsDataURL(file);
-        });
-    }, [files]);
-
     const validFileTypes = ["image/jpg", "image/jpeg", "image/png"];
 
     const inputHandler = (event) => {
@@ -48,6 +33,40 @@ const AddListing = (props) => {
             setIsValid(false);
         }
     };
+
+    const removeImg = (index) => {
+        setFiles((prevFiles) => prevFiles.filter((_, i) => i !== index));
+    };
+
+	useEffect(() => {
+		const images = [], fileReaders = [];
+		let isCancel = false;
+
+		if (files.length) {
+			files.forEach((file) => {
+			const fileReader = new FileReader();
+			fileReaders.push(fileReader);
+			fileReader.onload = (e) => {
+			  const { result } = e.target;
+			  if (result) {
+				images.push(result)
+			  }
+			  if (images.length === files.length && !isCancel) {
+				setPreviewUrls(images);
+			  }
+			}
+			fileReader.readAsDataURL(file);
+		  })
+		};
+		return () => {
+		  isCancel = true;
+		  fileReaders.forEach(fileReader => {
+			if (fileReader.readyState === 1) {
+			  fileReader.abort()
+			}
+		  })
+		}
+	  }, [files]);
 
     const schema = yup.object().shape({
         name: yup.string().required(),
