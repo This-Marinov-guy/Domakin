@@ -638,6 +638,22 @@ const EN = {
         'Offering',
     ],
     FOR_RENT: [{
+        id: '7',
+        status: 'Taken',
+        price: 560,
+        free: false,
+        type: 'Room in shared house',
+        location: 'Abeelstraat 107, 9741 Groningen',
+        description: {
+            property: 'Small room in shared house, 400 euro deposit and the bed is sold seperately',
+            period: 'From now',
+            bills: 'All bills included',
+            flatmates: 'TBD',
+        },
+        main_image: "assets/img/properties/property_7/1.jpg",
+        images: ['assets/img/properties/property_7/2.jpg', 'assets/img/properties/property_7/3.jpg', 'assets/img/properties/property_7/4.jpg', 'assets/img/properties/property_7/5.jpg', 'assets/img/properties/property_7/6.jpg'],
+    },
+    {
         id: '5',
         status: 'Taken',
         price: 395,
