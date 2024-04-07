@@ -3,13 +3,15 @@ import { useHttpClient } from '../../hooks/http-hook'
 import CreateFeedback from './createFeedback';
 import { ProgressSpinner } from 'primereact/progressspinner';
 import { useSelector } from 'react-redux'
-import { selectScript } from '../../redux/language'
+import language, { selectLanguage, selectScript } from '../../redux/language'
 import { selectFeedbacks } from '../../redux/feedbacks';
 
 const Feedbacks = () => {
     const { loading } = useHttpClient()
 
     const script = useSelector(selectScript)
+
+    const language = useSelector(selectLanguage)
 
     const feedbacks = useSelector(selectFeedbacks)
 
@@ -24,13 +26,13 @@ const Feedbacks = () => {
             </div>
         </div>
         {loading ? <div className='text-center'>            <ProgressSpinner style={{ width: '30px', height: '30px' }} />
-</div> :
+        </div> :
             <div>{feedbacks.length === 0 ?
                 <div className='text-center'>
                     <p>No feedbacks yet - A chance to be the first!</p>
                 </div> :
                 <div className="row ltn__testimonial-slider-5-active slick-arrow-1">
-                    {feedbacks.map((feedback, index) => {
+                    {feedbacks.filter((feedback) => { return feedback.lang === language }).map((feedback, index) => {
                         return <div key={index} className="col-lg-4">
                             <div className="ltn__testimonial-item ltn__testimonial-item-7">
                                 <div className="ltn__testimoni-info">
