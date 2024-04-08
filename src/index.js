@@ -83,7 +83,7 @@ const Root = () => {
     useEffect(() => {
         const fetchFeedbacks = async () => {
             try {
-                const responseData = await sendRequest('feedback/get-feedbacks');
+                const responseData = await sendRequest(`feedback/get-feedbacks/${lang}`);
                 dispatch(setFeedbacks(responseData.feedbacks.filter(feedback => feedback.approved === true)))
             } catch (err) {
             }
