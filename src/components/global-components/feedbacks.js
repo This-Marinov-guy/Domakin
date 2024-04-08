@@ -11,10 +11,7 @@ const Feedbacks = () => {
 
     const script = useSelector(selectScript)
 
-    const language = useSelector(selectLanguage)
-
     const feedbacks = useSelector(selectFeedbacks)
-
 
     return <div className='container mt-40'>
         <div className="row">
@@ -32,7 +29,7 @@ const Feedbacks = () => {
                     <p>No feedbacks yet - A chance to be the first!</p>
                 </div> :
                 <div className="row ltn__testimonial-slider-5-active slick-arrow-1">
-                    {feedbacks.filter((feedback) => { return feedback.lang === language }).map((feedback, index) => {
+                    {feedbacks.map((feedback, index) => {
                         return <div key={index} className="col-lg-4">
                             <div className="ltn__testimonial-item ltn__testimonial-item-7">
                                 <div className="ltn__testimoni-info">
