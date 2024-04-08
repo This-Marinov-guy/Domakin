@@ -15,7 +15,6 @@ const Feedbacks = () => {
 
     const feedbacks = useSelector(selectFeedbacks)
 
-
     return <div className='container mt-40'>
         <div className="row">
             <div className="col-lg-12">
