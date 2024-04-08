@@ -4,7 +4,7 @@ import { Provider, useDispatch, useSelector } from "react-redux";
 import { store } from './redux/store'
 import { useHttpClient } from './hooks/http-hook'
 import { BrowserRouter, Switch, Route } from "react-router-dom";
-import { selectScript, setLanguage, setScript } from "./redux/language";
+import { selectLanguage, selectScript } from '../../redux/language'
 import { BG, EN } from "./util/PAGE_SCRIPT";
 import { selectError, selectErrorMsg } from "./redux/error";
 import { Toast } from 'primereact/toast';
@@ -58,6 +58,7 @@ const Root = () => {
     const { sendRequest } = useHttpClient()
 
     const script = useSelector(selectScript)
+    const language = useSelector(selectLanguage)
 
     const error = useSelector(selectError)
     const errorMessage = useSelector(selectErrorMsg);
@@ -83,13 +84,13 @@ const Root = () => {
     useEffect(() => {
         const fetchFeedbacks = async () => {
             try {
-                const responseData = await sendRequest('feedback/get-feedbacks');
-                dispatch(setFeedbacks(responseData.feedbacks.filter(feedback => feedback.approved === true)))
+                const responseData = await sendRequest(`feedback/get-feedbacks/${language}`);
+                dispatch(setFeedbacks(responseData.feedbacks))
             } catch (err) {
             }
         }
         fetchFeedbacks()
-    }, [sendRequest])
+    }, [language])
 
     useEffect(() => {
         if (toast.current && errorMessage) {

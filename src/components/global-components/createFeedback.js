@@ -1,6 +1,6 @@
 import React, { useEffect, useState, useRef } from 'react';
 import { useSelector } from 'react-redux';
-import { selectScript } from '../../redux/language';
+import { selectLanguage, selectScript } from '../../redux/language'
 import { Field, Form, Formik, ErrorMessage } from 'formik';
 import * as yup from "yup";
 import { useHttpClient } from '../../hooks/http-hook'
@@ -16,6 +16,7 @@ const CreateFeedback = () => {
     const toast = useRef(null);
 
     const script = useSelector(selectScript);
+    const language = useSelector(selectLanguage);
 
     const { sendRequest } = useHttpClient()
 
@@ -50,6 +51,7 @@ const CreateFeedback = () => {
                                 "POST",
                                 JSON.stringify({
                                     name: values.name,
+                                    language,
                                     feedback: values.feedback
                                 }),
                                 {
