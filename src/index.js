@@ -4,7 +4,7 @@ import { Provider, useDispatch, useSelector } from "react-redux";
 import { store } from './redux/store'
 import { useHttpClient } from './hooks/http-hook'
 import { BrowserRouter, Switch, Route } from "react-router-dom";
-import { selectLanguage, selectScript } from '../../redux/language'
+import { selectLanguage, selectScript, setLanguage, setScript } from '../../redux/language'
 import { BG, EN } from "./util/PAGE_SCRIPT";
 import { selectError, selectErrorMsg } from "./redux/error";
 import { Toast } from 'primereact/toast';
