@@ -3,7 +3,7 @@ import { useHttpClient } from '../../hooks/http-hook'
 import CreateFeedback from './createFeedback';
 import { ProgressSpinner } from 'primereact/progressspinner';
 import { useSelector } from 'react-redux'
-import language, { selectLanguage, selectScript } from '../../redux/language'
+import {selectScript } from '../../redux/language'
 import { selectFeedbacks } from '../../redux/feedbacks';
 
 const Feedbacks = () => {
