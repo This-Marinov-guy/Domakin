@@ -16,8 +16,10 @@ export const languageSlice = createSlice({
             );
         },
         setScript: (state, action) => {
+            const lang = `${action.payload}`
+
             state.script = action.payload;
-            state.lang = `${action.payload}`.toLowerCase();
+            state.lang = lang.toLowerCase();
         }
     }
 });

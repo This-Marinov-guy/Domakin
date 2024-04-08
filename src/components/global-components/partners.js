@@ -16,9 +16,9 @@ const Partners = () => {
                         <img src={publicUrl + "assets/img/partners/2.jpg"} style={{ borderRadius: '50%' }} alt="Partner" className='partner-img' />
                     </a>
                 </div>
-                <div className='col-lg-3 col-md-6 col-sm-6'>
-                    <a href='https://bulgariansocietygro.nl/' target='_blank'>
-                        <img src={publicUrl + "assets/img/partners/2.jpg"} alt="Partner" className='partner-img' />
+                <div className='col-lg-6 col-md-6 col-sm-12'>
+                    <a href='https://www.cooltravel.bg/' target='_blank'>
+                        <img src={publicUrl + "assets/img/partners/3.png"} alt="Partner" className='partner-img cool-travel' />
                     </a>
                 </div>
                 <div className='col-lg-3 col-md-6 col-sm-6'>
@@ -28,7 +28,7 @@ const Partners = () => {
                 </div>
                 <div className='col-lg-3 col-md-6 col-sm-6'>
                     <a href='https://en.unify.bg/' target='_blank'>
-                        <img src={publicUrl + "assets/img/partners/4.jpg"} alt="Partner" className='partner-img' />
+                        <img src={publicUrl + "assets/img/partners/4.png"} alt="Partner" className='partner-img' />
                     </a>
                 </div>
             </div>
