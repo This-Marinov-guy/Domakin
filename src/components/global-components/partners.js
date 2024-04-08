@@ -18,7 +18,7 @@ const Partners = () => {
                 </div>
                 <div className='col-lg-6 col-md-6 col-sm-12'>
                     <a href='https://www.cooltravel.bg/' target='_blank'>
-                        <img src={publicUrl + "assets/img/partners/3.png"} alt="Partner" className='partner-img cool-travel' />
+                        <img src={publicUrl + "assets/img/partners/1.png"} alt="Partner" className='partner-img cool-travel' />
                     </a>
                 </div>
                 <div className='col-lg-3 col-md-6 col-sm-6'>

@@ -62,9 +62,9 @@ const Root = () => {
 
     const error = useSelector(selectError)
     const errorMessage = useSelector(selectErrorMsg);
+    const storedLanguage = localStorage.getItem("language");
 
     useEffect(() => {
-        let storedLanguage = localStorage.getItem("language");
         if (storedLanguage) {
             dispatch(setLanguage(storedLanguage))
         }
@@ -84,7 +84,7 @@ const Root = () => {
     useEffect(() => {
         const fetchFeedbacks = async () => {
             try {
-                const responseData = await sendRequest(`feedback/get-feedbacks/${language}`);
+                const responseData = await sendRequest(`feedback/get-feedbacks/${localStorage.getItem("language")}`);
                 dispatch(setFeedbacks(responseData.feedbacks))
             } catch (err) {
             }
