@@ -84,7 +84,7 @@ const Root = () => {
     useEffect(() => {
         const fetchFeedbacks = async () => {
             try {
-                const responseData = await sendRequest(`feedback/get-feedbacks/${storedLanguage}`);
+                const responseData = await sendRequest(`feedback/${storedLanguage}/get-feedbacks`);
                 dispatch(setFeedbacks(responseData.feedbacks))
             } catch (err) {
             }
