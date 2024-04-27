@@ -186,7 +186,7 @@ const BG = {
         {
             id: '6',
             status: 'Свободна',
-            price: 550,
+            price: 1100,
             free: true,
             type: 'Стая в Мезонет с 2 спални',
             location: 'Центъра на Ротердам',
@@ -656,7 +656,7 @@ const EN = {
     FOR_RENT: [{
         id: '6',
         status: 'RENT',
-        price: 550,
+        price: 1100,
         free: true,
         type: 'Room in a spacious apartment',
         location: 'Center of Rotterdam',
