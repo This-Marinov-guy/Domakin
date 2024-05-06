@@ -83,7 +83,7 @@ const PropertyItem = (props) => {
 const ProductSliderV4 = (props) => {
 	const script = useSelector(selectScript);
 
-	return <div className="ltn__product-slider-area ltn__product-gutter pt-115 pb-70">
+	return <div className="ltn__product-slider-area ltn__product-gutter pt-30 pb-70">
 		<div className="container">
 			<div className="row">
 				<div className="col-lg-12">
