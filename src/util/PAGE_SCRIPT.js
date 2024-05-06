@@ -190,7 +190,7 @@ const BG = {
             price: 410,
             free: true,
             type: 'Стая в споделен апартамент',
-            location: 'Turkooisstraat 34 9743 KZ Groningen',
+            location: 'Turkooisstraat KZ Groningen',
             description: {
                 property: 'Ставта е с размер 20 кв. метра. Мебелите могат да се закупят от сегашния наемодател за 400 евро, като са от ИКЕА в перфектно състояние (по желание на новия наемодател)',
                 period: 'Свободна от 1ви юли',
@@ -678,7 +678,7 @@ const EN = {
         price: 410,
         free: true,
         type: 'Room in a shared apartment',
-        location: 'Turkooisstraat 34 9743 KZ Groningen',
+        location: 'Turkooisstraat KZ Groningen',
         description: {
             property: 'Size of the room is 20 sq. meters. All furnitures can be bought from the current lender for 400 euro (furnitures are from IKEA and cost approxiamtely 400 euro)',
             period: 'Free from 1st of July',
