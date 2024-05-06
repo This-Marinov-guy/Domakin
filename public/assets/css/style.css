@@ -8812,9 +8812,6 @@ p.correct {
   content: "";
   left: 0;
   top: 0;
-  width: 100%;
-  height: 100%;
-  background-color: var(--ltn__primary-color);
   opacity: 0;
   visibility: hidden;
   -webkit-transition: all 0.3s ease 0s;

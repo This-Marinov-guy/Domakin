@@ -14,7 +14,7 @@ const PropertyItem = (props) => {
 			<div className="col-xl-4 col-sm-6 col-12">
 				<div className="ltn__product-item ltn__product-item-4 text-center---">
 					<div className="product-img go-top">
-						<Link to={publicUrl + props.main_image} data-rel={`lightcase:${props.description[0]}`}>
+						<Link style={{ height: '400px' }} to={publicUrl + props.main_image} data-rel={`lightcase:${props.description[0]}`}>
 							<img src={publicUrl + props.main_image} alt="Галерия" />
 						</Link>
 						<div className="product-badge">

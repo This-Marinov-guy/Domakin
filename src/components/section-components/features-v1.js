@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
 import parse from 'html-react-parser';
 import { useSelector } from 'react-redux';
-import { selectScript } from '../../redux/language';
+import { selectLanguage, selectScript } from '../../redux/language';
 
 const FeaturesV1 = (props) => {
 
@@ -11,6 +11,7 @@ const FeaturesV1 = (props) => {
 	const customClass = props.customClass ? props.customClass : ''
 
 	const script = useSelector(selectScript);
+	const language = useSelector(selectLanguage);
 
 	return <div className={customClass} >
 		<div className="container">
@@ -19,6 +20,7 @@ const FeaturesV1 = (props) => {
 					<div className="section-title-area ltn__section-title-2--- text-center">
 						<h6 className="section-subtitle section-subtitle-2 ltn__secondary-color">{script.features[0]}</h6>
 						<h1 className="section-title">{script.features[1]}</h1>
+						<h3>{script.features[12]}</h3>
 					</div>
 				</div>
 			</div>
@@ -77,6 +79,9 @@ const FeaturesV1 = (props) => {
 						</div>
 					</Link>
 				</div>
+			</div>
+			<div className='row'>
+				<img style={{ width: '500px', margin: 'auto' }} src={publicUrl + `assets/img/pricing/pricing-${language}.jpg`} alt='Pricing' />
 			</div>
 		</div>
 	</div>

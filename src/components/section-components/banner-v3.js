@@ -14,7 +14,7 @@ const BannerV3 = () => {
 	return <div className="ltn__slider-area ltn__slider-3  section-bg-2">
 		<div className="ltn__slide-one-active slick-slide-arrow-1 slick-slide-dots-1">
 			{/* ltn__slide-item */}
-			<div className="ltn__slide-item ltn__slide-item-2 ltn__slide-item-3-normal--- ltn__slide-item-3 bg-image bg-overlay-theme-black-60" data-bs-bg={publicUrl + "assets/img/slider/groningen.jpg"}>
+			<div className="ltn__slide-item ltn__slide-item-2 ltn__slide-item-3-normal--- ltn__slide-item-3 bg-image bg-overlay-theme-black-60" data-bs-bg={"/assets/img/slider/groningen.jpg"}>
 				<div className="ltn__slide-item-inner text-center">
 					<div className="container">
 						<div className="row">

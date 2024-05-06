@@ -1,4 +1,5 @@
 const BG = {
+    language: 'bg',
     header: [
         'Начална страница',
         'Предпочитан език',
@@ -184,6 +185,22 @@ const BG = {
     ],
     FOR_RENT: [
         {
+            id: '8',
+            status: 'Свободна',
+            price: 410,
+            free: true,
+            type: 'Стая в споделен апартамент',
+            location: 'Turkooisstraat 34 9743 KZ Groningen',
+            description: {
+                property: 'Ставта е с размер 20 кв. метра. Мебелите могат да се закупят от сегашния наемодател за 400 евро, като са от ИКЕА в перфектно състояние (по желание на новия наемодател)',
+                period: 'Свободна от 1ви юли',
+                bills: 'основните са включени в цената. Депозит от 410 евро и допълнителна таска за Wi-Fi при желание за ползване',
+                flatmates: '1х българка, 1х българка, 1х германец, 1х германка',
+            },
+            main_image: "assets/img/properties/property_8/1.jpg",
+            images: ['assets/img/properties/property_8/2.jpg', 'assets/img/properties/property_8/3.jpg', 'assets/img/properties/property_8/4.jpg', 'assets/img/properties/property_8/5.jpg', 'assets/img/properties/property_8/6.jpg', 'assets/img/properties/property_8/7.jpg'],
+        },
+        {
             id: '6',
             status: 'Свободна',
             price: 1100,
@@ -351,7 +368,8 @@ const BG = {
         'Услуги',
         'Ако искаш да намериш съквартирант или да предадеш стаята си на нов наемател, който да заеме стаята ти',
         'Извънредно настаняване',
-        'Ако търсиш или предлагаш кратък престой за студент в нужда'
+        'Ако търсиш или предлагаш кратък престой за студент в нужда',
+        'Намерете нашия ценоразпис отдолу'
     ],
     team: [
         'Екип',
@@ -472,6 +490,7 @@ const BG = {
 }
 
 const EN = {
+    language: 'en',
     header: [
         'Home',
         'Change language',
@@ -654,6 +673,21 @@ const EN = {
         'Offering',
     ],
     FOR_RENT: [{
+        id: '8',
+        status: 'RENT',
+        price: 410,
+        free: true,
+        type: 'Room in a shared apartment',
+        location: 'Turkooisstraat 34 9743 KZ Groningen',
+        description: {
+            property: 'Size of the room is 20 sq. meters. All furnitures can be bought from the current lender for 400 euro (furnitures are from IKEA and cost approxiamtely 400 euro)',
+            period: 'Free from 1st of July',
+            bills: 'main bills are included. Deposit of 410 euro is required. Wi-Fi can be paid if used according to the current plan',
+            flatmates: '2 Bulgarians and 2 Germans',
+        },
+        main_image: "assets/img/properties/property_8/1.jpg",
+        images: ['assets/img/properties/property_8/2.jpg', 'assets/img/properties/property_8/3.jpg', 'assets/img/properties/property_8/4.jpg', 'assets/img/properties/property_8/5.jpg', 'assets/img/properties/property_8/6.jpg', 'assets/img/properties/property_8/7.jpg'],
+    }, {
         id: '6',
         status: 'RENT',
         price: 1100,
@@ -668,21 +702,6 @@ const EN = {
         },
         main_image: "assets/img/properties/property_6/1.jpg",
         images: ['assets/img/properties/property_6/2.jpg', 'assets/img/properties/property_6/3.jpg', 'assets/img/properties/property_6/4.jpg', 'assets/img/properties/property_6/5.jpg', 'assets/img/properties/property_6/6.jpg', 'assets/img/properties/property_6/7.jpg'],
-    }, {
-        id: '7',
-        status: 'Taken',
-        price: 560,
-        free: false,
-        type: 'Room in shared house',
-        location: 'Abeelstraat 107, 9741 Groningen',
-        description: {
-            property: 'Small room in shared house, 400 euro deposit and the bed is sold seperately',
-            period: 'From now',
-            bills: 'All bills included',
-            flatmates: 'TBD',
-        },
-        main_image: "assets/img/properties/property_7/1.jpg",
-        images: ['assets/img/properties/property_7/2.jpg', 'assets/img/properties/property_7/3.jpg', 'assets/img/properties/property_7/4.jpg', 'assets/img/properties/property_7/5.jpg', 'assets/img/properties/property_7/6.jpg'],
     },
     {
         id: '5',
@@ -837,7 +856,8 @@ const EN = {
         'Services',
         'Search for a new flatmate / Transfer your contract',
         'Emergency Housing',
-        'Search or provide hosuing for short period in emergency situations'
+        'Search or provide hosuing for short period in emergency situations',
+        'Our pricing can be found below'
     ],
     team: [
         'Team',

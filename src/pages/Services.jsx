@@ -13,7 +13,7 @@ const Services = () => {
     return <div>
         <Navbar />
         <PageHeader headertitle={script.features[8]} subheader={script.features[1]} />
-        <Features customClass="ltn__feature-area section-bg-1--- pt-115 pb-90 mb-120---" />
+        <Features customClass="ltn__feature-area section-bg-1--- pb-90 mb-120---" />
         <CallToActionV1 />
         <Footer />
     </div>
