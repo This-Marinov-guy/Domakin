@@ -185,6 +185,22 @@ const BG = {
     ],
     FOR_RENT: [
         {
+            id: '9',
+            status: 'Свободна',
+            price: 510,
+            free: true,
+            type: '3 Стаи в споделен апартамент',
+            location: 'Eikenlaan, Groningen',
+            description: {
+                property: 'Апартамента е подходящ за 3ма човека, като регистрация е възможно само за 1 от тях. Общия наем е 1545 евро без сметките',
+                period: 'Договор за 12 месеца',
+                bills: 'не са включени сметки в цената',
+                flatmates: '2ма човека',
+            },
+            main_image: "assets/img/properties/property_9/1.webp",
+            images: ['assets/img/properties/property_9/2.webp', 'assets/img/properties/property_9/3.webp', 'assets/img/properties/property_9/4.webp', 'assets/img/properties/property_9/5.webp', 'assets/img/properties/property_9/6.webp', 'assets/img/properties/property_9/7.webp', 'assets/img/properties/property_9/8.webp', 'assets/img/properties/property_9/9.webp', 'assets/img/properties/property_9/10.webp'],
+        },
+        {
             id: '8',
             status: 'Свободна',
             price: 410,
@@ -192,7 +208,7 @@ const BG = {
             type: 'Стая в споделен апартамент',
             location: 'Turkooisstraat, Groningen',
             description: {
-                property: 'Ставта е с размер 20 кв. метра. Мебелите могат да се закупят от сегашния наемодател за 400 евро, като са от ИКЕА в перфектно състояние (по желание на новия наемодател)',
+                property: 'Стаята е с размер 20 кв. метра. Мебелите могат да се закупят от сегашния наемодател за 400 евро, като са от ИКЕА в перфектно състояние (по желание на новия наемодател)',
                 period: 'Свободна от 1ви юли',
                 bills: 'основните са включени в цената. Депозит от 410 евро и допълнителна таска за Wi-Fi при желание за ползване',
                 flatmates: '1х българка, 1х българка, 1х германец, 1х германка',
@@ -673,6 +689,21 @@ const EN = {
         'Offering',
     ],
     FOR_RENT: [{
+        id: '9',
+        status: 'RENT',
+        price: 510,
+        free: true,
+        type: '3 rooms in shared apartment',
+        location: 'Eikenlaan, Groningen',
+        description: {
+            property: 'The apartment is suitbale for 3 friends. Only 1 registration is possible on the property. The rent for the how apartment is 1545 euro.',
+            period: '12 month contract',
+            bills: 'bills are not included',
+            flatmates: '2 people',
+        },
+        main_image: "assets/img/properties/property_9/1.webp",
+        images: ['assets/img/properties/property_9/2.webp', 'assets/img/properties/property_9/3.webp', 'assets/img/properties/property_9/4.webp', 'assets/img/properties/property_9/5.webp', 'assets/img/properties/property_9/6.webp', 'assets/img/properties/property_9/7.webp', 'assets/img/properties/property_9/8.webp', 'assets/img/properties/property_9/9.webp', 'assets/img/properties/property_9/10.webp'],
+    }, {
         id: '8',
         status: 'RENT',
         price: 410,
