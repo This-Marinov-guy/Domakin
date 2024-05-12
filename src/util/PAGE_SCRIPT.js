@@ -197,8 +197,8 @@ const BG = {
                 bills: 'не са включени сметки в цената',
                 flatmates: '2ма човека',
             },
-            main_image: "assets/img/properties/property_9/1.webp",
-            images: ['assets/img/properties/property_9/2.webp', 'assets/img/properties/property_9/3.webp', 'assets/img/properties/property_9/4.webp', 'assets/img/properties/property_9/5.webp', 'assets/img/properties/property_9/6.webp', 'assets/img/properties/property_9/7.webp', 'assets/img/properties/property_9/8.webp', 'assets/img/properties/property_9/9.webp', 'assets/img/properties/property_9/10.webp'],
+            main_image: "assets/img/properties/property_9/1.jpg",
+            images: ['assets/img/properties/property_9/2.jpg', 'assets/img/properties/property_9/3.jpg', 'assets/img/properties/property_9/4.jpg', 'assets/img/properties/property_9/5.jpg', 'assets/img/properties/property_9/6.jpg', 'assets/img/properties/property_9/7.jpg', 'assets/img/properties/property_9/8.jpg', 'assets/img/properties/property_9/9.jpg', 'assets/img/properties/property_9/10.jpg'],
         },
         {
             id: '8',
@@ -701,8 +701,8 @@ const EN = {
             bills: 'bills are not included',
             flatmates: '2 people',
         },
-        main_image: "assets/img/properties/property_9/1.webp",
-        images: ['assets/img/properties/property_9/2.webp', 'assets/img/properties/property_9/3.webp', 'assets/img/properties/property_9/4.webp', 'assets/img/properties/property_9/5.webp', 'assets/img/properties/property_9/6.webp', 'assets/img/properties/property_9/7.webp', 'assets/img/properties/property_9/8.webp', 'assets/img/properties/property_9/9.webp', 'assets/img/properties/property_9/10.webp'],
+        main_image: "assets/img/properties/property_9/1.jpg",
+        images: ['assets/img/properties/property_9/2.jpg', 'assets/img/properties/property_9/3.jpg', 'assets/img/properties/property_9/4.jpg', 'assets/img/properties/property_9/5.jpg', 'assets/img/properties/property_9/6.jpg', 'assets/img/properties/property_9/7.jpg', 'assets/img/properties/property_9/8.jpg', 'assets/img/properties/property_9/9.jpg', 'assets/img/properties/property_9/10.jpg'],
     }, {
         id: '8',
         status: 'RENT',
