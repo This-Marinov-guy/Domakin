@@ -23,7 +23,7 @@ class Comments extends Component {
 					<h4 className="title-2">03 Comments</h4>
 					<div className="ltn__comment-inner">
 						<ul>
-						<li></li>
+						<li>
 							<div className="ltn__comment-item clearfix">
 							<div className="ltn__commenter-img">
 								<img src={publicUrl+"assets/img/testimonial/1.jpg"} alt='preview' />
