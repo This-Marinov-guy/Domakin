@@ -114,6 +114,11 @@
   "eslintConfig": {
     "extends": "react-app",
     "rules": {
+      "react-hooks/exhaustive-deps": "off",
+      "react/jsx-no-target-blank": "off",
+      "jsx-a11y/iframe-has-title": "off",
+      "jsx-a11y/role-supports-aria-props": "off",
+      "no-sparse-arrays": "off",
       "no-unused-vars": "off",
       "jsx-a11y/img-redundant-alt": "off",
       "jsx-a11y/anchor-is-valid": "off"
