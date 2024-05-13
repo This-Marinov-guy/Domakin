@@ -112,7 +112,11 @@
     "deploy": "npm run build && netlify deploy --prod"
   },
   "eslintConfig": {
-    "extends": "react-app"
+    "extends": "react-app",
+    "rules": {
+      "jsx-a11y/img-redundant-alt": "off",
+      "jsx-a11y/anchor-is-valid": "off"
+    }
   },
   "browserslist": {
     "production": [
