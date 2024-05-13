@@ -12,7 +12,7 @@ const TeamMember = (props) => {
 		<Link to='/agents'>
 			<div className="ltn__team-item ltn__team-item-3---">
 				<div className="team-img">
-					<img src={publicUrl + `assets/img/team/${props.image}.jpg`} alt="Image" />
+					<img src={publicUrl + `assets/img/team/${props.image}.jpg`} alt='preview' />
 				</div>
 				<div className="team-info">
 					<h4>{props.name}</h4>

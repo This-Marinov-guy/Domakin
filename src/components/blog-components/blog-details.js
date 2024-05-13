@@ -39,7 +39,7 @@ class BlogDetails extends Component {
 					</div>
 					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.</p>
 					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt.</p>
-					<img src={publicUrl+"assets/img/blog/35.jpg"} alt="Image" />
+					<img src={publicUrl+"assets/img/blog/35.jpg"} alt='preview' />
 					<h2>A cleansing hot shower or bath</h2>
 					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia. </p>
 					<hr />
@@ -61,18 +61,18 @@ class BlogDetails extends Component {
 						Viral dreamcatcher keytar typewriter, aest hetic offal umami. Aesthetic polaroid pug pitchfork post-ironic.
 					</blockquote>
 					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium. </p>
-					<img className="alignleft" src={publicUrl+"assets/img/blog/blog-details/1.jpg"} alt="Image" />
+					<img className="alignleft" src={publicUrl+"assets/img/blog/blog-details/1.jpg"} alt='preview' />
 					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus</p>
 					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem.</p>
 					<h4>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</h4>
 					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consectetur expedita velit laboriosam est sint laborum eos assumenda, quam voluptatem adipisci, reprehenderit ut nobis blanditiis perspiciatis!</p>
 					<div className="row">
 						<div className="col-lg-6">
-						<img src={publicUrl+"assets/img/service/31.jpg"} alt="Image" />
+						<img src={publicUrl+"assets/img/service/31.jpg"} alt='preview' />
 						<label>Image Caption Here</label>
 						</div>
 						<div className="col-lg-6">
-						<img src={publicUrl+"assets/img/service/32.jpg"} alt="Image" />
+						<img src={publicUrl+"assets/img/service/32.jpg"} alt='preview' />
 						</div>
 					</div>
 					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa, amet, fuga omnis eligendi sed cupiditate molestias enim autem animi est tempore ipsa corporis. Recusandae, quia.</p>
@@ -96,10 +96,10 @@ class BlogDetails extends Component {
 					<div className="ltn__social-media text-right text-end col-lg-4">
 						<h4>Social Share</h4>
 						<ul>
-						<li><a href="#" title="Facebook"><i className="fab fa-facebook-f" /></a></li>
-						<li><a href="#" title="Twitter"><i className="fab fa-twitter" /></a></li>
-						<li><a href="#" title="Linkedin"><i className="fab fa-linkedin" /></a></li>
-						<li><a href="#" title="Youtube"><i className="fab fa-youtube" /></a></li>
+						<li><a href="/#" title="Facebook"><i className="fab fa-facebook-f" /></a></li>
+						<li><a href="/#" title="Twitter"><i className="fab fa-twitter" /></a></li>
+						<li><a href="/#" title="Linkedin"><i className="fab fa-linkedin" /></a></li>
+						<li><a href="/#" title="Youtube"><i className="fab fa-youtube" /></a></li>
 						</ul>
 					</div>
 					</div>
@@ -124,7 +124,7 @@ class BlogDetails extends Component {
 						{/* Blog Item */}
 						<div className="ltn__blog-item ltn__blog-item-6">
 							<div className="ltn__blog-img">
-							<Link to="/blog-details"><img src={publicUrl+"assets/img/blog/blog-details/11.jpg"} alt="Image" /></Link>
+							<Link to="/blog-details"><img src={publicUrl+"assets/img/blog/blog-details/11.jpg"} alt='preview' /></Link>
 							</div>
 							<div className="ltn__blog-brief">
 							<div className="ltn__blog-meta">
@@ -144,7 +144,7 @@ class BlogDetails extends Component {
 						{/* Blog Item */}
 						<div className="ltn__blog-item ltn__blog-item-6">
 							<div className="ltn__blog-img">
-							<Link to="/blog-details"><img src={publicUrl+"assets/img/blog/blog-details/12.jpg"} alt="Image" /></Link>
+							<Link to="/blog-details"><img src={publicUrl+"assets/img/blog/blog-details/12.jpg"} alt='preview' /></Link>
 							</div>
 							<div className="ltn__blog-brief">
 							<div className="ltn__blog-meta">

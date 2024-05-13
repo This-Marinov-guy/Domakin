@@ -23,13 +23,13 @@ class Comments extends Component {
 					<h4 className="title-2">03 Comments</h4>
 					<div className="ltn__comment-inner">
 						<ul>
-						<li>
+						<li></li>
 							<div className="ltn__comment-item clearfix">
 							<div className="ltn__commenter-img">
-								<img src={publicUrl+"assets/img/testimonial/1.jpg"} alt="Image" />
+								<img src={publicUrl+"assets/img/testimonial/1.jpg"} alt='preview' />
 							</div>
 							<div className="ltn__commenter-comment">
-								<h6><a href="#">Adam Smit</a></h6>
+								<h6><a href="/#">Adam Smit</a></h6>
 								<span className="comment-date">20th May 2020</span>
 								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus, omnis fugit corporis iste magnam ratione.</p>
 								<Link to="#" className="ltn__comment-reply-btn"><i className="icon-reply-1" />Reply</Link>
@@ -39,10 +39,10 @@ class Comments extends Component {
 							<li>
 								<div className="ltn__comment-item clearfix">
 								<div className="ltn__commenter-img">
-									<img src={publicUrl+"assets/img/testimonial/3.jpg"} alt="Image" />
+									<img src={publicUrl+"assets/img/testimonial/3.jpg"} alt='preview' />
 								</div>
 								<div className="ltn__commenter-comment">
-									<h6><a href="#">Adam Smit</a></h6>
+									<h6><a href="/#">Adam Smit</a></h6>
 									<span className="comment-date">21th May 2020</span>
 									<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus, omnis fugit corporis iste magnam ratione.</p>
 									<Link to="#" className="ltn__comment-reply-btn"><i className="icon-reply-1" />Reply</Link>
@@ -54,10 +54,10 @@ class Comments extends Component {
 						<li>
 							<div className="ltn__comment-item clearfix">
 							<div className="ltn__commenter-img">
-								<img src={publicUrl+"assets/img/testimonial/4.jpg"} alt="Image" />
+								<img src={publicUrl+"assets/img/testimonial/4.jpg"} alt='preview' />
 							</div>
 							<div className="ltn__commenter-comment">
-								<h6><a href="#">Adam Smit</a></h6>
+								<h6><a href="/#">Adam Smit</a></h6>
 								<span className="comment-date">25th May 2020</span>
 								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus, omnis fugit corporis iste magnam ratione.</p>
 								<Link to="#" className="ltn__comment-reply-btn"><i className="icon-reply-1" />Reply</Link>

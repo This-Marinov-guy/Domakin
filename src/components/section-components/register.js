@@ -42,7 +42,7 @@ class Register extends Component {
 						</form>
 						<div className="by-agree text-center">
 						<p>By creating an account, you agree to our:</p>
-						<p><a href="#">TERMS OF CONDITIONS  &nbsp; &nbsp; | &nbsp; &nbsp;  PRIVACY POLICY</a></p>
+						<p><a href="/#">TERMS OF CONDITIONS  &nbsp; &nbsp; | &nbsp; &nbsp;  PRIVACY POLICY</a></p>
 						<div className="go-to-btn mt-50 go-top">
 							<Link to="/login">ALREADY HAVE AN ACCOUNT ?</Link>
 						</div>

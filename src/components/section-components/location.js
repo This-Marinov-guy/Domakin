@@ -69,7 +69,7 @@ class Location extends Component {
 						<h4 className="ltn__location-single-info"><i className="fas fa-phone-volume" />0123456789</h4>
 						<div className="btn-wrapper">
 						<a href="appointment.html" className="btn btn-transparent btn-border btn-effect-4"><i className="fas fa-location-arrow" /> Get An Appointment</a>
-						<a href="#" className="btn btn-transparent btn-border btn-effect-3"><i className="fas fa-globe" /> View Website</a>
+						<a href="/#" className="btn btn-transparent btn-border btn-effect-3"><i className="fas fa-globe" /> View Website</a>
 						</div>
 					</div>
 					</div>
@@ -80,7 +80,7 @@ class Location extends Component {
 						<h4 className="ltn__location-single-info"><i className="fas fa-phone-volume" />0123456789</h4>
 						<div className="btn-wrapper">
 						<a href="appointment.html" className="btn btn-transparent btn-border btn-effect-4"><i className="fas fa-location-arrow" /> Get An Appointment</a>
-						<a href="#" className="btn btn-transparent btn-border btn-effect-3"><i className="fas fa-globe" /> View Website</a>
+						<a href="/#" className="btn btn-transparent btn-border btn-effect-3"><i className="fas fa-globe" /> View Website</a>
 						</div>
 					</div>
 					</div>
@@ -91,7 +91,7 @@ class Location extends Component {
 						<h4 className="ltn__location-single-info"><i className="fas fa-phone-volume" />0123456789</h4>
 						<div className="btn-wrapper">
 						<a href="appointment.html" className="btn btn-transparent btn-border btn-effect-4"><i className="fas fa-location-arrow" /> Get An Appointment</a>
-						<a href="#" className="btn btn-transparent btn-border btn-effect-3"><i className="fas fa-globe" /> View Website</a>
+						<a href="/#" className="btn btn-transparent btn-border btn-effect-3"><i className="fas fa-globe" /> View Website</a>
 						</div>
 					</div>
 					</div>
@@ -102,7 +102,7 @@ class Location extends Component {
 						<h4 className="ltn__location-single-info"><i className="fas fa-phone-volume" />0123456789</h4>
 						<div className="btn-wrapper">
 						<a href="appointment.html" className="btn btn-transparent btn-border btn-effect-4"><i className="fas fa-location-arrow" /> Get An Appointment</a>
-						<a href="#" className="btn btn-transparent btn-border btn-effect-3"><i className="fas fa-globe" /> View Website</a>
+						<a href="/#" className="btn btn-transparent btn-border btn-effect-3"><i className="fas fa-globe" /> View Website</a>
 						</div>
 					</div>
 					</div>
@@ -113,7 +113,7 @@ class Location extends Component {
 						<h4 className="ltn__location-single-info"><i className="fas fa-phone-volume" />0123456789</h4>
 						<div className="btn-wrapper">
 						<a href="appointment.html" className="btn btn-transparent btn-border btn-effect-4"><i className="fas fa-location-arrow" /> Get An Appointment</a>
-						<a href="#" className="btn btn-transparent btn-border btn-effect-3"><i className="fas fa-globe" /> View Website</a>
+						<a href="/#" className="btn btn-transparent btn-border btn-effect-3"><i className="fas fa-globe" /> View Website</a>
 						</div>
 					</div>
 					</div>
@@ -124,7 +124,7 @@ class Location extends Component {
 						<h4 className="ltn__location-single-info"><i className="fas fa-phone-volume" />0123456789</h4>
 						<div className="btn-wrapper">
 						<a href="appointment.html" className="btn btn-transparent btn-border btn-effect-4"><i className="fas fa-location-arrow" /> Get An Appointment</a>
-						<a href="#" className="btn btn-transparent btn-border btn-effect-3"><i className="fas fa-globe" /> View Website</a>
+						<a href="/#" className="btn btn-transparent btn-border btn-effect-3"><i className="fas fa-globe" /> View Website</a>
 						</div>
 					</div>
 					</div>
@@ -140,7 +140,7 @@ class Location extends Component {
 						<h4 className="ltn__location-single-info"><i className="fas fa-phone-volume" />0123456789</h4>
 						<div className="btn-wrapper">
 						<a href="appointment.html" className="btn btn-transparent btn-border btn-effect-4"><i className="fas fa-location-arrow" /> Get An Appointment</a>
-						<a href="#" className="btn btn-transparent btn-border btn-effect-3"><i className="fas fa-globe" /> View Website</a>
+						<a href="/#" className="btn btn-transparent btn-border btn-effect-3"><i className="fas fa-globe" /> View Website</a>
 						</div>
 					</div>
 					</div>
@@ -151,7 +151,7 @@ class Location extends Component {
 						<h4 className="ltn__location-single-info"><i className="fas fa-phone-volume" />0123456789</h4>
 						<div className="btn-wrapper">
 						<a href="appointment.html" className="btn btn-transparent btn-border btn-effect-4"><i className="fas fa-location-arrow" /> Get An Appointment</a>
-						<a href="#" className="btn btn-transparent btn-border btn-effect-3"><i className="fas fa-globe" /> View Website</a>
+						<a href="/#" className="btn btn-transparent btn-border btn-effect-3"><i className="fas fa-globe" /> View Website</a>
 						</div>
 					</div>
 					</div>
@@ -162,7 +162,7 @@ class Location extends Component {
 						<h4 className="ltn__location-single-info"><i className="fas fa-phone-volume" />0123456789</h4>
 						<div className="btn-wrapper">
 						<a href="appointment.html" className="btn btn-transparent btn-border btn-effect-4"><i className="fas fa-location-arrow" /> Get An Appointment</a>
-						<a href="#" className="btn btn-transparent btn-border btn-effect-3"><i className="fas fa-globe" /> View Website</a>
+						<a href="/#" className="btn btn-transparent btn-border btn-effect-3"><i className="fas fa-globe" /> View Website</a>
 						</div>
 					</div>
 					</div>
@@ -178,7 +178,7 @@ class Location extends Component {
 						<h4 className="ltn__location-single-info"><i className="fas fa-phone-volume" />0123456789</h4>
 						<div className="btn-wrapper">
 						<a href="appointment.html" className="btn btn-transparent btn-border btn-effect-4"><i className="fas fa-location-arrow" /> Get An Appointment</a>
-						<a href="#" className="btn btn-transparent btn-border btn-effect-3"><i className="fas fa-globe" /> View Website</a>
+						<a href="/#" className="btn btn-transparent btn-border btn-effect-3"><i className="fas fa-globe" /> View Website</a>
 						</div>
 					</div>
 					</div>
@@ -189,7 +189,7 @@ class Location extends Component {
 						<h4 className="ltn__location-single-info"><i className="fas fa-phone-volume" />0123456789</h4>
 						<div className="btn-wrapper">
 						<a href="appointment.html" className="btn btn-transparent btn-border btn-effect-4"><i className="fas fa-location-arrow" /> Get An Appointment</a>
-						<a href="#" className="btn btn-transparent btn-border btn-effect-3"><i className="fas fa-globe" /> View Website</a>
+						<a href="/#" className="btn btn-transparent btn-border btn-effect-3"><i className="fas fa-globe" /> View Website</a>
 						</div>
 					</div>
 					</div>
@@ -200,7 +200,7 @@ class Location extends Component {
 						<h4 className="ltn__location-single-info"><i className="fas fa-phone-volume" />0123456789</h4>
 						<div className="btn-wrapper">
 						<a href="appointment.html" className="btn btn-transparent btn-border btn-effect-4"><i className="fas fa-location-arrow" /> Get An Appointment</a>
-						<a href="#" className="btn btn-transparent btn-border btn-effect-3"><i className="fas fa-globe" /> View Website</a>
+						<a href="/#" className="btn btn-transparent btn-border btn-effect-3"><i className="fas fa-globe" /> View Website</a>
 						</div>
 					</div>
 					</div>

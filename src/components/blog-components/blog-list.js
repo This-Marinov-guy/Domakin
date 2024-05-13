@@ -13,7 +13,7 @@ class BlogList extends Component {
 					{/* Blog Item */}
 					<div className="ltn__blog-item ltn__blog-item-5 go-top">
 					<div className="ltn__blog-img">
-						<Link to="/blog-details"><img src={publicUrl+"assets/img/blog/31.jpg"} alt="Image" /></Link>
+						<Link to="/blog-details"><img src={publicUrl+"assets/img/blog/31.jpg"} alt='preview' /></Link>
 					</div>
 					<div className="ltn__blog-brief">
 						<div className="ltn__blog-meta">
@@ -103,13 +103,13 @@ class BlogList extends Component {
 					<div className="ltn__blog-item ltn__blog-item-5 ltn__blog-item-gallery">
 					<div className="ltn__blog-gallery-active slick-arrow-1 slick-arrow-1-inner">
 						<div className="ltn__blog-gallery-item">
-						<Link to="/blog-details"><img src={publicUrl+"assets/img/blog/33.jpg"} alt="Image" /></Link>
+						<Link to="/blog-details"><img src={publicUrl+"assets/img/blog/33.jpg"} alt='preview' /></Link>
 						</div>
 						<div className="ltn__blog-gallery-item">
-						<Link to="/blog-details"><img src={publicUrl+"assets/img/blog/34.jpg"} alt="Image" /></Link>
+						<Link to="/blog-details"><img src={publicUrl+"assets/img/blog/34.jpg"} alt='preview' /></Link>
 						</div>
 						<div className="ltn__blog-gallery-item">
-						<Link to="/blog-details"><img src={publicUrl+"assets/img/blog/31.jpg"} alt="Image" /></Link>
+						<Link to="/blog-details"><img src={publicUrl+"assets/img/blog/31.jpg"} alt='preview' /></Link>
 						</div>
 					</div>
 					<div className="ltn__blog-brief">

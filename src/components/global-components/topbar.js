@@ -27,14 +27,14 @@ class TopBar extends Component {
 							{/* ltn__language-menu */}
 							<div className="ltn__drop-menu ltn__currency-menu ltn__language-menu">
 							<ul>
-								<li><a href="#" className="dropdown-toggle"><span className="active-currency">English</span></a>
+								<li><a href="/#" className="dropdown-toggle"><span className="active-currency">English</span></a>
 								<ul>
-									<li><a href="#">Arabic</a></li>
-									<li><a href="#">Bengali</a></li>
-									<li><a href="#">Chinese</a></li>
-									<li><a href="#">English</a></li>
-									<li><a href="#">French</a></li>
-									<li><a href="#">Hindi</a></li>
+									<li><a href="/#">Arabic</a></li>
+									<li><a href="/#">Bengali</a></li>
+									<li><a href="/#">Chinese</a></li>
+									<li><a href="/#">English</a></li>
+									<li><a href="/#">French</a></li>
+									<li><a href="/#">Hindi</a></li>
 								</ul>
 								</li>
 							</ul>
@@ -44,10 +44,10 @@ class TopBar extends Component {
 							{/* ltn__social-media */}
 							<div className="ltn__social-media">
 							<ul>
-								<li><a href="#" title="Facebook"><i className="fab fa-facebook-f" /></a></li>
-								<li><a href="#" title="Twitter"><i className="fab fa-twitter" /></a></li>
-								<li><a href="#" title="Instagram"><i className="fab fa-instagram" /></a></li>
-								<li><a href="#" title="Dribbble"><i className="fab fa-dribbble" /></a></li>
+								<li><a href="/#" title="Facebook"><i className="fab fa-facebook-f" /></a></li>
+								<li><a href="/#" title="Twitter"><i className="fab fa-twitter" /></a></li>
+								<li><a href="/#" title="Instagram"><i className="fab fa-instagram" /></a></li>
+								<li><a href="/#" title="Dribbble"><i className="fab fa-dribbble" /></a></li>
 							</ul>
 							</div>
 						</li>

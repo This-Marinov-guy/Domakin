@@ -28,7 +28,7 @@ class History extends Component {
 							<div className="row">
 								<div className="col-lg-6 align-self-center">
 								<div className="about-us-img-wrap about-img-left">
-									<img src={publicUrl+"assets/img/img-slide/12.jpg"} alt="Image" />
+									<img src={publicUrl+"assets/img/img-slide/12.jpg"} alt='preview' />
 									<div className="ltn__history-icon">
 									<i className="fas fa-award" />
 									</div>
@@ -52,7 +52,7 @@ class History extends Component {
 							<div className="row">
 								<div className="col-lg-6 align-self-center">
 								<div className="about-us-img-wrap about-img-left">
-									<img src={publicUrl+"assets/img/img-slide/11.jpg"} alt="Image" />
+									<img src={publicUrl+"assets/img/img-slide/11.jpg"} alt='preview' />
 									<div className="ltn__history-icon">
 									<i className="icon-award" />
 									</div>
@@ -77,7 +77,7 @@ class History extends Component {
 							<div className="row">
 								<div className="col-lg-6 align-self-center">
 								<div className="about-us-img-wrap about-img-left">
-									<img src={publicUrl+"assets/img/img-slide/13.jpg"} alt="Image" />
+									<img src={publicUrl+"assets/img/img-slide/13.jpg"} alt='preview' />
 									<div className="ltn__history-icon">
 									<i className="fas fa-medal" />
 									</div>
@@ -102,7 +102,7 @@ class History extends Component {
 							<div className="row">
 								<div className="col-lg-6 align-self-center">
 								<div className="about-us-img-wrap about-img-left">
-									<img src={publicUrl+"assets/img/img-slide/12.jpg"} alt="Image" />
+									<img src={publicUrl+"assets/img/img-slide/12.jpg"} alt='preview' />
 									<div className="ltn__history-icon">
 									<i className="icon-award" />
 									</div>
@@ -127,7 +127,7 @@ class History extends Component {
 							<div className="row">
 								<div className="col-lg-6 align-self-center">
 								<div className="about-us-img-wrap about-img-left">
-									<img src={publicUrl+"assets/img/img-slide/11.jpg"} alt="Image" />
+									<img src={publicUrl+"assets/img/img-slide/11.jpg"} alt='preview' />
 									<div className="ltn__history-icon">
 									<i className="fas fa-trophy" />
 									</div>

@@ -14,35 +14,35 @@ class ProductSliderV1 extends Component {
 					<div className="col-lg-12">
 					<div className="ltn__img-slide-item-4">
 						<a href={publicUrl+"assets/img/img-slide/31.jpg"} data-rel="lightcase:myCollection">
-						<img src={publicUrl+"assets/img/img-slide/31.jpg"} alt="Image" />
+						<img src={publicUrl+"assets/img/img-slide/31.jpg"} alt='preview' />
 						</a>
 					</div>
 					</div>
 					<div className="col-lg-12">
 					<div className="ltn__img-slide-item-4">
 						<a href={publicUrl+"assets/img/img-slide/32.jpg"} data-rel="lightcase:myCollection">
-						<img src={publicUrl+"assets/img/img-slide/32.jpg"} alt="Image" />
+						<img src={publicUrl+"assets/img/img-slide/32.jpg"} alt='preview' />
 						</a>
 					</div>
 					</div>
 					<div className="col-lg-12">
 					<div className="ltn__img-slide-item-4">
 						<a href={publicUrl+"assets/img/img-slide/33.jpg"} data-rel="lightcase:myCollection">
-						<img src={publicUrl+"assets/img/img-slide/33.jpg"} alt="Image" />
+						<img src={publicUrl+"assets/img/img-slide/33.jpg"} alt='preview' />
 						</a>
 					</div>
 					</div>
 					<div className="col-lg-12">
 					<div className="ltn__img-slide-item-4">
 						<a href={publicUrl+"assets/img/img-slide/34.jpg"} data-rel="lightcase:myCollection">
-						<img src={publicUrl+"assets/img/img-slide/34.jpg"} alt="Image" />
+						<img src={publicUrl+"assets/img/img-slide/34.jpg"} alt='preview' />
 						</a>
 					</div>
 					</div>
 					<div className="col-lg-12">
 					<div className="ltn__img-slide-item-4">
 						<a href={publicUrl+"assets/img/img-slide/35.jpg"} data-rel="lightcase:myCollection">
-						<img src={publicUrl+"assets/img/img-slide/35.jpg"} alt="Image" />
+						<img src={publicUrl+"assets/img/img-slide/35.jpg"} alt='preview' />
 						</a>
 					</div>
 					</div>

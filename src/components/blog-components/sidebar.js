@@ -14,26 +14,26 @@ class Sidebar extends Component {
 				{/* Author Widget */}
 				<div className="widget ltn__author-widget">
 				<div className="ltn__author-widget-inner text-center">
-					<img src={publicUrl+"assets/img/team/4.jpg"} alt="Image" />
+					<img src={publicUrl+"assets/img/team/4.jpg"} alt='preview' />
 					<h5>Rosalina D. Willaimson</h5>
 					<small>Traveller/Photographer</small>
 					<div className="product-ratting">
 					<ul>
-						<li><a href="#"><i className="fas fa-star" /></a></li>
-						<li><a href="#"><i className="fas fa-star" /></a></li>
-						<li><a href="#"><i className="fas fa-star" /></a></li>
-						<li><a href="#"><i className="fas fa-star-half-alt" /></a></li>
-						<li><a href="#"><i className="far fa-star" /></a></li>
-						<li className="review-total"> <a href="#"> ( 1 Reviews )</a></li>
+						<li><a href="/#"><i className="fas fa-star" /></a></li>
+						<li><a href="/#"><i className="fas fa-star" /></a></li>
+						<li><a href="/#"><i className="fas fa-star" /></a></li>
+						<li><a href="/#"><i className="fas fa-star-half-alt" /></a></li>
+						<li><a href="/#"><i className="far fa-star" /></a></li>
+						<li className="review-total"> <a href="/#"> ( 1 Reviews )</a></li>
 					</ul>
 					</div>
 					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veritatis distinctio, odio, eligendi suscipit reprehenderit atque.</p>
 					<div className="ltn__social-media">
 					<ul>
-						<li><a href="#" title="Facebook"><i className="fab fa-facebook-f" /></a></li>
-						<li><a href="#" title="Twitter"><i className="fab fa-twitter" /></a></li>
-						<li><a href="#" title="Linkedin"><i className="fab fa-linkedin" /></a></li>
-						<li><a href="#" title="Youtube"><i className="fab fa-youtube" /></a></li>
+						<li><a href="/#" title="Facebook"><i className="fab fa-facebook-f" /></a></li>
+						<li><a href="/#" title="Twitter"><i className="fab fa-twitter" /></a></li>
+						<li><a href="/#" title="Linkedin"><i className="fab fa-linkedin" /></a></li>
+						<li><a href="/#" title="Youtube"><i className="fab fa-youtube" /></a></li>
 					</ul>
 					</div>
 				</div>
@@ -68,11 +68,11 @@ class Sidebar extends Component {
 						<div className="top-rated-product-info">
 						<div className="product-ratting">
 							<ul>
-							<li><a href="#"><i className="fas fa-star" /></a></li>
-							<li><a href="#"><i className="fas fa-star" /></a></li>
-							<li><a href="#"><i className="fas fa-star" /></a></li>
-							<li><a href="#"><i className="fas fa-star" /></a></li>
-							<li><a href="#"><i className="fas fa-star" /></a></li>
+							<li><a href="/#"><i className="fas fa-star" /></a></li>
+							<li><a href="/#"><i className="fas fa-star" /></a></li>
+							<li><a href="/#"><i className="fas fa-star" /></a></li>
+							<li><a href="/#"><i className="fas fa-star" /></a></li>
+							<li><a href="/#"><i className="fas fa-star" /></a></li>
 							</ul>
 						</div>
 						<h6><Link to="/product-details">Luxury House In Greenville </Link></h6>
@@ -91,11 +91,11 @@ class Sidebar extends Component {
 						<div className="top-rated-product-info">
 						<div className="product-ratting">
 							<ul>
-							<li><a href="#"><i className="fas fa-star" /></a></li>
-							<li><a href="#"><i className="fas fa-star" /></a></li>
-							<li><a href="#"><i className="fas fa-star" /></a></li>
-							<li><a href="#"><i className="fas fa-star" /></a></li>
-							<li><a href="#"><i className="fas fa-star" /></a></li>
+							<li><a href="/#"><i className="fas fa-star" /></a></li>
+							<li><a href="/#"><i className="fas fa-star" /></a></li>
+							<li><a href="/#"><i className="fas fa-star" /></a></li>
+							<li><a href="/#"><i className="fas fa-star" /></a></li>
+							<li><a href="/#"><i className="fas fa-star" /></a></li>
 							</ul>
 						</div>
 						<h6><Link to="/product-details">Apartment with Subunits</Link></h6>
@@ -114,11 +114,11 @@ class Sidebar extends Component {
 						<div className="top-rated-product-info">
 						<div className="product-ratting">
 							<ul>
-							<li><a href="#"><i className="fas fa-star" /></a></li>
-							<li><a href="#"><i className="fas fa-star" /></a></li>
-							<li><a href="#"><i className="fas fa-star" /></a></li>
-							<li><a href="#"><i className="fas fa-star-half-alt" /></a></li>
-							<li><a href="#"><i className="far fa-star" /></a></li>
+							<li><a href="/#"><i className="fas fa-star" /></a></li>
+							<li><a href="/#"><i className="fas fa-star" /></a></li>
+							<li><a href="/#"><i className="fas fa-star" /></a></li>
+							<li><a href="/#"><i className="fas fa-star-half-alt" /></a></li>
+							<li><a href="/#"><i className="far fa-star" /></a></li>
 							</ul>
 						</div>
 						<h6><Link to="/product-details">3 Rooms Manhattan</Link></h6>
@@ -412,10 +412,10 @@ class Sidebar extends Component {
 				<h4 className="ltn__widget-title ltn__widget-title-border-2">Follow us</h4>
 				<div className="ltn__social-media-2">
 					<ul>
-					<li><a href="#" title="Facebook"><i className="fab fa-facebook-f" /></a></li>
-					<li><a href="#" title="Twitter"><i className="fab fa-twitter" /></a></li>
-					<li><a href="#" title="Linkedin"><i className="fab fa-linkedin" /></a></li>
-					<li><a href="#" title="Instagram"><i className="fab fa-instagram" /></a></li>
+					<li><a href="/#" title="Facebook"><i className="fab fa-facebook-f" /></a></li>
+					<li><a href="/#" title="Twitter"><i className="fab fa-twitter" /></a></li>
+					<li><a href="/#" title="Linkedin"><i className="fab fa-linkedin" /></a></li>
+					<li><a href="/#" title="Instagram"><i className="fab fa-instagram" /></a></li>
 					</ul>
 				</div>
 				</div>

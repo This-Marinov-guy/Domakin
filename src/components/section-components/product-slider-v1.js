@@ -85,12 +85,12 @@ class ProductSliderV1 extends Component {
 			            <div className="product-hover-action">
 			              <ul>
 			                <li>
-			                  <a href="#" title="Quick View" data-bs-toggle="modal" data-bs-target="#quick_view_modal">
+			                  <a href="/#" title="Quick View" data-bs-toggle="modal" data-bs-target="#quick_view_modal">
 			                    <i className="flaticon-expand" />
 			                  </a>
 			                </li>
 			                <li>
-			                  <a href="#" title="Wishlist" data-bs-toggle="modal" data-bs-target="#liton_wishlist_modal">
+			                  <a href="/#" title="Wishlist" data-bs-toggle="modal" data-bs-target="#liton_wishlist_modal">
 			                    <i className="flaticon-heart-1" /></a>
 			                </li>
 			                <li>
@@ -169,12 +169,12 @@ class ProductSliderV1 extends Component {
 			            <div className="product-hover-action">
 			              <ul>
 			                <li>
-			                  <a href="#" title="Quick View" data-bs-toggle="modal" data-bs-target="#quick_view_modal">
+			                  <a href="/#" title="Quick View" data-bs-toggle="modal" data-bs-target="#quick_view_modal">
 			                    <i className="flaticon-expand" />
 			                  </a>
 			                </li>
 			                <li>
-			                  <a href="#" title="Wishlist" data-bs-toggle="modal" data-bs-target="#liton_wishlist_modal">
+			                  <a href="/#" title="Wishlist" data-bs-toggle="modal" data-bs-target="#liton_wishlist_modal">
 			                    <i className="flaticon-heart-1" /></a>
 			                </li>
 			                <li>
@@ -253,12 +253,12 @@ class ProductSliderV1 extends Component {
 			            <div className="product-hover-action">
 			              <ul>
 			                <li>
-			                  <a href="#" title="Quick View" data-bs-toggle="modal" data-bs-target="#quick_view_modal">
+			                  <a href="/#" title="Quick View" data-bs-toggle="modal" data-bs-target="#quick_view_modal">
 			                    <i className="flaticon-expand" />
 			                  </a>
 			                </li>
 			                <li>
-			                  <a href="#" title="Wishlist" data-bs-toggle="modal" data-bs-target="#liton_wishlist_modal">
+			                  <a href="/#" title="Wishlist" data-bs-toggle="modal" data-bs-target="#liton_wishlist_modal">
 			                    <i className="flaticon-heart-1" /></a>
 			                </li>
 			                <li>
@@ -337,12 +337,12 @@ class ProductSliderV1 extends Component {
 			            <div className="product-hover-action">
 			              <ul>
 			                <li>
-			                  <a href="#" title="Quick View" data-bs-toggle="modal" data-bs-target="#quick_view_modal">
+			                  <a href="/#" title="Quick View" data-bs-toggle="modal" data-bs-target="#quick_view_modal">
 			                    <i className="flaticon-expand" />
 			                  </a>
 			                </li>
 			                <li>
-			                  <a href="#" title="Wishlist" data-bs-toggle="modal" data-bs-target="#liton_wishlist_modal">
+			                  <a href="/#" title="Wishlist" data-bs-toggle="modal" data-bs-target="#liton_wishlist_modal">
 			                    <i className="flaticon-heart-1" /></a>
 			                </li>
 			                <li>
@@ -421,12 +421,12 @@ class ProductSliderV1 extends Component {
 			            <div className="product-hover-action">
 			              <ul>
 			                <li>
-			                  <a href="#" title="Quick View" data-bs-toggle="modal" data-bs-target="#quick_view_modal">
+			                  <a href="/#" title="Quick View" data-bs-toggle="modal" data-bs-target="#quick_view_modal">
 			                    <i className="flaticon-expand" />
 			                  </a>
 			                </li>
 			                <li>
-			                  <a href="#" title="Wishlist" data-bs-toggle="modal" data-bs-target="#liton_wishlist_modal">
+			                  <a href="/#" title="Wishlist" data-bs-toggle="modal" data-bs-target="#liton_wishlist_modal">
 			                    <i className="flaticon-heart-1" /></a>
 			                </li>
 			                <li>
@@ -510,12 +510,12 @@ class ProductSliderV1 extends Component {
 								<div className="modal-product-info">
 									<div className="product-ratting">
 									<ul>
-										<li><a href="#"><i className="fas fa-star" /></a></li>
-										<li><a href="#"><i className="fas fa-star" /></a></li>
-										<li><a href="#"><i className="fas fa-star" /></a></li>
-										<li><a href="#"><i className="fas fa-star-half-alt" /></a></li>
-										<li><a href="#"><i className="far fa-star" /></a></li>
-										<li className="review-total"> <a href="#"> ( 95 Reviews )</a></li>
+										<li><a href="/#"><i className="fas fa-star" /></a></li>
+										<li><a href="/#"><i className="fas fa-star" /></a></li>
+										<li><a href="/#"><i className="fas fa-star" /></a></li>
+										<li><a href="/#"><i className="fas fa-star-half-alt" /></a></li>
+										<li><a href="/#"><i className="far fa-star" /></a></li>
+										<li className="review-total"> <a href="/#"> ( 95 Reviews )</a></li>
 									</ul>
 									</div>
 									<h3>Brake Conversion Kit</h3>
@@ -544,7 +544,7 @@ class ProductSliderV1 extends Component {
 										</div>
 										</li>
 										<li>
-										<a href="#" className="theme-btn-1 btn btn-effect-1" title="Add to Cart" data-bs-toggle="modal" data-bs-target="#add_to_cart_modal">
+										<a href="/#" className="theme-btn-1 btn btn-effect-1" title="Add to Cart" data-bs-toggle="modal" data-bs-target="#add_to_cart_modal">
 											<i className="fas fa-shopping-cart" />
 											<span>ADD TO CART</span>
 										</a>
@@ -555,10 +555,10 @@ class ProductSliderV1 extends Component {
 									<div className="ltn__social-media">
 									<ul>
 										<li>Share:</li>
-										<li><a href="#" title="Facebook"><i className="fab fa-facebook-f" /></a></li>
-										<li><a href="#" title="Twitter"><i className="fab fa-twitter" /></a></li>
-										<li><a href="#" title="Linkedin"><i className="fab fa-linkedin" /></a></li>
-										<li><a href="#" title="Instagram"><i className="fab fa-instagram" /></a></li>
+										<li><a href="/#" title="Facebook"><i className="fab fa-facebook-f" /></a></li>
+										<li><a href="/#" title="Twitter"><i className="fab fa-twitter" /></a></li>
+										<li><a href="/#" title="Linkedin"><i className="fab fa-linkedin" /></a></li>
+										<li><a href="/#" title="Instagram"><i className="fab fa-instagram" /></a></li>
 									</ul>
 									</div>
 								</div>

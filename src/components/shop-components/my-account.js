@@ -219,12 +219,12 @@ class MyAccount extends Component {
 									  <small><i className="icon-placeholder" /> Brooklyn, New York, United States</small>
 									  <div className="product-ratting">
 										<ul>
-										  <li><a href="#"><i className="fas fa-star" /></a></li>
-										  <li><a href="#"><i className="fas fa-star" /></a></li>
-										  <li><a href="#"><i className="fas fa-star" /></a></li>
-										  <li><a href="#"><i className="fas fa-star-half-alt" /></a></li>
-										  <li><a href="#"><i className="far fa-star" /></a></li>
-										  <li className="review-total"> <a href="#"> ( 95 Reviews )</a></li>
+										  <li><a href="/#"><i className="fas fa-star" /></a></li>
+										  <li><a href="/#"><i className="fas fa-star" /></a></li>
+										  <li><a href="/#"><i className="fas fa-star" /></a></li>
+										  <li><a href="/#"><i className="fas fa-star-half-alt" /></a></li>
+										  <li><a href="/#"><i className="far fa-star" /></a></li>
+										  <li className="review-total"> <a href="/#"> ( 95 Reviews )</a></li>
 										</ul>
 									  </div>
 									</div>
@@ -243,12 +243,12 @@ class MyAccount extends Component {
 									  <small><i className="icon-placeholder" /> Brooklyn, New York, United States</small>
 									  <div className="product-ratting">
 										<ul>
-										  <li><a href="#"><i className="fas fa-star" /></a></li>
-										  <li><a href="#"><i className="fas fa-star" /></a></li>
-										  <li><a href="#"><i className="fas fa-star" /></a></li>
-										  <li><a href="#"><i className="fas fa-star-half-alt" /></a></li>
-										  <li><a href="#"><i className="far fa-star" /></a></li>
-										  <li className="review-total"> <a href="#"> ( 95 Reviews )</a></li>
+										  <li><a href="/#"><i className="fas fa-star" /></a></li>
+										  <li><a href="/#"><i className="fas fa-star" /></a></li>
+										  <li><a href="/#"><i className="fas fa-star" /></a></li>
+										  <li><a href="/#"><i className="fas fa-star-half-alt" /></a></li>
+										  <li><a href="/#"><i className="far fa-star" /></a></li>
+										  <li className="review-total"> <a href="/#"> ( 95 Reviews )</a></li>
 										</ul>
 									  </div>
 									</div>
@@ -267,12 +267,12 @@ class MyAccount extends Component {
 									  <small><i className="icon-placeholder" /> Brooklyn, New York, United States</small>
 									  <div className="product-ratting">
 										<ul>
-										  <li><a href="#"><i className="fas fa-star" /></a></li>
-										  <li><a href="#"><i className="fas fa-star" /></a></li>
-										  <li><a href="#"><i className="fas fa-star" /></a></li>
-										  <li><a href="#"><i className="fas fa-star-half-alt" /></a></li>
-										  <li><a href="#"><i className="far fa-star" /></a></li>
-										  <li className="review-total"> <a href="#"> ( 95 Reviews )</a></li>
+										  <li><a href="/#"><i className="fas fa-star" /></a></li>
+										  <li><a href="/#"><i className="fas fa-star" /></a></li>
+										  <li><a href="/#"><i className="fas fa-star" /></a></li>
+										  <li><a href="/#"><i className="fas fa-star-half-alt" /></a></li>
+										  <li><a href="/#"><i className="far fa-star" /></a></li>
+										  <li className="review-total"> <a href="/#"> ( 95 Reviews )</a></li>
 										</ul>
 									  </div>
 									</div>
@@ -323,12 +323,12 @@ class MyAccount extends Component {
 									  <small><i className="icon-placeholder" /> Brooklyn, New York, United States</small>
 									  <div className="product-ratting">
 										<ul>
-										  <li><a href="#"><i className="fas fa-star" /></a></li>
-										  <li><a href="#"><i className="fas fa-star" /></a></li>
-										  <li><a href="#"><i className="fas fa-star" /></a></li>
-										  <li><a href="#"><i className="fas fa-star-half-alt" /></a></li>
-										  <li><a href="#"><i className="far fa-star" /></a></li>
-										  <li className="review-total"> <a href="#"> ( 95 Reviews )</a></li>
+										  <li><a href="/#"><i className="fas fa-star" /></a></li>
+										  <li><a href="/#"><i className="fas fa-star" /></a></li>
+										  <li><a href="/#"><i className="fas fa-star" /></a></li>
+										  <li><a href="/#"><i className="fas fa-star-half-alt" /></a></li>
+										  <li><a href="/#"><i className="far fa-star" /></a></li>
+										  <li className="review-total"> <a href="/#"> ( 95 Reviews )</a></li>
 										</ul>
 									  </div>
 									</div>
@@ -347,12 +347,12 @@ class MyAccount extends Component {
 									  <small><i className="icon-placeholder" /> Brooklyn, New York, United States</small>
 									  <div className="product-ratting">
 										<ul>
-										  <li><a href="#"><i className="fas fa-star" /></a></li>
-										  <li><a href="#"><i className="fas fa-star" /></a></li>
-										  <li><a href="#"><i className="fas fa-star" /></a></li>
-										  <li><a href="#"><i className="fas fa-star-half-alt" /></a></li>
-										  <li><a href="#"><i className="far fa-star" /></a></li>
-										  <li className="review-total"> <a href="#"> ( 95 Reviews )</a></li>
+										  <li><a href="/#"><i className="fas fa-star" /></a></li>
+										  <li><a href="/#"><i className="fas fa-star" /></a></li>
+										  <li><a href="/#"><i className="fas fa-star" /></a></li>
+										  <li><a href="/#"><i className="fas fa-star-half-alt" /></a></li>
+										  <li><a href="/#"><i className="far fa-star" /></a></li>
+										  <li className="review-total"> <a href="/#"> ( 95 Reviews )</a></li>
 										</ul>
 									  </div>
 									</div>
@@ -371,12 +371,12 @@ class MyAccount extends Component {
 									  <small><i className="icon-placeholder" /> Brooklyn, New York, United States</small>
 									  <div className="product-ratting">
 										<ul>
-										  <li><a href="#"><i className="fas fa-star" /></a></li>
-										  <li><a href="#"><i className="fas fa-star" /></a></li>
-										  <li><a href="#"><i className="fas fa-star" /></a></li>
-										  <li><a href="#"><i className="fas fa-star-half-alt" /></a></li>
-										  <li><a href="#"><i className="far fa-star" /></a></li>
-										  <li className="review-total"> <a href="#"> ( 95 Reviews )</a></li>
+										  <li><a href="/#"><i className="fas fa-star" /></a></li>
+										  <li><a href="/#"><i className="fas fa-star" /></a></li>
+										  <li><a href="/#"><i className="fas fa-star" /></a></li>
+										  <li><a href="/#"><i className="fas fa-star-half-alt" /></a></li>
+										  <li><a href="/#"><i className="far fa-star" /></a></li>
+										  <li className="review-total"> <a href="/#"> ( 95 Reviews )</a></li>
 										</ul>
 									  </div>
 									</div>

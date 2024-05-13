@@ -30,7 +30,7 @@ class Login extends Component {
 							<button className="theme-btn-1 btn btn-block" type="submit">SIGN IN</button>
 						</div>
 						<div className="go-to-btn mt-20">
-						<a href="#" title="Forgot Password?" data-bs-toggle="modal" data-bs-target="#ltn_forget_password_modal"><small>FORGOTTEN YOUR PASSWORD?</small></a>
+						<a href="/#" title="Forgot Password?" data-bs-toggle="modal" data-bs-target="#ltn_forget_password_modal"><small>FORGOTTEN YOUR PASSWORD?</small></a>
 						</div>
 						</form>
 					</div>
