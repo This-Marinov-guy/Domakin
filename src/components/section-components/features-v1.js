@@ -10,6 +10,7 @@ const FeaturesV1 = (props) => {
 
 	const customClass = props.customClass ? props.customClass : ''
 
+	
 	const script = useSelector(selectScript);
 	const language = useSelector(selectLanguage);
 
