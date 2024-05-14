@@ -10,7 +10,7 @@ const FeaturesV1 = (props) => {
 
 	const customClass = props.customClass ? props.customClass : ''
 
-	
+
 	const script = useSelector(selectScript);
 	const language = useSelector(selectLanguage);
 
@@ -43,7 +43,7 @@ const FeaturesV1 = (props) => {
 					<Link to="/services/renting">
 						<div className="ltn__feature-item ltn__feature-item-6 text-center bg-white  box-shadow-1 active">
 							<div className="ltn__feature-icon">
-								<img src={publicUrl + "assets/img/icons/icon-img/22.png"} alt="#" />
+								<img style={{ maxWidth: '225px' }} src={publicUrl + "assets/img/icons/icon-img/22.png"} alt="#" />
 							</div>
 							<div className="ltn__feature-info">
 								<h3>{script.features[5]}</h3>
