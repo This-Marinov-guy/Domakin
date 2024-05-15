@@ -12,7 +12,7 @@ const Partners = () => {
             <h2 className='text-center'>{script.partners[0]}</h2>
             <div className='row partners text-center'>
                 <div className='col-lg-3 col-md-6 col-sm-6'>
-                    <a href='https://bulgariansocietygro.nl/' target='_blank'>
+                    <a href='https://bulgariansociety.nl/' target='_blank'>
                         <img src={publicUrl + "assets/img/partners/2.jpg"} style={{ borderRadius: '50%' }} alt="Partner" className='partner-img' />
                     </a>
                 </div>
