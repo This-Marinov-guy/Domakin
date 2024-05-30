@@ -185,7 +185,7 @@ const BG = {
     ],
     FOR_RENT: [{
         id: '10',
-        status: 'Свободна',
+        status: 'В процес',
         price: 430,
         free: true,
         type: 'Стая в споделен апартамент',
@@ -201,7 +201,7 @@ const BG = {
     },
     {
         id: '9',
-        status: 'Свободна',
+        status: 'В процес',
         price: 510,
         free: true,
         type: '3 Стаи в споделен апартамент',
@@ -217,7 +217,7 @@ const BG = {
     },
     {
         id: '8',
-        status: 'Свободна',
+        status: 'В процес',
         price: 410,
         free: true,
         type: 'Стая в споделен апартамент',
@@ -705,7 +705,7 @@ const EN = {
     ],
     FOR_RENT: [{
         id: '10',
-        status: 'RENT',
+        status: 'In progress',
         price: 430,
         free: true,
         type: 'Room in a shared apartment',
@@ -720,7 +720,7 @@ const EN = {
         images: ['assets/img/properties/property_10/2.jpeg', 'assets/img/properties/property_10/3.jpeg', 'assets/img/properties/property_10/4.jpeg', 'assets/img/properties/property_10/5.jpeg'],
     }, {
         id: '9',
-        status: 'RENT',
+        status: 'In progress',
         price: 510,
         free: true,
         type: '3 rooms in shared apartment',
@@ -735,7 +735,7 @@ const EN = {
         images: ['assets/img/properties/property_9/2.jpg', 'assets/img/properties/property_9/3.jpg', 'assets/img/properties/property_9/4.jpg', 'assets/img/properties/property_9/5.jpg', 'assets/img/properties/property_9/6.jpg', 'assets/img/properties/property_9/7.jpg', 'assets/img/properties/property_9/8.jpg', 'assets/img/properties/property_9/9.jpg', 'assets/img/properties/property_9/10.jpg'],
     }, {
         id: '8',
-        status: 'RENT',
+        status: 'In progress',
         price: 410,
         free: true,
         type: 'Room in a shared apartment',
