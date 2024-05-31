@@ -201,7 +201,7 @@ const BG = {
     },
     {
         id: '9',
-        status: 'В процес',
+        status: 'Свободна',
         price: 510,
         free: true,
         type: '3 Стаи в споделен апартамент',
@@ -720,7 +720,7 @@ const EN = {
         images: ['assets/img/properties/property_10/2.jpeg', 'assets/img/properties/property_10/3.jpeg', 'assets/img/properties/property_10/4.jpeg', 'assets/img/properties/property_10/5.jpeg'],
     }, {
         id: '9',
-        status: 'In progress',
+        status: 'FREE',
         price: 510,
         free: true,
         type: '3 rooms in shared apartment',
