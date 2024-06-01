@@ -184,6 +184,21 @@ const BG = {
         'Предлагане'
     ],
     FOR_RENT: [{
+        id: '11',
+        status: 'Свободна',
+        price: 385,
+        free: true,
+        type: 'Стая в споделен апартамент',
+        location: 'Huygensstraat, Groningen',
+        description: {
+            property: 'Уютна стая в споделен апартамент. Тъсрси се нова съквартирантка',
+            period: '6-месечен договор',
+            bills: 'сметките са включени',
+            flatmates: '1х гъркиня и 1х виетнамка',
+        },
+        main_image: "assets/img/properties/property_11/2.jpg",
+        images: ["assets/img/properties/property_11/1.mp4"]
+    },{
         id: '10',
         status: 'В процес',
         price: 430,
@@ -286,7 +301,7 @@ const BG = {
         type: 'Единична Стая',
         location: 'Tweede Oosterparkstraat 3, Amsterdam',
         description: {
-            property: 'Реновирана стая в апартамент с две спални. Кухнята и холът са напълно обзаведени. Спалнята е наполовина обзаведена, като леглото и гардеробът могат да бъдат или закупени от предния наемодател, или премахнати, секцията остава в стаята.',
+            property: 'Реновирана стая в апартамент с две спални. Кухнята и холът са напълно обзаведени. Спалнята е наполовина обзаведена, като леглото и гардеробът могат да бъдат или закупени от предния наемодател.',
             period: 'Свободна от 8 септември 2023 до юни 2024 с опция за удължаване.',
             bills: 'Наемът включва сметки (вода, ток, интернет и т.н.).',
             flatmates: 'Другият съквартирант е работещ мъж на 26 години. Търси се съквартирант със сходен профил.',
@@ -704,6 +719,21 @@ const EN = {
         'Offering',
     ],
     FOR_RENT: [{
+        id: '11',
+        status: 'FREE',
+        price: 385,
+        free: true,
+        type: 'Room in a shred apartment',
+        location: 'Huygensstraat, Groningen',
+        description: {
+            property: 'Cosy room in shared apartment. The new tenant must be female',
+            period: '6 month contact',
+            bills: 'all bills included',
+            flatmates: '1х Greek и 1х Vietnamese',
+        },
+        main_image: "assets/img/properties/property_11/2.jpg",
+        images: ["assets/img/properties/property_11/1.mp4"]
+    },{
         id: '10',
         status: 'In progress',
         price: 430,
@@ -804,7 +834,7 @@ const EN = {
         type: 'Single Room',
         location: 'Tweede Oosterparkstraat 3, Amsterdam',
         description: {
-            property: 'A small but nice room in a two bedroom apartment. Living room, kitchen, bathroom have everything included. The room comes semi-furnished, the bed and the clothing rack can be bought from the previous tenant or removed. The shelf stays.',
+            property: 'A small but nice room in a two bedroom apartment. Living room, kitchen, bathroom have everything included. Optional furniture purchase.',
             period: '8th of September 2023 - June 2024 with a possibility of extension',
             bills: 'Rent includes service cost, bills, wifi, el, gas, water',
             flatmates: 'There is one more working male tenant - 26 years old.',
