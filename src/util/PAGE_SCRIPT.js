@@ -222,7 +222,7 @@ const BG = {
         location: 'Huygensstraat, Groningen',
         description: {
             property: 'Уютна стая в споделен апартамент. Тъсрси се нова съквартирантка',
-            period: '6-месечен договор',
+            period: '12-месечен договор',
             bills: 'сметките са включени',
             flatmates: '1х гъркиня и 1х виетнамка',
         },
@@ -787,7 +787,7 @@ const EN = {
         location: 'Huygensstraat, Groningen',
         description: {
             property: 'Cosy room in shared apartment. The new tenant must be female',
-            period: '6 month contact',
+            period: '12-months contract',
             bills: 'all bills included',
             flatmates: '1х Greek и 1х Vietnamese',
         },

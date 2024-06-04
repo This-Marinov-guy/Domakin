@@ -1,5 +1,6 @@
 import React, { useEffect, useState, useRef, lazy, Suspense } from "react";
 import ReactDOM from "react-dom/client";
+import { clarity } from 'react-microsoft-clarity';
 import { Provider, useDispatch, useSelector } from "react-redux";
 import { store } from './redux/store'
 import { useHttpClient } from './hooks/http-hook'
@@ -65,6 +66,14 @@ const Root = () => {
     const storedLanguage = localStorage.getItem("language");
 
     useEffect(() => {
+        clarity.init(process.env.REACT_APP_CLARITY_ID);
+        clarity.consent();
+
+        if (clarity.hasStarted()) {
+            console.log('Track with Clarity');
+            // clarity.identify('USER_ID', { userProperty: 'value' });
+        }
+        
         if (storedLanguage) {
             dispatch(setLanguage(storedLanguage))
         }
@@ -79,7 +88,7 @@ const Root = () => {
                 dispatch(setScript(BG))
                 break;
         }
-    }, [dispatch])
+    }, [])
 
     useEffect(() => {
         const fetchFeedbacks = async () => {

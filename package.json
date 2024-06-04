@@ -91,6 +91,7 @@
     "react-video-tag": "0.0.10",
     "react-visibility-sensor": "^5.1.1",
     "resolve": "1.10.0",
+    "react-microsoft-clarity": "^1.2.0",
     "sass": "^1.50.1",
     "sass-loader": "^7.3.1",
     "semver": "6.0.0",
