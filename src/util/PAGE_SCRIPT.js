@@ -184,6 +184,36 @@ const BG = {
         'Предлагане'
     ],
     FOR_RENT: [{
+        id: '13',
+        status: 'Свободна',
+        price: 400,
+        free: true,
+        type: 'Уютна слънчева стая',
+        location: 'Fokkerstraat Groningen',
+        description: {
+            property: 'Малка слънчева стая в къща на 2 етажа с всички екстри. Има колело към стаята.',
+            period: 'свободна веднага',
+            bills: 'сметките са включени, към цената има и колело',
+            flatmates: '3х момичета',
+        },
+        main_image: "assets/img/properties/property_13/1.jpg",
+        images: ["assets/img/properties/property_12/2.jpg", "assets/img/properties/property_12/3.jpg"]
+    },{
+        id: '12',
+        status: 'Свободна',
+        price: 600,
+        free: true,
+        type: '2 стаи в споделена къща',
+        location: 'Maasdamweg Rotterdam',
+        description: {
+            property: '2 отделни спални, всяка по 600 евро. Къщата е напълно обзаведена',
+            period: 'свободна веднага',
+            bills: 'сметките са включени, но може да варират',
+            flatmates: '1х момиче и 1х момче',
+        },
+        main_image: "assets/img/properties/property_12/1.jpg",
+        images: ["assets/img/properties/property_12/2.mp4"]
+    },{
         id: '11',
         status: 'Свободна',
         price: 385,
@@ -719,11 +749,41 @@ const EN = {
         'Offering',
     ],
     FOR_RENT: [{
+        id: '13',
+        status: 'Free',
+        price: 400,
+        free: true,
+        type: 'Small sunny room',
+        location: 'Fokkerstraat Groningen',
+        description: {
+            property: 'A small sunny room in a 2-floor house. A bike comes with the room.',
+            period: 'currently available',
+            bills: 'all bills included as well as bike',
+            flatmates: '3х girls',
+        },
+        main_image: "assets/img/properties/property_13/1.jpg",
+        images: ["assets/img/properties/property_12/2.jpg", "assets/img/properties/property_12/3.jpg"]
+    },{
+        id: '12',
+        status: 'Free',
+        price: 600,
+        free: true,
+        type: '2 room',
+        location: 'Maasdamweg Rotterdam',
+        description: {
+            property: '2 separate bedroooms in a beautiful shared house',
+            period: 'available now',
+            bills: 'bills included but might vary',
+            flatmates: '1х boy and 1х girl',
+        },
+        main_image: "assets/img/properties/property_12/1.jpg",
+        images: ["assets/img/properties/property_12/2.mp4"]
+    },{
         id: '11',
         status: 'FREE',
         price: 385,
         free: true,
-        type: 'Room in a shred apartment',
+        type: 'Room in a shared apartment',
         location: 'Huygensstraat, Groningen',
         description: {
             property: 'Cosy room in shared apartment. The new tenant must be female',
