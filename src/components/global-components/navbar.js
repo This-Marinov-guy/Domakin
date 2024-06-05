@@ -34,7 +34,7 @@ const Navbar = () => {
 												{/* ltn__language-menu */}
 												<div className="ltn__drop-menu ltn__currency-menu ltn__language-menu">
 													<ul>
-														<li><a href="/#" className="dropdown-toggle"><span className="active-currency mr-5">Language </span></a>
+														<li><h5 className="dropdown-toggle"><span className="active-currency mr-5">Language </span></h5>
 															<ul>
 																<li><button onClick={() => { dispatch(setLanguage('bg')); window.location.reload() }}>Български</button></li>
 																<li><button onClick={() => { dispatch(setLanguage('en')); window.location.reload() }}>English</button></li>
