@@ -184,6 +184,21 @@ const BG = {
         'Предлагане'
     ],
     FOR_RENT: [{
+        id: '14',
+        status: 'Свободна',
+        price: 1000,
+        free: true,
+        type: 'Студио',
+        location: 'Oosterhamrikkade Groningen',
+        description: {
+            property: 'Просторно студио в комуникативен район.',
+            period: 'свободна веднага',
+            bills: 'включени сметки',
+            flatmates: '-',
+        },
+        main_image: "assets/img/properties/property_14/1.jpg",
+        images: ["assets/img/properties/property_14/2.jpg", "assets/img/properties/property_14/3.jpg", "assets/img/properties/property_14/4.jpg", "assets/img/properties/property_14/5.jpg"]
+    },{
         id: '13',
         status: 'Свободна',
         price: 400,
@@ -749,6 +764,21 @@ const EN = {
         'Offering',
     ],
     FOR_RENT: [{
+        id: '14',
+        status: 'Free',
+        price: 1000,
+        free: true,
+        type: 'Studio',
+        location: 'Oosterhamrikkade Groningen',
+        description: {
+            property: 'Spacious Room in community building.',
+            period: 'currently available',
+            bills: 'all bills included',
+            flatmates: '-',
+        },
+        main_image: "assets/img/properties/property_14/1.jpg",
+        images: ["assets/img/properties/property_14/2.jpg", "assets/img/properties/property_14/3.jpg", "assets/img/properties/property_14/4.jpg", "assets/img/properties/property_14/5.jpg"]
+    },{
         id: '13',
         status: 'Free',
         price: 400,
