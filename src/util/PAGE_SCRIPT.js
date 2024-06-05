@@ -212,7 +212,7 @@ const BG = {
             flatmates: '3х момичета',
         },
         main_image: "assets/img/properties/property_13/1.jpg",
-        images: ["assets/img/properties/property_12/2.jpg", "assets/img/properties/property_12/3.jpg"]
+        images: ["assets/img/properties/property_13/2.jpg", "assets/img/properties/property_13/3.jpg"]
     },{
         id: '12',
         status: 'Свободна',
@@ -792,7 +792,7 @@ const EN = {
             flatmates: '3х girls',
         },
         main_image: "assets/img/properties/property_13/1.jpg",
-        images: ["assets/img/properties/property_12/2.jpg", "assets/img/properties/property_12/3.jpg"]
+        images: ["assets/img/properties/property_13/2.jpg", "assets/img/properties/property_13/3.jpg"]
     },{
         id: '12',
         status: 'Free',
