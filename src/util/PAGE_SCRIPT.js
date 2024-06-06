@@ -206,8 +206,8 @@ const BG = {
         type: 'Уютна слънчева стая',
         location: 'Fokkerstraat Groningen',
         description: {
-            property: 'Малка слънчева стая в къща на 2 етажа с всички екстри. Има колело към стаята.',
-            period: 'свободна веднага',
+            property: 'Малка слънчева стая в къща на 2 етажа с всички екстри. Има колело към стаята. Регистрация е възможна!',
+            period: 'свободна от юни до януари 2025',
             bills: 'сметките са включени, към цената има и колело',
             flatmates: '3х момичета',
         },
@@ -786,8 +786,8 @@ const EN = {
         type: 'Small sunny room',
         location: 'Fokkerstraat Groningen',
         description: {
-            property: 'A small sunny room in a 2-floor house. A bike comes with the room.',
-            period: 'currently available',
+            property: 'A small sunny room in a 2-floor house. A bike comes with the room. Registration is possible',
+            period: 'available from June to January 2025',
             bills: 'all bills included as well as bike',
             flatmates: '3х girls',
         },
