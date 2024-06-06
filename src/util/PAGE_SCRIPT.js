@@ -191,7 +191,7 @@ const BG = {
         type: 'Студио',
         location: 'Oosterhamrikkade Groningen',
         description: {
-            property: 'Просторно студио в комуникативен район.',
+            property: 'Просторно студио в комуникативен район. Регистрация НЕ е възможна!',
             period: 'свободна веднага',
             bills: 'включени сметки',
             flatmates: '-',
@@ -771,7 +771,7 @@ const EN = {
         type: 'Studio',
         location: 'Oosterhamrikkade Groningen',
         description: {
-            property: 'Spacious Room in community building.',
+            property: 'Spacious Room in community building. Registration is NOT possible!',
             period: 'currently available',
             bills: 'all bills included',
             flatmates: '-',
