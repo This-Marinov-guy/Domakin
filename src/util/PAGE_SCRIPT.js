@@ -191,14 +191,10 @@ const BG = {
         type: 'Студио на централна локация',
         location: 'Peperstraat, 9711PC, Groningen',
         description: {
-            property: 'Студиото се намира в центъра на града, което прави локацията му много удобна за\n' +
-            'новодошли студенти, които искат да се запознаят с града от близо \n' +
-            'Студиото си има собствена кухня и баня, и 2 радиотора за парно разположени от \n' +
-            'двете страни на стаята. Всички прозорци функционират и се отварят напълно \n' +
-            'Тоалетната се намира на долния етаж и се споделя за в момента с още 3 момичета.',
+            property: 'Студиото се намира в центъра на града. Студиото си има собствена кухня и баня. Тоалетната се намира на долния етаж и се споделя за в момента с още 3 момичета.',
             period: 'свободна веднага',
             bills: 'включени сметки',
-            flatmates: '-',
+            flatmates: '3',
         },
         main_image: "assets/img/properties/property_groningen_peperstraat/Thumbnail.jpeg",
         images: ["assets/img/properties/property_groningen_peperstraat/1.jpeg","assets/img/properties/property_groningen_peperstraat/2.jpeg", "assets/img/properties/property_groningen_peperstraat/3.jpeg", "assets/img/properties/property_groningen_peperstraat/4.jpeg", "assets/img/properties/property_groningen_peperstraat/5.jpeg"]
@@ -783,6 +779,21 @@ const EN = {
         'Offering',
     ],
     FOR_RENT: [{
+        id: '15',
+        status: 'Free',
+        price: 828.76,
+        free: true,
+        type: 'Studio in a central location',
+        location: 'Peperstraat, 9711PC, Groningen',
+        description: {
+            property: 'The studio is located in the city center. It has its own kitchen and bathroom. The toilet is located on the lower floor and is currently shared with 3 other girls.',
+            period: 'available immediately',
+            bills: 'bills included',
+            flatmates: '3'
+        },
+        main_image: "assets/img/properties/property_groningen_peperstraat/Thumbnail.jpeg",
+        images: ["assets/img/properties/property_groningen_peperstraat/1.jpeg","assets/img/properties/property_groningen_peperstraat/2.jpeg", "assets/img/properties/property_groningen_peperstraat/3.jpeg", "assets/img/properties/property_groningen_peperstraat/4.jpeg", "assets/img/properties/property_groningen_peperstraat/5.jpeg"]
+    },{
         id: '14',
         status: 'Free',
         price: 1000,
