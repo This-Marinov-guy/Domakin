@@ -184,7 +184,22 @@ const BG = {
         'Предлагане'
     ],
     FOR_RENT: [{
-        id: '15',
+        id: '16',
+        status: 'Свободна',
+        price: 400,
+        free: true,
+        type: 'Уютна стая във Венло',
+        location: 'Molensingel, 5912 AC, Venlo',
+        description: {
+            property: 'Стая в къща във Венло. Кухня, баня и тоалетна се споделят с 3 други момчета. Регистрацията е възможна.',
+            period: 'Свободна от 1ви юли',
+            bills: 'включени сметки',
+            flatmates: '3',
+        },
+        main_image: "assets/img/properties/property_venlo_molensingel/1.jpeg",
+        images: ["assets/img/properties/property_venlo_molensingel/1.jpeg","assets/img/properties/property_venlo_molensingel/2.jpeg" ]
+    },{
+        id: '12',
         status: 'В процес на заемане',
         price: 828.76,
         free: false,
@@ -229,7 +244,7 @@ const BG = {
         main_image: "assets/img/properties/property_13/1.jpg",
         images: ["assets/img/properties/property_13/2.jpg", "assets/img/properties/property_13/3.jpg"]
     },{
-        id: '12',
+        id: '15',
         status: 'Свободна',
         price: 600,
         free: true,
@@ -779,7 +794,22 @@ const EN = {
         'Offering',
     ],
     FOR_RENT: [{
-        id: '15',
+        id: '16',
+        status: 'Free',
+        price: 400,
+        free: true,
+        type: 'Cosy room in Venlo',
+        location: 'Molensingel, 5912 AC, Venlo',
+        description: {
+            property: 'Room in a house in Venlo. The kitchen, bath and toilet are shared with 3 other guys. Registration is possible',
+            period: '1st of July',
+            bills: 'utilities included',
+            flatmates: '3',
+        },
+        main_image: "assets/img/properties/property_venlo_molensingel/1.jpeg",
+        images: ["assets/img/properties/property_venlo_molensingel/1.jpeg","assets/img/properties/property_venlo_molensingel/2.jpeg" ]
+    },{
+        id: '12',
         status: 'In process of taking', 
         price: 828.76,
         free: false,
@@ -788,7 +818,7 @@ const EN = {
         description: {
             property: 'The studio is located in the city center. It has its own kitchen and bathroom. The toilet is located on the lower floor and is currently shared with 3 other girls.',
             period: 'available immediately',
-            bills: 'bills included',
+            bills: 'utilities included',
             flatmates: '3'
         },
         main_image: "assets/img/properties/property_groningen_peperstraat/Thumbnail.jpeg",
@@ -824,7 +854,7 @@ const EN = {
         main_image: "assets/img/properties/property_13/1.jpg",
         images: ["assets/img/properties/property_13/2.jpg", "assets/img/properties/property_13/3.jpg"]
     },{
-        id: '12',
+        id: '15',
         status: 'Free',
         price: 600,
         free: true,
