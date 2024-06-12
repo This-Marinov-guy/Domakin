@@ -185,9 +185,9 @@ const BG = {
     ],
     FOR_RENT: [{
         id: '15',
-        status: 'Свободна',
+        status: 'В процес на заемане',
         price: 828.76,
-        free: true,
+        free: false,
         type: 'Студио на централна локация',
         location: 'Peperstraat, 9711PC, Groningen',
         description: {
@@ -201,7 +201,7 @@ const BG = {
     },{
         id: '14',
         status: 'Свободна',
-        price: 1000,
+        price: 989,
         free: true,
         type: 'Студио',
         location: 'Oosterhamrikkade Groningen',
@@ -245,9 +245,9 @@ const BG = {
         images: ["assets/img/properties/property_12/2.mp4"]
     },{
         id: '11',
-        status: 'Свободна',
+        status: 'Заета',
         price: 385,
-        free: true,
+        free: false,
         type: 'Стая в споделен апартамент',
         location: 'Huygensstraat, Groningen',
         description: {
@@ -260,9 +260,9 @@ const BG = {
         images: ["assets/img/properties/property_11/1.mp4"]
     },{
         id: '10',
-        status: 'В процес',
+        status: 'В процес на заемане',
         price: 430,
-        free: true,
+        free: false,
         type: 'Стая в споделен апартамент',
         location: 'Petrus Driessenstraat, Groningen',
         description: {
@@ -276,9 +276,9 @@ const BG = {
     },
     {
         id: '9',
-        status: 'Свободна',
+        status: 'В процес на заемане',
         price: 510,
-        free: true,
+        free: false,
         type: '3 Стаи в споделен апартамент',
         location: 'Eikenlaan, Groningen',
         description: {
@@ -292,9 +292,9 @@ const BG = {
     },
     {
         id: '8',
-        status: 'В процес',
+        status: 'Заета',
         price: 410,
-        free: true,
+        free: false,
         type: 'Стая в споделен апартамент',
         location: 'Turkooisstraat, Groningen',
         description: {
@@ -780,9 +780,9 @@ const EN = {
     ],
     FOR_RENT: [{
         id: '15',
-        status: 'Free',
+        status: 'In process of taking', 
         price: 828.76,
-        free: true,
+        free: false,
         type: 'Studio in a central location',
         location: 'Peperstraat, 9711PC, Groningen',
         description: {
@@ -796,7 +796,7 @@ const EN = {
     },{
         id: '14',
         status: 'Free',
-        price: 1000,
+        price: 989,
         free: true,
         type: 'Studio',
         location: 'Oosterhamrikkade Groningen',
@@ -828,7 +828,7 @@ const EN = {
         status: 'Free',
         price: 600,
         free: true,
-        type: '2 room',
+        type: '2 rooms',
         location: 'Maasdamweg Rotterdam',
         description: {
             property: '2 separate bedroooms in a beautiful shared house',
@@ -840,9 +840,9 @@ const EN = {
         images: ["assets/img/properties/property_12/2.mp4"]
     },{
         id: '11',
-        status: 'FREE',
+        status: 'Taken',
         price: 385,
-        free: true,
+        free: false,
         type: 'Room in a shared apartment',
         location: 'Huygensstraat, Groningen',
         description: {
@@ -855,9 +855,9 @@ const EN = {
         images: ["assets/img/properties/property_11/1.mp4"]
     },{
         id: '10',
-        status: 'In progress',
+        status: 'In proccess of taking',
         price: 430,
-        free: true,
+        free: false,
         type: 'Room in a shared apartment',
         location: 'Petrus Driessenstraat, Groningen',
         description: {
@@ -870,9 +870,9 @@ const EN = {
         images: ['assets/img/properties/property_10/2.jpeg', 'assets/img/properties/property_10/3.jpeg', 'assets/img/properties/property_10/4.jpeg', 'assets/img/properties/property_10/5.jpeg'],
     }, {
         id: '9',
-        status: 'FREE',
+        status: 'In proccess of taking',
         price: 510,
-        free: true,
+        free: false,
         type: '3 rooms in shared apartment',
         location: 'Eikenlaan, Groningen',
         description: {
@@ -885,9 +885,9 @@ const EN = {
         images: ['assets/img/properties/property_9/2.jpg', 'assets/img/properties/property_9/3.jpg', 'assets/img/properties/property_9/4.jpg', 'assets/img/properties/property_9/5.jpg', 'assets/img/properties/property_9/6.jpg', 'assets/img/properties/property_9/7.jpg', 'assets/img/properties/property_9/8.jpg', 'assets/img/properties/property_9/9.jpg', 'assets/img/properties/property_9/10.jpg'],
     }, {
         id: '8',
-        status: 'In progress',
+        status: 'Taken',
         price: 410,
-        free: true,
+        free: false,
         type: 'Room in a shared apartment',
         location: 'Turkooisstraat, Groningen',
         description: {
@@ -900,7 +900,7 @@ const EN = {
         images: ['assets/img/properties/property_8/2.jpg', 'assets/img/properties/property_8/3.jpg', 'assets/img/properties/property_8/4.jpg', 'assets/img/properties/property_8/5.jpg', 'assets/img/properties/property_8/6.jpg', 'assets/img/properties/property_8/7.jpg'],
     }, {
         id: '6',
-        status: 'RENT',
+        status: 'Free',
         price: 1100,
         free: true,
         type: 'Room in a spacious apartment',
